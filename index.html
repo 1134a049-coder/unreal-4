@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unreal Engine 虛幻引擎 24小時全真互動測驗系統</title>
+  <meta name="description" content="虛幻引擎 UE4/UE5 24小時實戰教材官方章節題庫，12章120道全真考題，支援英中雙語切換、即時專業內容深度解釋、刷題與全真計時模考。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./ue_style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Brand Logo & Title -->
+      <div class="nav-brand">
+        <div class="brand-badge">
+          <span>UE</span>
+        </div>
+        <div class="brand-title">
+          <h1>Unreal Engine Pro</h1>
+          <p>虛幻引擎全真章節考題測驗庫</p>
+        </div>
+      </div>
+
+      <!-- Chapter Selector Dropdown -->
+      <div class="test-selector-wrapper">
+        <label for="chapterSelect" class="sr-only">選擇章節試卷</label>
+        <select id="chapterSelect" class="test-select">
+          <!-- Dynamically populated from JS -->
+        </select>
+      </div>
+
+      <!-- Mode Switcher Tabs -->
+      <nav class="mode-nav">
+        <button class="mode-tab active" data-mode="practice" id="btnModePractice">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>刷題模式</span>
+        </button>
+        <button class="mode-tab" data-mode="exam" id="btnModeExam">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>章節模考 (30分)</span>
+        </button>
+        <button class="mode-tab" data-mode="mistakes" id="btnModeMistakes">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          <span>錯題本 (<span id="mistakesCount">0</span>)</span>
+        </button>
+      </nav>
+
+      <!-- Exam Timer & Submit -->
+      <div class="exam-controls" id="examControls" style="display: none;">
+        <div class="exam-timer" id="examTimer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span id="timerDisplay">30:00</span>
+        </div>
+        <button class="btn-submit-exam" id="btnSubmitExam">交卷計分</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    
+    <!-- Top Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-info">
+        <span class="progress-text" id="progressText">Question 1 of 10</span>
+        <span class="progress-stat" id="progressStat">已答 0 題</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width: 10%;"></div>
+      </div>
+    </div>
+
+    <!-- Practice Mode Stats & Feature Toggles Banner -->
+    <div class="practice-banner" id="practiceBanner">
+      <div class="practice-stats-group">
+        <div class="stat-pill"><span class="pill-dot correct"></span>答對: <strong id="practiceCorrect">0</strong></div>
+        <div class="stat-pill"><span class="pill-dot wrong"></span>答錯: <strong id="practiceWrong">0</strong></div>
+        <div class="stat-pill"><span class="pill-dot rate"></span>正確率: <strong id="practiceRate">0%</strong></div>
+      </div>
+
+      <!-- Language Translation Switcher -->
+      <div class="lang-switch-group">
+        <span class="filter-label">🌐 語言轉換：</span>
+        <div class="lang-tabs">
+          <button class="lang-btn active" data-lang="en" id="btnLangEn">English 原文</button>
+          <button class="lang-btn" data-lang="bilingual" id="btnLangBi">英中雙語對照</button>
+          <button class="lang-btn" data-lang="zh" id="btnLangZh">中文繁體</button>
+        </div>
+      </div>
+
+      <!-- Feature Toggles -->
+      <div class="practice-toggles">
+        <button class="toggle-btn active" id="btnToggleAnswer" type="button" title="開啟/關閉即時顯示答案">
+          <svg class="icon-toggle" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span class="toggle-label">答案顯示：</span><strong class="toggle-status-text" id="answerToggleText">開啟</strong>
+        </button>
+        <button class="toggle-btn active" id="btnToggleExplain" type="button" title="開啟/關閉題目專業詳細解釋">
+          <svg class="icon-toggle" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span class="toggle-label">內容解釋：</span><strong class="toggle-status-text" id="explainToggleText">開啟</strong>
+        </button>
+        <button class="toggle-btn" id="btnResetTest" type="button" title="清除此章節的所有作答紀錄並重新練習">
+          <svg class="icon-toggle" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+          <span class="toggle-label">重置章節</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Layout: Left (Question Card) + Right (Quick Drawer) -->
+    <div class="test-layout">
+      
+      <!-- Primary Question Area -->
+      <section class="question-stage">
+        
+        <!-- Question Card -->
+        <div class="question-card" id="questionCard">
+          
+          <div class="card-header">
+            <div class="question-badge">
+              <span class="badge-num" id="cardQNum">Question 1</span>
+              <span class="badge-tag" id="cardQChapter">Hour 1: Your First Project</span>
+              <span class="badge-type" id="cardQType">單選題</span>
+            </div>
+            
+            <button class="btn-flag" id="btnFlag" title="標記稍後檢查" aria-label="標記此題">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>標記</span>
+            </button>
+          </div>
+
+          <!-- Question Body -->
+          <div class="question-body">
+            <p class="question-prompt" id="questionPromptEn">Loading question...</p>
+            <p class="question-prompt-zh" id="questionPromptZh" style="display: none;"></p>
+          </div>
+
+          <!-- Options Grid -->
+          <div class="options-container" id="optionsContainer">
+            <!-- Dynamically populated options -->
+          </div>
+
+        </div>
+
+        <!-- Stage Bottom Navigation Actions -->
+        <div class="stage-nav">
+          <button class="btn-nav btn-prev" id="btnPrevQ">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>上一題</span>
+          </button>
+
+          <button class="btn-drawer-toggle" id="btnOpenDrawer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>答題卡 (<span id="answeredCountBadge">0</span>/<span id="totalQuestionsBadge">10</span>)</span>
+          </button>
+
+          <button class="btn-nav btn-next" id="btnNextQ">
+            <span>下一題</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+        </div>
+
+        <!-- Immediate Feedback / 題目詳細解析 (Practice Mode) -->
+        <div class="feedback-card" id="feedbackCard" style="display: none;">
+          <div class="feedback-header">
+            <span class="feedback-icon" id="feedbackIcon"></span>
+            <span class="feedback-status" id="feedbackStatus">作答正確！</span>
+          </div>
+          <div class="feedback-detail">
+            <p><strong>正確答案：</strong><span class="correct-ans-tag" id="feedbackCorrectOpt">(B) Details</span></p>
+            <div class="feedback-notes" id="feedbackNotes">
+              <!-- Explanation contents -->
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right Answer Sheet Palette (Desktop Side / Mobile Drawer) -->
+      <aside class="palette-sidebar" id="paletteSidebar">
+        <div class="palette-header">
+          <h3>章節題卡導覽</h3>
+          <button class="palette-close-btn" id="btnCloseDrawer" aria-label="關閉答題卡">✕</button>
+        </div>
+
+        <div class="palette-legend">
+          <div class="legend-item"><span class="dot unans"></span>未答</div>
+          <div class="legend-item"><span class="dot ans"></span>已答</div>
+          <div class="legend-item"><span class="dot flag"></span>標記</div>
+          <div class="legend-item practice-only"><span class="dot correct"></span>答對</div>
+          <div class="legend-item practice-only"><span class="dot wrong"></span>答錯</div>
+        </div>
+
+        <!-- Answer Sheet Grid Buttons -->
+        <div class="palette-grid" id="paletteGrid">
+          <!-- 1 ~ 10 buttons populated by script -->
+        </div>
+
+        <!-- Chapter Statistics Quick Card -->
+        <div class="chapter-summary-card">
+          <h4>📊 章節完成進度</h4>
+          <div class="summary-line">
+            <span>當前章節：</span>
+            <strong id="sideChapterTitle">Hour 01</strong>
+          </div>
+          <div class="summary-line">
+            <span>總題數：</span>
+            <strong id="sideChapterTotal">10 題</strong>
+          </div>
+          <div class="summary-line">
+            <span>已作答：</span>
+            <strong id="sideChapterAnswered">0 題</strong>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Exam Result Modal -->
+  <div class="modal-overlay" id="resultModal" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>🎉 測驗成績單與結算報告</h2>
+        <p id="modalTestName">Hour 1: Your First Project</p>
+      </div>
+
+      <div class="score-display">
+        <div class="score-ring">
+          <div class="score-num" id="modalScore">20</div>
+          <div class="score-label">測驗得分 (滿分 20 分 / 10 題)</div>
+        </div>
+      </div>
+
+      <div class="result-stats-grid">
+        <div class="res-stat-card">
+          <div class="res-stat-val text-green" id="resCorrectCount">10</div>
+          <div class="res-stat-lbl">答對題數</div>
+        </div>
+        <div class="res-stat-card">
+          <div class="res-stat-val text-red" id="resWrongCount">0</div>
+          <div class="res-stat-lbl">答錯題數</div>
+        </div>
+        <div class="res-stat-card">
+          <div class="res-stat-val text-gray" id="resUnansweredCount">0</div>
+          <div class="res-stat-lbl">未作答</div>
+        </div>
+        <div class="res-stat-card">
+          <div class="res-stat-val text-gold" id="resAccuracy">100%</div>
+          <div class="res-stat-lbl">答對率</div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-modal btn-review" id="btnReviewExam">查看錯題與逐題詳解</button>
+        <button class="btn-modal btn-restart" id="btnRestartExam">重新測驗此章節</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastMessage">已更新</div>
+
+  <!-- Load Questions Data & Main Logic -->
+  <script src="./ue_questions.js"></script>
+  <script src="./ue_script.js"></script>
+</body>
+</html>
+
