@@ -1506,19 +1506,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "Movable",
       "correctIndex": 2,
       "correctText": "Movable",
-      "explanation": "【UE 4.27 核心考點：Static Mesh 預設移動性】\n靜態網格 Actor 拖入關卡時預設為「Static（靜態）」，這意味著其位置固定不變，可以完全參與 Lightmass 光照貼圖的高品質離線烘焙。",
+      "explanation": "【UE 4.27 核心考點：Static Mesh 即時動態光照】\n正確。若要讓 Static Mesh Actor 能夠受到即時動態光照（例如動態陰影、即時變更顏色或移動），必須將其 Mobility（可移動性）設定為「Movable（可移動）」。Static 物件只能接收預先烘焙的靜態光照貼圖。",
       "keywords": [
         {
-          "term": "Transform（空間變換）",
-          "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
-        },
-        {
-          "term": "Static Mesh（靜態網格）",
-          "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
-        },
-        {
-          "term": "Mobility（移動性）",
-          "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+          "term": "Mobility（可移動性）",
+          "role": "Static（靜態烘焙）、Stationary（固定位置動態光強）、Movable（完全動態即時光照與物理）"
         }
       ],
       "hasSegments": false,
@@ -1588,11 +1580,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "False",
       "correctIndex": 1,
       "correctText": "False",
-      "explanation": "【UE 4.27 核心考點：實例材質覆蓋原則】\n錯誤。在關卡中選取 Actor 修改材質，只會影響該場景實例（Override），不會修改 Content Browser 中原始資產的預設材質設定。",
+      "explanation": "【UE 4.27 核心考點：光照貼圖 UV 通道索引】\n錯誤。在 UE4 內部與圖形學中，UV 通道是以 0 為起始索引（0-indexed）。預設情況下，材質貼圖使用 UV Channel 0，而光照貼圖（Lightmap UV）則儲存在 UV Channel 1（即第二個 UV 通道），而非 Channel 2。",
       "keywords": [
         {
-          "term": "Unreal Engine 4.27 核心架構",
-          "role": "遵循教材與引擎核心工作流規範"
+          "term": "Lightmap UV（光照貼圖 UV）",
+          "role": "通常儲存於 UV Channel 1，要求面片無重疊且具備足夠邊界間距 Padding"
         }
       ],
       "hasSegments": false,
@@ -1625,11 +1617,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": ".fbx and .obj",
       "correctIndex": 1,
       "correctText": ".fbx and .obj",
-      "explanation": "【UE 4.27 核心考點：Content Browser 匯入操作】\n點擊 Content Browser 左上角的綠色「Import」按鈕，或在檔案清單空白處右鍵點選「Import to ...」，即可匯入外部 FBX、OBJ、PNG 等素材。",
+      "explanation": "【UE 4.27 核心考點：3D 模型匯入格式】\n正確。將 3D 模型匯入 UE4 編輯器最常用的兩種標準通用格式為 Autodesk .fbx 與 Wavefront .obj。.fbx 支援幾何體、材質槽、動畫與碰撞體；.obj 則為通用靜態網格格式。",
       "keywords": [
         {
-          "term": "Unreal Engine 4.27 核心架構",
-          "role": "遵循教材與引擎核心工作流規範"
+          "term": "FBX / OBJ 匯入格式",
+          "role": "UE4 靜態網格與骨架模型標準通用交換格式"
         }
       ],
       "hasSegments": false,
@@ -1660,19 +1652,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：碰撞最佳化原則】\n錯誤。無論距離遠近，遊戲物件都應盡量使用低開銷的簡單碰撞（Simple Collision）以維持高效能物理運算，複雜碰撞（Complex Collision）會造成嚴重的 CPU 效能浪費。",
+      "explanation": "【UE 4.27 核心考點：更換 Static Mesh Actor 參照資產】\n正確。在關卡工作視窗選取 Static Mesh Actor 後，可在 Details（細節）面板中的 Static Mesh 屬性欄位中，隨時將其參照的靜態網格資產更換為 Content Browser 中的其他模型。",
       "keywords": [
         {
-          "term": "Collision（碰撞體系）",
-          "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
-        },
-        {
-          "term": "Reference Viewer（引用檢視器）",
-          "role": "以可視化節點圖展示資產與資產之間的雙向依賴引用關係樹"
-        },
-        {
-          "term": "Static Mesh（靜態網格）",
-          "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+          "term": "Static Mesh Actor 參照資產",
+          "role": "可在 Details 面板隨時替換所參照的靜態網格資產"
         }
       ],
       "hasSegments": false,
@@ -1701,19 +1685,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Socket 插槽工具】\n在靜態網格編輯器中新增 Socket，可定義局部位置、旋轉與縮放，供藍圖或關卡中其他 Actor（如火把特效、燈光）精準附著吸附。",
+      "explanation": "【UE 4.27 核心考點：多重碰撞外框】\n正確。在靜態網格編輯器中，你可以為單一靜態網格資產組合新增多個盒體（Box）、球體（Sphere）或膠囊體（Capsule）簡易碰撞外框，以精準貼合複雜外形並維持極佳的物理運算效能。",
       "keywords": [
         {
-          "term": "Collision（碰撞體系）",
-          "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
-        },
-        {
-          "term": "Static Mesh（靜態網格）",
-          "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
-        },
-        {
-          "term": "Socket（插槽）",
-          "role": "網格模型上的指定附著點，供武器、裝飾帽子或光效精準對齊吸附"
+          "term": "Multiple Collision Hulls（多重碰撞外框）",
+          "role": "在單一資產上組合多個簡單碰撞體以擬合複雜幾何輪廓"
         }
       ],
       "hasSegments": false,
@@ -1828,15 +1804,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Directional Light 定向光】\n正確。定向光源發射平行光束，其在關卡中的位置座標不影響光線投射，僅由旋轉（Rotation）決定日光照射角度。",
+      "explanation": "【UE 4.27 核心考點：天空光動態陰影】\n錯誤。當 Sky Light 的可移動性設定為 Movable 或 Stationary 時，可開啟距離場環境遮擋（Distance Field Ambient Occlusion, DFAO）來產生即時的動態環境陰影。",
       "keywords": [
         {
-          "term": "Directional Light（定向光源）",
-          "role": "無限遠平行日光投射，僅旋轉角度影響日照方向，模擬太陽或月光"
-        },
-        {
-          "term": "Sky Light（天空光）",
-          "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+          "term": "Sky Light（天空光照）",
+          "role": "捕捉遠景天光，當設定為 Movable 時可產生 DFAO 動態環境陰影"
         }
       ],
       "hasSegments": false,
@@ -1912,15 +1884,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Spot Light 聚光燈】\n正確。Spot Light 圓錐形發光，Inner Cone Angle 範圍內為全亮，Inner 與 Outer 之間平滑過渡衰減，常用於手電筒、探照燈與汽車前燈。",
+      "explanation": "【UE 4.27 核心考點：光照衰減物理規律】\n正確。光照衰減（Light attenuation）指光線強度隨傳播距離增加而逐漸減弱的現象，UE4 遵循平方反比物理定律（Inverse Square Falloff）或透過 Attenuation Radius 衰減半徑控制影響範圍。",
       "keywords": [
         {
-          "term": "Spot Light（聚光燈）",
-          "role": "圓錐體發光，具備內/外圓錐角衰減，常用於手電筒、車燈與探照燈"
-        },
-        {
-          "term": "Sound Attenuation（聲音衰減）",
-          "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+          "term": "Light Attenuation（光照衰減）",
+          "role": "光照強度隨距離衰減，由 Attenuation Radius 控制邊界"
         }
       ],
       "hasSegments": false,
@@ -1988,11 +1956,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "False",
       "correctIndex": 1,
       "correctText": "False",
-      "explanation": "【UE 4.27 核心考點：靜態光源無動態陰影】\n錯誤。Static 光源的所有直射與間接光均在烘焙時寫死到靜態 Lightmap 中，遊戲運行時完全不進行任何即時動態陰影計算，因此效能消耗最低。",
+      "explanation": "【UE 4.27 核心考點：建置光照範疇】\n錯誤。Build Lighting（建置光照）僅調用 Lightmass 計算靜態場景的全局光照、陰影貼圖與反射捕捉，並不會編譯藍圖（Blueprints 是在藍圖編輯器中單獨編譯，或在打包專案時編譯）。",
       "keywords": [
         {
-          "term": "Unreal Engine 4.27 核心架構",
-          "role": "遵循教材與引擎核心工作流規範"
+          "term": "Build Lighting（建置光照）",
+          "role": "計算烘焙光照貼圖，不包含藍圖腳本編譯"
         }
       ],
       "hasSegments": false,
@@ -2077,11 +2045,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Sky Light 天空光】\n正確。Sky Light 捕捉整個天空半球的色彩分佈，為戶外場景提供柔和均勻的環境補光與天光漫反射。",
+      "explanation": "【UE 4.27 核心考點：個別 Actor 光照貼圖解析度覆蓋】\n正確。雖然靜態網格資產本身有預設的 Lightmap Resolution，但你可以在關卡中選取特定 Actor，在 Details 面板勾選「Overridden Light Map Res」並單獨自訂該實例的光照貼圖解析度。",
       "keywords": [
         {
-          "term": "Sky Light（天空光）",
-          "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+          "term": "Overridden Light Map Res",
+          "role": "可在 Details 面板針對特定場景實例單獨自訂光照貼圖解析度"
         }
       ],
       "hasSegments": false,
@@ -2218,19 +2186,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "Material",
       "correctIndex": 3,
       "correctText": "Material",
-      "explanation": "【UE 4.27 核心考點：Material 材質資產】\nMaterial 包含完整的表面著色演算法網絡，告訴著色器如何與光線交互，包含 Base Color、Metallic、Roughness、Normal 等屬性。",
+      "explanation": "【UE 4.27 核心考點：Material Editor 材質編輯器】\n正確。Material Editor 是節點式視覺化著色編輯器，利用材質表達式（Expressions）與函數（Functions）組合運算，控制物體表面的底色、粗糙度、金屬度與法線反射。",
       "keywords": [
         {
-          "term": "Lightmass（光照烘焙系統）",
-          "role": "離線預先計算光線多次反彈，將柔和漫反射陰影寫入光照貼圖（Lightmaps）"
-        },
-        {
-          "term": "Material（材質系統）",
+          "term": "Material Editor（材質編輯器）",
           "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
-        },
-        {
-          "term": "Roughness（粗糙度）",
-          "role": "0.0 為極度平滑鏡面高光，1.0 為完全粗糙漫散射消光表面"
         }
       ],
       "hasSegments": false,
@@ -2261,11 +2221,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Material Instance 材質實例】\n正確。Material Instance 繼承父材質編譯好的著色器代碼，修改參數時無需重新編譯，可在幾毫秒內即時預覽外觀變更，大幅提升製作效率。",
+      "explanation": "【UE 4.27 核心考點：開啟材質編輯器】\n正確。在 Content Browser 中按右鍵新建 Material，或直接連按兩下任何既有的 Material 資產，即可開啟材質編輯器獨立視窗進行節點編輯。",
       "keywords": [
         {
-          "term": "Material（材質系統）",
-          "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+          "term": "Material Asset 操作",
+          "role": "在 Content Browser 雙擊材質資產即可進入材質節點圖表"
         }
       ],
       "hasSegments": false,
@@ -2333,19 +2293,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Roughness 粗糙度參數】\n正確。Roughness 介於 0.0 ~ 1.0 之間：0.0 產生極度銳利的光澤鏡面高光；1.0 產生完全漫散射無清晰高光斑的消光表面。",
+      "explanation": "【UE 4.27 核心考點：PBR 非金屬高光 Specular 規範】\n錯誤。在 UE4 的 PBR 體系中，非金屬材質的 Specular 預設值為 0.5（對應 4% 反射率，符合絕大多數真實非金屬），一般情況下完全無需連接 Specular 輸入端，除非需要微調特定折射率。",
       "keywords": [
         {
-          "term": "Material（材質系統）",
-          "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
-        },
-        {
-          "term": "Roughness（粗糙度）",
-          "role": "0.0 為極度平滑鏡面高光，1.0 為完全粗糙漫散射消光表面"
-        },
-        {
-          "term": "Metallic（金屬度）",
-          "role": "物理上非 0 即 1（純導體為 1.0，純絕緣體為 0.0），中間值僅用於鏽蝕油污"
+          "term": "Specular（高光輸入端）",
+          "role": "非金屬預設為 0.5 即可滿足絕大多數物理真實反射，通常無需額外連接"
         }
       ],
       "hasSegments": false,
@@ -2434,11 +2386,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "False",
       "correctIndex": 1,
       "correctText": "False",
-      "explanation": "【UE 4.27 核心考點：Metallic 金屬度物理規則】\n錯誤。物理純導體（純金屬，如鐵、銅、金）的金屬度為 1.0；純絕緣體（非金屬，如塑膠、木頭、石頭、皮革）的金屬度為 0.0。只有生鏽或油污等極少數過渡狀態才會使用中間值。",
+      "explanation": "【UE 4.27 核心考點：Mipmaps 尺寸規範】\n錯誤。UE4 只有在貼圖寬高尺寸為「2 的次方（Powers of 2，如 512x512、1024x2048）」時，才會自動生成多級漸進紋理 Mipmaps；非 2 次方尺寸的貼圖無法生成 Mipmaps 且無法進行紋理流送（Texture Streaming）。",
       "keywords": [
         {
-          "term": "Metallic（金屬度）",
-          "role": "物理上非 0 即 1（純導體為 1.0，純絕緣體為 0.0），中間值僅用於鏽蝕油污"
+          "term": "Powers of 2（2 的次方）",
+          "role": "貼圖長寬必須為 2 的冪次才能自動生成 Mipmaps 並支援串流最佳化"
         }
       ],
       "hasSegments": false,
@@ -2467,11 +2419,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：貼圖資產匯入】\n正確。UE4 支援直接將 PNG、TGA、JPG 拖入內容瀏覽器，系統會自動轉換為 Texture2D 資產並指派對應的紋理壓縮格式（如 BC1/BC5）。",
+      "explanation": "【UE 4.27 核心考點：UV 平鋪控制位置】\n錯誤。貼圖的平鋪重複次數（Tiling）是在材質編輯器中使用 Texture Coordinate（TexCoord）節點調整 UTiling 與 VTiling 數值進行控制，而非在貼圖本身的資產屬性中設定。",
       "keywords": [
         {
-          "term": "Material（材質系統）",
-          "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+          "term": "Texture Coordinate（TexCoord）",
+          "role": "材質編輯器中用於控制貼圖 UV 平鋪重複率的核心節點"
         }
       ],
       "hasSegments": false,
@@ -2677,11 +2629,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：Sound Cue 節點編輯器】\n正確。Sound Cue 編輯器支援 Random（隨機選取）、Modulator（音高/音量微調）、Delay（延遲）、Looping 等多種節點串聯組合。",
+      "explanation": "【UE 4.27 核心考點：音訊位元率定義】\n正確。位元率（Bit rate）代表單位時間內傳輸或處理的音訊數據量（如 kbps）。位元率越高，保留的音頻細節越完整、音質越佳，但檔案體積也相對較大。",
       "keywords": [
         {
-          "term": "Sound Cue（音效提示）",
-          "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+          "term": "Bit Rate（位元率）",
+          "role": "單位時間音訊資料量，直接決定音質保真度與檔案大小"
         }
       ],
       "hasSegments": true,
@@ -2771,11 +2723,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "False",
       "correctIndex": 1,
       "correctText": "False",
-      "explanation": "【UE 4.27 核心考點：音訊匯入格式限制】\n錯誤。UE4 官方標準音訊匯入格式嚴格要求為「無壓縮 16-bit PCM .wav 格式」，取樣率建議為 44.1 kHz 或 48 kHz。MP3 與 OGG 無法直接匯入。",
+      "explanation": "【UE 4.27 核心考點：混響 vs 音訊調變】\n錯誤。音高（Pitch）與音量（Volume）的最小/最大調變是由 Sound Modulation（調變設定）控制，而非 Reverb Effect（混響效果資產主要控制空間反射、房間尺寸與回音衰減）。",
       "keywords": [
         {
-          "term": "Reverb Effect（混響效果）",
-          "role": "模擬山洞、教堂、浴室等封閉環境的空間殘響聲學反射"
+          "term": "Reverb Effect vs Modulation",
+          "role": "Reverb 控制空間殘響，Modulation 控制音高與音量調變"
         }
       ],
       "hasSegments": true,
@@ -2916,11 +2868,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "False",
       "correctIndex": 1,
       "correctText": "False",
-      "explanation": "【UE 4.27 核心考點：Spatialization 空間化定義】\n錯誤。空間化是透過 3D 坐標位置計算左右耳抵達時間差（ITD）與強度差（ILD），讓玩家感知聲音精準的 3D 方向與距離感。",
+      "explanation": "【UE 4.27 核心考點：Sound Cue 節點職責】\n錯誤。Looping 節點的作用是讓音訊持續循環播放；從一組節點中「隨機抽取觸發」的節點是 Random 節點。",
       "keywords": [
         {
-          "term": "Sound Wave（音效波形）",
-          "role": "原始 16-bit 44.1kHz .wav 匯入後的基礎音訊資產"
+          "term": "Random vs Looping 節點",
+          "role": "Random 用於隨機抽取不同音效，Looping 用於循環重播"
         }
       ],
       "hasSegments": false,
@@ -3027,11 +2979,11 @@ const UE_QUIZ_DATA = {
       "rawAnswer": "True",
       "correctIndex": 0,
       "correctText": "True",
-      "explanation": "【UE 4.27 核心考點：移動音源附著】\n正確。附加於移動 Actor 上的 Audio Component 其空間坐標隨父級更新，搭配 3D Spatialization 設定，聲音會完美跟隨物件軌跡。",
+      "explanation": "【UE 4.27 核心考點：快速放置環境音效】\n正確。從 Content Browser 中將任何 Sound Cue 或 Sound Wave 資產直接拖曳進關卡工作視窗，引擎會自動在該世界坐標生成一個引用該音訊資產的 Ambient Sound Actor。",
       "keywords": [
         {
-          "term": "Sound Cue（音效提示）",
-          "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+          "term": "Ambient Sound Actor 放置",
+          "role": "從 Content Browser 拖入音訊資產即可自動在關卡中實例化環境音效物件"
         }
       ],
       "hasSegments": false,
