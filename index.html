@@ -93,8 +93,9 @@
       <div class="lang-switch-group">
         <span class="filter-label">🌐 語言轉換：</span>
         <div class="lang-tabs">
-          <button class="lang-btn active" data-lang="en" id="btnLangEn">English 原文</button>
-          <button class="lang-btn" data-lang="bilingual" id="btnLangBi">英中雙語對照</button>
+          <button class="lang-btn" data-lang="en" id="btnLangEn">English 原文</button>
+          <button class="lang-btn active" data-lang="bilingual" id="btnLangBi">英中雙語對照</button>
+          <button class="lang-btn" data-lang="detailed" id="btnLangDetailed">精闢詳細版翻譯</button>
           <button class="lang-btn" data-lang="zh" id="btnLangZh">中文繁體</button>
         </div>
       </div>
@@ -142,6 +143,28 @@
           <div class="question-body">
             <p class="question-prompt" id="questionPromptEn">Loading question...</p>
             <p class="question-prompt-zh" id="questionPromptZh" style="display: none;"></p>
+            
+            <!-- 即時答案提示條 (打開答案顯示時呈現) -->
+            <div class="answer-hint-banner" id="answerHintBanner" style="display: none;">
+              <span class="hint-badge">💡 答案提示</span>
+              <span class="hint-text" id="answerHintText">正確答案為：<strong>(C) Orthographic</strong></span>
+            </div>
+
+            <!-- 切段詳細版翻譯與長句拆解 (詳細版翻譯開啟時呈現) -->
+            <div class="detailed-breakdown-box" id="detailedBreakdownBox" style="display: none;">
+              <div class="breakdown-header">
+                <span class="breakdown-badge">📑 長句結構拆解與逐段精準理解</span>
+              </div>
+              <div class="breakdown-content" id="breakdownContent"></div>
+            </div>
+
+            <!-- UE 功能關鍵字記憶點卡片 -->
+            <div class="keyword-memory-box" id="keywordMemoryBox" style="display: none;">
+              <div class="memory-header">
+                <span class="memory-badge">🧠 引擎核心功能記憶點 (UE 4.27 實戰指南)</span>
+              </div>
+              <div class="memory-list" id="memoryList"></div>
+            </div>
           </div>
 
           <!-- Options Grid -->

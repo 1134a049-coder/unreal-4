@@ -1,7 +1,6 @@
 /**
- * Unreal Engine 4.27 全真考題庫 (120 題完整 100% 原文與官方標準答案核對)
+ * Unreal Engine 4.27 全真考題庫 (120 題完整 100% 原文、精準功能記憶點與切段翻譯)
  * 來源：Teach Yourself Unreal Engine 4 Game Development in 24 Hours
- * 嚴格校對：考題以英文原文為主、繁體中文為輔、完全集中於 ue_quiz_website 目錄
  */
 const UE_QUIZ_DATA = {
   chapters: [
@@ -101,7 +100,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Details",
     "correctIndex": 1,
     "correctText": "Details",
-    "explanation": "【UE 4.27 核心考點：Details 細節面板】\n選取關卡視口或世界大綱中的任何 Actor，Details 面板會顯示其 Transform（位置/旋轉/縮放）、組件階層、材質槽與各項公開可編輯參數。\n\n【干擾項解析】：\n- Modes：提供放置常用幾何體、地貌雕刻與植被繪製工具。\n- Content Browser：管理專案中的資產庫。\n- World Outliner：列出當前關卡中所有實例化 Actor 的階層清單。"
+    "explanation": "【UE 4.27 核心考點：Details 細節面板】\n選取關卡視口或世界大綱中的任何 Actor，Details 面板會顯示其 Transform（位置/旋轉/縮放）、組件階層、材質槽與各項公開可編輯參數。\n\n【干擾項解析】：\n- Modes：提供放置常用幾何體、地貌雕刻與植被繪製工具。\n- Content Browser：管理專案中的資產庫。\n- World Outliner：列出當前關卡中所有實例化 Actor 的階層清單。",
+    "keywords": [
+      {
+        "term": "Details Panel（細節面板）",
+        "role": "檢視並修改當前選取 Actor 的所有變換坐標、材質槽與組件屬性"
+      },
+      {
+        "term": "World Outliner（世界大綱）",
+        "role": "場景總管清單樹，以樹狀結構列出關卡內的所有實例化 Actor 物件"
+      },
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q2",
@@ -121,7 +136,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：專案架構建立】\n正確。在開啟專案瀏覽器建立新專案時，頂部分頁提供 Blueprint 或 C++ 兩種底層代碼架構選擇。進入專案後兩者可自由混用（例如在藍圖專案中新增 C++ 類別）。"
+    "explanation": "【UE 4.27 核心考點：專案架構建立】\n正確。在開啟專案瀏覽器建立新專案時，頂部分頁提供 Blueprint 或 C++ 兩種底層代碼架構選擇。進入專案後兩者可自由混用（例如在藍圖專案中新增 C++ 類別）。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q3",
@@ -145,7 +168,36 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Epic Games Launcher",
     "correctIndex": 3,
     "correctText": "Epic Games Launcher",
-    "explanation": "【UE 4.27 核心考點：Epic Games Launcher 啟動器】\nEpic Games Launcher 是虛幻生態的桌面樞紐，負責安裝/管理多版本引擎（如 4.27.2、UE5）、開啟/刪除專案、購買商城資產包與下載官方範例。"
+    "explanation": "【UE 4.27 核心考點：Epic Games Launcher 啟動器】\nEpic Games Launcher 是虛幻生態的桌面樞紐，負責安裝/管理多版本引擎（如 4.27.2、UE5）、開啟/刪除專案、購買商城資產包與下載官方範例。",
+    "keywords": [
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      },
+      {
+        "term": "Epic Games Launcher",
+        "role": "虛幻桌面樞紐，負責多版本引擎管理、商城素材購買與官方文件範例下載"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ is an application that keeps track of the different versions of Unreal Engine that you have installed."
+      },
+      {
+        "partNum": 2,
+        "en": "You can use it to manage your projects, access free sample projects, and purchase content from the Unreal Marketplace."
+      },
+      {
+        "partNum": 3,
+        "en": "It also keeps you updated with community news and links to online learning resources and documentation."
+      }
+    ]
   },
   {
     "id": "h01_q4",
@@ -165,7 +217,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：World Outliner 世界大綱】\n正確。World Outliner 以樹狀清單列出目前關卡中載入的所有 Actor（網格、光源、體積、相機、音效等），並支援建立資料夾進行分類管理與快速搜尋過濾。"
+    "explanation": "【UE 4.27 核心考點：World Outliner 世界大綱】\n正確。World Outliner 以樹狀清單列出目前關卡中載入的所有 Actor（網格、光源、體積、相機、音效等），並支援建立資料夾進行分類管理與快速搜尋過濾。",
+    "keywords": [
+      {
+        "term": "World Outliner（世界大綱）",
+        "role": "場景總管清單樹，以樹狀結構列出關卡內的所有實例化 Actor 物件"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q5",
@@ -189,7 +249,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Detail Lighting",
     "correctIndex": 2,
     "correctText": "Detail Lighting",
-    "explanation": "【UE 4.27 核心考點：Detail Lighting 視圖模式】\nDetail Lighting 會將材質的 Base Color（底色）暫時替換為中性灰色，同時保留法線貼圖與光影計算，讓美術人員排除顏色干擾、專注檢視表面幾何凹凸與光影衰減細節。\n\n【對比】：\n- Lighting Only：僅顯示漫反射光照與陰影，不顯示法線貼圖細節。\n- Lit：完整呈現最終材質底色、高光、粗糙度與法線效果。"
+    "explanation": "【UE 4.27 核心考點：Detail Lighting 視圖模式】\nDetail Lighting 會將材質的 Base Color（底色）暫時替換為中性灰色，同時保留法線貼圖與光影計算，讓美術人員排除顏色干擾、專注檢視表面幾何凹凸與光影衰減細節。\n\n【對比】：\n- Lighting Only：僅顯示漫反射光照與陰影，不顯示法線貼圖細節。\n- Lit：完整呈現最終材質底色、高光、粗糙度與法線效果。",
+    "keywords": [
+      {
+        "term": "Detail Lighting（細節光照）",
+        "role": "去除材質固有底色替換為中性灰色，保留法線凹凸與光影，便於審視微觀表面細節"
+      },
+      {
+        "term": "Lighting Only（僅光照）",
+        "role": "僅顯示漫反射光照與投影，不計算材質表面法線微觀細節"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q6",
@@ -209,7 +285,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：視口碰撞顯示 Show Flags】\n錯誤。若要顯示關卡中 Actor 的碰撞體外框，應在視口左上角點擊「Show」選單並勾選「Collision」（快捷鍵 Alt + C），而不是關閉 Static Mesh 顯示標記。"
+    "explanation": "【UE 4.27 核心考點：視口碰撞顯示 Show Flags】\n錯誤。若要顯示關卡中 Actor 的碰撞體外框，應在視口左上角點擊「Show」選單並勾選「Collision」（快捷鍵 Alt + C），而不是關閉 Static Mesh 顯示標記。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q7",
@@ -229,7 +317,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：檔案管理安全原則】\n錯誤。編輯器運行期間檔案與資料庫處於載入鎖定狀態，在檔案總管手動移動專案目錄會破壞資產重定向器（Redirectors）與依賴關係，導致專案損壞。專案移動必須在關閉編輯器後執行。"
+    "explanation": "【UE 4.27 核心考點：檔案管理安全原則】\n錯誤。編輯器運行期間檔案與資料庫處於載入鎖定狀態，在檔案總管手動移動專案目錄會破壞資產重定向器（Redirectors）與依賴關係，導致專案損壞。專案移動必須在關閉編輯器後執行。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q8",
@@ -253,7 +349,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Game Mode",
     "correctIndex": 0,
     "correctText": "Game Mode",
-    "explanation": "【UE 4.27 核心考點：遊戲模式樣板】\n建立新專案時，UE4 提供針對常見遊戲類型的預設 Game Mode 樣板（包含 First Person、Third Person、Flying、Puzzle 等），已預先配置好輸入按鍵、攝影機設定與可操控 Pawn。"
+    "explanation": "【UE 4.27 核心考點：遊戲模式樣板】\n建立新專案時，UE4 提供針對常見遊戲類型的預設 Game Mode 樣板（包含 First Person、Third Person、Flying、Puzzle 等），已預先配置好輸入按鍵、攝影機設定與可操控 Pawn。",
+    "keywords": [
+      {
+        "term": "Game Mode（遊戲模式類別）",
+        "role": "定義核心遊戲規則、勝負邏輯與生成角色，多人生存架構中僅運行於伺服器端"
+      },
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q9",
@@ -277,7 +389,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Orthographic",
     "correctIndex": 2,
     "correctText": "Orthographic",
-    "explanation": "【UE 4.27 核心考點：視口投影模式】\n視口提供透視（Perspective, 近大遠小 3D 空間）與正交（Orthographic, 無透視變形的平行二維投影，包含 Top、Bottom、Left、Right、Front、Back）兩種顯示模式。"
+    "explanation": "【UE 4.27 核心考點：視口投影模式】\n視口提供透視（Perspective, 近大遠小 3D 空間）與正交（Orthographic, 無透視變形的平行二維投影，包含 Top、Bottom、Left、Right、Front、Back）兩種顯示模式。",
+    "keywords": [
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      },
+      {
+        "term": "Perspective（透視視圖）",
+        "role": "具備近大遠小真實 3D 空間透視感，適合關卡自由漫遊預覽"
+      },
+      {
+        "term": "Orthographic（正交視圖）",
+        "role": "平行投影無視角透視變形（頂/底/左/右/前/後視圖），專門用於精密對齊與測量"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h01_q10",
@@ -301,7 +429,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "View modes",
     "correctIndex": 1,
     "correctText": "View modes",
-    "explanation": "【UE 4.27 核心考點：View modes 檢視模式】\n檢視模式包含 Lit、Unlit、Wireframe、Detail Lighting、Lighting Only，以及 Light Complexity（光照複雜度）與 Shader Complexity（著色器開銷）等診斷視圖，是優化效能與除錯不可或缺的工具。"
+    "explanation": "【UE 4.27 核心考點：View modes 檢視模式】\n檢視模式包含 Lit、Unlit、Wireframe、Detail Lighting、Lighting Only，以及 Light Complexity（光照複雜度）與 Shader Complexity（著色器開銷）等診斷視圖，是優化效能與除錯不可或缺的工具。",
+    "keywords": [
+      {
+        "term": "Details Panel（細節面板）",
+        "role": "檢視並修改當前選取 Actor 的所有變換坐標、材質槽與組件屬性"
+      },
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      },
+      {
+        "term": "Perspective（透視視圖）",
+        "role": "具備近大遠小真實 3D 空間透視感，適合關卡自由漫遊預覽"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "____________ are settings applied to Editor Viewports that modify the display of content."
+      },
+      {
+        "partNum": 2,
+        "en": "They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results."
+      }
+    ]
   },
   {
     "id": "h02_q1",
@@ -325,7 +478,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": ".ini",
     "correctIndex": 2,
     "correctText": ".ini",
-    "explanation": "【UE 4.27 核心考點：.ini 組態檔】\n虛幻引擎將所有的引擎配置、按鍵映射輸入設定與專案預設值存放在 Config 目錄下的 .ini 格式文字檔中（如 DefaultEngine.ini, DefaultInput.ini, DefaultGame.ini）。"
+    "explanation": "【UE 4.27 核心考點：.ini 組態檔】\n虛幻引擎將所有的引擎配置、按鍵映射輸入設定與專案預設值存放在 Config 目錄下的 .ini 格式文字檔中（如 DefaultEngine.ini, DefaultInput.ini, DefaultGame.ini）。",
+    "keywords": [
+      {
+        "term": ".ini 組態設定檔",
+        "role": "存放在 Config 目錄下，儲存引擎底層參數、預設偏好設定與輸入按鍵映射"
+      },
+      {
+        "term": "Reference Viewer（引用檢視器）",
+        "role": "以可視化節點圖展示資產與資產之間的雙向依賴引用關係樹"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q2",
@@ -345,7 +510,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Saved 資料夾與自動存檔】\n正確。UE4 預設啟用了自動存檔機制，每隔特定時間將暫存與還原點存放在專案目錄下的 `Saved/Autosaves` 與 `Saved/Backup` 資料夾中。"
+    "explanation": "【UE 4.27 核心考點：Saved 資料夾與自動存檔】\n正確。UE4 預設啟用了自動存檔機制，每隔特定時間將暫存與還原點存放在專案目錄下的 `Saved/Autosaves` 與 `Saved/Backup` 資料夾中。",
+    "keywords": [
+      {
+        "term": "Saved 資料夾",
+        "role": "存放專案的自動備份（Autosaves）、烘焙暫存與運行日誌，專案異常時可在此找回進度"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "Autosave and backup files update every 30 minutes by default."
+      },
+      {
+        "partNum": 2,
+        "en": "These files can save the day if the Editor ever crashes on you, but they also increase the size of your project."
+      },
+      {
+        "partNum": 3,
+        "en": "These files are found in your project’s “Saved” folder."
+      }
+    ]
   },
   {
     "id": "h02_q3",
@@ -369,7 +555,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Raw Files",
     "correctIndex": 3,
     "correctText": "Raw Files",
-    "explanation": "【UE 4.27 核心考點：預設專案資料夾結構】\n預設的 UE 專案標準目錄包含 Config、Content、Intermediate、Saved（以及 C++ 專案的 Source）。「Raw Files」並非引擎標準資料夾，原始 3D 檔（.fbx）或 PSD 貼圖通常存放在專案外部以避免膨脹專案庫。"
+    "explanation": "【UE 4.27 核心考點：預設專案資料夾結構】\n預設的 UE 專案標準目錄包含 Config、Content、Intermediate、Saved（以及 C++ 專案的 Source）。「Raw Files」並非引擎標準資料夾，原始 3D 檔（.fbx）或 PSD 貼圖通常存放在專案外部以避免膨脹專案庫。",
+    "keywords": [
+      {
+        "term": "Saved 資料夾",
+        "role": "存放專案的自動備份（Autosaves）、烘焙暫存與運行日誌，專案異常時可在此找回進度"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q4",
@@ -389,7 +583,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：資產依賴與移動規範】\n錯誤。在檔案總管手動移動 .uasset 檔案會破壞其他關卡或材質對該資產的內部引用關係，導致資源遺失。資產移動必須在 Content Browser 內執行，編輯器才會自動維護 Asset Redirectors（資產重定向器）。"
+    "explanation": "【UE 4.27 核心考點：資產依賴與移動規範】\n錯誤。在檔案總管手動移動 .uasset 檔案會破壞其他關卡或材質對該資產的內部引用關係，導致資源遺失。資產移動必須在 Content Browser 內執行，編輯器才會自動維護 Asset Redirectors（資產重定向器）。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q5",
@@ -413,7 +615,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Reference",
     "correctIndex": 1,
     "correctText": "Reference",
-    "explanation": "【UE 4.27 核心考點：Reference Viewer 引用檢視器】\n在 Content Browser 中右鍵點選任何資產並選擇「Reference Viewer（快捷鍵 Shift + Alt + R）」，可以視覺化展開該資產被哪些關卡或材質所引用，以及該資產自身又依賴了哪些紋理貼圖。"
+    "explanation": "【UE 4.27 核心考點：Reference Viewer 引用檢視器】\n在 Content Browser 中右鍵點選任何資產並選擇「Reference Viewer（快捷鍵 Shift + Alt + R）」，可以視覺化展開該資產被哪些關卡或材質所引用，以及該資產自身又依賴了哪些紋理貼圖。",
+    "keywords": [
+      {
+        "term": "Reference Viewer（引用檢視器）",
+        "role": "以可視化節點圖展示資產與資產之間的雙向依賴引用關係樹"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q6",
@@ -433,7 +643,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Migrate 遷移工具】\n正確。Migrate 工具是跨專案複製資產的最佳標準方式，它會自動將所選資產以及其「所有相關依賴資產」（材質、貼圖、骨骼、物理資產）完整打包複製到目標專案的 Content 資料夾。"
+    "explanation": "【UE 4.27 核心考點：Migrate 遷移工具】\n正確。Migrate 工具是跨專案複製資產的最佳標準方式，它會自動將所選資產以及其「所有相關依賴資產」（材質、貼圖、骨骼、物理資產）完整打包複製到目標專案的 Content 資料夾。",
+    "keywords": [
+      {
+        "term": "Migrate（遷移工具）",
+        "role": "跨專案傳遞資產的最佳工具，自動遞迴打包該資產的所有依賴貼圖與材質"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q7",
@@ -457,7 +675,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Gameplay Framework",
     "correctIndex": 0,
     "correctText": "Gameplay Framework",
-    "explanation": "【UE 4.27 核心考點：Gameplay Framework 遊戲玩法框架】\nGameplay Framework 是虛幻引擎遊戲邏輯的頂層骨幹，包含 GameMode、GameState、PlayerController、Pawn/Character、PlayerState 與 HUD 等核心模組。"
+    "explanation": "【UE 4.27 核心考點：Gameplay Framework 遊戲玩法框架】\nGameplay Framework 是虛幻引擎遊戲邏輯的頂層骨幹，包含 GameMode、GameState、PlayerController、Pawn/Character、PlayerState 與 HUD 等核心模組。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q8",
@@ -477,7 +703,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：專案管理禁忌】\n錯誤。編輯器運行期間嚴禁移動專案根目錄，否則會因檔案鎖定與路徑斷裂導致專案崩潰損壞。"
+    "explanation": "【UE 4.27 核心考點：專案管理禁忌】\n錯誤。編輯器運行期間嚴禁移動專案根目錄，否則會因檔案鎖定與路徑斷裂導致專案崩潰損壞。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h02_q9",
@@ -501,7 +735,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Game Mode class",
     "correctIndex": 3,
     "correctText": "Game Mode class",
-    "explanation": "【UE 4.27 核心考點：AGameModeBase 與伺服器權威架構】\nGame Mode 定義遊戲的核心規則、生成哪種 Pawn、勝負條件。在多人生存連線架構中，Game Mode 僅存在於 Dedicated Server 伺服器端，客戶端完全不會複製或實例化此類別以防外掛作弊。"
+    "explanation": "【UE 4.27 核心考點：AGameModeBase 與伺服器權威架構】\nGame Mode 定義遊戲的核心規則、生成哪種 Pawn、勝負條件。在多人生存連線架構中，Game Mode 僅存在於 Dedicated Server 伺服器端，客戶端完全不會複製或實例化此類別以防外掛作弊。",
+    "keywords": [
+      {
+        "term": "Game Mode（遊戲模式類別）",
+        "role": "定義核心遊戲規則、勝負邏輯與生成角色，多人生存架構中僅運行於伺服器端"
+      },
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ is the definition of the game, including things like the game rules and win conditions."
+      },
+      {
+        "partNum": 2,
+        "en": "It only exists on the server."
+      },
+      {
+        "partNum": 3,
+        "en": "It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the Level."
+      }
+    ]
   },
   {
     "id": "h02_q10",
@@ -525,7 +784,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Player Controller",
     "correctIndex": 1,
     "correctText": "Player Controller",
-    "explanation": "【UE 4.27 核心考點：APlayerController 控制器】\nPlayer Controller 代表人類玩家的意志大腦，負責監聽硬體輸入（鍵盤、滑鼠、搖桿）並向被其附身（Possessed）的實體角色 Pawn 發送行為命令。"
+    "explanation": "【UE 4.27 核心考點：APlayerController 控制器】\nPlayer Controller 代表人類玩家的意志大腦，負責監聽硬體輸入（鍵盤、滑鼠、搖桿）並向被其附身（Possessed）的實體角色 Pawn 發送行為命令。",
+    "keywords": [
+      {
+        "term": "Game Mode（遊戲模式類別）",
+        "role": "定義核心遊戲規則、勝負邏輯與生成角色，多人生存架構中僅運行於伺服器端"
+      },
+      {
+        "term": "Player Controller（玩家控制器）",
+        "role": "代表人類玩家意志與大腦，接收硬體輸入訊號並指揮實體 Pawn 進行移動攻擊"
+      },
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is the interface between the Pawn and the human player controlling it."
+      },
+      {
+        "partNum": 2,
+        "en": "It decides what to do and then issues commands to the Pawn (for example, “start crouching,” “jump”)."
+      }
+    ]
   },
   {
     "id": "h03_q1",
@@ -549,7 +833,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Cartesian Coordinates System",
     "correctIndex": 0,
     "correctText": "Cartesian coordinate system",
-    "explanation": "【UE 4.27 核心考點：左手笛卡兒坐標系統】\n虛幻引擎採用左手笛卡兒坐標系（Left-Handed Cartesian Coordinate System）：X 軸指向前方（紅色）、Y 軸指向右側（綠色）、Z 軸指向垂直上方（藍色）。"
+    "explanation": "【UE 4.27 核心考點：左手笛卡兒坐標系統】\n虛幻引擎採用左手笛卡兒坐標系（Left-Handed Cartesian Coordinate System）：X 軸指向前方（紅色）、Y 軸指向右側（綠色）、Z 軸指向垂直上方（藍色）。",
+    "keywords": [
+      {
+        "term": "笛卡兒坐標系統",
+        "role": "UE 採用左手坐標系：X 指向前方(紅)、Y 指向右方(綠)、Z 指向上方(藍)"
+      },
+      {
+        "term": "Pivot Point（軸心點）",
+        "role": "Actor 幾何原點，決定旋轉中心與縮放錨點基準"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "____________ is a method for indicating the positions of points on a two-dimensional (2D) surface or in three-dimensional (3D) space."
+      },
+      {
+        "partNum": 2,
+        "en": "A 3D plane uses x, y, and z coordinates."
+      },
+      {
+        "partNum": 3,
+        "en": "Each letter corresponds to an axis, where z is up and down, y is left to right, and x is front to back."
+      }
+    ]
   },
   {
     "id": "h03_q2",
@@ -569,7 +878,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Transform 空間變換結構】\n正確。在 3D 圖形與虛幻引擎中，Transform 結構由三個三維向量組成：Location（3D 空間坐標位移）、Rotation（歐拉角或四元數旋轉）、Scale（三軸縮放比率）。"
+    "explanation": "【UE 4.27 核心考點：Transform 空間變換結構】\n正確。在 3D 圖形與虛幻引擎中，Transform 結構由三個三維向量組成：Location（3D 空間坐標位移）、Rotation（歐拉角或四元數旋轉）、Scale（三軸縮放比率）。",
+    "keywords": [
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q3",
@@ -593,7 +910,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Pivot Point",
     "correctIndex": 1,
     "correctText": "Pivot point",
-    "explanation": "【UE 4.27 核心考點：Pivot point 軸心點】\n軸心點（Pivot point）是物件旋轉與縮放的原點基準。在 DCC 軟體建模時距離世界原點 (0,0,0) 的距離，決定了匯入 UE4 之後模型的 Pivot 位置。"
+    "explanation": "【UE 4.27 核心考點：Pivot point 軸心點】\n軸心點（Pivot point）是物件旋轉與縮放的原點基準。在 DCC 軟體建模時距離世界原點 (0,0,0) 的距離，決定了匯入 UE4 之後模型的 Pivot 位置。",
+    "keywords": [
+      {
+        "term": "笛卡兒坐標系統",
+        "role": "UE 採用左手坐標系：X 指向前方(紅)、Y 指向右方(綠)、Z 指向上方(藍)"
+      },
+      {
+        "term": "Pivot Point（軸心點）",
+        "role": "Actor 幾何原點，決定旋轉中心與縮放錨點基準"
+      },
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q4",
@@ -613,7 +946,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：虛幻度量衡】\n正確。虛幻引擎全系統預設度量衡為公制公分：1 Unreal Unit (UU) = 1 cm。100 UU = 1 公尺。"
+    "explanation": "【UE 4.27 核心考點：虛幻度量衡】\n正確。虛幻引擎全系統預設度量衡為公制公分：1 Unreal Unit (UU) = 1 cm。100 UU = 1 公尺。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q5",
@@ -637,7 +978,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Attaching",
     "correctIndex": 3,
     "correctText": "Attaching",
-    "explanation": "【UE 4.27 核心考點：Attaching 父子階層】\nAttaching 是建立父子階層變換鏈（Hierarchy），子 Actor 的世界變換矩陣受父級變換驅動，常用於武器裝備到角色插槽（Socket）。"
+    "explanation": "【UE 4.27 核心考點：Attaching 父子階層】\nAttaching 是建立父子階層變換鏈（Hierarchy），子 Actor 的世界變換矩陣受父級變換驅動，常用於武器裝備到角色插槽（Socket）。",
+    "keywords": [
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      },
+      {
+        "term": "Attaching（附加）",
+        "role": "建立父子階層鏈（Parent-Child），子物件自動繼承並跟隨父級的世界坐標變換"
+      },
+      {
+        "term": "Socket（插槽）",
+        "role": "網格模型上的指定附著點，供武器、裝飾帽子或光效精準對齊吸附"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q6",
@@ -657,7 +1014,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Uniform Scale 等比縮放】\n正確。等比例縮放保持模型的長寬高長寬比固定不變，避免網格產生非等比拉伸畸變。"
+    "explanation": "【UE 4.27 核心考點：Uniform Scale 等比縮放】\n正確。等比例縮放保持模型的長寬高長寬比固定不變，避免網格產生非等比拉伸畸變。",
+    "keywords": [
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q7",
@@ -681,7 +1046,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "World Outliner",
     "correctIndex": 0,
     "correctText": "World Outliner",
-    "explanation": "【UE 4.27 核心考點：世界大綱中的拖曳附加】\n在 World Outliner 中，直接將一個 Actor 拖曳並放置到另一個 Actor 上方，即可快速將其附加（Attach）為子物件，建立父子階層關係。"
+    "explanation": "【UE 4.27 核心考點：世界大綱中的拖曳附加】\n在 World Outliner 中，直接將一個 Actor 拖曳並放置到另一個 Actor 上方，即可快速將其附加（Attach）為子物件，建立父子階層關係。",
+    "keywords": [
+      {
+        "term": "Details Panel（細節面板）",
+        "role": "檢視並修改當前選取 Actor 的所有變換坐標、材質槽與組件屬性"
+      },
+      {
+        "term": "World Outliner（世界大綱）",
+        "role": "場景總管清單樹，以樹狀結構列出關卡內的所有實例化 Actor 物件"
+      },
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q8",
@@ -701,7 +1082,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：組件變換空間獨立性】\n正確。在 Details 面板中，每個組件的 Location、Rotation 與 Scale 旁邊的小下拉箭頭都可以單獨切換為 Relative（相對於父級）或 World（相對於世界原點）。"
+    "explanation": "【UE 4.27 核心考點：組件變換空間獨立性】\n正確。在 Details 面板中，每個組件的 Location、Rotation 與 Scale 旁邊的小下拉箭頭都可以單獨切換為 Relative（相對於父級）或 World（相對於世界原點）。",
+    "keywords": [
+      {
+        "term": "Details Panel（細節面板）",
+        "role": "檢視並修改當前選取 Actor 的所有變換坐標、材質槽與組件屬性"
+      },
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q9",
@@ -725,7 +1118,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Layer",
     "correctIndex": 1,
     "correctText": "Layer",
-    "explanation": "【UE 4.27 核心考點：圖層與資料夾可見度控制】\n在 World Outliner 中指派給圖層（Layer）或資料夾，點擊小眼睛圖示即可批次隱藏或顯示整組物件。"
+    "explanation": "【UE 4.27 核心考點：圖層與資料夾可見度控制】\n在 World Outliner 中指派給圖層（Layer）或資料夾，點擊小眼睛圖示即可批次隱藏或顯示整組物件。",
+    "keywords": [
+      {
+        "term": "World Outliner（世界大綱）",
+        "role": "場景總管清單樹，以樹狀結構列出關卡內的所有實例化 Actor 物件"
+      },
+      {
+        "term": "Mobility（移動性）",
+        "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h03_q10",
@@ -749,7 +1154,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "World Outliner",
     "correctIndex": 1,
     "correctText": "World Outliner panel",
-    "explanation": "【UE 4.27 核心考點：World Outliner 世界大綱面板】\n位於編輯器預設介面右上角，專門用來檢視並檢索當前關卡中所有實例化 Actor 的階層清單。"
+    "explanation": "【UE 4.27 核心考點：World Outliner 世界大綱面板】\n位於編輯器預設介面右上角，專門用來檢視並檢索當前關卡中所有實例化 Actor 的階層清單。",
+    "keywords": [
+      {
+        "term": "World Outliner（世界大綱）",
+        "role": "場景總管清單樹，以樹狀結構列出關卡內的所有實例化 Actor 物件"
+      },
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu."
+      },
+      {
+        "partNum": 2,
+        "en": "By default, it appears in the top-right corner of the screen when you open a project."
+      }
+    ]
   },
   {
     "id": "h04_q1",
@@ -773,7 +1203,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Static Mesh Editor",
     "correctIndex": 3,
     "correctText": "Static Mesh Editor",
-    "explanation": "【UE 4.27 核心考點：Static Mesh Editor 靜態網格編輯器】\n在內容瀏覽器中雙擊 Static Mesh 資產即可開啟，可在此調整 LOD 距離、UV 展開通道、光照貼圖解析度、設定簡單碰撞體與指派預設材質槽。"
+    "explanation": "【UE 4.27 核心考點：Static Mesh Editor 靜態網格編輯器】\n在內容瀏覽器中雙擊 Static Mesh 資產即可開啟，可在此調整 LOD 距離、UV 展開通道、光照貼圖解析度、設定簡單碰撞體與指派預設材質槽。",
+    "keywords": [
+      {
+        "term": "Reference Viewer（引用檢視器）",
+        "role": "以可視化節點圖展示資產與資產之間的雙向依賴引用關係樹"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q2",
@@ -793,7 +1239,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：資產 vs Actor 實例】\n正確。資產（Asset）是指存放在 Content 資料夾中的靜態資料檔案；當將其拖入關卡視口後，便實例化為一個具備空間坐標變換的 Static Mesh Actor。"
+    "explanation": "【UE 4.27 核心考點：資產 vs Actor 實例】\n正確。資產（Asset）是指存放在 Content 資料夾中的靜態資料檔案；當將其拖入關卡視口後，便實例化為一個具備空間坐標變換的 Static Mesh Actor。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q3",
@@ -813,7 +1267,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：缺少碰撞體的後果】\n正確。如果原始靜態網格資產完全沒有簡單碰撞幾何體（Simple Collision），無論在關卡中如何設定碰撞通道，都不會產生阻擋效果。"
+    "explanation": "【UE 4.27 核心考點：缺少碰撞體的後果】\n正確。如果原始靜態網格資產完全沒有簡單碰撞幾何體（Simple Collision），無論在關卡中如何設定碰撞通道，都不會產生阻擋效果。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q4",
@@ -837,7 +1303,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Movable",
     "correctIndex": 2,
     "correctText": "Movable",
-    "explanation": "【UE 4.27 核心考點：Static Mesh 預設移動性】\n靜態網格 Actor 拖入關卡時預設為「Static（靜態）」，這意味著其位置固定不變，可以完全參與 Lightmass 光照貼圖的高品質離線烘焙。"
+    "explanation": "【UE 4.27 核心考點：Static Mesh 預設移動性】\n靜態網格 Actor 拖入關卡時預設為「Static（靜態）」，這意味著其位置固定不變，可以完全參與 Lightmass 光照貼圖的高品質離線烘焙。",
+    "keywords": [
+      {
+        "term": "Transform（空間變換）",
+        "role": "包含 Location（坐標位移）、Rotation（三軸旋轉角）與 Scale（三軸縮放比）"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Mobility（移動性）",
+        "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q5",
@@ -861,7 +1343,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Ignore, Overlap, and Block",
     "correctIndex": 1,
     "correctText": "Ignore, Overlap, and Block",
-    "explanation": "【UE 4.27 核心考點：碰撞回應三態】\n- Ignore：完全穿透無事件。\n- Overlap：穿透但發出重疊事件（觸發器）。\n- Block：物理實體阻擋並發出 Hit 擊中事件。"
+    "explanation": "【UE 4.27 核心考點：碰撞回應三態】\n- Ignore：完全穿透無事件。\n- Overlap：穿透但發出重疊事件（觸發器）。\n- Block：物理實體阻擋並發出 Hit 擊中事件。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q6",
@@ -881,7 +1371,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：實例材質覆蓋原則】\n錯誤。在關卡中選取 Actor 修改材質，只會影響該場景實例（Override），不會修改 Content Browser 中原始資產的預設材質設定。"
+    "explanation": "【UE 4.27 核心考點：實例材質覆蓋原則】\n錯誤。在關卡中選取 Actor 修改材質，只會影響該場景實例（Override），不會修改 Content Browser 中原始資產的預設材質設定。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q7",
@@ -905,7 +1403,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": ".fbx and .obj",
     "correctIndex": 1,
     "correctText": ".fbx and .obj",
-    "explanation": "【UE 4.27 核心考點：Content Browser 匯入操作】\n點擊 Content Browser 左上角的綠色「Import」按鈕，或在檔案清單空白處右鍵點選「Import to ...」，即可匯入外部 FBX、OBJ、PNG 等素材。"
+    "explanation": "【UE 4.27 核心考點：Content Browser 匯入操作】\n點擊 Content Browser 左上角的綠色「Import」按鈕，或在檔案清單空白處右鍵點選「Import to ...」，即可匯入外部 FBX、OBJ、PNG 等素材。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q8",
@@ -925,7 +1431,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：碰撞最佳化原則】\n錯誤。無論距離遠近，遊戲物件都應盡量使用低開銷的簡單碰撞（Simple Collision）以維持高效能物理運算，複雜碰撞（Complex Collision）會造成嚴重的 CPU 效能浪費。"
+    "explanation": "【UE 4.27 核心考點：碰撞最佳化原則】\n錯誤。無論距離遠近，遊戲物件都應盡量使用低開銷的簡單碰撞（Simple Collision）以維持高效能物理運算，複雜碰撞（Complex Collision）會造成嚴重的 CPU 效能浪費。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      },
+      {
+        "term": "Reference Viewer（引用檢視器）",
+        "role": "以可視化節點圖展示資產與資產之間的雙向依賴引用關係樹"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q9",
@@ -945,7 +1467,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Socket 插槽工具】\n在靜態網格編輯器中新增 Socket，可定義局部位置、旋轉與縮放，供藍圖或關卡中其他 Actor（如火把特效、燈光）精準附著吸附。"
+    "explanation": "【UE 4.27 核心考點：Socket 插槽工具】\n在靜態網格編輯器中新增 Socket，可定義局部位置、旋轉與縮放，供藍圖或關卡中其他 Actor（如火把特效、燈光）精準附著吸附。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Socket（插槽）",
+        "role": "網格模型上的指定附著點，供武器、裝飾帽子或光效精準對齊吸附"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h04_q10",
@@ -969,7 +1507,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Atl+C",
     "correctIndex": 0,
     "correctText": "Atl+C",
-    "explanation": "【UE 4.27 核心考點：視口碰撞快捷鍵】\n在視口中按下 Alt + C（原官方答案文件筆誤印刷為 Atl+C）可快速開啟或隱藏關卡中所有 Actor 的碰撞外框（Collision Visualization）。"
+    "explanation": "【UE 4.27 核心考點：視口碰撞快捷鍵】\n在視口中按下 Alt + C（原官方答案文件筆誤印刷為 Atl+C）可快速開啟或隱藏關卡中所有 Actor 的碰撞外框（Collision Visualization）。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q1",
@@ -993,7 +1539,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Lightmass",
     "correctIndex": 0,
     "correctText": "Lightmass",
-    "explanation": "【UE 4.27 核心考點：Lightmass 光照烘焙系統】\nLightmass 是 UE4 核心靜態全域光照計算器，能預先計算漫反射光線多次反彈，將柔和陰影與環境光遮蔽烘焙到靜態光照貼圖（Lightmaps）中。"
+    "explanation": "【UE 4.27 核心考點：Lightmass 光照烘焙系統】\nLightmass 是 UE4 核心靜態全域光照計算器，能預先計算漫反射光線多次反彈，將柔和陰影與環境光遮蔽烘焙到靜態光照貼圖（Lightmaps）中。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Mobility（移動性）",
+        "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+      },
+      {
+        "term": "Lightmass（光照烘焙系統）",
+        "role": "離線預先計算光線多次反彈，將柔和漫反射陰影寫入光照貼圖（Lightmaps）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q2",
@@ -1013,7 +1575,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Directional Light 定向光】\n正確。定向光源發射平行光束，其在關卡中的位置座標不影響光線投射，僅由旋轉（Rotation）決定日光照射角度。"
+    "explanation": "【UE 4.27 核心考點：Directional Light 定向光】\n正確。定向光源發射平行光束，其在關卡中的位置座標不影響光線投射，僅由旋轉（Rotation）決定日光照射角度。",
+    "keywords": [
+      {
+        "term": "Directional Light（定向光源）",
+        "role": "無限遠平行日光投射，僅旋轉角度影響日照方向，模擬太陽或月光"
+      },
+      {
+        "term": "Sky Light（天空光）",
+        "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q3",
@@ -1037,7 +1611,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Point Light",
     "correctIndex": 2,
     "correctText": "Point Light",
-    "explanation": "【UE 4.27 核心考點：Point Light 點光源】\nPoint Light 具有半徑衰減球體，從單一點向 360 度全向發光，常用於吊燈、壁燈、火把等光源。"
+    "explanation": "【UE 4.27 核心考點：Point Light 點光源】\nPoint Light 具有半徑衰減球體，從單一點向 360 度全向發光，常用於吊燈、壁燈、火把等光源。",
+    "keywords": [
+      {
+        "term": "Point Light（點光源）",
+        "role": "無方向性 360 度球形全向發光，常用於蠟燭、燈泡與火球"
+      },
+      {
+        "term": "Spot Light（聚光燈）",
+        "role": "圓錐體發光，具備內/外圓錐角衰減，常用於手電筒、車燈與探照燈"
+      },
+      {
+        "term": "Directional Light（定向光源）",
+        "role": "無限遠平行日光投射，僅旋轉角度影響日照方向，模擬太陽或月光"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q4",
@@ -1057,7 +1647,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Spot Light 聚光燈】\n正確。Spot Light 圓錐形發光，Inner Cone Angle 範圍內為全亮，Inner 與 Outer 之間平滑過渡衰減，常用於手電筒、探照燈與汽車前燈。"
+    "explanation": "【UE 4.27 核心考點：Spot Light 聚光燈】\n正確。Spot Light 圓錐形發光，Inner Cone Angle 範圍內為全亮，Inner 與 Outer 之間平滑過渡衰減，常用於手電筒、探照燈與汽車前燈。",
+    "keywords": [
+      {
+        "term": "Spot Light（聚光燈）",
+        "role": "圓錐體發光，具備內/外圓錐角衰減，常用於手電筒、車燈與探照燈"
+      },
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q5",
@@ -1081,7 +1683,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Stationary",
     "correctIndex": 3,
     "correctText": "Stationary",
-    "explanation": "【UE 4.27 核心考點：Stationary 固定光源】\n固定光源兼具靜態烘焙陰影品質與動態屬性控制能力。位置不能位移，但其強度（Intensity）與顏色（Light Color）可在運行時透過藍圖隨時改變。"
+    "explanation": "【UE 4.27 核心考點：Stationary 固定光源】\n固定光源兼具靜態烘焙陰影品質與動態屬性控制能力。位置不能位移，但其強度（Intensity）與顏色（Light Color）可在運行時透過藍圖隨時改變。",
+    "keywords": [
+      {
+        "term": "Mobility（移動性）",
+        "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q6",
@@ -1101,7 +1711,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：靜態光源無動態陰影】\n錯誤。Static 光源的所有直射與間接光均在烘焙時寫死到靜態 Lightmap 中，遊戲運行時完全不進行任何即時動態陰影計算，因此效能消耗最低。"
+    "explanation": "【UE 4.27 核心考點：靜態光源無動態陰影】\n錯誤。Static 光源的所有直射與間接光均在烘焙時寫死到靜態 Lightmap 中，遊戲運行時完全不進行任何即時動態陰影計算，因此效能消耗最低。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q7",
@@ -1125,7 +1743,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Swarm Agent",
     "correctIndex": 3,
     "correctText": "Swarm Agent",
-    "explanation": "【UE 4.27 核心考點：Swarm Agent 烘焙管理器】\n點擊 Build Lighting 時，Windows 系統匣會啟動 Swarm Agent，負責調度 CPU 多核心執行緒計算 Lightmass 任務，並支援區域網路分散式運算。"
+    "explanation": "【UE 4.27 核心考點：Swarm Agent 烘焙管理器】\n點擊 Build Lighting 時，Windows 系統匣會啟動 Swarm Agent，負責調度 CPU 多核心執行緒計算 Lightmass 任務，並支援區域網路分散式運算。",
+    "keywords": [
+      {
+        "term": "Epic Games Launcher",
+        "role": "虛幻桌面樞紐，負責多版本引擎管理、商城素材購買與官方文件範例下載"
+      },
+      {
+        "term": "Lightmass（光照烘焙系統）",
+        "role": "離線預先計算光線多次反彈，將柔和漫反射陰影寫入光照貼圖（Lightmaps）"
+      },
+      {
+        "term": "Swarm Agent",
+        "role": "背景光照計算調度器，協調 CPU 多核心運算並支援區域網絡分散式並行算圖"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "____________ manages communication between the Editor and Lightmass."
+      },
+      {
+        "partNum": 2,
+        "en": "When you build lighting, it keeps track of and displays the build progress."
+      }
+    ]
   },
   {
     "id": "h05_q8",
@@ -1145,7 +1788,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Sky Light 天空光】\n正確。Sky Light 捕捉整個天空半球的色彩分佈，為戶外場景提供柔和均勻的環境補光與天光漫反射。"
+    "explanation": "【UE 4.27 核心考點：Sky Light 天空光】\n正確。Sky Light 捕捉整個天空半球的色彩分佈，為戶外場景提供柔和均勻的環境補光與天光漫反射。",
+    "keywords": [
+      {
+        "term": "Sky Light（天空光）",
+        "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h05_q9",
@@ -1169,7 +1820,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Rendering",
     "correctIndex": 1,
     "correctText": "Rendering",
-    "explanation": "【UE 4.27 核心考點：Rendering 渲染管線】\nRendering（渲染）是虛幻引擎渲染管線將 3D 模型頂點、燈光、材質著色器經由光柵化/光線追蹤最終繪製到 2D 螢幕像素的過程。"
+    "explanation": "【UE 4.27 核心考點：Rendering 渲染管線】\nRendering（渲染）是虛幻引擎渲染管線將 3D 模型頂點、燈光、材質著色器經由光柵化/光線追蹤最終繪製到 2D 螢幕像素的過程。",
+    "keywords": [
+      {
+        "term": "Swarm Agent",
+        "role": "背景光照計算調度器，協調 CPU 多核心運算並支援區域網絡分散式並行算圖"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model position and Material properties."
+      },
+      {
+        "partNum": 2,
+        "en": "Common rendering methods include scanline rendering, ray tracing, and radiosity methods."
+      }
+    ]
   },
   {
     "id": "h05_q10",
@@ -1193,7 +1865,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Temperature",
     "correctIndex": 1,
     "correctText": "Temperature",
-    "explanation": "【UE 4.27 核心考點：Light Temperature 色溫系統】\n以 Kelvin（K）為物理單位：暖黃燭光約 1800K、鎢絲燈約 3200K、正午日光約 6500K、陰天冷藍天光約 9000K 以上，提供物理精準的發光色彩。"
+    "explanation": "【UE 4.27 核心考點：Light Temperature 色溫系統】\n以 Kelvin（K）為物理單位：暖黃燭光約 1800K、鎢絲燈約 3200K、正午日光約 6500K、陰天冷藍天光約 9000K 以上，提供物理精準的發光色彩。",
+    "keywords": [
+      {
+        "term": "Light Temperature（色溫）",
+        "role": "以開爾文(Kelvin)為單位物理著色：1800K(暖燭光)、6500K(正午日光)、9000K+(冷藍光)"
+      },
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ light property overrides light color properties and uses real-world values in kelvins to define the color of a light."
+      },
+      {
+        "partNum": 2,
+        "en": "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
+      }
+    ]
   },
   {
     "id": "h06_q1",
@@ -1217,7 +1910,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Material",
     "correctIndex": 3,
     "correctText": "Material",
-    "explanation": "【UE 4.27 核心考點：Material 材質資產】\nMaterial 包含完整的表面著色演算法網絡，告訴著色器如何與光線交互，包含 Base Color、Metallic、Roughness、Normal 等屬性。"
+    "explanation": "【UE 4.27 核心考點：Material 材質資產】\nMaterial 包含完整的表面著色演算法網絡，告訴著色器如何與光線交互，包含 Base Color、Metallic、Roughness、Normal 等屬性。",
+    "keywords": [
+      {
+        "term": "Lightmass（光照烘焙系統）",
+        "role": "離線預先計算光線多次反彈，將柔和漫反射陰影寫入光照貼圖（Lightmaps）"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Roughness（粗糙度）",
+        "role": "0.0 為極度平滑鏡面高光，1.0 為完全粗糙漫散射消光表面"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q2",
@@ -1237,7 +1946,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Material Instance 材質實例】\n正確。Material Instance 繼承父材質編譯好的著色器代碼，修改參數時無需重新編譯，可在幾毫秒內即時預覽外觀變更，大幅提升製作效率。"
+    "explanation": "【UE 4.27 核心考點：Material Instance 材質實例】\n正確。Material Instance 繼承父材質編譯好的著色器代碼，修改參數時無需重新編譯，可在幾毫秒內即時預覽外觀變更，大幅提升製作效率。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q3",
@@ -1261,7 +1978,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Physically based rendering",
     "correctIndex": 2,
     "correctText": "Physically based rendering",
-    "explanation": "【UE 4.27 核心考點：PBR 基於物理著色】\nPhysically Based Rendering 遵循能量守恆定律與物理光學測量數據，確保材質在艷陽、室內或夜間等任何光照環境下都呈現逼真自然的外觀。"
+    "explanation": "【UE 4.27 核心考點：PBR 基於物理著色】\nPhysically Based Rendering 遵循能量守恆定律與物理光學測量數據，確保材質在艷陽、室內或夜間等任何光照環境下都呈現逼真自然的外觀。",
+    "keywords": [
+      {
+        "term": "PBR（基於物理的渲染）",
+        "role": "基於真實物理光學測量，確保在任何光照條件下外觀材質都自然逼真"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q4",
@@ -1281,7 +2006,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Roughness 粗糙度參數】\n正確。Roughness 介於 0.0 ~ 1.0 之間：0.0 產生極度銳利的光澤鏡面高光；1.0 產生完全漫散射無清晰高光斑的消光表面。"
+    "explanation": "【UE 4.27 核心考點：Roughness 粗糙度參數】\n正確。Roughness 介於 0.0 ~ 1.0 之間：0.0 產生極度銳利的光澤鏡面高光；1.0 產生完全漫散射無清晰高光斑的消光表面。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Roughness（粗糙度）",
+        "role": "0.0 為極度平滑鏡面高光，1.0 為完全粗糙漫散射消光表面"
+      },
+      {
+        "term": "Metallic（金屬度）",
+        "role": "物理上非 0 即 1（純導體為 1.0，純絕緣體為 0.0），中間值僅用於鏽蝕油污"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q5",
@@ -1305,7 +2046,36 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Albedo",
     "correctIndex": 3,
     "correctText": "Albedo",
-    "explanation": "【UE 4.27 核心考點：Albedo 反照率】\nAlbedo 貼圖代表物體表面的純固有色，PBR 製作標準嚴格要求 Albedo 貼圖內「不得包含任何方向性光照、高光或環境陰影（AO）」。"
+    "explanation": "【UE 4.27 核心考點：Albedo 反照率】\nAlbedo 貼圖代表物體表面的純固有色，PBR 製作標準嚴格要求 Albedo 貼圖內「不得包含任何方向性光照、高光或環境陰影（AO）」。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "PBR（基於物理的渲染）",
+        "role": "基於真實物理光學測量，確保在任何光照條件下外觀材質都自然逼真"
+      },
+      {
+        "term": "Albedo / Base Color（反照率）",
+        "role": "物體的純粹固有色彩貼圖，PBR 規範中嚴禁包含任何預先烘焙的方向性光影"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "Base color, also called ____________, defines the overall color of a Material."
+      },
+      {
+        "partNum": 2,
+        "en": "It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1."
+      },
+      {
+        "partNum": 3,
+        "en": "It is the core color description of the surface in a Material minus shadow and lighting detail."
+      }
+    ]
   },
   {
     "id": "h06_q6",
@@ -1325,7 +2095,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Metallic 金屬度物理規則】\n錯誤。物理純導體（純金屬，如鐵、銅、金）的金屬度為 1.0；純絕緣體（非金屬，如塑膠、木頭、石頭、皮革）的金屬度為 0.0。只有生鏽或油污等極少數過渡狀態才會使用中間值。"
+    "explanation": "【UE 4.27 核心考點：Metallic 金屬度物理規則】\n錯誤。物理純導體（純金屬，如鐵、銅、金）的金屬度為 1.0；純絕緣體（非金屬，如塑膠、木頭、石頭、皮革）的金屬度為 0.0。只有生鏽或油污等極少數過渡狀態才會使用中間值。",
+    "keywords": [
+      {
+        "term": "Metallic（金屬度）",
+        "role": "物理上非 0 即 1（純導體為 1.0，純絕緣體為 0.0），中間值僅用於鏽蝕油污"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q7",
@@ -1345,7 +2123,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：貼圖資產匯入】\n正確。UE4 支援直接將 PNG、TGA、JPG 拖入內容瀏覽器，系統會自動轉換為 Texture2D 資產並指派對應的紋理壓縮格式（如 BC1/BC5）。"
+    "explanation": "【UE 4.27 核心考點：貼圖資產匯入】\n正確。UE4 支援直接將 PNG、TGA、JPG 拖入內容瀏覽器，系統會自動轉換為 Texture2D 資產並指派對應的紋理壓縮格式（如 BC1/BC5）。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q8",
@@ -1369,7 +2155,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Constant 3 Vector",
     "correctIndex": 0,
     "correctText": "Constant 3 Vector",
-    "explanation": "【UE 4.27 核心考點：Constant 3 Vector 節點】\nConstant 3 Vector 代表 (R, G, B) 或 (X, Y, Z) 三維數組，快速鍵是在材質圖表中按住數字鍵「3」並點擊滑鼠左鍵。"
+    "explanation": "【UE 4.27 核心考點：Constant 3 Vector 節點】\nConstant 3 Vector 代表 (R, G, B) 或 (X, Y, Z) 三維數組，快速鍵是在材質圖表中按住數字鍵「3」並點擊滑鼠左鍵。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q9",
@@ -1393,7 +2187,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Normal",
     "correctIndex": 3,
     "correctText": "Normal",
-    "explanation": "【UE 4.27 核心考點：Normal Map 法線貼圖】\n法線貼圖以 RGB 色彩儲存微觀幾何面的切線空間法線向量，欺騙光照著色器計算明暗，大幅節省 3D 幾何頂點面數。"
+    "explanation": "【UE 4.27 核心考點：Normal Map 法線貼圖】\n法線貼圖以 RGB 色彩儲存微觀幾何面的切線空間法線向量，欺騙光照著色器計算明暗，大幅節省 3D 幾何頂點面數。",
+    "keywords": [
+      {
+        "term": "Metallic（金屬度）",
+        "role": "物理上非 0 即 1（純導體為 1.0，純絕緣體為 0.0），中間值僅用於鏽蝕油污"
+      },
+      {
+        "term": "Normal Map（法線貼圖）",
+        "role": "以 RGB 儲存表面法線向量，在不增加模型幾何頂點面數下模擬微觀立體凹凸"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h06_q10",
@@ -1417,7 +2223,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Material expressions",
     "correctIndex": 2,
     "correctText": "Material expressions",
-    "explanation": "【UE 4.27 核心考點：Material expressions 材質表達式】\n虛幻材質圖表中的所有節點（如 Add、Multiply、Texture Sample、Lerp）統稱為 Material Expressions。"
+    "explanation": "【UE 4.27 核心考點：Material expressions 材質表達式】\n虛幻材質圖表中的所有節點（如 Add、Multiply、Texture Sample、Lerp）統稱為 Material Expressions。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "____________ are the building blocks used to create Materials."
+      },
+      {
+        "partNum": 2,
+        "en": "They are self-contained nodes with different combinations of inputs and outputs that perform specific operations."
+      }
+    ]
   },
   {
     "id": "h07_q1",
@@ -1441,7 +2264,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Sound Wave asset",
     "correctIndex": 2,
     "correctText": "Sound Wave asset",
-    "explanation": "【UE 4.27 核心考點：Sound Wave 音訊波形資產】\n原始 WAV 音訊直接匯入後生成的基礎資產型態，可直接播放，亦可放入 Sound Cue 中進行進階合成混音。"
+    "explanation": "【UE 4.27 核心考點：Sound Wave 音訊波形資產】\n原始 WAV 音訊直接匯入後生成的基礎資產型態，可直接播放，亦可放入 Sound Cue 中進行進階合成混音。",
+    "keywords": [
+      {
+        "term": "Sound Wave（音效波形）",
+        "role": "原始 16-bit 44.1kHz .wav 匯入後的基礎音訊資產"
+      },
+      {
+        "term": "Sound Cue（音效提示）",
+        "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+      },
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h07_q2",
@@ -1461,7 +2300,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Sound Cue 節點編輯器】\n正確。Sound Cue 編輯器支援 Random（隨機選取）、Modulator（音高/音量微調）、Delay（延遲）、Looping 等多種節點串聯組合。"
+    "explanation": "【UE 4.27 核心考點：Sound Cue 節點編輯器】\n正確。Sound Cue 編輯器支援 Random（隨機選取）、Modulator（音高/音量微調）、Delay（延遲）、Looping 等多種節點串聯組合。",
+    "keywords": [
+      {
+        "term": "Sound Cue（音效提示）",
+        "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The term bit rate refers to the amount of data that is processed or transferred over a specified amount of time."
+      },
+      {
+        "partNum": 2,
+        "en": "Bit rate also has an impact on quality: the higher the bit rate, the better the quality."
+      }
+    ]
   },
   {
     "id": "h07_q3",
@@ -1485,7 +2341,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Sound Attenuation asset",
     "correctIndex": 3,
     "correctText": "Sound Attenuation asset",
-    "explanation": "【UE 4.27 核心考點：Sound Attenuation 聲音衰減】\nSound Attenuation 資產設定內外半徑範圍、立體聲空間化（Spatialization）演算法與距離倒數衰減曲線（Falloff Curve）。"
+    "explanation": "【UE 4.27 核心考點：Sound Attenuation 聲音衰減】\nSound Attenuation 資產設定內外半徑範圍、立體聲空間化（Spatialization）演算法與距離倒數衰減曲線（Falloff Curve）。",
+    "keywords": [
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      },
+      {
+        "term": "Reverb Effect（混響效果）",
+        "role": "模擬山洞、教堂、浴室等封閉環境的空間殘響聲學反射"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ stores attenuation properties in a reusable manner."
+      },
+      {
+        "partNum": 2,
+        "en": "This allows for adjustment to attenuation properties without having to revisit every Sound Actor individually."
+      }
+    ]
   },
   {
     "id": "h07_q4",
@@ -1505,7 +2382,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：音訊匯入格式限制】\n錯誤。UE4 官方標準音訊匯入格式嚴格要求為「無壓縮 16-bit PCM .wav 格式」，取樣率建議為 44.1 kHz 或 48 kHz。MP3 與 OGG 無法直接匯入。"
+    "explanation": "【UE 4.27 核心考點：音訊匯入格式限制】\n錯誤。UE4 官方標準音訊匯入格式嚴格要求為「無壓縮 16-bit PCM .wav 格式」，取樣率建議為 44.1 kHz 或 48 kHz。MP3 與 OGG 無法直接匯入。",
+    "keywords": [
+      {
+        "term": "Reverb Effect（混響效果）",
+        "role": "模擬山洞、教堂、浴室等封閉環境的空間殘響聲學反射"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A Reverb Effect asset adds motion and depth to sound."
+      },
+      {
+        "partNum": 2,
+        "en": "The Modulation settings allow you to control the minimum and maximum modulation for both pitch and volume as well as set a high-frequency gain multiplier."
+      }
+    ]
   },
   {
     "id": "h07_q5",
@@ -1529,7 +2423,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Sound Cue Editor",
     "correctIndex": 0,
     "correctText": "Sound Cue Editor",
-    "explanation": "【UE 4.27 核心考點：Sound Cue Editor】\n在 Sound Cue Editor 中雙擊開啟資產，使用 Modulator 隨機調整 Pitch 與 Volume，可避免槍聲或腳步聲重複播放時聽起來機械單調。"
+    "explanation": "【UE 4.27 核心考點：Sound Cue Editor】\n在 Sound Cue Editor 中雙擊開啟資產，使用 Modulator 隨機調整 Pitch 與 Volume，可避免槍聲或腳步聲重複播放時聽起來機械單調。",
+    "keywords": [
+      {
+        "term": "Sound Wave（音效波形）",
+        "role": "原始 16-bit 44.1kHz .wav 匯入後的基礎音訊資產"
+      },
+      {
+        "term": "Sound Cue（音效提示）",
+        "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+      },
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ Is a node-based editor that gives you the ability to modify Sound Waves and store the result as a Sound Cue asset."
+      },
+      {
+        "partNum": 2,
+        "en": "You can add modulation, reverb, and randomness."
+      }
+    ]
   },
   {
     "id": "h07_q6",
@@ -1553,7 +2472,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Reverb Effect asset",
     "correctIndex": 3,
     "correctText": "Reverb Effect asset",
-    "explanation": "【UE 4.27 核心考點：Reverb Effect 混響效果】\nReverb Effect asset 模擬洞穴、浴室、大教堂或空曠走廊等空間聲學環境的反射殘響參數。"
+    "explanation": "【UE 4.27 核心考點：Reverb Effect 混響效果】\nReverb Effect asset 模擬洞穴、浴室、大教堂或空曠走廊等空間聲學環境的反射殘響參數。",
+    "keywords": [
+      {
+        "term": "Sound Cue（音效提示）",
+        "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+      },
+      {
+        "term": "Sound Attenuation（聲音衰減）",
+        "role": "定義聲音隨距離拉遠時的音量衰減曲線與 3D 空間立體聲像定位（Spatialization）"
+      },
+      {
+        "term": "Reverb Effect（混響效果）",
+        "role": "模擬山洞、教堂、浴室等封閉環境的空間殘響聲學反射"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h07_q7",
@@ -1573,7 +2508,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Spatialization 空間化定義】\n錯誤。空間化是透過 3D 坐標位置計算左右耳抵達時間差（ITD）與強度差（ILD），讓玩家感知聲音精準的 3D 方向與距離感。"
+    "explanation": "【UE 4.27 核心考點：Spatialization 空間化定義】\n錯誤。空間化是透過 3D 坐標位置計算左右耳抵達時間差（ITD）與強度差（ILD），讓玩家感知聲音精準的 3D 方向與距離感。",
+    "keywords": [
+      {
+        "term": "Sound Wave（音效波形）",
+        "role": "原始 16-bit 44.1kHz .wav 匯入後的基礎音訊資產"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h07_q8",
@@ -1597,7 +2540,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Audio Volume Actor",
     "correctIndex": 3,
     "correctText": "Audio Volume Actor",
-    "explanation": "【UE 4.27 核心考點：Audio Volume 音訊體積】\n放置於特定室內空間，能套用專屬的 Reverb Settings，並能隔離或衰減室外傳入的環境噪音。"
+    "explanation": "【UE 4.27 核心考點：Audio Volume 音訊體積】\n放置於特定室內空間，能套用專屬的 Reverb Settings，並能隔離或衰減室外傳入的環境噪音。",
+    "keywords": [
+      {
+        "term": "Reverb Effect（混響效果）",
+        "role": "模擬山洞、教堂、浴室等封閉環境的空間殘響聲學反射"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h07_q9",
@@ -1621,7 +2572,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Mixer node",
     "correctIndex": 2,
     "correctText": "Mixer node",
-    "explanation": "【UE 4.27 核心考點：Mixer 混音節點】\nMixer 節點接收多個輸入引腳並同時疊加輸出；相較之下 Concatenator 是接續依序播放。"
+    "explanation": "【UE 4.27 核心考點：Mixer 混音節點】\nMixer 節點接收多個輸入引腳並同時疊加輸出；相較之下 Concatenator 是接續依序播放。",
+    "keywords": [
+      {
+        "term": "Sound Wave（音效波形）",
+        "role": "原始 16-bit 44.1kHz .wav 匯入後的基礎音訊資產"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h07_q10",
@@ -1641,7 +2600,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：移動音源附著】\n正確。附加於移動 Actor 上的 Audio Component 其空間坐標隨父級更新，搭配 3D Spatialization 設定，聲音會完美跟隨物件軌跡。"
+    "explanation": "【UE 4.27 核心考點：移動音源附著】\n正確。附加於移動 Actor 上的 Audio Component 其空間坐標隨父級更新，搭配 3D Spatialization 設定，聲音會完美跟隨物件軌跡。",
+    "keywords": [
+      {
+        "term": "Sound Cue（音效提示）",
+        "role": "節點式音效網絡，支援多曲隨機抽取、音高/音量隨機調製與混音"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q1",
@@ -1665,7 +2632,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Height map",
     "correctIndex": 3,
     "correctText": "Height map",
-    "explanation": "【UE 4.27 核心考點：Height map 高度圖】\n高度圖（Height Map）通常為 16 位元灰階影像，白色像素代表最高海拔，黑色像素代表最低地勢，是建立地形地貌的核心輸入來源。"
+    "explanation": "【UE 4.27 核心考點：Height map 高度圖】\n高度圖（Height Map）通常為 16 位元灰階影像，白色像素代表最高海拔，黑色像素代表最低地勢，是建立地形地貌的核心輸入來源。",
+    "keywords": [
+      {
+        "term": "Normal Map（法線貼圖）",
+        "role": "以 RGB 儲存表面法線向量，在不增加模型幾何頂點面數下模擬微觀立體凹凸"
+      },
+      {
+        "term": "Height Map（高度圖）",
+        "role": "16 位元灰階地形影像，純白為最高海拔，純黑為最低地勢"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q2",
@@ -1685,7 +2664,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Landscape 編輯模式位置】\n錯誤。地貌工具位於 Modes（模式）面板中的 Landscape 模式（快捷鍵 Shift + 2），而非在 World Settings 面板中。"
+    "explanation": "【UE 4.27 核心考點：Landscape 編輯模式位置】\n錯誤。地貌工具位於 Modes（模式）面板中的 Landscape 模式（快捷鍵 Shift + 2），而非在 World Settings 面板中。",
+    "keywords": [
+      {
+        "term": "Modes Panel（模式面板）",
+        "role": "提供放置幾何筆刷、地貌雕刻（Landscape）與植被繪製（Foliage）的核心面板"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q3",
@@ -1705,7 +2696,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：地貌高度圖建立途徑】\n正確。可以直接在 UE4 視口中用 Sculpt 工具手動雕刻，也可以從外部地形軟體（如 World Machine, Gaea）匯入 16 位元 RAW 或 PNG 高度圖。"
+    "explanation": "【UE 4.27 核心考點：地貌高度圖建立途徑】\n正確。可以直接在 UE4 視口中用 Sculpt 工具手動雕刻，也可以從外部地形軟體（如 World Machine, Gaea）匯入 16 位元 RAW 或 PNG 高度圖。",
+    "keywords": [
+      {
+        "term": "Height Map（高度圖）",
+        "role": "16 位元灰階地形影像，純白為最高海拔，純黑為最低地勢"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q4",
@@ -1729,7 +2732,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "LandscapeLayerBlend",
     "correctIndex": 1,
     "correctText": "LandscapeLayerBlend",
-    "explanation": "【UE 4.27 核心考點：LandscapeLayerBlend 節點】\nLandscapeLayerBlend 是地貌專用材質節點，定義各圖層名稱與混合方式（Weight Blend / Height Blend），供地貌 Paint 模式筆刷權重塗抹。"
+    "explanation": "【UE 4.27 核心考點：LandscapeLayerBlend 節點】\nLandscapeLayerBlend 是地貌專用材質節點，定義各圖層名稱與混合方式（Weight Blend / Height Blend），供地貌 Paint 模式筆刷權重塗抹。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      },
+      {
+        "term": "Foliage System（植被系統）",
+        "role": "GPU 實例化技術（HISM），極度節省 Draw Calls，可批量刷繪數十萬棵樹草"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q5",
@@ -1753,7 +2772,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Foliage Actor",
     "correctIndex": 2,
     "correctText": "Foliage Actor",
-    "explanation": "【UE 4.27 核心考點：Foliage Actor 植被實例】\nFoliage 系統將多個靜態網格整合為實例化陣列（HISM），極致壓縮 Draw Calls，能在地形上快速繪製大量樹木、灌木與岩石。"
+    "explanation": "【UE 4.27 核心考點：Foliage Actor 植被實例】\nFoliage 系統將多個靜態網格整合為實例化陣列（HISM），極致壓縮 Draw Calls，能在地形上快速繪製大量樹木、灌木與岩石。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      },
+      {
+        "term": "Foliage System（植被系統）",
+        "role": "GPU 實例化技術（HISM），極度節省 Draw Calls，可批量刷繪數十萬棵樹草"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is a collection of assets placed on top of and in direct relation to the Landscape mesh or other assets in a scene."
+      },
+      {
+        "partNum": 2,
+        "en": "This Actor can be any type of Static Mesh asset that is available through the Content Browser."
+      }
+    ]
   },
   {
     "id": "h08_q6",
@@ -1773,7 +2817,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：地貌紋理圖層繪製機制】\n正確。在地貌 Paint 模式下使用筆刷塗抹草地或泥土時，會即時寫入頂點圖層權重，驅動材質中的 LandscapeLayerBlend 節點進行融合。"
+    "explanation": "【UE 4.27 核心考點：地貌紋理圖層繪製機制】\n正確。在地貌 Paint 模式下使用筆刷塗抹草地或泥土時，會即時寫入頂點圖層權重，驅動材質中的 LandscapeLayerBlend 節點進行融合。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q7",
@@ -1797,7 +2853,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Foliage panel",
     "correctIndex": 0,
     "correctText": "Foliage mode",
-    "explanation": "【UE 4.27 核心考點：Foliage mode 植被工具】\n植被模式面板提供 Density（密度）、Radius、坡度限制（Slope）、高度限制與隨機縮放/旋轉設定，能大批量筆刷式種植植物與散落物。"
+    "explanation": "【UE 4.27 核心考點：Foliage mode 植被工具】\n植被模式面板提供 Density（密度）、Radius、坡度限制（Slope）、高度限制與隨機縮放/旋轉設定，能大批量筆刷式種植植物與散落物。",
+    "keywords": [
+      {
+        "term": "Foliage System（植被系統）",
+        "role": "GPU 實例化技術（HISM），極度節省 Draw Calls，可批量刷繪數十萬棵樹草"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h08_q8",
@@ -1821,7 +2885,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Landscape Actor",
     "correctIndex": 1,
     "correctText": "Landscape Actor",
-    "explanation": "【UE 4.27 核心考點：Landscape Actor 地貌類別】\nLandscape Actor 是承載地形幾何的主體，採用連續 LOD 網格拼合技術，根據視角動態簡化遠處地形網格以節省效能。"
+    "explanation": "【UE 4.27 核心考點：Landscape Actor 地貌類別】\nLandscape Actor 是承載地形幾何的主體，採用連續 LOD 網格拼合技術，根據視角動態簡化遠處地形網格以節省效能。",
+    "keywords": [
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      },
+      {
+        "term": "Foliage System（植被系統）",
+        "role": "GPU 實例化技術（HISM），極度節省 Draw Calls，可批量刷繪數十萬棵樹草"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is a specific Actor class used to represent terrain."
+      },
+      {
+        "partNum": 2,
+        "en": "This Actor has its own level of detail (LOD) system for efficiency."
+      }
+    ]
   },
   {
     "id": "h08_q9",
@@ -1845,7 +2930,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Sculpt tab",
     "correctIndex": 2,
     "correctText": "Sculpt tab",
-    "explanation": "【UE 4.27 核心考點：Sculpt 雕刻分頁】\nSculpt 分頁包含 Sculpt（抬升/下陷）、Smooth（平滑）、Flatten（壓平）、Ramp（斜坡）等塑形工具。"
+    "explanation": "【UE 4.27 核心考點：Sculpt 雕刻分頁】\nSculpt 分頁包含 Sculpt（抬升/下陷）、Smooth（平滑）、Flatten（壓平）、Ramp（斜坡）等塑形工具。",
+    "keywords": [
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      },
+      {
+        "term": "Foliage System（植被系統）",
+        "role": "GPU 實例化技術（HISM），極度節省 Draw Calls，可批量刷繪數十萬棵樹草"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "In Landscape mode, the ____________ contains a collection of tools for deforming the surface of a Landscape Actor."
+      },
+      {
+        "partNum": 2,
+        "en": "There are different properties for editing brush sizes and shapes."
+      }
+    ]
   },
   {
     "id": "h08_q10",
@@ -1865,7 +2971,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Fill World 地貌建立功能】\n錯誤。Fill World 會自動偵測並擴展地貌尺寸以完全填滿整個關卡的預設世界邊界（World Bounds），而不僅僅是確認當前設定。"
+    "explanation": "【UE 4.27 核心考點：Fill World 地貌建立功能】\n錯誤。Fill World 會自動偵測並擴展地貌尺寸以完全填滿整個關卡的預設世界邊界（World Bounds），而不僅僅是確認當前設定。",
+    "keywords": [
+      {
+        "term": "Landscape Actor（地貌地形）",
+        "role": "專為廣袤自然地形設計的幾何網格體，具備動態連續 LOD 優化"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q1",
@@ -1889,7 +3003,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Reflection Capture",
     "correctIndex": 1,
     "correctText": "Reflection Capture",
-    "explanation": "【UE 4.27 核心考點：Reflection Capture 反射捕捉】\nSphere/Box Reflection Capture 捕捉局部環境烘焙成 Cubemap，為附近光滑金屬與玻璃材質提供高品質鏡面反射。"
+    "explanation": "【UE 4.27 核心考點：Reflection Capture 反射捕捉】\nSphere/Box Reflection Capture 捕捉局部環境烘焙成 Cubemap，為附近光滑金屬與玻璃材質提供高品質鏡面反射。",
+    "keywords": [
+      {
+        "term": "Reflection Capture（反射捕捉）",
+        "role": "烘焙局部 360 度 Cubemap，為金屬與玻璃提供高品質靜態環境倒影"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q2",
@@ -1909,7 +3031,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Bloom vs Eye Adaptation】\n錯誤。人眼適應明暗調節效果稱為「Eye Adaptation（人眼適應 / 自動曝光 Auto Exposure）」；而 Bloom 是高亮區域周圍產生的光暈眩光溢出效果。"
+    "explanation": "【UE 4.27 核心考點：Bloom vs Eye Adaptation】\n錯誤。人眼適應明暗調節效果稱為「Eye Adaptation（人眼適應 / 自動曝光 Auto Exposure）」；而 Bloom 是高亮區域周圍產生的光暈眩光溢出效果。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q3",
@@ -1929,7 +3059,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Player Start 玩家出生點】\n正確。關卡中放置 Player Start Actor，遊戲開始時 Game Mode 會在此位置自動生成玩家預設的 Pawn 或 Character。"
+    "explanation": "【UE 4.27 核心考點：Player Start 玩家出生點】\n正確。關卡中放置 Player Start Actor，遊戲開始時 Game Mode 會在此位置自動生成玩家預設的 Pawn 或 Character。",
+    "keywords": [
+      {
+        "term": "Game Mode（遊戲模式類別）",
+        "role": "定義核心遊戲規則、勝負邏輯與生成角色，多人生存架構中僅運行於伺服器端"
+      },
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q4",
@@ -1953,7 +3095,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Atmospheric Fog Actor",
     "correctIndex": 0,
     "correctText": "Atmospheric Fog",
-    "explanation": "【UE 4.27 核心考點：Atmospheric Fog 大氣霧】\n依據物理瑞利散射與米氏散射模型，能模擬真實大氣厚度與太陽光照射角度產生的天色漸層變化。"
+    "explanation": "【UE 4.27 核心考點：Atmospheric Fog 大氣霧】\n依據物理瑞利散射與米氏散射模型，能模擬真實大氣厚度與太陽光照射角度產生的天色漸層變化。",
+    "keywords": [
+      {
+        "term": "Sky Light（天空光）",
+        "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+      },
+      {
+        "term": "Atmospheric Fog（大氣霧）",
+        "role": "依據物理大氣散射模型，隨太陽照射角度產生晨曦、正午與夕陽天色漸層"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ Actor gives an approximation of light scattering through a planetary atmosphere."
+      },
+      {
+        "partNum": 2,
+        "en": "It can give your outdoor Levels a much more realistic look."
+      }
+    ]
   },
   {
     "id": "h09_q5",
@@ -1977,7 +3140,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Lightmass Importance Volume",
     "correctIndex": 3,
     "correctText": "Lightmass Importance Volume",
-    "explanation": "【UE 4.27 核心考點：Lightmass Importance Volume】\n告知 Lightmass 集中高精度光線計算於體積內部可玩區域，體積外部使用極粗糙採樣，大幅縮短整體烘焙時間。"
+    "explanation": "【UE 4.27 核心考點：Lightmass Importance Volume】\n告知 Lightmass 集中高精度光線計算於體積內部可玩區域，體積外部使用極粗糙採樣，大幅縮短整體烘焙時間。",
+    "keywords": [
+      {
+        "term": "Lightmass（光照烘焙系統）",
+        "role": "離線預先計算光線多次反彈，將柔和漫反射陰影寫入光照貼圖（Lightmaps）"
+      },
+      {
+        "term": "Sky Light（天空光）",
+        "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+      },
+      {
+        "term": "Reflection Capture（反射捕捉）",
+        "role": "烘焙局部 360 度 Cubemap，為金屬與玻璃提供高品質靜態環境倒影"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q6",
@@ -1997,7 +3176,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：靜態/固定 Sky Light 重新捕捉】\n正確。在非動態模式下，修改天空球或背景後必須重新烘焙光照或點擊 Recapture，Sky Light 的環境光才會更新。"
+    "explanation": "【UE 4.27 核心考點：靜態/固定 Sky Light 重新捕捉】\n正確。在非動態模式下，修改天空球或背景後必須重新烘焙光照或點擊 Recapture，Sky Light 的環境光才會更新。",
+    "keywords": [
+      {
+        "term": "Sky Light（天空光）",
+        "role": "捕捉遠方天空半球色彩分佈，為戶外場景提供均勻柔和的天光環境漫反射"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q7",
@@ -2021,7 +3208,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Depth of Field (DOF)",
     "correctIndex": 0,
     "correctText": "Depth of Field (DOF)",
-    "explanation": "【UE 4.27 核心考點：Depth of Field (DOF) 景深】\n景深設定焦點距離與光圈數值（F-stop），將背景或前景虛化模糊，營造電影感視覺焦點。"
+    "explanation": "【UE 4.27 核心考點：Depth of Field (DOF) 景深】\n景深設定焦點距離與光圈數值（F-stop），將背景或前景虛化模糊，營造電影感視覺焦點。",
+    "keywords": [
+      {
+        "term": "Depth of Field / DOF（景深）",
+        "role": "設定對焦點與光圈虛化背景或前景，模擬真實相機鏡頭的電影感焦點"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ post processing property applies a blur to the scene based on distance in front of or behind a focal point."
+      },
+      {
+        "partNum": 2,
+        "en": "This is done to simulate what happens in real-world cameras."
+      },
+      {
+        "partNum": 3,
+        "en": "The effect can be used to draw the viewer’s attention and to make the rendering appear more like a photograph or a movie."
+      }
+    ]
   },
   {
     "id": "h09_q8",
@@ -2045,7 +3253,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Scene Fringe",
     "correctIndex": 0,
     "correctText": "Scene Fringe",
-    "explanation": "【UE 4.27 核心考點：Scene Fringe 色散效果】\n在後製設定中稱為 Scene Fringe，專門模擬鏡片對不同波長色光折射率不同導致紅藍色彩邊緣分離。"
+    "explanation": "【UE 4.27 核心考點：Scene Fringe 色散效果】\n在後製設定中稱為 Scene Fringe，專門模擬鏡片對不同波長色光折射率不同導致紅藍色彩邊緣分離。",
+    "keywords": [
+      {
+        "term": "Scene Fringe（鏡頭色散）",
+        "role": "模擬光學鏡片對不同色光折射率差異，在畫面邊緣呈現紅藍色相分離"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is a chromatic aberration effect that simulates the color shifts in real-world camera lenses."
+      },
+      {
+        "partNum": 2,
+        "en": "The effect is mostly noticeable near the edges of an image."
+      }
+    ]
   },
   {
     "id": "h09_q9",
@@ -2069,7 +3294,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Exponential Height Fog",
     "correctIndex": 3,
     "correctText": "Exponential Height Fog",
-    "explanation": "【UE 4.27 核心考點：Exponential Height Fog 指數高度霧】\n指數高度霧提供隨海拔高度平滑遞減的霧氣密度，並支援定向發光散射（Directional Inscattering Color）與體積霧（Volumetric Fog）。"
+    "explanation": "【UE 4.27 核心考點：Exponential Height Fog 指數高度霧】\n指數高度霧提供隨海拔高度平滑遞減的霧氣密度，並支援定向發光散射（Directional Inscattering Color）與體積霧（Volumetric Fog）。",
+    "keywords": [
+      {
+        "term": "Directional Light（定向光源）",
+        "role": "無限遠平行日光投射，僅旋轉角度影響日照方向，模擬太陽或月光"
+      },
+      {
+        "term": "Reflection Capture（反射捕捉）",
+        "role": "烘焙局部 360 度 Cubemap，為金屬與玻璃提供高品質靜態環境倒影"
+      },
+      {
+        "term": "Atmospheric Fog（大氣霧）",
+        "role": "依據物理大氣散射模型，隨太陽照射角度產生晨曦、正午與夕陽天色漸層"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h09_q10",
@@ -2089,7 +3330,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Lens Flare vs DOF】\n錯誤。Lens Flare 是模擬鏡頭內部光學鏡片在面對強光直射時產生的內部反射光斑與星芒，與景深（DOF）的焦距模糊是完全獨立的兩種後製效果。"
+    "explanation": "【UE 4.27 核心考點：Lens Flare vs DOF】\n錯誤。Lens Flare 是模擬鏡頭內部光學鏡片在面對強光直射時產生的內部反射光斑與星芒，與景深（DOF）的焦距模糊是完全獨立的兩種後製效果。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q1",
@@ -2109,7 +3358,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Color Over Life 與分佈曲線】\n正確。在 Cascade 中，Color Over Life 模組搭配 Curve Distribution 可以在時間軸 0.0~1.0 之間漸變顏色與 Alpha 不透明度（例如火花由亮黃轉橙再轉淡灰煙霧）。"
+    "explanation": "【UE 4.27 核心考點：Color Over Life 與分佈曲線】\n正確。在 Cascade 中，Color Over Life 模組搭配 Curve Distribution 可以在時間軸 0.0~1.0 之間漸變顏色與 Alpha 不透明度（例如火花由亮黃轉橙再轉淡灰煙霧）。",
+    "keywords": [
+      {
+        "term": "Cascade 粒子編輯器",
+        "role": "UE4 經典模組化即時粒子系統，控制火焰、煙霧、電弧與爆炸特效"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q2",
@@ -2133,7 +3390,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Distributions",
     "correctIndex": 1,
     "correctText": "Distributions",
-    "explanation": "【UE 4.27 核心考點：Distributions 分佈器】\nDistributions 是 Cascade 粒子參數的數學基礎，包含 Constant、Uniform（範圍隨機）、Constant Curve（自訂曲線）等形態。"
+    "explanation": "【UE 4.27 核心考點：Distributions 分佈器】\nDistributions 是 Cascade 粒子參數的數學基礎，包含 Constant、Uniform（範圍隨機）、Constant Curve（自訂曲線）等形態。",
+    "keywords": [
+      {
+        "term": "Cascade 粒子編輯器",
+        "role": "UE4 經典模組化即時粒子系統，控制火焰、煙霧、電弧與爆炸特效"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q3",
@@ -2153,7 +3418,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Emitter Actor 實例化】\n正確。在 Content Browser 中建立的是 Particle System 資產；當將其拖曳至關卡世界後，生成的物件即為 AEmitter（Emitter Actor）。"
+    "explanation": "【UE 4.27 核心考點：Emitter Actor 實例化】\n正確。在 Content Browser 中建立的是 Particle System 資產；當將其拖曳至關卡世界後，生成的物件即為 AEmitter（Emitter Actor）。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q4",
@@ -2177,7 +3450,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Particle System asset",
     "correctIndex": 2,
     "correctText": "Particle System asset",
-    "explanation": "【UE 4.27 核心考點：Particle System asset 粒子系統資產】\n單一 Particle System 資產可同時整合多個發射器（例如營火系統內同時包含火焰、煙霧、飛濺火星與底部動態光源發射器）。"
+    "explanation": "【UE 4.27 核心考點：Particle System asset 粒子系統資產】\n單一 Particle System 資產可同時整合多個發射器（例如營火系統內同時包含火焰、煙霧、飛濺火星與底部動態光源發射器）。",
+    "keywords": [
+      {
+        "term": "Type Data 模組",
+        "role": "改變發射器基礎形態：Sprite(平面面片)、Mesh(實體幾何)、Beam(電弧光束)、Ribbon(飄帶)"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is a complete particle effect that contains any number of Particle Emitters."
+      },
+      {
+        "partNum": 2,
+        "en": "By allowing multiple Emitters in a system, the designer can create elaborate particle effects that are held in a single system."
+      }
+    ]
   },
   {
     "id": "h10_q5",
@@ -2201,7 +3491,28 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Required",
     "correctIndex": 0,
     "correctText": "Required",
-    "explanation": "【UE 4.27 核心考點：Required 必要模組】\nRequired 模組位於發射器頂部且不可刪除，負責指定粒子材質、子貼圖序列（SubUV）、循環次數與螢幕對齊方式。"
+    "explanation": "【UE 4.27 核心考點：Required 必要模組】\nRequired 模組位於發射器頂部且不可刪除，負責指定粒子材質、子貼圖序列（SubUV）、循環次數與螢幕對齊方式。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ module holds the parameters that a particle Emitter absolutely needs to function."
+      },
+      {
+        "partNum": 2,
+        "en": "Information about the applied Material, the Emitter’s lifetime, and whether the Emitter loops can be found here."
+      }
+    ]
   },
   {
     "id": "h10_q6",
@@ -2221,7 +3532,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Spawn 生成模組】\n正確。Spawn 模組設定 Rate（每秒持續生成率）與 Burst（瞬間爆發數量，如爆炸瞬間噴出 50 顆碎屑）。"
+    "explanation": "【UE 4.27 核心考點：Spawn 生成模組】\n正確。Spawn 模組設定 Rate（每秒持續生成率）與 Burst（瞬間爆發數量，如爆炸瞬間噴出 50 顆碎屑）。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q7",
@@ -2245,7 +3564,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Type Data",
     "correctIndex": 0,
     "correctText": "Type Data",
-    "explanation": "【UE 4.27 核心考點：Type Data 模組外觀】\n在 Cascade 介面中，Type Data 模組以粗黑條形式置於發射器上方或特定欄位，決定發射精靈面片（Sprite）、實體網格（Mesh）、光束（Beam）或飄帶（Ribbon）。"
+    "explanation": "【UE 4.27 核心考點：Type Data 模組外觀】\n在 Cascade 介面中，Type Data 模組以粗黑條形式置於發射器上方或特定欄位，決定發射精靈面片（Sprite）、實體網格（Mesh）、光束（Beam）或飄帶（Ribbon）。",
+    "keywords": [
+      {
+        "term": "Cascade 粒子編輯器",
+        "role": "UE4 經典模組化即時粒子系統，控制火焰、煙霧、電弧與爆炸特效"
+      },
+      {
+        "term": "Type Data 模組",
+        "role": "改變發射器基礎形態：Sprite(平面面片)、Mesh(實體幾何)、Beam(電弧光束)、Ribbon(飄帶)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q8",
@@ -2269,7 +3600,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Rain",
     "correctIndex": 3,
     "correctText": "Rain",
-    "explanation": "【UE 4.27 核心考點：UE4 原生 Type Data 類型】\nUE4 內建的 Type Data 包含 Mesh Data、Beam Data、Ribbon Data、Anim Trail 等；「Rain」並非內建的 Type Data 模組，雨水效果是用 GPU Sprite 配合重力與碰撞模擬製作的。"
+    "explanation": "【UE 4.27 核心考點：UE4 原生 Type Data 類型】\nUE4 內建的 Type Data 包含 Mesh Data、Beam Data、Ribbon Data、Anim Trail 等；「Rain」並非內建的 Type Data 模組，雨水效果是用 GPU Sprite 配合重力與碰撞模擬製作的。",
+    "keywords": [
+      {
+        "term": "Type Data 模組",
+        "role": "改變發射器基礎形態：Sprite(平面面片)、Mesh(實體幾何)、Beam(電弧光束)、Ribbon(飄帶)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q9",
@@ -2293,7 +3632,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Cascade",
     "correctIndex": 0,
     "correctText": "Cascade",
-    "explanation": "【UE 4.27 核心考點：Cascade 粒子編輯器】\nCascade 是 UE4 經典的節點模組式即時粒子系統編輯器（在 UE5 中則逐步演進至 Niagara 系統）。"
+    "explanation": "【UE 4.27 核心考點：Cascade 粒子編輯器】\nCascade 是 UE4 經典的節點模組式即時粒子系統編輯器（在 UE5 中則逐步演進至 Niagara 系統）。",
+    "keywords": [
+      {
+        "term": "Cascade 粒子編輯器",
+        "role": "UE4 經典模組化即時粒子系統，控制火焰、煙霧、電弧與爆炸特效"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h10_q10",
@@ -2317,7 +3664,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Beam",
     "correctIndex": 0,
     "correctText": "Beam",
-    "explanation": "【UE 4.27 核心考點：Beam Data 光束發射器】\nBeam Data 專門在起點與終點之間拉出一條連續且支援噪波抖動的面片，用於製作閃電雷擊、牽引光束或雷射射線。"
+    "explanation": "【UE 4.27 核心考點：Beam Data 光束發射器】\nBeam Data 專門在起點與終點之間拉出一條連續且支援噪波抖動的面片，用於製作閃電雷擊、牽引光束或雷射射線。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is connected particles that form a stream between a source point and a target point."
+      },
+      {
+        "partNum": 2,
+        "en": "By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points."
+      }
+    ]
   },
   {
     "id": "h12_q1",
@@ -2341,7 +3705,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Sequencer",
     "correctIndex": 3,
     "correctText": "Sequencer",
-    "explanation": "【UE 4.27 核心考點：Sequencer 序列器】\nSequencer 取代舊有的 Matinee，具備現代非線性多軌剪輯介面（類似 Premiere/After Effects），是虛幻引擎影視過場動畫的核心系統。"
+    "explanation": "【UE 4.27 核心考點：Sequencer 序列器】\nSequencer 取代舊有的 Matinee，具備現代非線性多軌剪輯介面（類似 Premiere/After Effects），是虛幻引擎影視過場動畫的核心系統。",
+    "keywords": [
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q2",
@@ -2361,7 +3733,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：關鍵影格動畫原理】\n正確。在不同時間點打上 Keyframe，引擎自動在關鍵影格之間對坐標、角度或浮點數值進行平滑插值曲線計算。"
+    "explanation": "【UE 4.27 核心考點：關鍵影格動畫原理】\n正確。在不同時間點打上 Keyframe，引擎自動在關鍵影格之間對坐標、角度或浮點數值進行平滑插值曲線計算。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q3",
@@ -2385,7 +3765,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Timeline",
     "correctIndex": 1,
     "correctText": "Timeline",
-    "explanation": "【UE 4.27 核心考點：Timeline 時間軸播放區間】\nTimeline 面板包含綠色（起始幀 Start Marker）與紅色（結束幀 End Marker）標記，定義序列的播放循環與導出範圍。"
+    "explanation": "【UE 4.27 核心考點：Timeline 時間軸播放區間】\nTimeline 面板包含綠色（起始幀 Start Marker）與紅色（結束幀 End Marker）標記，定義序列的播放循環與導出範圍。",
+    "keywords": [
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q4",
@@ -2405,7 +3793,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Cine Camera vs 一般相機】\n錯誤。Cine Camera Actor 具備專業電影光學特有屬性：真實感應器規格（Sensor Dimensions）、實體焦距（Focal Length）、光圈（Aperture / f-stop）與自動跟焦追蹤（Focus Tracking）。"
+    "explanation": "【UE 4.27 核心考點：Cine Camera vs 一般相機】\n錯誤。Cine Camera Actor 具備專業電影光學特有屬性：真實感應器規格（Sensor Dimensions）、實體焦距（Focal Length）、光圈（Aperture / f-stop）與自動跟焦追蹤（Focus Tracking）。",
+    "keywords": [
+      {
+        "term": "Cine Camera Actor（電影攝影機）",
+        "role": "模擬真實光學鏡頭：感應器片幅、焦距(mm)、光圈(f-stop)與自動主體跟焦"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q5",
@@ -2429,7 +3825,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Possessable",
     "correctIndex": 1,
     "correctText": "Possessable",
-    "explanation": "【UE 4.27 核心考點：Possessable 可附身物件】\nPossessable 是引用關卡中原有的 Actor 物件；動畫結束後該物件依然留在關卡中。對比 Spawnable 則是動畫開始動態生成、結束自動銷毀。"
+    "explanation": "【UE 4.27 核心考點：Possessable 可附身物件】\nPossessable 是引用關卡中原有的 Actor 物件；動畫結束後該物件依然留在關卡中。對比 Spawnable 則是動畫開始動態生成、結束自動銷毀。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      },
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q6",
@@ -2449,7 +3857,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Playhead 播放指針】\n正確。拖動 Timeline Marker 可在視口中即時搓擦預覽（Scrubbing）各影格的動畫狀態。"
+    "explanation": "【UE 4.27 核心考點：Playhead 播放指針】\n正確。拖動 Timeline Marker 可在視口中即時搓擦預覽（Scrubbing）各影格的動畫狀態。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q7",
@@ -2473,7 +3889,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Spawnable",
     "correctIndex": 2,
     "correctText": "Spawnable",
-    "explanation": "【UE 4.27 核心考點：Spawnable 可生成物件】\nSpawnable 物件直接儲存在 Level Sequence 資產內部，只在序列播放期間存在，結束後自動銷毀，不會污染原始關卡。"
+    "explanation": "【UE 4.27 核心考點：Spawnable 可生成物件】\nSpawnable 物件直接儲存在 Level Sequence 資產內部，只在序列播放期間存在，結束後自動銷毀，不會污染原始關卡。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      },
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q8",
@@ -2497,7 +3925,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Level Sequence assets",
     "correctIndex": 0,
     "correctText": "Level Sequence assets",
-    "explanation": "【UE 4.27 核心考點：Level Sequence assets】\nLevel Sequence 是 Content Browser 中的專有資產，可被多個關卡重複引用或透過藍圖節點「Play Sequence」觸發播放。"
+    "explanation": "【UE 4.27 核心考點：Level Sequence assets】\nLevel Sequence 是 Content Browser 中的專有資產，可被多個關卡重複引用或透過藍圖節點「Play Sequence」觸發播放。",
+    "keywords": [
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q9",
@@ -2521,7 +3957,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Camera Cut Track",
     "correctIndex": 2,
     "correctText": "Camera Cut Track",
-    "explanation": "【UE 4.27 核心考點：Camera Cut Track 相機切鏡軌道】\nCamera Cut Track 是電影導演軌道，負責在主時間軸上安排不同時間段切換到哪一台 Cine Camera 拍攝畫面。"
+    "explanation": "【UE 4.27 核心考點：Camera Cut Track 相機切鏡軌道】\nCamera Cut Track 是電影導演軌道，負責在主時間軸上安排不同時間段切換到哪一台 Cine Camera 拍攝畫面。",
+    "keywords": [
+      {
+        "term": "Perspective（透視視圖）",
+        "role": "具備近大遠小真實 3D 空間透視感，適合關卡自由漫遊預覽"
+      },
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      },
+      {
+        "term": "Cine Camera Actor（電影攝影機）",
+        "role": "模擬真實光學鏡頭：感應器片幅、焦距(mm)、光圈(f-stop)與自動主體跟焦"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h12_q10",
@@ -2545,7 +3997,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Camera Rig Rail Actor",
     "correctIndex": 2,
     "correctText": "Camera Rig Rail Actor",
-    "explanation": "【UE 4.27 核心考點：Camera Rig Rail Actor 軌道車】\nCamera Rig Rail 提供可編輯的樣條曲線導軌，透過單一參數驅動相機平滑平移滑行，精準重現好萊塢電影軌道車運鏡。"
+    "explanation": "【UE 4.27 核心考點：Camera Rig Rail Actor 軌道車】\nCamera Rig Rail 提供可編輯的樣條曲線導軌，透過單一參數驅動相機平滑平移滑行，精準重現好萊塢電影軌道車運鏡。",
+    "keywords": [
+      {
+        "term": "Pawn（兵卒實體）",
+        "role": "在世界中可被 Controller（控制器）附身附著的實體角色或載具基礎類別"
+      },
+      {
+        "term": "Sequencer（電影序列器）",
+        "role": "專業非線性過場動畫多軌剪輯器，控制鏡頭視角、關鍵影格與物件生成"
+      },
+      {
+        "term": "Cine Camera Actor（電影攝影機）",
+        "role": "模擬真實光學鏡頭：感應器片幅、焦距(mm)、光圈(f-stop)與自動主體跟焦"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q1",
@@ -2569,7 +4037,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Destructible Actor",
     "correctIndex": 2,
     "correctText": "Destructible Actor",
-    "explanation": "【UE 4.27 核心考點：Destructible Actor 可破壞物件】\nDestructible Actor 採用 Voronoi 演算法將模型切分成破碎層次，受到物理衝擊或爆炸傷害時碎裂散落。"
+    "explanation": "【UE 4.27 核心考點：Destructible Actor 可破壞物件】\nDestructible Actor 採用 Voronoi 演算法將模型切分成破碎層次，受到物理衝擊或爆炸傷害時碎裂散落。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Destructible Actor（可破壞物件）",
+        "role": "採用 Voronoi 演算法將模型預先碎塊化，受撞擊傷害時動態崩解散落"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q2",
@@ -2589,7 +4069,19 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：物理摩擦力定義】\n正確。在 Physical Material 中調整 Friction（摩擦係數），可控制物體在斜坡或地面上的滑行阻力（例如冰面摩擦極小、砂石摩擦極大）。"
+    "explanation": "【UE 4.27 核心考點：物理摩擦力定義】\n正確。在 Physical Material 中調整 Friction（摩擦係數），可控制物體在斜坡或地面上的滑行阻力（例如冰面摩擦極小、砂石摩擦極大）。",
+    "keywords": [
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Physical Material（物理材質）",
+        "role": "設定物理屬性（摩擦力 Friction、彈力恢復係數 Restitution、密度 Density）"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q3",
@@ -2613,7 +4105,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Mass",
     "correctIndex": 0,
     "correctText": "Mass",
-    "explanation": "【UE 4.27 核心考點：Mass 質量物理量】\n質量（Mass，以公斤 kg 為單位）決定物體的慣性大小（F = ma），質量越大的物體需要越大的推力才能使其加速運動。"
+    "explanation": "【UE 4.27 核心考點：Mass 質量物理量】\n質量（Mass，以公斤 kg 為單位）決定物體的慣性大小（F = ma），質量越大的物體需要越大的推力才能使其加速運動。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q4",
@@ -2633,7 +4133,24 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "False",
     "correctIndex": 1,
     "correctText": "False",
-    "explanation": "【UE 4.27 核心考點：Restitution 恢復係數 / 彈性】\n錯誤。能量隨時間耗散減速的屬性是阻尼（Damping）；而 Restitution 代表的是「彈性碰撞恢復係數」（0.0 = 完全非彈性碰撞不反彈，1.0 = 完全彈性碰撞 100% 反彈跳起）。"
+    "explanation": "【UE 4.27 核心考點：Restitution 恢復係數 / 彈性】\n錯誤。能量隨時間耗散減速的屬性是阻尼（Damping）；而 Restitution 代表的是「彈性碰撞恢復係數」（0.0 = 完全非彈性碰撞不反彈，1.0 = 完全彈性碰撞 100% 反彈跳起）。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "Restitution refers to how quickly a physics body comes to rest after a force has been applied."
+      },
+      {
+        "partNum": 2,
+        "en": "It is the dissipation of energy over time."
+      }
+    ]
   },
   {
     "id": "h13_q5",
@@ -2657,7 +4174,36 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Physics Constraint Actor",
     "correctIndex": 3,
     "correctText": "Physics Constraint Actor",
-    "explanation": "【UE 4.27 核心考點：Physics Constraint Actor 物理約束】\nPhysics Constraint 限制兩個剛體之間的相對線性與角度自由度，常用於門軸鉸鏈、擺鐘、吊橋繩索或車輪懸吊系統。"
+    "explanation": "【UE 4.27 核心考點：Physics Constraint Actor 物理約束】\nPhysics Constraint 限制兩個剛體之間的相對線性與角度自由度，常用於門軸鉸鏈、擺鐘、吊橋繩索或車輪懸吊系統。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Socket（插槽）",
+        "role": "網格模型上的指定附著點，供武器、裝飾帽子或光效精準對齊吸附"
+      },
+      {
+        "term": "Destructible Actor（可破壞物件）",
+        "role": "採用 Voronoi 演算法將模型預先碎塊化，受撞擊傷害時動態崩解散落"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ is a type of joint that allows you to connect two Actors together, presumably ones simulating physics."
+      },
+      {
+        "partNum": 2,
+        "en": "It gives you the ability to apply limits or set linear and angular forces."
+      },
+      {
+        "partNum": 3,
+        "en": "There are several preset joint types: ball-and-socket, hinge, and prismatic."
+      }
+    ]
   },
   {
     "id": "h13_q6",
@@ -2677,7 +4223,23 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：靜態網格物理模擬】\n正確。只要 Static Mesh 具備碰撞體（Collision Hull）且 Mobility 為 Movable，勾選「Simulate Physics」即可讓該物件受重力自由落體並產生推擠碰撞。"
+    "explanation": "【UE 4.27 核心考點：靜態網格物理模擬】\n正確。只要 Static Mesh 具備碰撞體（Collision Hull）且 Mobility 為 Movable，勾選「Simulate Physics」即可讓該物件受重力自由落體並產生推擠碰撞。",
+    "keywords": [
+      {
+        "term": "Collision（碰撞體系）",
+        "role": "阻止角色與物件穿透，並能觸發物理阻擋（Block）或重疊事件（Overlap）"
+      },
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Mobility（移動性）",
+        "role": "Static(靜態烘焙)、Stationary(固定位置動態光強)、Movable(完全動態即時物理)"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q7",
@@ -2701,7 +4263,32 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Physics Asset Tool (PhAT)",
     "correctIndex": 0,
     "correctText": "Physics Asset Tool (PhAT)",
-    "explanation": "【UE 4.27 核心考點：Physics Asset Tool (PhAT)】\nPhAT 是骨骼網格專用的物理編輯器，為每根骨骼建立膠囊碰撞體並設定關節旋轉極限，是製作布娃娃系統的核心工具。"
+    "explanation": "【UE 4.27 核心考點：Physics Asset Tool (PhAT)】\nPhAT 是骨骼網格專用的物理編輯器，為每根骨骼建立膠囊碰撞體並設定關節旋轉極限，是製作布娃娃系統的核心工具。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Destructible Actor（可破壞物件）",
+        "role": "採用 Voronoi 演算法將模型預先碎塊化，受撞擊傷害時動態崩解散落"
+      },
+      {
+        "term": "Physics Constraint（物理約束關節）",
+        "role": "連結兩個剛體並限制位移與旋轉自由度，製作鉸鏈門軸、擺鐘與懸吊避震"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "The ____________ Editor is used to set up physics constraints on the bone hierarchy for a Skeletal Mesh asset."
+      },
+      {
+        "partNum": 2,
+        "en": "It is used, for example, to create ragdoll effects on characters or dynamic hoses or chains that react with the world around them."
+      }
+    ]
   },
   {
     "id": "h13_q8",
@@ -2721,7 +4308,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "True",
     "correctIndex": 0,
     "correctText": "True",
-    "explanation": "【UE 4.27 核心考點：Voronoi 破碎演算法】\n正確。UE4 破碎網格（Destructible Mesh）與 Chaos 破碎系統廣泛採用 Voronoi 圖形分割法，生成隨機自然的斷裂碎片面。"
+    "explanation": "【UE 4.27 核心考點：Voronoi 破碎演算法】\n正確。UE4 破碎網格（Destructible Mesh）與 Chaos 破碎系統廣泛採用 Voronoi 圖形分割法，生成隨機自然的斷裂碎片面。",
+    "keywords": [
+      {
+        "term": "Destructible Actor（可破壞物件）",
+        "role": "採用 Voronoi 演算法將模型預先碎塊化，受撞擊傷害時動態崩解散落"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   },
   {
     "id": "h13_q9",
@@ -2745,7 +4340,36 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Physical Material asset",
     "correctIndex": 1,
     "correctText": "Physical Material asset",
-    "explanation": "【UE 4.27 核心考點：Physical Material asset 物理材質】\nPhysical Material 定義表面的物理交互特徵（摩擦、彈跳、密度），並可設定 Surface Type 決定子彈擊中時產生金屬火花或石壁灰塵特效。"
+    "explanation": "【UE 4.27 核心考點：Physical Material asset 物理材質】\nPhysical Material 定義表面的物理交互特徵（摩擦、彈跳、密度），並可設定 Surface Type 決定子彈擊中時產生金屬火花或石壁灰塵特效。",
+    "keywords": [
+      {
+        "term": "Static Mesh（靜態網格）",
+        "role": "不可骨骼蒙皮形變的剛性 3D 幾何模型，渲染開銷極低且能參與靜態光照烘焙"
+      },
+      {
+        "term": "Material（材質系統）",
+        "role": "節點式表面光學著色網絡，計算光線如何與微觀表面相互作用"
+      },
+      {
+        "term": "Destructible Actor（可破壞物件）",
+        "role": "採用 Voronoi 演算法將模型預先碎塊化，受撞擊傷害時動態崩解散落"
+      }
+    ],
+    "hasSegments": true,
+    "segments": [
+      {
+        "partNum": 1,
+        "en": "A ____________ contains a collection of properties that affect the behavior of an Actor simulating physics."
+      },
+      {
+        "partNum": 2,
+        "en": "It can be assigned to a Static Mesh Actor or a Material."
+      },
+      {
+        "partNum": 3,
+        "en": "Properties include Friction, Restitution, and Density."
+      }
+    ]
   },
   {
     "id": "h13_q10",
@@ -2769,7 +4393,15 @@ const UE_QUIZ_DATA = {
     "rawAnswer": "Rigid body",
     "correctIndex": 3,
     "correctText": "Rigid body",
-    "explanation": "【UE 4.27 核心考點：Rigid body 剛體定義】\n經典物理學與遊戲物理中的剛體（Rigid Body），受力時內部各點的相對距離保持絕對恆定，不發生幾何形變。"
+    "explanation": "【UE 4.27 核心考點：Rigid body 剛體定義】\n經典物理學與遊戲物理中的剛體（Rigid Body），受力時內部各點的相對距離保持絕對恆定，不發生幾何形變。",
+    "keywords": [
+      {
+        "term": "Unreal Engine 4.27 核心架構",
+        "role": "遵循教材與引擎核心工作流規範"
+      }
+    ],
+    "hasSegments": false,
+    "segments": []
   }
 ]
 };

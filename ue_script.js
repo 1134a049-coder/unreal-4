@@ -53,6 +53,7 @@
   
   const btnLangEn = document.getElementById('btnLangEn');
   const btnLangBi = document.getElementById('btnLangBi');
+  const btnLangDetailed = document.getElementById('btnLangDetailed');
   const btnLangZh = document.getElementById('btnLangZh');
   
   const btnToggleAnswer = document.getElementById('btnToggleAnswer');
@@ -71,6 +72,12 @@
   const btnFlag = document.getElementById('btnFlag');
   const questionPromptEn = document.getElementById('questionPromptEn');
   const questionPromptZh = document.getElementById('questionPromptZh');
+  const answerHintBanner = document.getElementById('answerHintBanner');
+  const answerHintText = document.getElementById('answerHintText');
+  const detailedBreakdownBox = document.getElementById('detailedBreakdownBox');
+  const breakdownContent = document.getElementById('breakdownContent');
+  const keywordMemoryBox = document.getElementById('keywordMemoryBox');
+  const memoryList = document.getElementById('memoryList');
   const optionsContainer = document.getElementById('optionsContainer');
   
   const btnPrevQ = document.getElementById('btnPrevQ');
@@ -204,10 +211,17 @@
     state.language = lang;
     btnLangEn.classList.toggle('active', lang === 'en');
     btnLangBi.classList.toggle('active', lang === 'bilingual');
+    if (btnLangDetailed) btnLangDetailed.classList.toggle('active', lang === 'detailed');
     btnLangZh.classList.toggle('active', lang === 'zh');
     renderQuestionContent();
     renderOptions();
-    showToast(`已切換至：${lang === 'en' ? 'English 原文' : lang === 'zh' ? '繁體中文' : '英中雙語對照'}`);
+    const map = {
+      en: 'English 原文',
+      bilingual: '英中雙語對照',
+      detailed: '精闢詳細版翻譯（長句分段與記憶錨點）',
+      zh: '中文繁體'
+    };
+    showToast(`已切換至：${map[lang] || lang}`);
   }
 
   // Exam Timer
@@ -359,20 +373,89 @@
     const q = getCurrentQuestion();
     if (!q) return;
 
+    // 1. 基本題目文字渲染
     if (state.language === 'en') {
       questionPromptEn.style.display = 'block';
       questionPromptEn.textContent = q.question;
       questionPromptZh.style.display = 'none';
+      detailedBreakdownBox.style.display = 'none';
+      keywordMemoryBox.style.display = 'none';
     } else if (state.language === 'zh') {
       questionPromptEn.style.display = 'none';
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;
-    } else {
-      // Bilingual
+      detailedBreakdownBox.style.display = 'none';
+      keywordMemoryBox.style.display = 'none';
+    } else if (state.language === 'detailed') {
+      // 詳細版翻譯模式：英文 + 中文 + 切段拆解 + 功能記憶點
       questionPromptEn.style.display = 'block';
       questionPromptEn.textContent = q.question;
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;
+
+      // 切段翻譯
+      renderBreakdown(q);
+      // 功能記憶點
+      renderKeywords(q);
+    } else {
+      // Bilingual 預設雙語模式：英文 + 中文 + 功能記憶點
+      questionPromptEn.style.display = 'block';
+      questionPromptEn.textContent = q.question;
+      questionPromptZh.style.display = 'block';
+      questionPromptZh.textContent = q.questionZh;
+      detailedBreakdownBox.style.display = 'none';
+      renderKeywords(q);
+    }
+
+    // 2. 答案提示條 (如果開啟答案顯示，且在刷題模式)
+    renderAnswerHint(q);
+  }
+
+  function renderAnswerHint(q) {
+    if (!answerHintBanner) return;
+    if (state.mode === 'practice' && state.showAnswer) {
+      answerHintBanner.style.display = 'flex';
+      const letters = ['A', 'B', 'C', 'D'];
+      const letChar = letters[q.correctIndex] || '';
+      answerHintText.innerHTML = `題目提示：正確答案為 <strong>(${letChar}) ${q.correctText}</strong>`;
+    } else {
+      answerHintBanner.style.display = 'none';
+    }
+  }
+
+  function renderBreakdown(q) {
+    if (!detailedBreakdownBox || !breakdownContent) return;
+    detailedBreakdownBox.style.display = 'block';
+    breakdownContent.innerHTML = '';
+
+    if (q.segments && q.segments.length > 1) {
+      q.segments.forEach(seg => {
+        const item = document.createElement('div');
+        item.className = 'breakdown-item';
+        item.innerHTML = `<span class="breakdown-idx">分段 ${seg.partNum}</span><span class="breakdown-text">${seg.en}</span>`;
+        breakdownContent.appendChild(item);
+      });
+    } else {
+      const item = document.createElement('div');
+      item.className = 'breakdown-item';
+      item.innerHTML = `<span class="breakdown-idx">核心句</span><span class="breakdown-text">${q.question}</span>`;
+      breakdownContent.appendChild(item);
+    }
+  }
+
+  function renderKeywords(q) {
+    if (!keywordMemoryBox || !memoryList) return;
+    if (q.keywords && q.keywords.length > 0) {
+      keywordMemoryBox.style.display = 'block';
+      memoryList.innerHTML = '';
+      q.keywords.forEach(kw => {
+        const div = document.createElement('div');
+        div.className = 'memory-item';
+        div.innerHTML = `<div class="memory-term">🔹 ${kw.term}</div><div class="memory-role">${kw.role}</div>`;
+        memoryList.appendChild(div);
+      });
+    } else {
+      keywordMemoryBox.style.display = 'none';
     }
   }
 
@@ -572,6 +655,7 @@
     // Language Buttons
     btnLangEn.addEventListener('click', () => setLanguage('en'));
     btnLangBi.addEventListener('click', () => setLanguage('bilingual'));
+    if (btnLangDetailed) btnLangDetailed.addEventListener('click', () => setLanguage('detailed'));
     btnLangZh.addEventListener('click', () => setLanguage('zh'));
 
     // Toggle Answer & Explain
@@ -579,6 +663,7 @@
       state.showAnswer = !state.showAnswer;
       btnToggleAnswer.classList.toggle('active', state.showAnswer);
       answerToggleText.textContent = state.showAnswer ? '開啟' : '關閉';
+      renderQuestionContent();
       renderOptions();
       showToast(`即時答案顯示已${state.showAnswer ? '開啟' : '關閉'}`);
     });
