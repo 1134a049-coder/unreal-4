@@ -110,10 +110,22 @@
   const btnRestartExam = document.getElementById('btnRestartExam');
   const toastMessage = document.getElementById('toastMessage');
 
+  // LocalStorage Keys
+  const STORAGE_KEYS = {
+    answers: 'ue_quiz_answers',
+    chapter: 'ue_quiz_chapter',
+    lang: 'ue_quiz_lang',
+    mode: 'ue_quiz_mode',
+    showAnswer: 'ue_quiz_show_answer',
+    showExplain: 'ue_quiz_show_explain',
+    currentIndex: 'ue_quiz_current_index',
+    mistakes: 'ue_quiz_mistakes'
+  };
+
   // Load mistakes from localStorage
   function loadMistakes() {
     try {
-      const saved = localStorage.getItem('ue_quiz_mistakes');
+      const saved = localStorage.getItem(STORAGE_KEYS.mistakes);
       if (saved) {
         state.mistakes = new Set(JSON.parse(saved));
       }
@@ -125,7 +137,7 @@
 
   function saveMistakes() {
     try {
-      localStorage.setItem('ue_quiz_mistakes', JSON.stringify(Array.from(state.mistakes)));
+      localStorage.setItem(STORAGE_KEYS.mistakes, JSON.stringify(Array.from(state.mistakes)));
     } catch (e) {
       console.warn('Could not save mistakes to localStorage', e);
     }
@@ -135,6 +147,91 @@
   function updateMistakesCount() {
     if (mistakesCountEl) {
       mistakesCountEl.textContent = state.mistakes.size;
+    }
+  }
+
+  // Save / Load Application State to LocalStorage
+  function saveAppState() {
+    try {
+      localStorage.setItem(STORAGE_KEYS.answers, JSON.stringify(state.answers));
+      localStorage.setItem(STORAGE_KEYS.chapter, state.currentChapterId);
+      localStorage.setItem(STORAGE_KEYS.lang, state.language);
+      localStorage.setItem(STORAGE_KEYS.mode, state.mode);
+      localStorage.setItem(STORAGE_KEYS.showAnswer, String(state.showAnswer));
+      localStorage.setItem(STORAGE_KEYS.showExplain, String(state.showExplain));
+      localStorage.setItem(STORAGE_KEYS.currentIndex, String(state.currentIndex));
+    } catch (e) {
+      console.warn('Could not save app state to localStorage', e);
+    }
+  }
+
+  function saveAnswers() {
+    try {
+      localStorage.setItem(STORAGE_KEYS.answers, JSON.stringify(state.answers));
+    } catch (e) {
+      console.warn('Could not save answers to localStorage', e);
+    }
+  }
+
+  function saveCurrentIndex() {
+    try {
+      localStorage.setItem(STORAGE_KEYS.currentIndex, String(state.currentIndex));
+    } catch (e) {
+      console.warn('Could not save current index to localStorage', e);
+    }
+  }
+
+  function loadStoredState() {
+    try {
+      // 1. 恢復所有章節已作答選項與標記
+      const savedAnswers = localStorage.getItem(STORAGE_KEYS.answers);
+      if (savedAnswers) {
+        const parsed = JSON.parse(savedAnswers);
+        if (parsed && typeof parsed === 'object') {
+          state.answers = parsed;
+        }
+      }
+
+      // 2. 恢復上次瀏覽的章節
+      const savedChap = localStorage.getItem(STORAGE_KEYS.chapter);
+      if (savedChap && UE_QUIZ_DATA.chapters.some(c => c.id === savedChap)) {
+        state.currentChapterId = savedChap;
+      }
+
+      // 3. 恢復上次選擇的語言翻譯模式
+      const savedLang = localStorage.getItem(STORAGE_KEYS.lang);
+      if (savedLang && ['en', 'bilingual', 'detailed', 'zh'].includes(savedLang)) {
+        state.language = savedLang;
+      }
+
+      // 4. 恢復功能開關設定 (即時答案、詳細解釋)
+      const savedShowAns = localStorage.getItem(STORAGE_KEYS.showAnswer);
+      if (savedShowAns !== null) {
+        state.showAnswer = (savedShowAns === 'true');
+      }
+      const savedShowExp = localStorage.getItem(STORAGE_KEYS.showExplain);
+      if (savedShowExp !== null) {
+        state.showExplain = (savedShowExp === 'true');
+      }
+
+      // 5. 恢復模式 (刷題/錯題本，模考模式為避免計時異常預設回刷題)
+      const savedMode = localStorage.getItem(STORAGE_KEYS.mode);
+      if (savedMode === 'mistakes' && state.mistakes.size > 0) {
+        state.mode = 'mistakes';
+      } else {
+        state.mode = 'practice';
+      }
+
+      // 6. 恢復當前題號索引
+      const savedIdx = localStorage.getItem(STORAGE_KEYS.currentIndex);
+      if (savedIdx !== null) {
+        const parsedIdx = parseInt(savedIdx, 10);
+        if (!isNaN(parsedIdx) && parsedIdx >= 0) {
+          state.currentIndex = parsedIdx;
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load stored state from localStorage', e);
     }
   }
 
@@ -176,8 +273,18 @@
     chapterSelect.value = state.currentChapterId;
 
     chapterSelect.addEventListener('change', (e) => {
+      // 切換章節時，若位於錯題本模式，自動切回刷題模式以呈現該章題目
+      if (state.mode === 'mistakes') {
+        state.mode = 'practice';
+        btnModePractice.classList.add('active');
+        btnModeMistakes.classList.remove('active');
+        btnModeExam.classList.remove('active');
+        examControls.style.display = 'none';
+        practiceBanner.style.display = 'flex';
+      }
       state.currentChapterId = e.target.value;
       state.currentIndex = 0;
+      saveAppState();
       if (state.mode === 'exam') {
         startExamTimer();
       }
@@ -203,25 +310,28 @@
     }
 
     state.currentIndex = 0;
+    saveAppState();
     renderAll();
   }
 
   // Language Switching
-  function setLanguage(lang) {
+  function setLanguage(lang, silent = false) {
     state.language = lang;
-    btnLangEn.classList.toggle('active', lang === 'en');
-    btnLangBi.classList.toggle('active', lang === 'bilingual');
-    if (btnLangDetailed) btnLangDetailed.classList.toggle('active', lang === 'detailed');
-    btnLangZh.classList.toggle('active', lang === 'zh');
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    saveAppState();
     renderQuestionContent();
     renderOptions();
-    const map = {
-      en: 'English 原文',
-      bilingual: '英中雙語對照',
-      detailed: '精闢詳細版翻譯（長句分段與記憶錨點）',
-      zh: '中文繁體'
-    };
-    showToast(`已切換至：${map[lang] || lang}`);
+    if (!silent) {
+      const map = {
+        en: 'English 原文',
+        bilingual: '英中雙語對照',
+        detailed: '精闢詳細版翻譯（專有名詞隨文註解已啟用）',
+        zh: '中文繁體'
+      };
+      showToast(`已切換至：${map[lang] || lang}`);
+    }
   }
 
   // Exam Timer
@@ -306,6 +416,9 @@
       }
     }
 
+    // 儲存至本地端，防止重新整理丟失作答紀錄
+    saveAppState();
+
     renderOptions();
     renderFeedback();
     renderPalette();
@@ -343,7 +456,7 @@
     const chap = UE_QUIZ_DATA.chapters.find(c => c.id === q.chapterId);
     cardQNum.textContent = `Question ${state.currentIndex + 1}`;
     cardQChapter.textContent = chap ? chap.title : 'Unreal Engine 4';
-    cardQType.textContent = q.type === 'TF' ? '是非判斷題' : '四選一單選題';
+    cardQType.textContent = (q.type === 'TF' ? '是非判斷題' : '四選一單選題') + (state.language === 'detailed' ? ' · 專有名詞隨文註解已啟用' : '');
 
     // Flag button state
     const record = state.answers[q.id];
@@ -387,18 +500,15 @@
       detailedBreakdownBox.style.display = 'none';
       keywordMemoryBox.style.display = 'none';
     } else if (state.language === 'detailed') {
-      // 詳細版翻譯模式：英文 + 中文 + 切段拆解 + 功能記憶點
+      // 精闢詳細版翻譯：英文專有名詞隨文附帶中文註解 + 繁體中文全句翻譯 + 核心功能記憶錨點
       questionPromptEn.style.display = 'block';
-      questionPromptEn.textContent = q.question;
+      questionPromptEn.innerHTML = q.detailedQuestion || q.question;
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;
-
-      // 切段翻譯
-      renderBreakdown(q);
-      // 功能記憶點
+      detailedBreakdownBox.style.display = 'none';
       renderKeywords(q);
     } else {
-      // Bilingual 預設雙語模式：英文 + 中文 + 功能記憶點
+      // Bilingual 預設雙語模式：英文原文 + 繁體中文對照 + 核心功能記憶錨點
       questionPromptEn.style.display = 'block';
       questionPromptEn.textContent = q.question;
       questionPromptZh.style.display = 'block';
@@ -508,6 +618,16 @@
         textZh.className = 'opt-text';
         textZh.textContent = optZh;
         content.appendChild(textZh);
+      } else if (state.language === 'detailed') {
+        // Detailed mode: English option + detailed inline explanation
+        const textEn = document.createElement('div');
+        textEn.className = 'opt-text';
+        textEn.textContent = optEn;
+        const textZh = document.createElement('div');
+        textZh.className = 'opt-text-zh';
+        textZh.innerHTML = (q.detailedOptions && q.detailedOptions[idx]) ? q.detailedOptions[idx] : optZh;
+        content.appendChild(textEn);
+        content.appendChild(textZh);
       } else {
         // Bilingual
         const textEn = document.createElement('div');
@@ -600,6 +720,7 @@
 
       btn.addEventListener('click', () => {
         state.currentIndex = idx;
+        saveCurrentIndex();
         renderAll();
         // Close drawer on mobile
         if (window.innerWidth <= 1024) {
@@ -652,7 +773,19 @@
     btnModeExam.addEventListener('click', () => setMode('exam'));
     btnModeMistakes.addEventListener('click', () => setMode('mistakes'));
 
-    // Language Buttons
+    // Language Tabs Delegation & Direct Events
+    const langTabs = document.querySelector('.lang-tabs');
+    if (langTabs) {
+      ['click', 'touchend'].forEach(evtType => {
+        langTabs.addEventListener(evtType, (e) => {
+          const btn = e.target.closest('.lang-btn');
+          if (!btn || !btn.dataset.lang) return;
+          if (evtType === 'touchend') e.preventDefault();
+          setLanguage(btn.dataset.lang);
+        }, { passive: false });
+      });
+    }
+
     btnLangEn.addEventListener('click', () => setLanguage('en'));
     btnLangBi.addEventListener('click', () => setLanguage('bilingual'));
     if (btnLangDetailed) btnLangDetailed.addEventListener('click', () => setLanguage('detailed'));
@@ -663,6 +796,7 @@
       state.showAnswer = !state.showAnswer;
       btnToggleAnswer.classList.toggle('active', state.showAnswer);
       answerToggleText.textContent = state.showAnswer ? '開啟' : '關閉';
+      saveAppState();
       renderQuestionContent();
       renderOptions();
       showToast(`即時答案顯示已${state.showAnswer ? '開啟' : '關閉'}`);
@@ -672,22 +806,40 @@
       state.showExplain = !state.showExplain;
       btnToggleExplain.classList.toggle('active', state.showExplain);
       explainToggleText.textContent = state.showExplain ? '開啟' : '關閉';
+      saveAppState();
       renderFeedback();
       showToast(`內容專業解釋已${state.showExplain ? '開啟' : '關閉'}`);
     });
 
     // Reset Chapter
     btnResetTest.addEventListener('click', () => {
-      if (confirm('確定要清除當前章節的所有作答與標記紀錄嗎？')) {
+      if (confirm('確定要清除當前章節的所有作答與標記紀錄嗎？（其他章節紀錄仍會保留）')) {
         const list = getActiveQuestions();
         list.forEach(q => {
           delete state.answers[q.id];
         });
         state.currentIndex = 0;
+        saveAppState();
         renderAll();
         showToast('已重置當前章節的作答紀錄！');
       }
     });
+
+    // Clear All Data
+    const btnClearAllData = document.getElementById('btnClearAllData');
+    if (btnClearAllData) {
+      btnClearAllData.addEventListener('click', () => {
+        if (confirm('⚠️ 警告：確定要清除「全部 12 個章節」的所有作答紀錄、標記與錯題本嗎？此操作無法復原。')) {
+          state.answers = {};
+          state.mistakes.clear();
+          state.currentIndex = 0;
+          saveMistakes();
+          saveAppState();
+          renderAll();
+          showToast('已成功清除全站所有作答進度！');
+        }
+      });
+    }
 
     // Flag Button
     btnFlag.addEventListener('click', () => {
@@ -697,6 +849,7 @@
       cur.isFlagged = !cur.isFlagged;
       state.answers[q.id] = cur;
       btnFlag.classList.toggle('active', cur.isFlagged);
+      saveAppState();
       renderPalette();
       showToast(cur.isFlagged ? '★ 已將此題加入標記清單' : '已取消此題標記');
     });
@@ -705,6 +858,7 @@
     btnPrevQ.addEventListener('click', () => {
       if (state.currentIndex > 0) {
         state.currentIndex--;
+        saveCurrentIndex();
         renderAll();
       }
     });
@@ -713,6 +867,7 @@
       const list = getActiveQuestions();
       if (state.currentIndex < list.length - 1) {
         state.currentIndex++;
+        saveCurrentIndex();
         renderAll();
       }
     });
@@ -739,6 +894,7 @@
     btnReviewExam.addEventListener('click', () => {
       resultModal.style.display = 'none';
       state.currentIndex = 0;
+      saveCurrentIndex();
       renderAll();
     });
 
@@ -747,6 +903,7 @@
       const list = getActiveQuestions();
       list.forEach(q => delete state.answers[q.id]);
       state.currentIndex = 0;
+      saveAppState();
       startExamTimer();
       renderAll();
     });
@@ -758,12 +915,14 @@
       if (e.key === 'ArrowLeft') {
         if (state.currentIndex > 0) {
           state.currentIndex--;
+          saveCurrentIndex();
           renderAll();
         }
       } else if (e.key === 'ArrowRight') {
         const list = getActiveQuestions();
         if (state.currentIndex < list.length - 1) {
           state.currentIndex++;
+          saveCurrentIndex();
           renderAll();
         }
       } else if (['1', '2', '3', '4'].includes(e.key)) {
@@ -783,10 +942,48 @@
     });
   }
 
+  // Synchronize UI from loaded state
+  function initModeUI() {
+    btnModePractice.classList.toggle('active', state.mode === 'practice');
+    btnModeExam.classList.toggle('active', state.mode === 'exam');
+    btnModeMistakes.classList.toggle('active', state.mode === 'mistakes');
+
+    if (state.mode === 'exam') {
+      examControls.style.display = 'flex';
+      practiceBanner.style.display = 'none';
+      startExamTimer();
+    } else {
+      clearInterval(state.examTimerInterval);
+      examControls.style.display = 'none';
+      practiceBanner.style.display = 'flex';
+    }
+  }
+
+  function initLanguageUI() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === state.language);
+    });
+  }
+
+  function initToggleUI() {
+    if (btnToggleAnswer && answerToggleText) {
+      btnToggleAnswer.classList.toggle('active', state.showAnswer);
+      answerToggleText.textContent = state.showAnswer ? '開啟' : '關閉';
+    }
+    if (btnToggleExplain && explainToggleText) {
+      btnToggleExplain.classList.toggle('active', state.showExplain);
+      explainToggleText.textContent = state.showExplain ? '開啟' : '關閉';
+    }
+  }
+
   // Initialization
   function init() {
     loadMistakes();
+    loadStoredState();
     initChapterSelect();
+    initModeUI();
+    initLanguageUI();
+    initToggleUI();
     initEvents();
     renderAll();
   }
