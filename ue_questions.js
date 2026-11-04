@@ -92,10 +92,10 @@ const UE_QUIZ_DATA = {
         "World Outliner"
       ],
       "optionsZh": [
-        "Modes（模式面板）",
-        "Details（細節屬性面板）",
-        "Content Browser（內容瀏覽器）",
-        "World Outliner（世界大綱面板）"
+        "Modes（模式面板：放置基礎幾何體、地貌與植被工具）",
+        "Details（細節面板：檢視與調整所選物件的各項屬性數值）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "World Outliner（世界大綱：當前關卡中所有物件的清單總表）"
       ],
       "rawAnswer": "Details",
       "correctIndex": 1,
@@ -119,10 +119,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> ____________ panel displays the editable properties for a selected <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
-        "Modes（模式面板）",
-        "Details（細節屬性面板）",
-        "Content Browser（內容瀏覽器）",
-        "World Outliner（世界大綱面板）"
+        "Modes（模式面板：放置基礎幾何體、地貌與植被工具）",
+        "Details（細節面板：檢視與調整所選物件的各項屬性數值）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "World Outliner（世界大綱：當前關卡中所有物件的清單總表）"
       ]
     },
     {
@@ -172,10 +172,10 @@ const UE_QUIZ_DATA = {
         "Epic Games Launcher"
       ],
       "optionsZh": [
-        "Project Browser（專案瀏覽器（建立或開啟專案））",
-        "Modes panel（模式面板）",
-        "Static Mesh Editor（靜態網格編輯器）",
-        "Epic Games Launcher（Epic Games 官方啟動器）"
+        "Project Browser（專案瀏覽器：建立新專案或開啟既有專案）",
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）",
+        "Epic Games Launcher（Epic 官方啟動器：下載引擎版本與購買商城素材）"
       ],
       "rawAnswer": "Epic Games Launcher",
       "correctIndex": 3,
@@ -212,10 +212,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "The ____________ is an application that keeps track of the different versions of Unreal Engine that you have installed. You can use it to manage your projects, access free sample projects, and purchase content from the <span class=\"term-en\">Unreal Marketplace</span><span class=\"inline-trans\">（虛幻商城）</span>. It also keeps you updated with community news and links to online learning resources and documentation.",
       "detailedOptions": [
-        "Project Browser（專案瀏覽器（建立或開啟專案））",
-        "Modes panel（模式面板）",
-        "Static Mesh Editor（靜態網格編輯器）",
-        "Epic Games Launcher（Epic Games 官方啟動器）"
+        "Project Browser（專案瀏覽器：建立新專案或開啟既有專案）",
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）",
+        "Epic Games Launcher（Epic 官方啟動器：下載引擎版本與購買商城素材）"
       ]
     },
     {
@@ -265,10 +265,10 @@ const UE_QUIZ_DATA = {
         "Lighting Only"
       ],
       "optionsZh": [
-        "Lit（帶光照完整渲染模式）",
-        "Wireframe（線框結構顯示模式）",
-        "Detail Lighting（僅細節光照模式）",
-        "Lighting Only（純光照模式（不帶材質貼圖））"
+        "Lit（完整光照模式：呈現最終光影與材質效果）",
+        "Wireframe（線框模式：僅顯示 3D 模型的幾何多邊形網格線條）",
+        "Detail Lighting（僅細節光照：去除顏色干擾，專注檢視表面凹凸與陰影）",
+        "Lighting Only（純光照模式：僅顯示光線照射與陰影，不顯示材質貼圖）"
       ],
       "rawAnswer": "Detail Lighting",
       "correctIndex": 2,
@@ -292,10 +292,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ <span class=\"term-en\">view mode</span><span class=\"inline-trans\">（場景檢視模式）</span> displays a neutral color on all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> along with the <span class=\"term-en\">normal map</span><span class=\"inline-trans\">（法線貼圖：表面凹凸）</span> from each <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>’s assigned <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>.",
       "detailedOptions": [
-        "Lit（帶光照完整渲染模式）",
-        "Wireframe（線框結構顯示模式）",
-        "Detail Lighting（僅細節光照模式）",
-        "Lighting Only（純光照模式（不帶材質貼圖））"
+        "Lit（完整光照模式：呈現最終光影與材質效果）",
+        "Wireframe（線框模式：僅顯示 3D 模型的幾何多邊形網格線條）",
+        "Detail Lighting（僅細節光照：去除顏色干擾，專注檢視表面凹凸與陰影）",
+        "Lighting Only（純光照模式：僅顯示光線照射與陰影，不顯示材質貼圖）"
       ]
     },
     {
@@ -382,10 +382,10 @@ const UE_QUIZ_DATA = {
         "Viewport"
       ],
       "optionsZh": [
-        "Game Mode（遊戲核心規則與玩法模式樣板）",
-        "Graphic Settings（圖形品質設定）",
-        "Landscape（地貌編輯工具）",
-        "Viewport（關卡工作視窗）"
+        "Game Mode（遊戲模式規範：定義遊戲規則、勝負條件與預設生成角色的中央大腦）",
+        "Graphic Settings（圖形品質設定：調整畫面解析度與渲染效能）",
+        "Landscape（地貌工具：雕刻山脈與繪製地形材質）",
+        "Viewport（工作視窗：編輯與預覽 3D 場景的主要操作視窗）"
       ],
       "rawAnswer": "Game Mode",
       "correctIndex": 0,
@@ -409,10 +409,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "When creating a new project, you can select from a variety of default ____________ templates, such as First Person, Third Person, Flying, and Puzzle.",
       "detailedOptions": [
-        "Game Mode（遊戲核心規則與玩法模式樣板）",
-        "Graphic Settings（圖形品質設定）",
-        "Landscape（地貌編輯工具）",
-        "Viewport（關卡工作視窗）"
+        "Game Mode（遊戲模式規範：定義遊戲規則、勝負條件與預設生成角色的中央大腦）",
+        "Graphic Settings（圖形品質設定：調整畫面解析度與渲染效能）",
+        "Landscape（地貌工具：雕刻山脈與繪製地形材質）",
+        "Viewport（工作視窗：編輯與預覽 3D 場景的主要操作視窗）"
       ]
     },
     {
@@ -429,10 +429,10 @@ const UE_QUIZ_DATA = {
         "Templates"
       ],
       "optionsZh": [
-        "Paint（頂點色彩繪製模式）",
-        "Lit（帶光照完整渲染模式）",
-        "Orthographic（正交平面視圖）",
-        "Templates（專案樣板範本）"
+        "Paint（頂點繪製：直接在模型頂點上刷塗顏色）",
+        "Lit（完整光照模式：呈現最終光影與材質效果）",
+        "Orthographic（正交視圖：無透視近大遠小的 2D 平行投影（如頂視圖、側視圖））",
+        "Templates（專案樣板：預先配置好玩法邏輯的遊戲範本）"
       ],
       "rawAnswer": "Orthographic",
       "correctIndex": 2,
@@ -456,10 +456,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "In the <span class=\"term-en\">Level Viewport</span><span class=\"inline-trans\">（關卡場景工作視窗）</span>, you can switch between <span class=\"term-en\">Perspective</span><span class=\"inline-trans\">（透視 3D 視角）</span> and ____________ display modes.",
       "detailedOptions": [
-        "Paint（頂點色彩繪製模式）",
-        "Lit（帶光照完整渲染模式）",
-        "Orthographic（正交平面視圖）",
-        "Templates（專案樣板範本）"
+        "Paint（頂點繪製：直接在模型頂點上刷塗顏色）",
+        "Lit（完整光照模式：呈現最終光影與材質效果）",
+        "Orthographic（正交視圖：無透視近大遠小的 2D 平行投影（如頂視圖、側視圖））",
+        "Templates（專案樣板：預先配置好玩法邏輯的遊戲範本）"
       ]
     },
     {
@@ -476,10 +476,10 @@ const UE_QUIZ_DATA = {
         "Foliage"
       ],
       "optionsZh": [
-        "Perspective（透視 3D 視角）",
-        "View modes（視圖顯示模式選單）",
-        "Level Details panel（關卡細節面板）",
-        "Foliage（植被繪製工具）"
+        "Perspective（透視視角：符合人眼近大遠小的真實 3D 空間視角）",
+        "View modes（視圖選單：切換帶光照、無光照與線框等顯示模式）",
+        "Level Details panel（關卡細節面板：調整關卡專有設定）",
+        "Foliage（植被工具：快速刷塗大量樹木與花草）"
       ],
       "rawAnswer": "View modes",
       "correctIndex": 1,
@@ -512,10 +512,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "____________ are settings applied to <span class=\"term-en\">Editor Viewports</span><span class=\"inline-trans\">（編輯器場景視窗）</span> that modify the display of content. They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results.",
       "detailedOptions": [
-        "Perspective（透視 3D 視角）",
-        "View modes（視圖顯示模式選單）",
-        "Level Details panel（關卡細節面板）",
-        "Foliage（植被繪製工具）"
+        "Perspective（透視視角：符合人眼近大遠小的真實 3D 空間視角）",
+        "View modes（視圖選單：切換帶光照、無光照與線框等顯示模式）",
+        "Level Details panel（關卡細節面板：調整關卡專有設定）",
+        "Foliage（植被工具：快速刷塗大量樹木與花草）"
       ]
     },
     {
@@ -532,10 +532,10 @@ const UE_QUIZ_DATA = {
         ".uproject"
       ],
       "optionsZh": [
-        ".uasset（虛幻引擎專案資產二進位檔案）",
-        ".umap（關卡地圖檔案）",
-        ".ini（設定設定檔）",
-        ".uproject（專案啟動引導描述檔）"
+        ".uasset（虛幻專用資產檔：包含模型、材質與音效等素材）",
+        ".umap（關卡地圖檔：儲存場景中所有擺放的物件資訊）",
+        ".ini（純文字設定檔：儲存引擎配置與專案預設參數）",
+        ".uproject（專案描述引導檔：記錄專案版本與外掛啟用狀態）"
       ],
       "rawAnswer": ".ini",
       "correctIndex": 2,
@@ -555,10 +555,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ files are text files that store <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span>, engine, and project preferences.",
       "detailedOptions": [
-        ".uasset（虛幻引擎專案資產二進位檔案）",
-        ".umap（關卡地圖檔案）",
-        ".ini（設定設定檔）",
-        ".uproject（專案啟動引導描述檔）"
+        ".uasset（虛幻專用資產檔：包含模型、材質與音效等素材）",
+        ".umap（關卡地圖檔：儲存場景中所有擺放的物件資訊）",
+        ".ini（純文字設定檔：儲存引擎配置與專案預設參數）",
+        ".uproject（專案描述引導檔：記錄專案版本與外掛啟用狀態）"
       ]
     },
     {
@@ -621,10 +621,10 @@ const UE_QUIZ_DATA = {
         "Raw Files"
       ],
       "optionsZh": [
-        "Saved（存放自動存檔與截圖的暫存目錄）",
-        "Content（專案所有遊戲素材資產根目錄）",
-        "Intermediate（引擎編譯過程產生之中間暫存目錄）",
-        "Raw Files（原始檔案目錄）"
+        "Saved（暫存目錄：存放自動備份存檔與遊戲執行日誌）",
+        "Content（資產主目錄：專案所有遊戲素材必須存放在此）",
+        "Intermediate（中間暫存目錄：編譯過程中由引擎自動產生的暫存檔）",
+        "Raw Files（外部原始檔案目錄）"
       ],
       "rawAnswer": "Raw Files",
       "correctIndex": 3,
@@ -640,10 +640,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ folder is not found in a default project folder.",
       "detailedOptions": [
-        "Saved（存放自動存檔與截圖的暫存目錄）",
-        "Content（專案所有遊戲素材資產根目錄）",
-        "Intermediate（引擎編譯過程產生之中間暫存目錄）",
-        "Raw Files（原始檔案目錄）"
+        "Saved（暫存目錄：存放自動備份存檔與遊戲執行日誌）",
+        "Content（資產主目錄：專案所有遊戲素材必須存放在此）",
+        "Intermediate（中間暫存目錄：編譯過程中由引擎自動產生的暫存檔）",
+        "Raw Files（外部原始檔案目錄）"
       ]
     },
     {
@@ -693,10 +693,10 @@ const UE_QUIZ_DATA = {
         "Import"
       ],
       "optionsZh": [
-        "Viewport（關卡工作視窗）",
-        "Reference（專案資源參照）",
-        "Migration（資產遷移工具（Migrate：安全將資產連同相依檔案複製至其他專案））",
-        "Import（匯入外部資源）"
+        "Viewport（工作視窗：編輯與預覽 3D 場景的主要操作視窗）",
+        "Reference（資產引用：查看素材之間的相依連結）",
+        "Migration（資產遷移：安全地將素材連同所有相依檔案複製到另一個專案）",
+        "Import（匯入功能：將外部檔案載入專案中）"
       ],
       "rawAnswer": "Reference",
       "correctIndex": 1,
@@ -712,10 +712,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ______________ Viewer shows the dependencies for an asset.",
       "detailedOptions": [
-        "Viewport（關卡工作視窗）",
-        "Reference（專案資源參照）",
-        "Migration（資產遷移工具（Migrate：安全將資產連同相依檔案複製至其他專案））",
-        "Import（匯入外部資源）"
+        "Viewport（工作視窗：編輯與預覽 3D 場景的主要操作視窗）",
+        "Reference（資產引用：查看素材之間的相依連結）",
+        "Migration（資產遷移：安全地將素材連同所有相依檔案複製到另一個專案）",
+        "Import（匯入功能：將外部檔案載入專案中）"
       ]
     },
     {
@@ -765,10 +765,10 @@ const UE_QUIZ_DATA = {
         "Pawn class"
       ],
       "optionsZh": [
-        "Gameplay Framework（遊戲玩法核心框架）",
-        "Content Browser（內容瀏覽器）",
-        "Controller class（大腦控制核心類別（PlayerController / AIController））",
-        "Pawn class（Pawn 角色基礎類別）"
+        "Gameplay Framework（玩法框架：UE 官方定義的一套標準遊戲開發架構）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Controller class（控制器：接收鍵盤滑鼠操作並對角色下達動作指令的核心類別）",
+        "Pawn class（Pawn 基礎類別：可被操控的基本實體）"
       ],
       "rawAnswer": "Gameplay Framework",
       "correctIndex": 0,
@@ -782,12 +782,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The____________ is a collection of C++ or <span class=\"term-en\">Blueprint</span><span class=\"inline-trans\">（藍圖腳本）</span> classes that manages the rules of the game, handles player input, and defines the avatars, cameras, and player HUDs in UE4 projects.",
+      "detailedQuestion": "The____________ is a collection of C++ or <span class=\"term-en\">Blueprint</span><span class=\"inline-trans\">（藍圖腳本）</span> classes that manages the rules of the game, handles player input, and <span class=\"term-en\">defines</span><span class=\"inline-trans\">（定義規範）</span> the avatars, cameras, and player <span class=\"term-en\">HUDs</span><span class=\"inline-trans\">（抬頭顯示介面）</span> in UE4 projects.",
       "detailedOptions": [
-        "Gameplay Framework（遊戲玩法核心框架）",
-        "Content Browser（內容瀏覽器）",
-        "Controller class（大腦控制核心類別（PlayerController / AIController））",
-        "Pawn class（Pawn 角色基礎類別）"
+        "Gameplay Framework（玩法框架：UE 官方定義的一套標準遊戲開發架構）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Controller class（控制器：接收鍵盤滑鼠操作並對角色下達動作指令的核心類別）",
+        "Pawn class（Pawn 基礎類別：可被操控的基本實體）"
       ]
     },
     {
@@ -837,10 +837,10 @@ const UE_QUIZ_DATA = {
         "Game Mode class"
       ],
       "optionsZh": [
-        "Controller class（大腦控制核心類別（PlayerController / AIController））",
-        "HUD class（HUD 抬頭顯示介面類別）",
-        "Game Instance class（遊戲全域實例類別（跨關卡保存全域資料））",
-        "Game Mode class（遊戲模式規則類別）"
+        "Controller class（控制器：接收鍵盤滑鼠操作並對角色下達動作指令的核心類別）",
+        "HUD class（抬頭顯示介面：繪製玩家血量與計分等 2D 螢幕介面）",
+        "Game Instance class（全域遊戲實例：換關卡時不會被銷毀、能跨關卡保存全域資料）",
+        "Game Mode class（遊戲模式類別：僅存在於伺服器端的規則管理者）"
       ],
       "rawAnswer": "Game Mode class",
       "correctIndex": 3,
@@ -873,10 +873,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "The ____________ is the definition of the game, including things like the game rules and win conditions. It only exists on the server. It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
-        "Controller class（大腦控制核心類別（PlayerController / AIController））",
-        "HUD class（HUD 抬頭顯示介面類別）",
-        "Game Instance class（遊戲全域實例類別（跨關卡保存全域資料））",
-        "Game Mode class（遊戲模式規則類別）"
+        "Controller class（控制器：接收鍵盤滑鼠操作並對角色下達動作指令的核心類別）",
+        "HUD class（抬頭顯示介面：繪製玩家血量與計分等 2D 螢幕介面）",
+        "Game Instance class（全域遊戲實例：換關卡時不會被銷毀、能跨關卡保存全域資料）",
+        "Game Mode class（遊戲模式類別：僅存在於伺服器端的規則管理者）"
       ]
     },
     {
@@ -893,10 +893,10 @@ const UE_QUIZ_DATA = {
         "Player State"
       ],
       "optionsZh": [
-        "Game Mode（遊戲核心規則與玩法模式樣板）",
-        "Player Controller（玩家控制器（負責接收鍵盤滑鼠輸入並操控角色））",
-        "Game State（遊戲全域狀態（記錄遊戲進程、勝負狀態））",
-        "Player State（個別玩家狀態資料（記錄得分、血量等））"
+        "Game Mode（遊戲模式規範：定義遊戲規則、勝負條件與預設生成角色的中央大腦）",
+        "Player Controller（玩家控制器：負責處理真人玩家的按鍵輸入與鏡頭控制）",
+        "Game State（遊戲全域狀態：記錄整場比賽進行時間、分數與對戰狀態）",
+        "Player State（玩家個人狀態：儲存個別玩家的得分、血量與遊戲歷程資料）"
       ],
       "rawAnswer": "Player Controller",
       "correctIndex": 1,
@@ -929,10 +929,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "A ____________ is the interface between the <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> and the human player controlling it. It decides what to do and then issues commands to the <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> (for example, “start crouching,” “jump”).",
       "detailedOptions": [
-        "Game Mode（遊戲核心規則與玩法模式樣板）",
-        "Player Controller（玩家控制器（負責接收鍵盤滑鼠輸入並操控角色））",
-        "Game State（遊戲全域狀態（記錄遊戲進程、勝負狀態））",
-        "Player State（個別玩家狀態資料（記錄得分、血量等））"
+        "Game Mode（遊戲模式規範：定義遊戲規則、勝負條件與預設生成角色的中央大腦）",
+        "Player Controller（玩家控制器：負責處理真人玩家的按鍵輸入與鏡頭控制）",
+        "Game State（遊戲全域狀態：記錄整場比賽進行時間、分數與對戰狀態）",
+        "Player State（玩家個人狀態：儲存個別玩家的得分、血量與遊戲歷程資料）"
       ]
     },
     {
@@ -949,10 +949,10 @@ const UE_QUIZ_DATA = {
         "Pivot point"
       ],
       "optionsZh": [
-        "Cartesian coordinate system（笛卡兒直角坐標系（X/Y/Z 三維空間度量系統））",
-        "Boolean operation（布林幾何運算（交集/聯集/差集））",
-        "Axis（坐標軸向）",
-        "Pivot point（物體局部幾何軸心點（樞軸點））"
+        "Cartesian coordinate system（笛卡兒坐標系：以 XYZ 三軸標記空間中位置的直角坐標系）",
+        "Boolean operation（布林運算：利用多邊形交集、聯集或相減來切削幾何體）",
+        "Axis（坐標軸：指示 X 前後、Y 左右、Z 上下的參考軸向）",
+        "Pivot point（軸心點：物體進行旋轉與縮放時所圍繞的幾何中心）"
       ],
       "rawAnswer": "Cartesian Coordinates System",
       "correctIndex": 0,
@@ -985,10 +985,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "____________ is a method for indicating the positions of points on a two-dimensional (2D) surface or in three-dimensional (3D) space. A 3D plane uses x, y, and z coordinates. Each letter corresponds to an axis, where z is up and down, y is left to right, and x is front to back.",
       "detailedOptions": [
-        "Cartesian coordinate system（笛卡兒直角坐標系（X/Y/Z 三維空間度量系統））",
-        "Boolean operation（布林幾何運算（交集/聯集/差集））",
-        "Axis（坐標軸向）",
-        "Pivot point（物體局部幾何軸心點（樞軸點））"
+        "Cartesian coordinate system（笛卡兒坐標系：以 XYZ 三軸標記空間中位置的直角坐標系）",
+        "Boolean operation（布林運算：利用多邊形交集、聯集或相減來切削幾何體）",
+        "Axis（坐標軸：指示 X 前後、Y 左右、Z 上下的參考軸向）",
+        "Pivot point（軸心點：物體進行旋轉與縮放時所圍繞的幾何中心）"
       ]
     },
     {
@@ -1038,10 +1038,10 @@ const UE_QUIZ_DATA = {
         "Transform"
       ],
       "optionsZh": [
-        "Cartesian coordinate system（笛卡兒直角坐標系（X/Y/Z 三維空間度量系統））",
-        "Pivot point（物體局部幾何軸心點（樞軸點））",
-        "Vertices（頂點資料）",
-        "Transform（空間變換（包含 Location 位移、Rotation 旋轉與 Scale 縮放））"
+        "Cartesian coordinate system（笛卡兒坐標系：以 XYZ 三軸標記空間中位置的直角坐標系）",
+        "Pivot point（軸心點：物體進行旋轉與縮放時所圍繞的幾何中心）",
+        "Vertices（頂點：構成 3D 模型邊緣與面片的基本幾何點）",
+        "Transform（空間變換：包含位置 Location、旋轉 Rotation 與縮放 Scale）"
       ],
       "rawAnswer": "Pivot Point",
       "correctIndex": 1,
@@ -1065,10 +1065,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ is the local axis of an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
-        "Cartesian coordinate system（笛卡兒直角坐標系（X/Y/Z 三維空間度量系統））",
-        "Pivot point（物體局部幾何軸心點（樞軸點））",
-        "Vertices（頂點資料）",
-        "Transform（空間變換（包含 Location 位移、Rotation 旋轉與 Scale 縮放））"
+        "Cartesian coordinate system（笛卡兒坐標系：以 XYZ 三軸標記空間中位置的直角坐標系）",
+        "Pivot point（軸心點：物體進行旋轉與縮放時所圍繞的幾何中心）",
+        "Vertices（頂點：構成 3D 模型邊緣與面片的基本幾何點）",
+        "Transform（空間變換：包含位置 Location、旋轉 Rotation 與縮放 Scale）"
       ]
     },
     {
@@ -1118,10 +1118,10 @@ const UE_QUIZ_DATA = {
         "Attaching"
       ],
       "optionsZh": [
-        "Combining（幾何合併）",
+        "Combining（幾何合併：將多個模型拼合成單一整體）",
         "Layering（分層處理）",
-        "Grouping（臨時群組組合）",
-        "Attaching（掛載附著）"
+        "Grouping（臨時群組：將多個物件暫時編組以利批次選取移動）",
+        "Attaching（附著掛載）"
       ],
       "rawAnswer": "Attaching",
       "correctIndex": 3,
@@ -1145,10 +1145,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ creates a <span class=\"term-en\">parent-child relationship</span><span class=\"inline-trans\">（父子階層關聯）</span> between two or more <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> where the child <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>’s <span class=\"term-en\">transforms</span><span class=\"inline-trans\">（變換屬性）</span> become relative to the parent’s <span class=\"term-en\">transforms</span><span class=\"inline-trans\">（變換屬性）</span> by default.",
       "detailedOptions": [
-        "Combining（幾何合併）",
+        "Combining（幾何合併：將多個模型拼合成單一整體）",
         "Layering（分層處理）",
-        "Grouping（臨時群組組合）",
-        "Attaching（掛載附著）"
+        "Grouping（臨時群組：將多個物件暫時編組以利批次選取移動）",
+        "Attaching（附著掛載）"
       ]
     },
     {
@@ -1198,10 +1198,10 @@ const UE_QUIZ_DATA = {
         "Modes panel"
       ],
       "optionsZh": [
-        "World Outliner（世界大綱面板）",
-        "Details panel（細節屬性面板）",
-        "Content Browser（內容瀏覽器）",
-        "Modes panel（模式面板）"
+        "World Outliner（世界大綱：當前關卡中所有物件的清單總表）",
+        "Details panel（細節屬性面板：調整所選物件的參數與組件）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）"
       ],
       "rawAnswer": "World Outliner",
       "correctIndex": 0,
@@ -1225,10 +1225,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If you want to attach two <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> to create a <span class=\"term-en\">parent-child relationship</span><span class=\"inline-trans\">（父子階層關聯）</span>, this can be done in the ____________.",
       "detailedOptions": [
-        "World Outliner（世界大綱面板）",
-        "Details panel（細節屬性面板）",
-        "Content Browser（內容瀏覽器）",
-        "Modes panel（模式面板）"
+        "World Outliner（世界大綱：當前關卡中所有物件的清單總表）",
+        "Details panel（細節屬性面板：調整所選物件的參數與組件）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）"
       ]
     },
     {
@@ -1282,10 +1282,10 @@ const UE_QUIZ_DATA = {
         "Teapot"
       ],
       "optionsZh": [
-        "Parent（父階層）",
+        "Parent（父物件：階層架構中的主導者）",
         "Layer（圖層管理）",
-        "“Static” Mobility setting（「靜態（Static）」可移動性設定）",
-        "Teapot（茶壺幾何模型）"
+        "“Static” Mobility setting（「靜態」可移動性：位置固定，用於預先烘焙光影以極大化效能）",
+        "Teapot（經典茶壺模型）"
       ],
       "rawAnswer": "Layer",
       "correctIndex": 1,
@@ -1305,10 +1305,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If a collection of <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> are assigned to a ____________ in the <span class=\"term-en\">World Outliner</span><span class=\"inline-trans\">（世界大綱/場景物件清單）</span>, you can easily change all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span>’ <span class=\"term-en\">visibility</span><span class=\"inline-trans\">（可見度）</span>.",
       "detailedOptions": [
-        "Parent（父階層）",
+        "Parent（父物件：階層架構中的主導者）",
         "Layer（圖層管理）",
-        "“Static” Mobility setting（「靜態（Static）」可移動性設定）",
-        "Teapot（茶壺幾何模型）"
+        "“Static” Mobility setting（「靜態」可移動性：位置固定，用於預先烘焙光影以極大化效能）",
+        "Teapot（經典茶壺模型）"
       ]
     },
     {
@@ -1325,10 +1325,10 @@ const UE_QUIZ_DATA = {
         "Static Mesh Editor"
       ],
       "optionsZh": [
-        "Modes panel（模式面板）",
-        "World Outliner panel（世界大綱面板（場景物件清單樹狀圖））",
-        "Content Browser（內容瀏覽器）",
-        "Static Mesh Editor（靜態網格編輯器）"
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）",
+        "World Outliner panel（世界大綱面板：場景中所有物件的清單總表）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）"
       ],
       "rawAnswer": "World Outliner",
       "correctIndex": 1,
@@ -1361,10 +1361,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu. By default, it appears in the top-right corner of the screen when you open a project.",
       "detailedOptions": [
-        "Modes panel（模式面板）",
-        "World Outliner panel（世界大綱面板（場景物件清單樹狀圖））",
-        "Content Browser（內容瀏覽器）",
-        "Static Mesh Editor（靜態網格編輯器）"
+        "Modes panel（模式面板：放置常用物件與地貌植被工具）",
+        "World Outliner panel（世界大綱面板：場景中所有物件的清單總表）",
+        "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）"
       ]
     },
     {
@@ -1381,10 +1381,10 @@ const UE_QUIZ_DATA = {
         "Static Mesh Editor"
       ],
       "optionsZh": [
-        "Destructible Editor（可破壞網格編輯器）",
-        "Blueprint Editor（藍圖編輯器）",
-        "Material Editor（材質編輯器）",
-        "Static Mesh Editor（靜態網格編輯器）"
+        "Destructible Editor（可破壞網格編輯器：製作受撞擊碎裂的剛體模型）",
+        "Blueprint Editor（藍圖編輯器：視覺化編寫遊戲邏輯圖表）",
+        "Material Editor（材質編輯器：節點式設定物體表面質感與著色效果）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）"
       ],
       "rawAnswer": "Static Mesh Editor",
       "correctIndex": 3,
@@ -1408,10 +1408,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ in UE4 allows you to modify and set the default preferences for <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> assets.",
       "detailedOptions": [
-        "Destructible Editor（可破壞網格編輯器）",
-        "Blueprint Editor（藍圖編輯器）",
-        "Material Editor（材質編輯器）",
-        "Static Mesh Editor（靜態網格編輯器）"
+        "Destructible Editor（可破壞網格編輯器：製作受撞擊碎裂的剛體模型）",
+        "Blueprint Editor（藍圖編輯器：視覺化編寫遊戲邏輯圖表）",
+        "Material Editor（材質編輯器：節點式設定物體表面質感與著色效果）",
+        "Static Mesh Editor（靜態網格編輯器：設定模型外形、碰撞體與材質槽）"
       ]
     },
     {
@@ -1498,10 +1498,10 @@ const UE_QUIZ_DATA = {
         "Transform"
       ],
       "optionsZh": [
-        "Hidden（隱藏不可見）",
-        "Static（靜態光源（完全無法在運行時移動或變更，光影完全烘焙至貼圖））",
-        "Movable（可移動光源（可在遊戲中任意位移變更顏色，開銷較高））",
-        "Transform（空間變換（包含 Location 位移、Rotation 旋轉與 Scale 縮放））"
+        "Hidden（隱藏不顯示）",
+        "Static（靜態：位置固定，用於預先烘焙光照貼圖以極大化效能）",
+        "Movable（可移動：可在遊戲中移動並接收即時動態光照）",
+        "Transform（空間變換：包含位置 Location、旋轉 Rotation 與縮放 Scale）"
       ],
       "rawAnswer": "Movable",
       "correctIndex": 2,
@@ -1517,10 +1517,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If you want a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> to be lit in real time, you should change its <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> to ____________.",
       "detailedOptions": [
-        "Hidden（隱藏不可見）",
-        "Static（靜態光源（完全無法在運行時移動或變更，光影完全烘焙至貼圖））",
-        "Movable（可移動光源（可在遊戲中任意位移變更顏色，開銷較高））",
-        "Transform（空間變換（包含 Location 位移、Rotation 旋轉與 Scale 縮放））"
+        "Hidden（隱藏不顯示）",
+        "Static（靜態：位置固定，用於預先烘焙光照貼圖以極大化效能）",
+        "Movable（可移動：可在遊戲中移動並接收即時動態光照）",
+        "Transform（空間變換：包含位置 Location、旋轉 Rotation 與縮放 Scale）"
       ]
     },
     {
@@ -1537,8 +1537,8 @@ const UE_QUIZ_DATA = {
         "Block, Touch, and, Overlap"
       ],
       "optionsZh": [
-        "Bounce, Hit, and Intersection（彈跳、碰撞擊中與幾何相交）",
-        "Ignore, Overlap, and Block（忽略、重疊與阻擋）",
+        "Bounce, Hit, and Intersection（反彈、擊中與幾何相交）",
+        "Ignore, Overlap, and Block（忽略、重疊與阻擋：三種標準物理碰撞回應）",
         "Ignore, Intersection, and Touch（忽略、幾何相交與接觸碰觸）",
         "Block, Touch, and, Overlap（阻擋、接觸碰觸與區域重疊）"
       ],
@@ -1556,8 +1556,8 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The three <span class=\"term-en\">collision</span><span class=\"inline-trans\">（物理碰撞）</span> response types are ____________.",
       "detailedOptions": [
-        "Bounce, Hit, and Intersection（彈跳、碰撞擊中與幾何相交）",
-        "Ignore, Overlap, and Block（忽略、重疊與阻擋）",
+        "Bounce, Hit, and Intersection（反彈、擊中與幾何相交）",
+        "Ignore, Overlap, and Block（忽略、重疊與阻擋：三種標準物理碰撞回應）",
         "Ignore, Intersection, and Touch（忽略、幾何相交與接觸碰觸）",
         "Block, Touch, and, Overlap（阻擋、接觸碰觸與區域重疊）"
       ]
@@ -1609,10 +1609,10 @@ const UE_QUIZ_DATA = {
         ".stl and .obj"
       ],
       "optionsZh": [
-        ".pdf and .fbx（.pdf 文件與 .fbx 模型）",
-        ".fbx and .obj（.fbx 與 .obj（3D 模型標準通用交換格式））",
-        ".obj and .3ds（.obj 與 .3ds 格式）",
-        ".stl and .obj（.stl 與 .obj 格式）"
+        ".pdf and .fbx（PDF 文件與 FBX 模型）",
+        ".fbx and .obj（FBX 與 OBJ：最常用的標準 3D 模型匯入格式）",
+        ".obj and .3ds（OBJ 與 3DS 模型格式）",
+        ".stl and .obj（STL 與 OBJ 格式）"
       ],
       "rawAnswer": ".fbx and .obj",
       "correctIndex": 1,
@@ -1628,10 +1628,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The two common file types used to import 3D models into the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> are ____________.",
       "detailedOptions": [
-        ".pdf and .fbx（.pdf 文件與 .fbx 模型）",
-        ".fbx and .obj（.fbx 與 .obj（3D 模型標準通用交換格式））",
-        ".obj and .3ds（.obj 與 .3ds 格式）",
-        ".stl and .obj（.stl 與 .obj 格式）"
+        ".pdf and .fbx（PDF 文件與 FBX 模型）",
+        ".fbx and .obj（FBX 與 OBJ：最常用的標準 3D 模型匯入格式）",
+        ".obj and .3ds（OBJ 與 3DS 模型格式）",
+        ".stl and .obj（STL 與 OBJ 格式）"
       ]
     },
     {
@@ -1694,7 +1694,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "You can create multiple <span class=\"term-en\">collision hulls</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span> on a single <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset.",
+      "detailedQuestion": "You can create <span class=\"term-en\">multiple</span><span class=\"inline-trans\">（多個/多重）</span> <span class=\"term-en\">collision hulls</span><span class=\"inline-trans\">（物理碰撞外框）</span> on a single <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1714,8 +1714,8 @@ const UE_QUIZ_DATA = {
         "Shift+H"
       ],
       "optionsZh": [
-        "Atl+C（Alt+C（顯示/隱藏關卡工作視窗碰撞外框線快捷鍵））",
-        "Atl+H（Alt+H（無效快捷鍵組合））",
+        "Atl+C（Alt+C：切換開啟/隱藏關卡工作視窗碰撞外框線條的快捷鍵）",
+        "Atl+H（無效快捷鍵組合）",
         "Ctrl+Alt+C（無效快捷鍵組合）",
         "Shift+H（無效快捷鍵組合）"
       ],
@@ -1733,8 +1733,8 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "You press ____________ to toggle <span class=\"term-en\">collision hull</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span> <span class=\"term-en\">visibility</span><span class=\"inline-trans\">（可見度）</span> on and off in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> <span class=\"term-en\">Editor Viewport</span><span class=\"inline-trans\">（編輯器場景視窗）</span>.",
       "detailedOptions": [
-        "Atl+C（Alt+C（顯示/隱藏關卡工作視窗碰撞外框線快捷鍵））",
-        "Atl+H（Alt+H（無效快捷鍵組合））",
+        "Atl+C（Alt+C：切換開啟/隱藏關卡工作視窗碰撞外框線條的快捷鍵）",
+        "Atl+H（無效快捷鍵組合）",
         "Ctrl+Alt+C（無效快捷鍵組合）",
         "Shift+H（無效快捷鍵組合）"
       ]
@@ -1753,9 +1753,9 @@ const UE_QUIZ_DATA = {
         "Raytrace"
       ],
       "optionsZh": [
-        "Lightmass（靜態全局光照與高質量烘焙系統）",
-        "Renderman（Pixar 傳統電影離線照片級渲染器）",
-        "Mental Ray（傳統光線追蹤渲染引擎）",
+        "Lightmass（Lightmass 烘焙系統：預先計算漫反射光影並寫入貼圖，效能極高）",
+        "Renderman（Pixar RenderMan：電影級離線擬真渲染器）",
+        "Mental Ray（Mental Ray：傳統光線追蹤渲染器）",
         "Raytrace（即時光線追蹤技術）"
       ],
       "rawAnswer": "Lightmass",
@@ -1780,9 +1780,9 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ is UE4’s offline global illumination rendering engine and is used to calculating lighting for Light and <span class=\"term-en\">Static Mesh Actors</span><span class=\"inline-trans\">（靜態網格物件）</span> with a <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> of “Static”.",
       "detailedOptions": [
-        "Lightmass（靜態全局光照與高質量烘焙系統）",
-        "Renderman（Pixar 傳統電影離線照片級渲染器）",
-        "Mental Ray（傳統光線追蹤渲染引擎）",
+        "Lightmass（Lightmass 烘焙系統：預先計算漫反射光影並寫入貼圖，效能極高）",
+        "Renderman（Pixar RenderMan：電影級離線擬真渲染器）",
+        "Mental Ray（Mental Ray：傳統光線追蹤渲染器）",
         "Raytrace（即時光線追蹤技術）"
       ]
     },
@@ -1833,10 +1833,10 @@ const UE_QUIZ_DATA = {
         "Spot Light"
       ],
       "optionsZh": [
-        "Directional Light（定向光源（模擬無限遠太陽直射光，全場景平行光））",
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Point Light（點光源（模擬燈泡，從單點向 360 度四面八方均勻發光））",
-        "Spot Light（聚光燈（模擬手電筒或舞台射燈，向錐形範圍定向照射））"
+        "Directional Light（定向光源：模擬太陽光，全場景平行的遠距直射光源）",
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Point Light（點光源：模擬燈泡，向四面八方 360 度均勻發光）",
+        "Spot Light（聚光燈：模擬手電筒或探照燈，朝圓錐範圍定向照射）"
       ],
       "rawAnswer": "Point Light",
       "correctIndex": 2,
@@ -1860,10 +1860,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ works much like a real-world lightbulb, emitting light equally in all directions from a single point in space.",
       "detailedOptions": [
-        "Directional Light（定向光源（模擬無限遠太陽直射光，全場景平行光））",
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Point Light（點光源（模擬燈泡，從單點向 360 度四面八方均勻發光））",
-        "Spot Light（聚光燈（模擬手電筒或舞台射燈，向錐形範圍定向照射））"
+        "Directional Light（定向光源：模擬太陽光，全場景平行的遠距直射光源）",
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Point Light（點光源：模擬燈泡，向四面八方 360 度均勻發光）",
+        "Spot Light（聚光燈：模擬手電筒或探照燈，朝圓錐範圍定向照射）"
       ]
     },
     {
@@ -1913,10 +1913,10 @@ const UE_QUIZ_DATA = {
         "Stationary"
       ],
       "optionsZh": [
-        "Dynamic（完全動態光源（無預先烘焙，支援完全即時陰影））",
-        "Static（靜態光源（完全無法在運行時移動或變更，光影完全烘焙至貼圖））",
-        "Movable（可移動光源（可在遊戲中任意位移變更顏色，開銷較高））",
-        "Stationary（固定光源（位置固定但可動態改變強度顏色，混合烘焙間接光與即時直接光））"
+        "Dynamic（完全動態光源：隨時可移動並產生即時陰影，開銷較大）",
+        "Static（靜態光源：完全固定不可移動，光影完全預先烘焙至貼圖）",
+        "Movable（可移動：可在遊戲中移動並接收即時動態光照）",
+        "Stationary（固定光源：位置固定但可動態改變亮度與顏色）"
       ],
       "rawAnswer": "Stationary",
       "correctIndex": 3,
@@ -1932,10 +1932,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "While Light <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> with a <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> of ____________ do not move, their brightness can be changed at runtime.",
       "detailedOptions": [
-        "Dynamic（完全動態光源（無預先烘焙，支援完全即時陰影））",
-        "Static（靜態光源（完全無法在運行時移動或變更，光影完全烘焙至貼圖））",
-        "Movable（可移動光源（可在遊戲中任意位移變更顏色，開銷較高））",
-        "Stationary（固定光源（位置固定但可動態改變強度顏色，混合烘焙間接光與即時直接光））"
+        "Dynamic（完全動態光源：隨時可移動並產生即時陰影，開銷較大）",
+        "Static（靜態光源：完全固定不可移動，光影完全預先烘焙至貼圖）",
+        "Movable（可移動：可在遊戲中移動並接收即時動態光照）",
+        "Stationary（固定光源：位置固定但可動態改變亮度與顏色）"
       ]
     },
     {
@@ -1985,10 +1985,10 @@ const UE_QUIZ_DATA = {
         "Swarm Agent"
       ],
       "optionsZh": [
-        "Epic Games Launcher（Epic Games 官方啟動器）",
-        "Radiosity（熱輻射度光照演算法）",
-        "Scanline（光柵掃描線渲染演算法）",
-        "Swarm Agent（分佈式多電腦/多核心光照烘焙運算代理程序）"
+        "Epic Games Launcher（Epic 官方啟動器：下載引擎版本與購買商城素材）",
+        "Radiosity（熱輻射度：計算表面相互反彈光照的演算法）",
+        "Scanline（掃描線渲染：逐行繪製畫面的光柵化方法）",
+        "Swarm Agent（Swarm Agent：在後台協同多核心或多電腦運算光照烘焙的代理程式）"
       ],
       "rawAnswer": "Swarm Agent",
       "correctIndex": 3,
@@ -2021,10 +2021,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "____________ manages communication between the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> and <span class=\"term-en\">Lightmass</span><span class=\"inline-trans\">（Lightmass 靜態光照烘焙系統）</span>. When you build lighting, it keeps track of and displays the build progress.",
       "detailedOptions": [
-        "Epic Games Launcher（Epic Games 官方啟動器）",
-        "Radiosity（熱輻射度光照演算法）",
-        "Scanline（光柵掃描線渲染演算法）",
-        "Swarm Agent（分佈式多電腦/多核心光照烘焙運算代理程序）"
+        "Epic Games Launcher（Epic 官方啟動器：下載引擎版本與購買商城素材）",
+        "Radiosity（熱輻射度：計算表面相互反彈光照的演算法）",
+        "Scanline（掃描線渲染：逐行繪製畫面的光柵化方法）",
+        "Swarm Agent（Swarm Agent：在後台協同多核心或多電腦運算光照烘焙的代理程式）"
       ]
     },
     {
@@ -2074,10 +2074,10 @@ const UE_QUIZ_DATA = {
         "Swarm"
       ],
       "optionsZh": [
-        "Rasterization（光柵化演算法）",
-        "Rendering（即時著色渲染過程）",
-        "Build（建置光照（Build Lighting））",
-        "Swarm（分佈式光照編譯協調系統）"
+        "Rasterization（光柵化：將 3D 幾何頂點轉換為 2D 螢幕像素的渲染技術）",
+        "Rendering（渲染著色：將 3D 場景計算並生成最終畫面的過程）",
+        "Build（建置光照：開始計算全場景靜態陰影與光照貼圖）",
+        "Swarm（Swarm 分佈式光照編譯協調系統）"
       ],
       "rawAnswer": "Rendering",
       "correctIndex": 1,
@@ -2106,10 +2106,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model <span class=\"term-en\">position</span><span class=\"inline-trans\">（位置坐標）</span> and <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> properties. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
       "detailedOptions": [
-        "Rasterization（光柵化演算法）",
-        "Rendering（即時著色渲染過程）",
-        "Build（建置光照（Build Lighting））",
-        "Swarm（分佈式光照編譯協調系統）"
+        "Rasterization（光柵化：將 3D 幾何頂點轉換為 2D 螢幕像素的渲染技術）",
+        "Rendering（渲染著色：將 3D 場景計算並生成最終畫面的過程）",
+        "Build（建置光照：開始計算全場景靜態陰影與光照貼圖）",
+        "Swarm（Swarm 分佈式光照編譯協調系統）"
       ]
     },
     {
@@ -2126,10 +2126,10 @@ const UE_QUIZ_DATA = {
         "Attenuation"
       ],
       "optionsZh": [
-        "IES（光學設定檔（由真實燈具廠商提供的物理光照分佈圖樣））",
-        "Temperature（色溫（單位：克耳文 K，控制偏冷或偏暖光色））",
-        "Intensity（發光強度（單位：流明或燭光））",
-        "Attenuation（衰減半徑（光源影響的最遠物理距離））"
+        "IES（IES 光學設定檔：真實燈具廠商提供的物理光線照射形狀圖樣）",
+        "Temperature（色溫：以開爾文 K 為單位調整偏暖黃光或偏冷藍光）",
+        "Intensity（發光強度：光源發出的亮度大小（單位：流明或燭光））",
+        "Attenuation（衰減半徑：光源光線照射所能到達的最遠有效距離）"
       ],
       "rawAnswer": "Temperature",
       "correctIndex": 1,
@@ -2156,12 +2156,12 @@ const UE_QUIZ_DATA = {
           "en": "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
         }
       ],
-      "detailedQuestion": "The ____________ light property overrides light color properties and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">light property</span><span class=\"inline-trans\">（光源光學屬性）</span> overrides light color properties and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
       "detailedOptions": [
-        "IES（光學設定檔（由真實燈具廠商提供的物理光照分佈圖樣））",
-        "Temperature（色溫（單位：克耳文 K，控制偏冷或偏暖光色））",
-        "Intensity（發光強度（單位：流明或燭光））",
-        "Attenuation（衰減半徑（光源影響的最遠物理距離））"
+        "IES（IES 光學設定檔：真實燈具廠商提供的物理光線照射形狀圖樣）",
+        "Temperature（色溫：以開爾文 K 為單位調整偏暖黃光或偏冷藍光）",
+        "Intensity（發光強度：光源發出的亮度大小（單位：流明或燭光））",
+        "Attenuation（衰減半徑：光源光線照射所能到達的最遠有效距離）"
       ]
     },
     {
@@ -2178,10 +2178,10 @@ const UE_QUIZ_DATA = {
         "Material"
       ],
       "optionsZh": [
-        "Lightmass（靜態全局光照與高質量烘焙系統）",
-        "Texture（貼圖（儲存像素顏色或數值資訊的 2D 點陣圖片資產））",
-        "Shader（著色器（在 GPU 上執行的底層渲染計算程式碼指令））",
-        "Material（材質（定義物體表面著色外觀與光學特性的主資產））"
+        "Lightmass（Lightmass 烘焙系統：預先計算漫反射光影並寫入貼圖，效能極高）",
+        "Texture（貼圖：儲存像素顏色或法線數值的 2D 圖片檔案）",
+        "Shader（著色器：在顯示卡 GPU 上運行的底層圖形運算程式碼）",
+        "Material（材質：決定物體表面外觀、色彩、金屬感與光澤度的核心資產）"
       ],
       "rawAnswer": "Material",
       "correctIndex": 3,
@@ -2197,10 +2197,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is a node-based system that uses expressions and functions to create a desired surface.",
       "detailedOptions": [
-        "Lightmass（靜態全局光照與高質量烘焙系統）",
-        "Texture（貼圖（儲存像素顏色或數值資訊的 2D 點陣圖片資產））",
-        "Shader（著色器（在 GPU 上執行的底層渲染計算程式碼指令））",
-        "Material（材質（定義物體表面著色外觀與光學特性的主資產））"
+        "Lightmass（Lightmass 烘焙系統：預先計算漫反射光影並寫入貼圖，效能極高）",
+        "Texture（貼圖：儲存像素顏色或法線數值的 2D 圖片檔案）",
+        "Shader（著色器：在顯示卡 GPU 上運行的底層圖形運算程式碼）",
+        "Material（材質：決定物體表面外觀、色彩、金屬感與光澤度的核心資產）"
       ]
     },
     {
@@ -2252,8 +2252,8 @@ const UE_QUIZ_DATA = {
       "optionsZh": [
         "Physical-based rasterization（物理光柵化計算）",
         "Physical baking and rendering（物理烘焙與渲染）",
-        "Physically based rendering（基於物理的渲染技術（PBR：以真實物理光學呈現擬真光影））",
-        "Photon-based rendering（基於光子散射的渲染技術）"
+        "Physically based rendering（PBR 基於物理的渲染：依照真實光學規律呈現擬真材質與光影）",
+        "Photon-based rendering（光子散射渲染技術）"
       ],
       "rawAnswer": "Physically based rendering",
       "correctIndex": 2,
@@ -2271,8 +2271,8 @@ const UE_QUIZ_DATA = {
       "detailedOptions": [
         "Physical-based rasterization（物理光柵化計算）",
         "Physical baking and rendering（物理烘焙與渲染）",
-        "Physically based rendering（基於物理的渲染技術（PBR：以真實物理光學呈現擬真光影））",
-        "Photon-based rendering（基於光子散射的渲染技術）"
+        "Physically based rendering（PBR 基於物理的渲染：依照真實光學規律呈現擬真材質與光影）",
+        "Photon-based rendering（光子散射渲染技術）"
       ]
     },
     {
@@ -2322,10 +2322,10 @@ const UE_QUIZ_DATA = {
         "Albedo"
       ],
       "optionsZh": [
-        "Emissive（自發光顏色（不受外部光照影響的自體發光色彩））",
-        "Roughness（粗糙度（0 代表鏡面極平滑、1 代表完全粗糙漫射））",
-        "Specular（高光反射強度（主要控制非金屬電介質表面的反射微調））",
-        "Albedo（反照率色彩（不帶陰影高光的表面固有色彩））"
+        "Emissive（自發光顏色：物體自身發光的亮度和顏色（不受外部燈光影響））",
+        "Roughness（粗糙度：0 代表極致鏡面反光，1 代表完全粗糙消光）",
+        "Specular（高光反射強度：微調非金屬表面的反射強烈程度）",
+        "Albedo（反照率：物體純粹的固有反射率貼圖）"
       ],
       "rawAnswer": "Albedo",
       "correctIndex": 3,
@@ -2360,12 +2360,12 @@ const UE_QUIZ_DATA = {
           "en": "It is the core color description of the surface in a Material minus shadow and lighting detail."
         }
       ],
-      "detailedQuestion": "Base color, also called ____________, defines the overall color of a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> minus shadow and lighting detail.",
+      "detailedQuestion": "Base color, also called ____________, <span class=\"term-en\">defines</span><span class=\"inline-trans\">（定義決定）</span> the overall color of a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> minus shadow and lighting detail.",
       "detailedOptions": [
-        "Emissive（自發光顏色（不受外部光照影響的自體發光色彩））",
-        "Roughness（粗糙度（0 代表鏡面極平滑、1 代表完全粗糙漫射））",
-        "Specular（高光反射強度（主要控制非金屬電介質表面的反射微調））",
-        "Albedo（反照率色彩（不帶陰影高光的表面固有色彩））"
+        "Emissive（自發光顏色：物體自身發光的亮度和顏色（不受外部燈光影響））",
+        "Roughness（粗糙度：0 代表極致鏡面反光，1 代表完全粗糙消光）",
+        "Specular（高光反射強度：微調非金屬表面的反射強烈程度）",
+        "Albedo（反照率：物體純粹的固有反射率貼圖）"
       ]
     },
     {
@@ -2448,10 +2448,10 @@ const UE_QUIZ_DATA = {
         "Texture Coordinate"
       ],
       "optionsZh": [
-        "Constant 3 Vector（三維常數向量節點（快捷鍵 3+點擊，輸出 RGB 顏色或 XYZ 向量））",
-        "Sine（正弦週期波形節點（輸出 -1 到 1 循環波動數值））",
-        "Time（時間節點（輸出隨時間遞增的秒數，用於驅動 UV 流動或波浪動畫））",
-        "Texture Coordinate（貼圖 UV 坐標節點（TexCoord，快捷鍵 U+點擊））"
+        "Constant 3 Vector（三維常數向量：快捷鍵 3+點擊，輸出 RGB 顏色或 XYZ 坐標）",
+        "Sine（正弦波節點：在 -1 到 1 之間週期波動，常用於波浪或呼吸燈動畫）",
+        "Time（時間節點：隨遊戲運行持續遞增，用於驅動動態水流或旋轉動畫）",
+        "Texture Coordinate（貼圖 UV 節點：快捷鍵 U+點擊，調整貼圖在模型上的平鋪重複率）"
       ],
       "rawAnswer": "Constant 3 Vector",
       "correctIndex": 0,
@@ -2467,10 +2467,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If you want to make the base color of a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> an even color, you should use a ____________ <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> expression node.",
       "detailedOptions": [
-        "Constant 3 Vector（三維常數向量節點（快捷鍵 3+點擊，輸出 RGB 顏色或 XYZ 向量））",
-        "Sine（正弦週期波形節點（輸出 -1 到 1 循環波動數值））",
-        "Time（時間節點（輸出隨時間遞增的秒數，用於驅動 UV 流動或波浪動畫））",
-        "Texture Coordinate（貼圖 UV 坐標節點（TexCoord，快捷鍵 U+點擊））"
+        "Constant 3 Vector（三維常數向量：快捷鍵 3+點擊，輸出 RGB 顏色或 XYZ 坐標）",
+        "Sine（正弦波節點：在 -1 到 1 之間週期波動，常用於波浪或呼吸燈動畫）",
+        "Time（時間節點：隨遊戲運行持續遞增，用於驅動動態水流或旋轉動畫）",
+        "Texture Coordinate（貼圖 UV 節點：快捷鍵 U+點擊，調整貼圖在模型上的平鋪重複率）"
       ]
     },
     {
@@ -2487,10 +2487,10 @@ const UE_QUIZ_DATA = {
         "Normal"
       ],
       "optionsZh": [
-        "Metallic（金屬度（0 為非金屬塑膠木石、1 為完全導電純金屬））",
-        "Texture（貼圖（儲存像素顏色或數值資訊的 2D 點陣圖片資產））",
-        "Specular（高光反射強度（主要控制非金屬電介質表面的反射微調））",
-        "Normal（法線貼圖節點（微觀凹凸幾何細節））"
+        "Metallic（金屬度：0 為非金屬（塑膠、木石），1 為純導電金屬）",
+        "Texture（貼圖：儲存像素顏色或法線數值的 2D 圖片檔案）",
+        "Specular（高光反射強度：微調非金屬表面的反射強烈程度）",
+        "Normal（法線貼圖節點：在不增加頂點的情況下模擬微觀立體凹凸刻痕）"
       ],
       "rawAnswer": "Normal",
       "correctIndex": 3,
@@ -2510,10 +2510,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ input uses RGB values to control the direction in which light should react with a surface and create the illusion of directional variation on a surface.",
       "detailedOptions": [
-        "Metallic（金屬度（0 為非金屬塑膠木石、1 為完全導電純金屬））",
-        "Texture（貼圖（儲存像素顏色或數值資訊的 2D 點陣圖片資產））",
-        "Specular（高光反射強度（主要控制非金屬電介質表面的反射微調））",
-        "Normal（法線貼圖節點（微觀凹凸幾何細節））"
+        "Metallic（金屬度：0 為非金屬（塑膠、木石），1 為純導電金屬）",
+        "Texture（貼圖：儲存像素顏色或法線數值的 2D 圖片檔案）",
+        "Specular（高光反射強度：微調非金屬表面的反射強烈程度）",
+        "Normal（法線貼圖節點：在不增加頂點的情況下模擬微觀立體凹凸刻痕）"
       ]
     },
     {
@@ -2530,10 +2530,10 @@ const UE_QUIZ_DATA = {
         "Powers of 2"
       ],
       "optionsZh": [
-        "Mipmaps（多級漸進紋理：根據距離自動切換縮小解析度以節省頻寬）",
-        "Material functions（材質函數）",
+        "Mipmaps（多級漸進紋理：隨距離拉遠自動切換為低解析度貼圖以省效能）",
+        "Material functions（材質函數模組）",
         "Material expressions（材質表達式節點）",
-        "Powers of 2（2 的次方像素尺寸（512、1024、2048 等，支援 Mipmaps 紋理流送最佳化））"
+        "Powers of 2（2 的次方尺寸：長寬如 512、1024、2048 等，支援 Mipmaps 最佳化）"
       ],
       "rawAnswer": "Material expressions",
       "correctIndex": 2,
@@ -2558,10 +2558,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "____________ are the building blocks used to create <span class=\"term-en\">Materials</span><span class=\"inline-trans\">（材質）</span>. They are self-contained nodes with different combinations of inputs and outputs that perform specific operations.",
       "detailedOptions": [
-        "Mipmaps（多級漸進紋理：根據距離自動切換縮小解析度以節省頻寬）",
-        "Material functions（材質函數）",
+        "Mipmaps（多級漸進紋理：隨距離拉遠自動切換為低解析度貼圖以省效能）",
+        "Material functions（材質函數模組）",
         "Material expressions（材質表達式節點）",
-        "Powers of 2（2 的次方像素尺寸（512、1024、2048 等，支援 Mipmaps 紋理流送最佳化））"
+        "Powers of 2（2 的次方尺寸：長寬如 512、1024、2048 等，支援 Mipmaps 最佳化）"
       ]
     },
     {
@@ -2578,10 +2578,10 @@ const UE_QUIZ_DATA = {
         "Reverb Effect asset"
       ],
       "optionsZh": [
-        "Ambient Sound Actor（環境音效 Actor（放置在關卡空間中特定坐標發聲的實體物件））",
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））",
-        "Sound Wave asset（音訊波形資產（.wav 導入資產））",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））"
+        "Ambient Sound Actor（環境音效：放置於場景特定位置發聲的世界實體物件）",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）",
+        "Sound Wave asset（音訊波形資產：匯入引擎的原始 WAV 檔案）",
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）"
       ],
       "rawAnswer": "Sound Wave asset",
       "correctIndex": 2,
@@ -2605,10 +2605,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ represents an imported audio file and settings related to the playback and storage of that file.",
       "detailedOptions": [
-        "Ambient Sound Actor（環境音效 Actor（放置在關卡空間中特定坐標發聲的實體物件））",
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））",
-        "Sound Wave asset（音訊波形資產（.wav 導入資產））",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））"
+        "Ambient Sound Actor（環境音效：放置於場景特定位置發聲的世界實體物件）",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）",
+        "Sound Wave asset（音訊波形資產：匯入引擎的原始 WAV 檔案）",
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）"
       ]
     },
     {
@@ -2668,9 +2668,9 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Modulation Effect asset（音訊調變效果資產）",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））",
-        "Audio Volume（音效空間體積）",
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））"
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）",
+        "Audio Volume（音效區域體積）",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）"
       ],
       "rawAnswer": "Sound Attenuation asset",
       "correctIndex": 3,
@@ -2700,9 +2700,9 @@ const UE_QUIZ_DATA = {
       "detailedQuestion": "A ____________ stores attenuation properties in a reusable manner. This allows for adjustment to attenuation properties without having to revisit every Sound <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> individually.",
       "detailedOptions": [
         "Modulation Effect asset（音訊調變效果資產）",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））",
-        "Audio Volume（音效空間體積）",
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））"
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）",
+        "Audio Volume（音效區域體積）",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）"
       ]
     },
     {
@@ -2761,9 +2761,9 @@ const UE_QUIZ_DATA = {
         "Attenuation Editor"
       ],
       "optionsZh": [
-        "Sound Cue Editor（Sound Cue 節點編輯器）",
+        "Sound Cue Editor（Sound Cue 節點編輯器：設計複雜動態音效播放邏輯的圖表工具）",
         "Audio Editor（音訊編輯器）",
-        "Audacity（第三方音訊錄音編輯軟體）",
+        "Audacity（Audacity 第三方錄音與音訊編輯軟體）",
         "Attenuation Editor（衰減編輯器）"
       ],
       "rawAnswer": "Sound Cue Editor",
@@ -2797,9 +2797,9 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "The ____________ Is a node-based editor that gives you the ability to modify <span class=\"term-en\">Sound Waves</span><span class=\"inline-trans\">（原始音效素材）</span> and store the result as a <span class=\"term-en\">Sound Cue asset</span><span class=\"inline-trans\">（Sound Cue 音效資產）</span>. You can add modulation, reverb, and randomness.",
       "detailedOptions": [
-        "Sound Cue Editor（Sound Cue 節點編輯器）",
+        "Sound Cue Editor（Sound Cue 節點編輯器：設計複雜動態音效播放邏輯的圖表工具）",
         "Audio Editor（音訊編輯器）",
-        "Audacity（第三方音訊錄音編輯軟體）",
+        "Audacity（Audacity 第三方錄音與音訊編輯軟體）",
         "Attenuation Editor（衰減編輯器）"
       ]
     },
@@ -2817,10 +2817,10 @@ const UE_QUIZ_DATA = {
         "Reverb Effect asset"
       ],
       "optionsZh": [
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））",
-        "Sound Cue asset（Sound Cue 音訊節點藍圖資產（可包含隨機音調、循環與淡入淡出邏輯））",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）",
+        "Sound Cue asset（Sound Cue 音效藍圖：可用節點組合隨機音調、淡入淡出與混音邏輯）",
         "Modulation Effect asset（音訊調變效果資產）",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））"
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）"
       ],
       "rawAnswer": "Reverb Effect asset",
       "correctIndex": 3,
@@ -2842,12 +2842,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ is a definable asset with adjustable property settings that will allow you to control such elements as echo density, overall reverb gain, and air absorption to help craft the overall feel you may be after.",
+      "detailedQuestion": "A ____________ is a definable asset with adjustable <span class=\"term-en\">property</span><span class=\"inline-trans\">（空間聲學屬性）</span> settings that will allow you to control such elements as echo density, overall reverb gain, and air absorption to help craft the overall feel you may be after.",
       "detailedOptions": [
-        "Sound Attenuation asset（聲音衰減資產（定義聲音隨距離衰減幅度與 3D 空間立體聲定位））",
-        "Sound Cue asset（Sound Cue 音訊節點藍圖資產（可包含隨機音調、循環與淡入淡出邏輯））",
+        "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）",
+        "Sound Cue asset（Sound Cue 音效藍圖：可用節點組合隨機音調、淡入淡出與混音邏輯）",
         "Modulation Effect asset（音訊調變效果資產）",
-        "Reverb Effect asset（混響回音效果資產（定義洞穴、室內或大廳的音響迴盪特性））"
+        "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）"
       ]
     },
     {
@@ -2897,10 +2897,10 @@ const UE_QUIZ_DATA = {
         "Audio Volume Actor"
       ],
       "optionsZh": [
-        "Sound Modulation Actor（音訊調變 Actor）",
-        "Reverb Actor（混響 Actor）",
-        "Ambient Sound Actor（環境音效 Actor（放置在關卡空間中特定坐標發聲的實體物件））",
-        "Audio Volume Actor（音訊體積 Actor（定義特定空間區域內的混響回音與環境音效設定））"
+        "Sound Modulation Actor（音訊調變物件）",
+        "Reverb Actor（混響物件）",
+        "Ambient Sound Actor（環境音效：放置於場景特定位置發聲的世界實體物件）",
+        "Audio Volume Actor（音訊體積：定義特定室內空間的混響回音與隔音範圍）"
       ],
       "rawAnswer": "Audio Volume Actor",
       "correctIndex": 3,
@@ -2916,10 +2916,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ allows you to control and apply various sounds in your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> as well as provides an avenue to create compartmentalized audio zones where you can control what is heard inside and outside of the volume.",
       "detailedOptions": [
-        "Sound Modulation Actor（音訊調變 Actor）",
-        "Reverb Actor（混響 Actor）",
-        "Ambient Sound Actor（環境音效 Actor（放置在關卡空間中特定坐標發聲的實體物件））",
-        "Audio Volume Actor（音訊體積 Actor（定義特定空間區域內的混響回音與環境音效設定））"
+        "Sound Modulation Actor（音訊調變物件）",
+        "Reverb Actor（混響物件）",
+        "Ambient Sound Actor（環境音效：放置於場景特定位置發聲的世界實體物件）",
+        "Audio Volume Actor（音訊體積：定義特定室內空間的混響回音與隔音範圍）"
       ]
     },
     {
@@ -2936,10 +2936,10 @@ const UE_QUIZ_DATA = {
         "Looping node"
       ],
       "optionsZh": [
-        "Wave Player node（波形播放器節點（Wave Player：播放指定 Sound Wave 音訊資產））",
-        "Random node（隨機挑選節點（Random：隨機播放多個音效之一以避免聽覺疲勞））",
-        "Mixer node（混音器節點（Mixer：同時混合多路音軌播放））",
-        "Looping node（循環播放節點）"
+        "Wave Player node（波形播放節點：在 Sound Cue 中播放指定的 WAV 音訊資產）",
+        "Random node（隨機挑選節點：從多個音效中隨機抽取一個播放以避免聽覺重複單調）",
+        "Mixer node（混音節點：將多路音效輸入同時疊加播放）",
+        "Looping node（循環播放節點：讓音效不間斷重播）"
       ],
       "rawAnswer": "Mixer node",
       "correctIndex": 2,
@@ -2953,12 +2953,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ is used to trigger multiple <span class=\"term-en\">Sound Wave</span><span class=\"inline-trans\">（原始音訊素材 .wav）</span> nodes simultaneously.",
+      "detailedQuestion": "A ____________ is used to trigger <span class=\"term-en\">multiple</span><span class=\"inline-trans\">（多個/多路）</span> <span class=\"term-en\">Sound Wave</span><span class=\"inline-trans\">（原始音訊素材 .wav）</span> nodes simultaneously.",
       "detailedOptions": [
-        "Wave Player node（波形播放器節點（Wave Player：播放指定 Sound Wave 音訊資產））",
-        "Random node（隨機挑選節點（Random：隨機播放多個音效之一以避免聽覺疲勞））",
-        "Mixer node（混音器節點（Mixer：同時混合多路音軌播放））",
-        "Looping node（循環播放節點）"
+        "Wave Player node（波形播放節點：在 Sound Cue 中播放指定的 WAV 音訊資產）",
+        "Random node（隨機挑選節點：從多個音效中隨機抽取一個播放以避免聽覺重複單調）",
+        "Mixer node（混音節點：將多路音效輸入同時疊加播放）",
+        "Looping node（循環播放節點：讓音效不間斷重播）"
       ]
     },
     {
@@ -3009,9 +3009,9 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Terrain map（地形圖）",
-        "8-bit map（8 位元灰階圖（精度不足會造成地形階梯狀撕裂））",
+        "8-bit map（8 位元灰階圖：精度過低會導致地形產生梯田狀撕裂斷層）",
         "Normal map（法線凹凸貼圖）",
-        "Height map（高度圖（Heightmap：以 16 位元灰階高低數值決定地形起伏的高低場檔案））"
+        "Height map（高度圖：以 16 位元灰階黑白深淺決定地形海拔起伏的高低圖檔）"
       ],
       "rawAnswer": "Height map",
       "correctIndex": 3,
@@ -3032,9 +3032,9 @@ const UE_QUIZ_DATA = {
       "detailedQuestion": "A ____________ is a <span class=\"term-en\">Texture</span><span class=\"inline-trans\">（紋理貼圖）</span> that provides elevation information based on a gray <span class=\"term-en\">scale</span><span class=\"inline-trans\">（縮放比例）</span>.",
       "detailedOptions": [
         "Terrain map（地形圖）",
-        "8-bit map（8 位元灰階圖（精度不足會造成地形階梯狀撕裂））",
+        "8-bit map（8 位元灰階圖：精度過低會導致地形產生梯田狀撕裂斷層）",
         "Normal map（法線凹凸貼圖）",
-        "Height map（高度圖（Heightmap：以 16 位元灰階高低數值決定地形起伏的高低場檔案））"
+        "Height map（高度圖：以 16 位元灰階黑白深淺決定地形海拔起伏的高低圖檔）"
       ]
     },
     {
@@ -3125,8 +3125,8 @@ const UE_QUIZ_DATA = {
         "LB_WeightedBlend"
       ],
       "optionsZh": [
-        "FoliageLayerBlend（植被圖層混合（非引擎標準節點））",
-        "LandscapeLayerBlend（地貌圖層混合節點（在材質中混合多個地表層））",
+        "FoliageLayerBlend（植被圖層混合）",
+        "LandscapeLayerBlend（地貌圖層混合節點：在材質中混合草地、沙地與岩石多圖層）",
         "TerrainLayerBlend（地形圖層混合節點）",
         "LB_WeightedBlend（權重混合模式）"
       ],
@@ -3152,8 +3152,8 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The ____________ is a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> node that allows you to blend between <span class=\"term-en\">Materials</span><span class=\"inline-trans\">（材質）</span> and <span class=\"term-en\">Textures</span><span class=\"inline-trans\">（紋理貼圖）</span> on Landscapes.",
       "detailedOptions": [
-        "FoliageLayerBlend（植被圖層混合（非引擎標準節點））",
-        "LandscapeLayerBlend（地貌圖層混合節點（在材質中混合多個地表層））",
+        "FoliageLayerBlend（植被圖層混合）",
+        "LandscapeLayerBlend（地貌圖層混合節點：在材質中混合草地、沙地與岩石多圖層）",
         "TerrainLayerBlend（地形圖層混合節點）",
         "LB_WeightedBlend（權重混合模式）"
       ]
@@ -3174,7 +3174,7 @@ const UE_QUIZ_DATA = {
       "optionsZh": [
         "Shrub Actor（灌木 Actor）",
         "Tree Actor（樹木 Actor）",
-        "Foliage Actor（植被 Actor（被批次實例化生成的植被集合））",
+        "Foliage Actor（植被 Actor：被批次實例化生成的植被集合物件）",
         "Landscape Foliage Actor（地貌植被 Actor）"
       ],
       "rawAnswer": "Foliage Actor",
@@ -3210,7 +3210,7 @@ const UE_QUIZ_DATA = {
       "detailedOptions": [
         "Shrub Actor（灌木 Actor）",
         "Tree Actor（樹木 Actor）",
-        "Foliage Actor（植被 Actor（被批次實例化生成的植被集合））",
+        "Foliage Actor（植被 Actor：被批次實例化生成的植被集合物件）",
         "Landscape Foliage Actor（地貌植被 Actor）"
       ]
     },
@@ -3265,10 +3265,10 @@ const UE_QUIZ_DATA = {
         "Model mode"
       ],
       "optionsZh": [
-        "Foliage mode（植被模式（快捷鍵 Shift+3，支援一鍵批量快速筆刷種植草木石塊））",
-        "Sculpt mode（地貌雕刻模式（快捷鍵 Shift+2））",
-        "Paint mode（網格頂點繪製模式（快捷鍵 Shift+5））",
-        "Model mode（幾何體建模模式）"
+        "Foliage mode（植被模式：快捷鍵 Shift+3，支援一鍵批量快速筆刷種植草木石塊）",
+        "Sculpt mode（地貌雕刻模式：快捷鍵 Shift+2，進入地形高低起伏雕塑）",
+        "Paint mode（頂點繪製模式：快捷鍵 Shift+5，在模型表面塗繪色彩）",
+        "Model mode（幾何建模模式）"
       ],
       "rawAnswer": "Foliage panel",
       "correctIndex": 0,
@@ -3284,10 +3284,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ contains a collection of tools for placing a large number of assets into a scene quickly, using defined parameters and restrictions on where they can be placed.",
       "detailedOptions": [
-        "Foliage mode（植被模式（快捷鍵 Shift+3，支援一鍵批量快速筆刷種植草木石塊））",
-        "Sculpt mode（地貌雕刻模式（快捷鍵 Shift+2））",
-        "Paint mode（網格頂點繪製模式（快捷鍵 Shift+5））",
-        "Model mode（幾何體建模模式）"
+        "Foliage mode（植被模式：快捷鍵 Shift+3，支援一鍵批量快速筆刷種植草木石塊）",
+        "Sculpt mode（地貌雕刻模式：快捷鍵 Shift+2，進入地形高低起伏雕塑）",
+        "Paint mode（頂點繪製模式：快捷鍵 Shift+5，在模型表面塗繪色彩）",
+        "Model mode（幾何建模模式）"
       ]
     },
     {
@@ -3305,8 +3305,8 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Terrain Actor（地形 Actor）",
-        "Landscape Actor（地貌景觀 Actor（管理整座大地形高度場網格與碰撞的核心物件））",
-        "Foliage Actor（植被 Actor（被批次實例化生成的植被集合））",
+        "Landscape Actor（地貌景觀 Actor：管理大地形網格、雕刻高度場與碰撞的核心物件）",
+        "Foliage Actor（植被 Actor：被批次實例化生成的植被集合物件）",
         "Ground Actor（地面 Actor）"
       ],
       "rawAnswer": "Landscape Actor",
@@ -3337,8 +3337,8 @@ const UE_QUIZ_DATA = {
       "detailedQuestion": "A ____________ is a specific <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> class used to represent terrain. This <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> has its own level of detail (<span class=\"term-en\">LOD</span><span class=\"inline-trans\">（LOD 細節層次）</span>) system for efficiency.",
       "detailedOptions": [
         "Terrain Actor（地形 Actor）",
-        "Landscape Actor（地貌景觀 Actor（管理整座大地形高度場網格與碰撞的核心物件））",
-        "Foliage Actor（植被 Actor（被批次實例化生成的植被集合））",
+        "Landscape Actor（地貌景觀 Actor：管理大地形網格、雕刻高度場與碰撞的核心物件）",
+        "Foliage Actor（植被 Actor：被批次實例化生成的植被集合物件）",
         "Ground Actor（地面 Actor）"
       ]
     },
@@ -3442,9 +3442,9 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Sphere Capture（球狀反射捕捉）",
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
         "Sky Sphere（動態天空球）",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））"
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）"
       ],
       "rawAnswer": "Reflection Capture",
       "correctIndex": 1,
@@ -3458,12 +3458,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> captures images (cubemaps) of the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> from its location and projects those images onto other <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> in its vicinity.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件）</span> <span class=\"term-en\">captures</span><span class=\"inline-trans\">（捕捉環境畫面）</span> images (<span class=\"term-en\">cubemaps</span><span class=\"inline-trans\">（六面體全景反射貼圖）</span>) of the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> from its <span class=\"term-en\">location</span><span class=\"inline-trans\">（所在世界坐標位置）</span> and projects those images onto other <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件）</span> in its <span class=\"term-en\">vicinity</span><span class=\"inline-trans\">（周遭鄰近範圍）</span>.",
       "detailedOptions": [
         "Sphere Capture（球狀反射捕捉）",
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
         "Sky Sphere（動態天空球）",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））"
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）"
       ]
     },
     {
@@ -3493,7 +3493,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "<span class=\"term-en\">Bloom</span><span class=\"inline-trans\">（強光泛光眩光）</span> causes the exposure of a scene to automatically adjust to re-create the effect experienced as human eyes adjust when going from a bright environment into a dark environment or vice versa.",
+      "detailedQuestion": "<span class=\"term-en\">Bloom</span><span class=\"inline-trans\">（強光泛光眩光）</span> causes the exposure of a scene to automatically adjust to re-create the <span class=\"term-en\">effect</span><span class=\"inline-trans\">（瞳孔調節視覺效果）</span> experienced as human eyes adjust when going from a bright environment into a dark environment or vice versa.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3530,7 +3530,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The Player Start <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> defines the location the player’s <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> will spawn into the world.",
+      "detailedQuestion": "The <span class=\"term-en\">Player Start Actor</span><span class=\"inline-trans\">（玩家出生點物件）</span> <span class=\"term-en\">defines</span><span class=\"inline-trans\">（定義指定）</span> the <span class=\"term-en\">location</span><span class=\"inline-trans\">（生成空間坐標位置）</span> the player’s <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控角色實體）</span> will <span class=\"term-en\">spawn</span><span class=\"inline-trans\">（動態生成進入）</span> into the world.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3550,10 +3550,10 @@ const UE_QUIZ_DATA = {
         "Post Process Volume"
       ],
       "optionsZh": [
-        "Atmospheric Fog（大氣霧 Actor（模擬行星大氣層光線散射、天際線漸變與真實日照衰減））",
-        "Sky Sphere Blueprint（動態天空球藍圖（BP_Sky_Sphere，提供程序化太陽、雲層與天空漸層））",
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））"
+        "Atmospheric Fog（大氣霧：模擬真實大氣散射光線、天際線漸變與夕陽餘暉）",
+        "Sky Sphere Blueprint（動態天空球藍圖：程序化生成動態太陽、雲層與天空漸層）",
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）"
       ],
       "rawAnswer": "Atmospheric Fog Actor",
       "correctIndex": 0,
@@ -3580,12 +3580,12 @@ const UE_QUIZ_DATA = {
           "en": "It can give your outdoor Levels a much more realistic look."
         }
       ],
-      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> gives an approximation of light scattering through a planetary atmosphere. It can give your outdoor <span class=\"term-en\">Levels</span><span class=\"inline-trans\">（關卡場景）</span> a much more realistic look.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件）</span> gives an approximation of <span class=\"term-en\">light scattering</span><span class=\"inline-trans\">（光線大氣散射）</span> through a planetary atmosphere. It can give your outdoor <span class=\"term-en\">Levels</span><span class=\"inline-trans\">（戶外關卡場景）</span> a much more <span class=\"term-en\">realistic</span><span class=\"inline-trans\">（逼真寫實的視覺光影）</span> look.",
       "detailedOptions": [
-        "Atmospheric Fog（大氣霧 Actor（模擬行星大氣層光線散射、天際線漸變與真實日照衰減））",
-        "Sky Sphere Blueprint（動態天空球藍圖（BP_Sky_Sphere，提供程序化太陽、雲層與天空漸層））",
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））"
+        "Atmospheric Fog（大氣霧：模擬真實大氣散射光線、天際線漸變與夕陽餘暉）",
+        "Sky Sphere Blueprint（動態天空球藍圖：程序化生成動態太陽、雲層與天空漸層）",
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）"
       ]
     },
     {
@@ -3602,10 +3602,10 @@ const UE_QUIZ_DATA = {
         "Lightmass Importance Volume"
       ],
       "optionsZh": [
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））",
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
-        "Lightmass Importance Volume（Lightmass 重要體積（將有限的高質量光照烘焙集中在主要玩家活動區））"
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）",
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
+        "Lightmass Importance Volume（重要光照體積：集中計算主要玩家活動區的高品質光影）"
       ],
       "rawAnswer": "Lightmass Importance Volume",
       "correctIndex": 3,
@@ -3629,10 +3629,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If it is taking a long time to build lighting for your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>, there is a good chance you need to place a ____________.",
       "detailedOptions": [
-        "Sky Light（天空光照（捕捉遠景半球環境光與環境天光反射））",
-        "Post Process Volume（後製處理體積（定義攝影機進入該區域時應用的調色、曝光與後效））",
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
-        "Lightmass Importance Volume（Lightmass 重要體積（將有限的高質量光照烘焙集中在主要玩家活動區））"
+        "Sky Light（天空光照：捕捉遠方天際色彩，為戶外提供柔和的環境天光漫反射）",
+        "Post Process Volume（後製處理體積：控制攝影機進入該區域時的畫面調色、曝光與後效）",
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
+        "Lightmass Importance Volume（重要光照體積：集中計算主要玩家活動區的高品質光影）"
       ]
     },
     {
@@ -3682,10 +3682,10 @@ const UE_QUIZ_DATA = {
         "Anti-Aliasing"
       ],
       "optionsZh": [
-        "Depth of Field (DOF)（景深虛化效果（Depth of Field：模擬大光圈散景））",
-        "Color Grading（調色分級（調整畫面色調、對比度與色彩風格））",
-        "Eye Adaptation（人眼適應（自動曝光模擬））",
-        "Anti-Aliasing（反鋸齒平滑邊緣（TXAA/FXAA））"
+        "Depth of Field (DOF)（景深虛化效果：模擬相機大光圈散景）",
+        "Color Grading（調色分級：調整整體的色溫、對比度與電影色調風格）",
+        "Eye Adaptation（人眼適應：自動曝光模擬）",
+        "Anti-Aliasing（反鋸齒平滑邊緣：消除模型邊緣的階梯狀鋸齒）"
       ],
       "rawAnswer": "Depth of Field (DOF)",
       "correctIndex": 0,
@@ -3712,12 +3712,12 @@ const UE_QUIZ_DATA = {
           "en": "The effect can be used to draw the viewer’s attention and to make the rendering appear more like a photograph or a movie."
         }
       ],
-      "detailedQuestion": "The ____________ post processing property applies a blur to the scene based on distance in front of or behind a focal point. This is done to simulate what happens in real-world cameras. The effect can be used to draw the viewer’s attention and to make the rendering appear more like a photograph or a movie.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">post processing property</span><span class=\"inline-trans\">（後製處理光學屬性）</span> <span class=\"term-en\">applies</span><span class=\"inline-trans\">（套用施加）</span> a <span class=\"term-en\">blur</span><span class=\"inline-trans\">（景深虛化模糊）</span> to the scene based on distance in front of or behind a <span class=\"term-en\">focal point</span><span class=\"inline-trans\">（對焦點）</span>. This is done to <span class=\"term-en\">simulate</span><span class=\"inline-trans\">（模擬真實相機成像）</span> what happens in real-world cameras. The <span class=\"term-en\">effect</span><span class=\"inline-trans\">（光學視覺效果）</span> can be used to draw the viewer’s attention and to make the rendering <span class=\"term-en\">appear</span><span class=\"inline-trans\">（呈現出/看起來）</span> more like a photograph or a movie.",
       "detailedOptions": [
-        "Depth of Field (DOF)（景深虛化效果（Depth of Field：模擬大光圈散景））",
-        "Color Grading（調色分級（調整畫面色調、對比度與色彩風格））",
-        "Eye Adaptation（人眼適應（自動曝光模擬））",
-        "Anti-Aliasing（反鋸齒平滑邊緣（TXAA/FXAA））"
+        "Depth of Field (DOF)（景深虛化效果：模擬相機大光圈散景）",
+        "Color Grading（調色分級：調整整體的色溫、對比度與電影色調風格）",
+        "Eye Adaptation（人眼適應：自動曝光模擬）",
+        "Anti-Aliasing（反鋸齒平滑邊緣：消除模型邊緣的階梯狀鋸齒）"
       ]
     },
     {
@@ -3734,10 +3734,10 @@ const UE_QUIZ_DATA = {
         "Tone Mapping"
       ],
       "optionsZh": [
-        "Scene Fringe（場景邊緣色差（模擬相機色散紫邊））",
+        "Scene Fringe（邊緣色差：模擬真實鏡頭邊緣光學色散紫邊）",
         "Blendable（可混合後製材質資產）",
-        "Bloom（泛光光暈效果（當物體發光超過閾值時溢出耀眼的光暈視覺效果））",
-        "Tone Mapping（色調映射（將 HDR 高動態範圍壓縮至 LDR 顯示範圍））"
+        "Bloom（泛光效果：發光物體亮度超過閾值時溢出耀眼的光暈視覺）",
+        "Tone Mapping（色調映射：將 HDR 高動態範圍亮度安全壓縮至螢幕能顯示的範圍）"
       ],
       "rawAnswer": "Scene Fringe",
       "correctIndex": 0,
@@ -3762,10 +3762,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "A ____________ is a <span class=\"term-en\">chromatic aberration effect</span><span class=\"inline-trans\">（色差/色散光學效應）</span> that simulates the color shifts in real-world camera lenses. The effect is mostly noticeable near the edges of an image.",
       "detailedOptions": [
-        "Scene Fringe（場景邊緣色差（模擬相機色散紫邊））",
+        "Scene Fringe（邊緣色差：模擬真實鏡頭邊緣光學色散紫邊）",
         "Blendable（可混合後製材質資產）",
-        "Bloom（泛光光暈效果（當物體發光超過閾值時溢出耀眼的光暈視覺效果））",
-        "Tone Mapping（色調映射（將 HDR 高動態範圍壓縮至 LDR 顯示範圍））"
+        "Bloom（泛光效果：發光物體亮度超過閾值時溢出耀眼的光暈視覺）",
+        "Tone Mapping（色調映射：將 HDR 高動態範圍亮度安全壓縮至螢幕能顯示的範圍）"
       ]
     },
     {
@@ -3782,10 +3782,10 @@ const UE_QUIZ_DATA = {
         "Exponential Height Fog"
       ],
       "optionsZh": [
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
-        "Sky Sphere Blueprint（動態天空球藍圖（BP_Sky_Sphere，提供程序化太陽、雲層與天空漸層））",
-        "Atmospheric Fog（大氣霧 Actor（模擬行星大氣層光線散射、天際線漸變與真實日照衰減））",
-        "Exponential Height Fog（指數高度霧 Actor（霧氣密度隨高度指數衰減，適合山谷或地表晨霧））"
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
+        "Sky Sphere Blueprint（動態天空球藍圖：程序化生成動態太陽、雲層與天空漸層）",
+        "Atmospheric Fog（大氣霧：模擬真實大氣散射光線、天際線漸變與夕陽餘暉）",
+        "Exponential Height Fog（指數高度霧：霧氣密度隨海拔高度指數衰減，適合山谷晨霧）"
       ],
       "rawAnswer": "Exponential Height Fog",
       "correctIndex": 3,
@@ -3807,12 +3807,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ provides two fog colors, one for the hemisphere facing the dominant <span class=\"term-en\">Directional Light</span><span class=\"inline-trans\">（定向光源/太陽光）</span> (or straight up if none exists), and another for the opposite hemisphere.",
+      "detailedQuestion": "____________ provides two fog colors, one for the <span class=\"term-en\">hemisphere</span><span class=\"inline-trans\">（天空半球區域）</span> facing the <span class=\"term-en\">dominant</span><span class=\"inline-trans\">（主要主導方向的）</span> <span class=\"term-en\">Directional Light</span><span class=\"inline-trans\">（定向太陽光源）</span> (or straight up if none exists), and another for the opposite <span class=\"term-en\">hemisphere</span><span class=\"inline-trans\">（天空半球）</span>.",
       "detailedOptions": [
-        "Reflection Capture（反射捕捉 Actor（將周圍環境即時捕捉為立方體貼圖用於金屬反光））",
-        "Sky Sphere Blueprint（動態天空球藍圖（BP_Sky_Sphere，提供程序化太陽、雲層與天空漸層））",
-        "Atmospheric Fog（大氣霧 Actor（模擬行星大氣層光線散射、天際線漸變與真實日照衰減））",
-        "Exponential Height Fog（指數高度霧 Actor（霧氣密度隨高度指數衰減，適合山谷或地表晨霧））"
+        "Reflection Capture（反射捕捉：將周圍環境捕捉為立方體貼圖供光滑表面反射）",
+        "Sky Sphere Blueprint（動態天空球藍圖：程序化生成動態太陽、雲層與天空漸層）",
+        "Atmospheric Fog（大氣霧：模擬真實大氣散射光線、天際線漸變與夕陽餘暉）",
+        "Exponential Height Fog（指數高度霧：霧氣密度隨海拔高度指數衰減，適合山谷晨霧）"
       ]
     },
     {
@@ -3875,7 +3875,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "If you want to animate the change in color of a particle over its life, you need a <span class=\"term-en\">Color Over Life module</span><span class=\"inline-trans\">（生命週期顏色漸變模組）</span> with a constant curve or uniform curve distribution.",
+      "detailedQuestion": "If you want to animate the change in color of a <span class=\"term-en\">particle</span><span class=\"inline-trans\">（粒子顆粒）</span> over its life, you need a <span class=\"term-en\">Color Over Life module</span><span class=\"inline-trans\">（生命週期顏色漸變模組）</span> with a <span class=\"term-en\">constant</span><span class=\"inline-trans\">（固定常數曲線）</span> curve or uniform curve <span class=\"term-en\">distribution</span><span class=\"inline-trans\">（數值時間分佈方式）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3896,7 +3896,7 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Emitter Actors（發射器 Actor 清單）",
-        "Distributions（分佈器（虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態））",
+        "Distributions（分佈器：虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態）",
         "Color Over Life modules（生命週期顏色變化模組）",
         "Particles（個別粒子顆粒）"
       ],
@@ -3912,10 +3912,10 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ are a set of float or vector data types for handling data in specialized ways, such as using a range for a value, or interpolating a value along a curve.",
+      "detailedQuestion": "____________ are a set of float or vector data types for handling data in specialized ways, such as using a range for a value, or <span class=\"term-en\">interpolating</span><span class=\"inline-trans\">（沿著曲線進行動態插值平滑過渡）</span> a value along a curve.",
       "detailedOptions": [
         "Emitter Actors（發射器 Actor 清單）",
-        "Distributions（分佈器（虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態））",
+        "Distributions（分佈器：虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態）",
         "Color Over Life modules（生命週期顏色變化模組）",
         "Particles（個別粒子顆粒）"
       ]
@@ -3947,7 +3947,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "An <span class=\"term-en\">Emitter Actor</span><span class=\"inline-trans\">（粒子發射器物件）</span> is an instance of a <span class=\"term-en\">Particle System asset</span><span class=\"inline-trans\">（粒子系統資產）</span> placed in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
+      "detailedQuestion": "An <span class=\"term-en\">Emitter Actor</span><span class=\"inline-trans\">（粒子發射器物件）</span> is an <span class=\"term-en\">instance</span><span class=\"inline-trans\">（場景實例化實體）</span> of a <span class=\"term-en\">Particle System asset</span><span class=\"inline-trans\">（粒子系統資產）</span> placed in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3967,10 +3967,10 @@ const UE_QUIZ_DATA = {
         "Type Data module"
       ],
       "optionsZh": [
-        "Emitter Actor（粒子發射器 Actor）",
+        "Emitter Actor（粒子發射器實體物件）",
         "Emitter System asset（發射器系統資產）",
         "Particle System asset（粒子系統主資產）",
-        "Type Data module（類型資料模組（Type Data：定義粒子發射形式為精靈、光束、飄帶或網格））"
+        "Type Data module（類型資料模組：定義粒子外觀是平面面片、光束、飄帶或 3D 幾何模型）"
       ],
       "rawAnswer": "Particle System asset",
       "correctIndex": 2,
@@ -3993,12 +3993,12 @@ const UE_QUIZ_DATA = {
           "en": "By allowing multiple Emitters in a system, the designer can create elaborate particle effects that are held in a single system."
         }
       ],
-      "detailedQuestion": "A ____________ is a complete particle effect that contains any number of <span class=\"term-en\">Particle Emitters</span><span class=\"inline-trans\">（粒子發射器單元）</span>. By allowing multiple <span class=\"term-en\">Emitters</span><span class=\"inline-trans\">（發射器）</span> in a system, the designer can create elaborate particle effects that are held in a single system.",
+      "detailedQuestion": "A ____________ is a complete <span class=\"term-en\">particle effect</span><span class=\"inline-trans\">（粒子視覺特效）</span> that contains any number of <span class=\"term-en\">Particle Emitters</span><span class=\"inline-trans\">（粒子發射器單元）</span>. By allowing <span class=\"term-en\">multiple</span><span class=\"inline-trans\">（多個/多組）</span> <span class=\"term-en\">Emitters</span><span class=\"inline-trans\">（發射器）</span> in a system, the <span class=\"term-en\">designer</span><span class=\"inline-trans\">（特效設計師）</span> can create <span class=\"term-en\">elaborate</span><span class=\"inline-trans\">（精緻複雜的）</span> particle <span class=\"term-en\">effects</span><span class=\"inline-trans\">（複合特效表現）</span> that are held in a single system.",
       "detailedOptions": [
-        "Emitter Actor（粒子發射器 Actor）",
+        "Emitter Actor（粒子發射器實體物件）",
         "Emitter System asset（發射器系統資產）",
         "Particle System asset（粒子系統主資產）",
-        "Type Data module（類型資料模組（Type Data：定義粒子發射形式為精靈、光束、飄帶或網格））"
+        "Type Data module（類型資料模組：定義粒子外觀是平面面片、光束、飄帶或 3D 幾何模型）"
       ]
     },
     {
@@ -4015,10 +4015,10 @@ const UE_QUIZ_DATA = {
         "Distributions"
       ],
       "optionsZh": [
-        "Required（必要模組（所有發射器必備的基礎模組，設定材質、發射數量與排序））",
-        "Initial Velocity（初始發射速度模組）",
-        "Spawn（生成速率模組（控制每秒發射多少粒子或突發瞬間爆發數量））",
-        "Distributions（分佈器（虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態））"
+        "Required（必要基礎模組：每個發射器必備的頂層模組，設定材質與發射類型）",
+        "Initial Velocity（初始發射速度模組：設定粒子噴射時的方向與速度大小）",
+        "Spawn（生成速率模組：控制每秒生成多少粒子或瞬間爆發數量的模組）",
+        "Distributions（分佈器：虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態）"
       ],
       "rawAnswer": "Required",
       "correctIndex": 0,
@@ -4045,12 +4045,12 @@ const UE_QUIZ_DATA = {
           "en": "Information about the applied Material, the Emitter’s lifetime, and whether the Emitter loops can be found here."
         }
       ],
-      "detailedQuestion": "The ____________ module holds the parameters that a particle <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> absolutely needs to function. Information about the applied <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>, the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span>’s lifetime, and whether the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> loops can be found here.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">module</span><span class=\"inline-trans\">（行為模組）</span> holds the parameters that a <span class=\"term-en\">particle</span><span class=\"inline-trans\">（粒子）</span> <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> absolutely needs to function. Information about the applied <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>, the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span>’s lifetime, and whether the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> loops can be found here.",
       "detailedOptions": [
-        "Required（必要模組（所有發射器必備的基礎模組，設定材質、發射數量與排序））",
-        "Initial Velocity（初始發射速度模組）",
-        "Spawn（生成速率模組（控制每秒發射多少粒子或突發瞬間爆發數量））",
-        "Distributions（分佈器（虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態））"
+        "Required（必要基礎模組：每個發射器必備的頂層模組，設定材質與發射類型）",
+        "Initial Velocity（初始發射速度模組：設定粒子噴射時的方向與速度大小）",
+        "Spawn（生成速率模組：控制每秒生成多少粒子或瞬間爆發數量的模組）",
+        "Distributions（分佈器：虛幻引擎控制數值是固定常數、隨機範圍或時間曲線的資料型態）"
       ]
     },
     {
@@ -4080,7 +4080,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The <span class=\"term-en\">Spawn module</span><span class=\"inline-trans\">（粒子生成速率模組）</span> is responsible for the number of new particles that are birthed and their frequency or rate of emission.",
+      "detailedQuestion": "The <span class=\"term-en\">Spawn module</span><span class=\"inline-trans\">（粒子生成速率模組）</span> is responsible for the number of new <span class=\"term-en\">particles</span><span class=\"inline-trans\">（新粒子顆粒）</span> that are birthed and their frequency or rate of emission.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4101,9 +4101,9 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Type Data（類型資料模組）",
-        "Required（必要模組（所有發射器必備的基礎模組，設定材質、發射數量與排序））",
-        "Initial Velocity（初始發射速度模組）",
-        "Initial Size（初始尺寸模組（定義粒子剛誕生時的三軸初始大小））"
+        "Required（必要基礎模組：每個發射器必備的頂層模組，設定材質與發射類型）",
+        "Initial Velocity（初始發射速度模組：設定粒子噴射時的方向與速度大小）",
+        "Initial Size（初始尺寸模組：定義粒子剛誕生時的三軸初始大小長寬）"
       ],
       "rawAnswer": "Type Data",
       "correctIndex": 0,
@@ -4121,12 +4121,12 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ module is represented as a black bar below the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> block.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">module</span><span class=\"inline-trans\">（基礎核心模組）</span> is represented as a black bar below the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> block.",
       "detailedOptions": [
         "Type Data（類型資料模組）",
-        "Required（必要模組（所有發射器必備的基礎模組，設定材質、發射數量與排序））",
-        "Initial Velocity（初始發射速度模組）",
-        "Initial Size（初始尺寸模組（定義粒子剛誕生時的三軸初始大小））"
+        "Required（必要基礎模組：每個發射器必備的頂層模組，設定材質與發射類型）",
+        "Initial Velocity（初始發射速度模組：設定粒子噴射時的方向與速度大小）",
+        "Initial Size（初始尺寸模組：定義粒子剛誕生時的三軸初始大小長寬）"
       ]
     },
     {
@@ -4143,9 +4143,9 @@ const UE_QUIZ_DATA = {
         "Rain"
       ],
       "optionsZh": [
-        "Sprite（精靈粒子（面向攝影機鏡頭的 2D 平面貼圖廣告看板粒子））",
-        "Beam（光束粒子（連接起點與終點的閃電、雷射光柱或電弧線型粒子））",
-        "Ribbon（飄帶粒子（尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡粒子））",
+        "Sprite（精靈粒子：永遠面向攝影機鏡頭的 2D 平面面片粒子）",
+        "Beam（光束粒子：連接起點與終點的閃電、雷射光柱或電弧線型粒子）",
+        "Ribbon（飄帶粒子：尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡）",
         "Rain（下雨效果）"
       ],
       "rawAnswer": "Rain",
@@ -4162,9 +4162,9 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ is not a type data found in UE4.",
       "detailedOptions": [
-        "Sprite（精靈粒子（面向攝影機鏡頭的 2D 平面貼圖廣告看板粒子））",
-        "Beam（光束粒子（連接起點與終點的閃電、雷射光柱或電弧線型粒子））",
-        "Ribbon（飄帶粒子（尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡粒子））",
+        "Sprite（精靈粒子：永遠面向攝影機鏡頭的 2D 平面面片粒子）",
+        "Beam（光束粒子：連接起點與終點的閃電、雷射光柱或電弧線型粒子）",
+        "Ribbon（飄帶粒子：尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡）",
         "Rain（下雨效果）"
       ]
     },
@@ -4182,7 +4182,7 @@ const UE_QUIZ_DATA = {
         "Waterfall"
       ],
       "optionsZh": [
-        "Cascade（粒子編輯器（UE4 經典模組化粒子特效製作系統））",
+        "Cascade（Cascade 粒子編輯器：UE4 經典模組化粒子特效製作系統）",
         "Drizzle（毛毛細雨效果）",
         "Torrent（傾盆大雨效果）",
         "Waterfall（瀑布流水粒子特效）"
@@ -4199,9 +4199,9 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is a real-time particle editor and UE4’s modular approach to controlling particle behavior that allows you to design complex effects quickly and easily.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（編輯器）</span> is a real-time <span class=\"term-en\">particle</span><span class=\"inline-trans\">（粒子特效）</span> editor and UE4’s modular approach to controlling particle behavior that allows you to design complex <span class=\"term-en\">effects</span><span class=\"inline-trans\">（視覺特效）</span> quickly and easily.",
       "detailedOptions": [
-        "Cascade（粒子編輯器（UE4 經典模組化粒子特效製作系統））",
+        "Cascade（Cascade 粒子編輯器：UE4 經典模組化粒子特效製作系統）",
         "Drizzle（毛毛細雨效果）",
         "Torrent（傾盆大雨效果）",
         "Waterfall（瀑布流水粒子特效）"
@@ -4221,10 +4221,10 @@ const UE_QUIZ_DATA = {
         "Anim Trail"
       ],
       "optionsZh": [
-        "Beam（光束粒子（連接起點與終點的閃電、雷射光柱或電弧線型粒子））",
-        "GPU（粒子（在顯示卡上並行運算，可同時渲染數十萬至數百萬顆粒子並支援 3D 向量場））",
-        "Ribbon（飄帶粒子（尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡粒子））",
-        "Anim Trail（動畫軌跡拖尾粒子（專門用於角色武器刀光揮舞時的平滑幾何面片拖尾））"
+        "Beam（光束粒子：連接起點與終點的閃電、雷射光柱或電弧線型粒子）",
+        "GPU（GPU 粒子：由顯示卡並行運算，可同時渲染數百萬顆粒子並支援向量場）",
+        "Ribbon（飄帶粒子：尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡）",
+        "Anim Trail（動畫軌跡拖尾：專門用於武器刀光揮舞時的平滑幾何拖尾面片）"
       ],
       "rawAnswer": "Beam",
       "correctIndex": 0,
@@ -4249,10 +4249,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "A ____________ is connected particles that form a stream between a source point and a target point. By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points.",
       "detailedOptions": [
-        "Beam（光束粒子（連接起點與終點的閃電、雷射光柱或電弧線型粒子））",
-        "GPU（粒子（在顯示卡上並行運算，可同時渲染數十萬至數百萬顆粒子並支援 3D 向量場））",
-        "Ribbon（飄帶粒子（尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡粒子））",
-        "Anim Trail（動畫軌跡拖尾粒子（專門用於角色武器刀光揮舞時的平滑幾何面片拖尾））"
+        "Beam（光束粒子：連接起點與終點的閃電、雷射光柱或電弧線型粒子）",
+        "GPU（GPU 粒子：由顯示卡並行運算，可同時渲染數百萬顆粒子並支援向量場）",
+        "Ribbon（飄帶粒子：尾隨運動軌跡連接拉伸的刀光、飄帶或飛彈尾跡）",
+        "Anim Trail（動畫軌跡拖尾：專門用於武器刀光揮舞時的平滑幾何拖尾面片）"
       ]
     },
     {
@@ -4269,10 +4269,10 @@ const UE_QUIZ_DATA = {
         "Sequencer"
       ],
       "optionsZh": [
-        "Cinematics（電影過場動畫製作領域）",
-        "Persona（動畫編輯工具）",
-        "Matinee（舊世代動畫編輯工具（已被 Sequencer 取代））",
-        "Sequencer（電影過場序列編輯器（非線性時間軸動畫、鏡頭調度與特效控制核心系統））"
+        "Cinematics（電影過場動畫領域）",
+        "Persona（Persona 骨骼動畫編輯工具）",
+        "Matinee（舊版 Matinee 動畫工具：已被 Sequencer 全面取代的舊系統）",
+        "Sequencer（Sequencer 序列編輯器：現代非線性時間軸動畫、鏡頭調度與特效核心工具）"
       ],
       "rawAnswer": "Sequencer",
       "correctIndex": 3,
@@ -4288,10 +4288,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "The newest editor in UE4 used to edit in-game cinematics is called ____________.",
       "detailedOptions": [
-        "Cinematics（電影過場動畫製作領域）",
-        "Persona（動畫編輯工具）",
-        "Matinee（舊世代動畫編輯工具（已被 Sequencer 取代））",
-        "Sequencer（電影過場序列編輯器（非線性時間軸動畫、鏡頭調度與特效控制核心系統））"
+        "Cinematics（電影過場動畫領域）",
+        "Persona（Persona 骨骼動畫編輯工具）",
+        "Matinee（舊版 Matinee 動畫工具：已被 Sequencer 全面取代的舊系統）",
+        "Sequencer（Sequencer 序列編輯器：現代非線性時間軸動畫、鏡頭調度與特效核心工具）"
       ]
     },
     {
@@ -4321,7 +4321,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "In a digital environment, <span class=\"term-en\">keys</span><span class=\"inline-trans\">（關鍵影格）</span> or <span class=\"term-en\">keyframes</span><span class=\"inline-trans\">（關鍵影格）</span> store changes in value or property at set points over a specified amount of time.",
+      "detailedQuestion": "In a digital environment, <span class=\"term-en\">keys</span><span class=\"inline-trans\">（關鍵影格）</span> or <span class=\"term-en\">keyframes</span><span class=\"inline-trans\">（關鍵影格）</span> store changes in value or <span class=\"term-en\">property</span><span class=\"inline-trans\">（物件屬性數值）</span> at set points over a specified amount of time.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4341,10 +4341,10 @@ const UE_QUIZ_DATA = {
         "Tree View"
       ],
       "optionsZh": [
-        "Tracks Area（軌道時間軸編輯區域（排列關鍵影格、音軌與各通道數值的多軌區域））",
+        "Tracks Area（軌道時間軸編輯區：排列關鍵影格、音軌與屬性通道的多軌時間軸）",
         "Timeline（時間軸播放控制區）",
-        "Sequence Breadcrumb（序列階層導航標籤（麵包屑路徑，顯示主序列與當前編輯的子 Shot 序列位置））",
-        "Tree View（樹狀大綱清單檢視（左側列出所有受 Sequencer 控制的 Actor 物件與屬性項目））"
+        "Sequence Breadcrumb（序列階層導航標籤：顯示主序列與當前子分鏡 Shot 位置的麵包屑路徑）",
+        "Tree View（樹狀大綱清單：左側列出所有受 Sequencer 控制的物件與屬性清單）"
       ],
       "rawAnswer": "Timeline",
       "correctIndex": 1,
@@ -4360,10 +4360,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ is a panel in the <span class=\"term-en\">Sequencer Editor</span><span class=\"inline-trans\">（Sequencer 動畫序列編輯器）</span> that displays the playback range of your sequence using red and green markers.",
       "detailedOptions": [
-        "Tracks Area（軌道時間軸編輯區域（排列關鍵影格、音軌與各通道數值的多軌區域））",
+        "Tracks Area（軌道時間軸編輯區：排列關鍵影格、音軌與屬性通道的多軌時間軸）",
         "Timeline（時間軸播放控制區）",
-        "Sequence Breadcrumb（序列階層導航標籤（麵包屑路徑，顯示主序列與當前編輯的子 Shot 序列位置））",
-        "Tree View（樹狀大綱清單檢視（左側列出所有受 Sequencer 控制的 Actor 物件與屬性項目））"
+        "Sequence Breadcrumb（序列階層導航標籤：顯示主序列與當前子分鏡 Shot 位置的麵包屑路徑）",
+        "Tree View（樹狀大綱清單：左側列出所有受 Sequencer 控制的物件與屬性清單）"
       ]
     },
     {
@@ -4413,9 +4413,9 @@ const UE_QUIZ_DATA = {
         "Addable"
       ],
       "optionsZh": [
-        "Placeable（可放置靜態物件（關卡一般常規 Actor））",
-        "Possessable（附身物件（關卡中本來就已存在的 Actor，由 Sequencer 暫時接管控制））",
-        "Spawnable（動態生成物件（原本關卡中不存在，由 Sequencer 在播放時動態生成，結束時自動銷毀））",
+        "Placeable（可放置靜態物件：關卡中常規的放置實體）",
+        "Possessable（附身物件：關卡中本來就已存在、由 Sequencer 暫時接管控制的物件）",
+        "Spawnable（動態生成物件：關卡中原本不存在，由 Sequencer 在播放時生成、結束時銷毀）",
         "Addable（非官方標準定義項目）"
       ],
       "rawAnswer": "Possessable",
@@ -4436,9 +4436,9 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ is a <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> term meaning an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> that exists in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> already and that <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> will take control of in order to apply changes to it.",
       "detailedOptions": [
-        "Placeable（可放置靜態物件（關卡一般常規 Actor））",
-        "Possessable（附身物件（關卡中本來就已存在的 Actor，由 Sequencer 暫時接管控制））",
-        "Spawnable（動態生成物件（原本關卡中不存在，由 Sequencer 在播放時動態生成，結束時自動銷毀））",
+        "Placeable（可放置靜態物件：關卡中常規的放置實體）",
+        "Possessable（附身物件：關卡中本來就已存在、由 Sequencer 暫時接管控制的物件）",
+        "Spawnable（動態生成物件：關卡中原本不存在，由 Sequencer 在播放時生成、結束時銷毀）",
         "Addable（非官方標準定義項目）"
       ]
     },
@@ -4489,9 +4489,9 @@ const UE_QUIZ_DATA = {
         "Addable"
       ],
       "optionsZh": [
-        "Placeable（可放置靜態物件（關卡一般常規 Actor））",
-        "Possessable（附身物件（關卡中本來就已存在的 Actor，由 Sequencer 暫時接管控制））",
-        "Spawnable（動態生成物件（原本關卡中不存在，由 Sequencer 在播放時動態生成，結束時自動銷毀））",
+        "Placeable（可放置靜態物件：關卡中常規的放置實體）",
+        "Possessable（附身物件：關卡中本來就已存在、由 Sequencer 暫時接管控制的物件）",
+        "Spawnable（動態生成物件：關卡中原本不存在，由 Sequencer 在播放時生成、結束時銷毀）",
         "Addable（非官方標準定義項目）"
       ],
       "rawAnswer": "Spawnable",
@@ -4512,9 +4512,9 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ is a <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> term meaning an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> that <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> is possessing that does not yet exist and will be spawned by <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span>.",
       "detailedOptions": [
-        "Placeable（可放置靜態物件（關卡一般常規 Actor））",
-        "Possessable（附身物件（關卡中本來就已存在的 Actor，由 Sequencer 暫時接管控制））",
-        "Spawnable（動態生成物件（原本關卡中不存在，由 Sequencer 在播放時動態生成，結束時自動銷毀））",
+        "Placeable（可放置靜態物件：關卡中常規的放置實體）",
+        "Possessable（附身物件：關卡中本來就已存在、由 Sequencer 暫時接管控制的物件）",
+        "Spawnable（動態生成物件：關卡中原本不存在，由 Sequencer 在播放時生成、結束時銷毀）",
         "Addable（非官方標準定義項目）"
       ]
     },
@@ -4532,10 +4532,10 @@ const UE_QUIZ_DATA = {
         "Matinee Actors"
       ],
       "optionsZh": [
-        "Level Sequence assets（關卡序列資產（Level Sequence））",
-        "Level Sequence Actors（關卡序列播放器 Actor（在關卡中代表該序列並控制自動播放的實體物件））",
-        "Persona assets（Persona 骨架動畫資產）",
-        "Matinee Actors（舊版 Matinee 序列 Actor）"
+        "Level Sequence assets（關卡序列資產：儲存所有軌道與關鍵影格資料的核心資產）",
+        "Level Sequence Actors（關卡序列播放器：在場景中負責觸發並控制序列播放的實體物件）",
+        "Persona assets（Persona 骨骼動畫資產）",
+        "Matinee Actors（舊版 Matinee 序列播放器）"
       ],
       "rawAnswer": "Level Sequence assets",
       "correctIndex": 0,
@@ -4551,10 +4551,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ are self-contained assets that store track and <span class=\"term-en\">keyframe</span><span class=\"inline-trans\">（關鍵影格）</span> data used for creating in-game cinematics and are edited in the <span class=\"term-en\">Sequencer Editor</span><span class=\"inline-trans\">（Sequencer 動畫序列編輯器）</span>.",
       "detailedOptions": [
-        "Level Sequence assets（關卡序列資產（Level Sequence））",
-        "Level Sequence Actors（關卡序列播放器 Actor（在關卡中代表該序列並控制自動播放的實體物件））",
-        "Persona assets（Persona 骨架動畫資產）",
-        "Matinee Actors（舊版 Matinee 序列 Actor）"
+        "Level Sequence assets（關卡序列資產：儲存所有軌道與關鍵影格資料的核心資產）",
+        "Level Sequence Actors（關卡序列播放器：在場景中負責觸發並控制序列播放的實體物件）",
+        "Persona assets（Persona 骨骼動畫資產）",
+        "Matinee Actors（舊版 Matinee 序列播放器）"
       ]
     },
     {
@@ -4571,10 +4571,10 @@ const UE_QUIZ_DATA = {
         "Play Rate Track"
       ],
       "optionsZh": [
-        "Shot Track（分鏡鏡頭軌道（將整段電影切分為多個獨立子 Shot 進行組織管理））",
-        "Event Track（藍圖事件軌道（在指定影格觸發關卡藍圖自訂事件））",
-        "Camera Cut Track（攝影機剪輯切換軌道）",
-        "Play Rate Track（播放速率軌道（控制時間流速快慢縮放，實現子彈時間或慢動作））"
+        "Shot Track（分鏡鏡頭軌道：將整段電影切分為多個獨立子鏡頭進行組織管理）",
+        "Event Track（藍圖事件軌道：在指定影格觸發關卡藍圖自訂事件）",
+        "Camera Cut Track（攝影機剪輯軌道：切換鏡頭分鏡視角並輸出最終電影畫面的導演軌道）",
+        "Play Rate Track（播放速率軌道：控制時間流速快慢縮放，實現慢動作或加速）"
       ],
       "rawAnswer": "Camera Cut Track",
       "correctIndex": 2,
@@ -4598,10 +4598,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ allows you to switch between cameras associated with <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> and provides a camera perspective.",
       "detailedOptions": [
-        "Shot Track（分鏡鏡頭軌道（將整段電影切分為多個獨立子 Shot 進行組織管理））",
-        "Event Track（藍圖事件軌道（在指定影格觸發關卡藍圖自訂事件））",
-        "Camera Cut Track（攝影機剪輯切換軌道）",
-        "Play Rate Track（播放速率軌道（控制時間流速快慢縮放，實現子彈時間或慢動作））"
+        "Shot Track（分鏡鏡頭軌道：將整段電影切分為多個獨立子鏡頭進行組織管理）",
+        "Event Track（藍圖事件軌道：在指定影格觸發關卡藍圖自訂事件）",
+        "Camera Cut Track（攝影機剪輯軌道：切換鏡頭分鏡視角並輸出最終電影畫面的導演軌道）",
+        "Play Rate Track（播放速率軌道：控制時間流速快慢縮放，實現慢動作或加速）"
       ]
     },
     {
@@ -4618,10 +4618,10 @@ const UE_QUIZ_DATA = {
         "Spawnable Actor"
       ],
       "optionsZh": [
-        "Camera Rig Crane Actor（攝影機搖臂吊臂 Actor）",
-        "Level Sequence Actor（關卡序列播放器 Actor）",
-        "Camera Rig Rail Actor（攝影機軌道滑軌 Actor）",
-        "Spawnable Actor（動態生成 Actor）"
+        "Camera Rig Crane Actor（攝影機搖臂裝置）",
+        "Level Sequence Actor（關卡序列播放器）",
+        "Camera Rig Rail Actor（攝影機軌道滑軌裝置）",
+        "Spawnable Actor（動態生成物件）"
       ],
       "rawAnswer": "Camera Rig Rail Actor",
       "correctIndex": 2,
@@ -4645,10 +4645,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "If you want to animate a <span class=\"term-en\">Cine Camera Actor</span><span class=\"inline-trans\">（電影攝影機物件）</span> along a path with <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span>, you should use a ____________.",
       "detailedOptions": [
-        "Camera Rig Crane Actor（攝影機搖臂吊臂 Actor）",
-        "Level Sequence Actor（關卡序列播放器 Actor）",
-        "Camera Rig Rail Actor（攝影機軌道滑軌 Actor）",
-        "Spawnable Actor（動態生成 Actor）"
+        "Camera Rig Crane Actor（攝影機搖臂裝置）",
+        "Level Sequence Actor（關卡序列播放器）",
+        "Camera Rig Rail Actor（攝影機軌道滑軌裝置）",
+        "Spawnable Actor（動態生成物件）"
       ]
     },
     {
@@ -4665,10 +4665,10 @@ const UE_QUIZ_DATA = {
         "Skeletal Mesh Actor"
       ],
       "optionsZh": [
-        "Radial Force Actor（徑向力場 Actor（以球形向四周發射爆炸推力或向內產生吸引力引力場））",
-        "Static Mesh Actor（靜態網格物件（可勾選 Simulate Physics 開啟物理剛體模擬））",
-        "Destructible Actor（可破壞網格 Actor（受到足夠外力衝擊或傷害時碎裂瓦解的剛體物件））",
-        "Skeletal Mesh Actor（骨架模型物件（具備骨骼階層，可切換布娃娃物理狀態））"
+        "Radial Force Actor（徑向力場：以球形向四周發射爆炸推力或向內產生吸引力引力場）",
+        "Static Mesh Actor（靜態網格物件：勾選 Simulate Physics 即可開啟物理剛體模擬）",
+        "Destructible Actor（可破壞網格物件：受到足夠外力撞擊或傷害時碎裂粉碎的剛體模型）",
+        "Skeletal Mesh Actor（骨架模型物件：具備骨骼階層，可切換布娃娃物理狀態）"
       ],
       "rawAnswer": "Destructible Actor",
       "correctIndex": 2,
@@ -4688,10 +4688,10 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "A ____________ is a <span class=\"term-en\">rigid body</span><span class=\"inline-trans\">（剛體物理）</span> that fractures and crumbles when enough force or damage has been applied.",
       "detailedOptions": [
-        "Radial Force Actor（徑向力場 Actor（以球形向四周發射爆炸推力或向內產生吸引力引力場））",
-        "Static Mesh Actor（靜態網格物件（可勾選 Simulate Physics 開啟物理剛體模擬））",
-        "Destructible Actor（可破壞網格 Actor（受到足夠外力衝擊或傷害時碎裂瓦解的剛體物件））",
-        "Skeletal Mesh Actor（骨架模型物件（具備骨骼階層，可切換布娃娃物理狀態））"
+        "Radial Force Actor（徑向力場：以球形向四周發射爆炸推力或向內產生吸引力引力場）",
+        "Static Mesh Actor（靜態網格物件：勾選 Simulate Physics 即可開啟物理剛體模擬）",
+        "Destructible Actor（可破壞網格物件：受到足夠外力撞擊或傷害時碎裂粉碎的剛體模型）",
+        "Skeletal Mesh Actor（骨架模型物件：具備骨骼階層，可切換布娃娃物理狀態）"
       ]
     },
     {
@@ -4745,9 +4745,9 @@ const UE_QUIZ_DATA = {
         "Angular Force"
       ],
       "optionsZh": [
-        "Mass（物理質量）",
-        "Density（物質密度）",
-        "Impulse（瞬間衝量（一次性瞬間改變速度的動量脈衝））",
+        "Mass（物理質量：物體的重量慣性（以公斤 kg 為單位））",
+        "Density（物質密度：單位體積內的質量密度）",
+        "Impulse（瞬間衝量：如同被球棒擊中瞬間一次性改變速度的動量脈衝）",
         "Angular Force（角加速度旋轉力）"
       ],
       "rawAnswer": "Mass",
@@ -4764,9 +4764,9 @@ const UE_QUIZ_DATA = {
       "segments": [],
       "detailedQuestion": "____________ refers to the amount of matter in a body, regardless of the amount of gravity applied.",
       "detailedOptions": [
-        "Mass（物理質量）",
-        "Density（物質密度）",
-        "Impulse（瞬間衝量（一次性瞬間改變速度的動量脈衝））",
+        "Mass（物理質量：物體的重量慣性（以公斤 kg 為單位））",
+        "Density（物質密度：單位體積內的質量密度）",
+        "Impulse（瞬間衝量：如同被球棒擊中瞬間一次性改變速度的動量脈衝）",
         "Angular Force（角加速度旋轉力）"
       ]
     },
@@ -4826,10 +4826,10 @@ const UE_QUIZ_DATA = {
         "Physics Constraint Actor"
       ],
       "optionsZh": [
-        "Destructible Actor（可破壞網格 Actor（受到足夠外力衝擊或傷害時碎裂瓦解的剛體物件））",
-        "Physics Thruster Actor（物理推進器 Actor（如同火箭引擎噴射口，持續沿負 X 軸方向施加強大反作用力推力））",
-        "Static Mesh Actor（靜態網格物件（可勾選 Simulate Physics 開啟物理剛體模擬））",
-        "Physics Constraint Actor（物理約束關節 Actor（在兩個 Actor 之間建立球鉸鏈、合頁鉸鏈或平移限制約束））"
+        "Destructible Actor（可破壞網格物件：受到足夠外力撞擊或傷害時碎裂粉碎的剛體模型）",
+        "Physics Thruster Actor（物理推進器：如同火箭引擎噴射口，持續產生強大反作用推力）",
+        "Static Mesh Actor（靜態網格物件：勾選 Simulate Physics 即可開啟物理剛體模擬）",
+        "Physics Constraint Actor（物理約束關節：在兩個物件之間建立鉸鏈或關節以限制位移旋轉）"
       ],
       "rawAnswer": "Physics Constraint Actor",
       "correctIndex": 3,
@@ -4866,10 +4866,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "A ____________ is a type of joint that allows you to connect two <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> together, presumably ones simulating physics. It gives you the ability to apply limits or set linear and angular forces. There are several preset joint types: ball-and-socket, hinge, and prismatic.",
       "detailedOptions": [
-        "Destructible Actor（可破壞網格 Actor（受到足夠外力衝擊或傷害時碎裂瓦解的剛體物件））",
-        "Physics Thruster Actor（物理推進器 Actor（如同火箭引擎噴射口，持續沿負 X 軸方向施加強大反作用力推力））",
-        "Static Mesh Actor（靜態網格物件（可勾選 Simulate Physics 開啟物理剛體模擬））",
-        "Physics Constraint Actor（物理約束關節 Actor（在兩個 Actor 之間建立球鉸鏈、合頁鉸鏈或平移限制約束））"
+        "Destructible Actor（可破壞網格物件：受到足夠外力撞擊或傷害時碎裂粉碎的剛體模型）",
+        "Physics Thruster Actor（物理推進器：如同火箭引擎噴射口，持續產生強大反作用推力）",
+        "Static Mesh Actor（靜態網格物件：勾選 Simulate Physics 即可開啟物理剛體模擬）",
+        "Physics Constraint Actor（物理約束關節：在兩個物件之間建立鉸鏈或關節以限制位移旋轉）"
       ]
     },
     {
@@ -4907,7 +4907,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> can be set to simulate physics.",
+      "detailedQuestion": "A <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> can be set to <span class=\"term-en\">simulate</span><span class=\"inline-trans\">（模擬運算）</span> physics.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4927,10 +4927,10 @@ const UE_QUIZ_DATA = {
         "Static Mesh"
       ],
       "optionsZh": [
-        "Physics Asset Tool (PhAT)（物理資產編輯工具（PhAT：為骨架模型設定布娃娃碰撞體與物理關節））",
-        "Destructible Mesh（可破壞網格模型資產）",
+        "Physics Asset Tool (PhAT)（PhAT 物理資產工具：為骨骼模型設定布娃娃碰撞體與關節約束）",
+        "Destructible Mesh（可破壞模型資產：被切割成破碎層次的模型資產）",
         "APEX PhysX Lab（NVIDIA APEX PhysX 實驗室工具）",
-        "Static Mesh（靜態幾何網格模型資產（.uasset））"
+        "Static Mesh（靜態幾何網格模型：最基礎的 3D 模型資產）"
       ],
       "rawAnswer": "Physics Asset Tool (PhAT)",
       "correctIndex": 0,
@@ -4963,10 +4963,10 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is used to set up <span class=\"term-en\">physics constraints</span><span class=\"inline-trans\">（物理約束鉸鏈）</span> on the <span class=\"term-en\">bone hierarchy</span><span class=\"inline-trans\">（骨骼階層）</span> for a <span class=\"term-en\">Skeletal Mesh asset</span><span class=\"inline-trans\">（骨架模型資產）</span>. It is used, for example, to create <span class=\"term-en\">ragdoll effects</span><span class=\"inline-trans\">（布娃娃物理效果）</span> on characters or dynamic hoses or chains that react with the world around them.",
       "detailedOptions": [
-        "Physics Asset Tool (PhAT)（物理資產編輯工具（PhAT：為骨架模型設定布娃娃碰撞體與物理關節））",
-        "Destructible Mesh（可破壞網格模型資產）",
+        "Physics Asset Tool (PhAT)（PhAT 物理資產工具：為骨骼模型設定布娃娃碰撞體與關節約束）",
+        "Destructible Mesh（可破壞模型資產：被切割成破碎層次的模型資產）",
         "APEX PhysX Lab（NVIDIA APEX PhysX 實驗室工具）",
-        "Static Mesh（靜態幾何網格模型資產（.uasset））"
+        "Static Mesh（靜態幾何網格模型：最基礎的 3D 模型資產）"
       ]
     },
     {
@@ -5016,8 +5016,8 @@ const UE_QUIZ_DATA = {
         "Physics property"
       ],
       "optionsZh": [
-        "Skeletal Mesh asset（骨架網格模型資產）",
-        "Physical Material asset（物理材質資產（Physical Material））",
+        "Skeletal Mesh asset（骨架模型資產）",
+        "Physical Material asset（物理材質資產：設定摩擦力、反彈彈性與表面擊中類型）",
         "Destructible Mesh asset（可破壞模型資產）",
         "Physics property（常規物理碰撞屬性）"
       ],
@@ -5056,8 +5056,8 @@ const UE_QUIZ_DATA = {
       ],
       "detailedQuestion": "A ____________ contains a collection of properties that affect the behavior of an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> simulating physics. It can be assigned to a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> or a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>. Properties include <span class=\"term-en\">Friction</span><span class=\"inline-trans\">（表面摩擦力）</span>, <span class=\"term-en\">Restitution</span><span class=\"inline-trans\">（表面彈性係數）</span>, and Density.",
       "detailedOptions": [
-        "Skeletal Mesh asset（骨架網格模型資產）",
-        "Physical Material asset（物理材質資產（Physical Material））",
+        "Skeletal Mesh asset（骨架模型資產）",
+        "Physical Material asset（物理材質資產：設定摩擦力、反彈彈性與表面擊中類型）",
         "Destructible Mesh asset（可破壞模型資產）",
         "Physics property（常規物理碰撞屬性）"
       ]
@@ -5077,9 +5077,9 @@ const UE_QUIZ_DATA = {
       ],
       "optionsZh": [
         "Cloth（布料物理模擬）",
-        "Impulse（瞬間衝量（一次性瞬間改變速度的動量脈衝））",
+        "Impulse（瞬間衝量：如同被球棒擊中瞬間一次性改變速度的動量脈衝）",
         "Soft body（軟體物理模擬）",
-        "Rigid body（剛體物理模擬（不變形的固體力學模擬））"
+        "Rigid body（剛體：受力時形狀恆定不變形、遵守固體力學運動的物理模型）"
       ],
       "rawAnswer": "Rigid body",
       "correctIndex": 3,
@@ -5096,9 +5096,9 @@ const UE_QUIZ_DATA = {
       "detailedQuestion": "A ____________ is a solid nondeformable object.",
       "detailedOptions": [
         "Cloth（布料物理模擬）",
-        "Impulse（瞬間衝量（一次性瞬間改變速度的動量脈衝））",
+        "Impulse（瞬間衝量：如同被球棒擊中瞬間一次性改變速度的動量脈衝）",
         "Soft body（軟體物理模擬）",
-        "Rigid body（剛體物理模擬（不變形的固體力學模擬））"
+        "Rigid body（剛體：受力時形狀恆定不變形、遵守固體力學運動的物理模型）"
       ]
     }
   ]
