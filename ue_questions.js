@@ -117,7 +117,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The Level ____________ panel displays the <span class=\"term-en\">editable properties</span><span class=\"inline-trans\">（可編輯屬性/各項參數）</span> for a selected <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（所選取的場景物件/演員）</span>.",
+      "detailedQuestion": "The <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> ____________ panel displays the editable properties for a selected <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
         "Modes（模式面板）",
         "Details（細節面板）",
@@ -152,7 +152,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The default developer-provided <span class=\"term-en\">template</span><span class=\"inline-trans\">（專案範本）</span> for a top-down game includes a <span class=\"term-en\">character</span><span class=\"inline-trans\">（角色）</span> that is controlled by a ____________.",
+      "detailedQuestion": "From the <span class=\"term-en\">Project Browser</span><span class=\"inline-trans\">（專案瀏覽器）</span>’s <span class=\"term-en\">New Project tab</span><span class=\"inline-trans\">（新建專案分頁）</span> you can create <span class=\"term-en\">Blueprint</span><span class=\"inline-trans\">（藍圖腳本）</span>- or C++-based projects.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -210,7 +210,7 @@ const UE_QUIZ_DATA = {
           "en": "It also keeps you updated with community news and links to online learning resources and documentation."
         }
       ],
-      "detailedQuestion": "The ____________ is an interactive list of all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（所有場景物件的階層樹狀清單）</span> in your level.",
+      "detailedQuestion": "The ____________ is an application that keeps track of the different versions of Unreal Engine that you have installed. You can use it to manage your projects, access free sample projects, and purchase content from the <span class=\"term-en\">Unreal Marketplace</span><span class=\"inline-trans\">（虛幻商城）</span>. It also keeps you updated with community news and links to online learning resources and documentation.",
       "detailedOptions": [
         "Project Browser（專案瀏覽器）",
         "Modes panel（模式面板）",
@@ -245,7 +245,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: The <span class=\"term-en\">Modes panel</span><span class=\"inline-trans\">（Modes 放置模式面板）</span> displays a set of tool modes for the <span class=\"term-en\">Level Editor</span><span class=\"inline-trans\">（關卡編輯器工具模式）</span>.",
+      "detailedQuestion": "The <span class=\"term-en\">World Outliner</span><span class=\"inline-trans\">（世界大綱/場景物件清單）</span> shows you all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> that are placed in the current <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -290,7 +290,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ <span class=\"term-en\">view mode</span><span class=\"inline-trans\">（場景檢視模式）</span> displays a neutral gray across all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（所有場景物件）</span> in the level, while showing off the effects of <span class=\"term-en\">normal maps</span><span class=\"inline-trans\">（法線貼圖：表面凹凸光影）</span> in their assigned <span class=\"term-en\">materials</span><span class=\"inline-trans\">（指定材質）</span>.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">view mode</span><span class=\"inline-trans\">（場景檢視模式）</span> displays a neutral color on all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> along with the <span class=\"term-en\">normal map</span><span class=\"inline-trans\">（法線貼圖：表面凹凸）</span> from each <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>’s assigned <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>.",
       "detailedOptions": [
         "Lit（帶光照）",
         "Wireframe（線框模式）",
@@ -329,7 +329,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: If you want to temporarily view <span class=\"term-en\">collision hulls</span><span class=\"inline-trans\">（碰撞體外框/碰撞範圍）</span> for all Actors in the <span class=\"term-en\">Level Viewport</span><span class=\"inline-trans\">（關卡工作視窗/3D場景編輯區）</span>, you need to toggle off the <span class=\"term-en\">Static Mesh show flag</span><span class=\"inline-trans\">（關閉靜態網格顯示旗標）</span>.",
+      "detailedQuestion": "If you want to temporarily display the <span class=\"term-en\">collision hulls</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span> of all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> in your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>, you need to toggle off the <span class=\"term-en\">Static Mesh show flag</span><span class=\"inline-trans\">（靜態網格顯示旗標）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -362,7 +362,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "<span class=\"term-en\">Project folders</span><span class=\"inline-trans\">（專案資料夾檔案）</span> can and should be moved while the <span class=\"term-en\">Editor is running</span><span class=\"inline-trans\">（編輯器正在開啟執行中）</span>.",
+      "detailedQuestion": "<span class=\"term-en\">Project folders</span><span class=\"inline-trans\">（專案資料夾檔案）</span> can and should be moved while the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is running.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -407,7 +407,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: When opening an existing level, it will always be opened into a separate <span class=\"term-en\">instance</span><span class=\"inline-trans\">（獨立實例/分開獨立的編輯視窗）</span> of the Unreal Editor.",
+      "detailedQuestion": "When creating a new project, you can select from a variety of default ____________ templates, such as First Person, Third Person, Flying, and Puzzle.",
       "detailedOptions": [
         "Game Mode（遊戲模式樣板）",
         "Graphic Settings（圖形設定）",
@@ -454,7 +454,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "In the <span class=\"term-en\">Level Viewport</span><span class=\"inline-trans\">（關卡工作視窗/3D場景編輯區）</span>, you can switch between <span class=\"term-en\">Perspective</span><span class=\"inline-trans\">（透視 3D 視角）</span> and ____________ <span class=\"term-en\">display modes</span><span class=\"inline-trans\">（顯示視角模式）</span>.",
+      "detailedQuestion": "In the <span class=\"term-en\">Level Viewport</span><span class=\"inline-trans\">（關卡場景工作視窗）</span>, you can switch between <span class=\"term-en\">Perspective</span><span class=\"inline-trans\">（透視 3D 視角）</span> and ____________ display modes.",
       "detailedOptions": [
         "Paint（繪製）",
         "Lit（光照）",
@@ -510,7 +510,7 @@ const UE_QUIZ_DATA = {
           "en": "They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results."
         }
       ],
-      "detailedQuestion": "____________ are <span class=\"term-en\">viewport display settings</span><span class=\"inline-trans\">（工作視窗顯示旗標設定）</span> that allow you to toggle the <span class=\"term-en\">rendering</span><span class=\"inline-trans\">（即時渲染呈現）</span> of individual elements or features.",
+      "detailedQuestion": "____________ are settings applied to <span class=\"term-en\">Editor Viewports</span><span class=\"inline-trans\">（編輯器場景視窗）</span> that modify the display of content. They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results.",
       "detailedOptions": [
         "Perspective（透視）",
         "View modes（檢視模式）",
@@ -553,7 +553,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A project’s <span class=\"term-en\">Saved directory</span><span class=\"inline-trans\">（Saved 暫存快取、截圖與日誌目錄）</span> should be included with <span class=\"term-en\">version control software</span><span class=\"inline-trans\">（版本控制軟體，如 Git/SVN）</span>.",
+      "detailedQuestion": "____________ files are text files that store <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span>, engine, and project preferences.",
       "detailedOptions": [
         ".uasset（.uasset（資產二進位檔）",
         ".umap（.umap（關卡地圖檔）",
@@ -601,7 +601,7 @@ const UE_QUIZ_DATA = {
           "en": "These files are found in your project’s “Saved” folder."
         }
       ],
-      "detailedQuestion": "<span class=\"term-en\">Blueprints</span><span class=\"inline-trans\">（藍圖可視化腳本）</span> are a <span class=\"term-en\">visual scripting language</span><span class=\"inline-trans\">（可視化圖形腳本語言）</span> that is built on top of ____________.",
+      "detailedQuestion": "Autosave and backup files update every 30 minutes by default. These files can save the day if the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> ever crashes on you, but they also increase the size of your project. These files are found in your project’s “Saved” folder.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -638,7 +638,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ class determines which <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span>, <span class=\"term-en\">Player Controller</span><span class=\"inline-trans\">（玩家控制器）</span>, and <span class=\"term-en\">HUD class</span><span class=\"inline-trans\">（介面資訊顯示）</span> are used in a level.",
+      "detailedQuestion": "The ____________ folder is not found in a default project folder.",
       "detailedOptions": [
         "Saved（已儲存資料夾）",
         "Content（內容資產資料夾）",
@@ -673,7 +673,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: An <span class=\"term-en\">asset</span><span class=\"inline-trans\">（專案資源/素材檔案）</span> that is deleted from the <span class=\"term-en\">Content Browser</span><span class=\"inline-trans\">（內容瀏覽器）</span> is permanently <span class=\"term-en\">deleted from the disk</span><span class=\"inline-trans\">（從硬碟磁碟機徹底刪除）</span>.",
+      "detailedQuestion": "It is acceptable to move <span class=\"term-en\">.uasset files</span><span class=\"inline-trans\">（.uasset 虛幻資產檔案）</span> manually outside of the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -710,7 +710,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which directory holds your project's <span class=\"term-en\">.ini configuration files</span><span class=\"inline-trans\">（專案組態設定檔）</span>?",
+      "detailedQuestion": "The ______________ Viewer shows the dependencies for an asset.",
       "detailedOptions": [
         "Viewport（關卡工作視窗）",
         "Reference（引用檢視器 Reference Viewer）",
@@ -745,7 +745,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Character</span><span class=\"inline-trans\">（Character 角色類別）</span> is a specialized type of <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（進階版 Pawn 實體）</span> that includes <span class=\"term-en\">built-in movement capabilities</span><span class=\"inline-trans\">（自帶行走、跳躍與跑步等移動邏輯組件）</span>.",
+      "detailedQuestion": "One way to bring assets into a project is to use the <span class=\"term-en\">Migrate tool</span><span class=\"inline-trans\">（Migrate 素材遷移工具）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -782,7 +782,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ file is the primary file used to <span class=\"term-en\">launch and configure an Unreal project</span><span class=\"inline-trans\">（啟動與設定虛幻引擎專案的主描述檔）</span>.",
+      "detailedQuestion": "The____________ is a collection of C++ or <span class=\"term-en\">Blueprint</span><span class=\"inline-trans\">（藍圖腳本）</span> classes that manages the rules of the game, handles player input, and defines the avatars, cameras, and player HUDs in UE4 projects.",
       "detailedOptions": [
         "Gameplay Framework（遊戲玩法框架）",
         "Content Browser（內容瀏覽器）",
@@ -817,7 +817,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which of the following is NOT a default directory created with a standard <span class=\"term-en\">Unreal project</span><span class=\"inline-trans\">（標準虛幻引擎專案目錄）</span>?",
+      "detailedQuestion": "<span class=\"term-en\">Project folders</span><span class=\"inline-trans\">（專案資料夾檔案）</span> can and should be moved while the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is running.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -871,7 +871,7 @@ const UE_QUIZ_DATA = {
           "en": "It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the Level."
         }
       ],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Blueprints</span><span class=\"inline-trans\">（藍圖腳本）</span> must be <span class=\"term-en\">compiled</span><span class=\"inline-trans\">（編譯檢驗）</span> before changes will take <span class=\"term-en\">effect in the editor</span><span class=\"inline-trans\">（在編輯器中生效）</span>.",
+      "detailedQuestion": "The ____________ is the definition of the game, including things like the game rules and win conditions. It only exists on the server. It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
         "Controller class（控制器類別）",
         "HUD class（抬頭顯示器類別）",
@@ -927,7 +927,7 @@ const UE_QUIZ_DATA = {
           "en": "It decides what to do and then issues commands to the Pawn (for example, “start crouching,” “jump”)."
         }
       ],
-      "detailedQuestion": "The ____________ receives <span class=\"term-en\">raw input</span><span class=\"inline-trans\">（接收原始滑鼠與鍵盤操作輸入）</span> from the player and translates it into actions for the <span class=\"term-en\">possessed Pawn</span><span class=\"inline-trans\">（轉化為被附身控制之實體的動作）</span>.",
+      "detailedQuestion": "A ____________ is the interface between the <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> and the human player controlling it. It decides what to do and then issues commands to the <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> (for example, “start crouching,” “jump”).",
       "detailedOptions": [
         "Game Mode（遊戲模式）",
         "Player Controller（玩家控制器）",
@@ -983,7 +983,7 @@ const UE_QUIZ_DATA = {
           "en": "Each letter corresponds to an axis, where z is up and down, y is left to right, and x is front to back."
         }
       ],
-      "detailedQuestion": "Unreal Engine 4 uses a ____________ <span class=\"term-en\">coordinate system</span><span class=\"inline-trans\">（坐標軸系統：X 向前、Y 向右、Z 向上）</span>.",
+      "detailedQuestion": "____________ is a method for indicating the positions of points on a two-dimensional (2D) surface or in three-dimensional (3D) space. A 3D plane uses x, y, and z coordinates. Each letter corresponds to an axis, where z is up and down, y is left to right, and x is front to back.",
       "detailedOptions": [
         "Cartesian coordinate system（笛卡兒坐標系）",
         "Boolean operation（布林運算）",
@@ -1018,7 +1018,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The default <span class=\"term-en\">unit of measurement</span><span class=\"inline-trans\">（長度空間基本度量單位）</span> in Unreal Engine 4 is the ____________.",
+      "detailedQuestion": "<span class=\"term-en\">Transforms</span><span class=\"inline-trans\">（變換屬性：位移/旋轉/縮放）</span> store the <span class=\"term-en\">position</span><span class=\"inline-trans\">（位置坐標）</span>, <span class=\"term-en\">rotation</span><span class=\"inline-trans\">（旋轉角度）</span>, and <span class=\"term-en\">scale</span><span class=\"inline-trans\">（縮放比例）</span> of an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> in <span class=\"term-en\">3D space</span><span class=\"inline-trans\">（3D 空間）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1063,7 +1063,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which <span class=\"term-en\">transform gizmo</span><span class=\"inline-trans\">（3D變換軸向小工具）</span> corresponds to changing an Actor's position in 3D space?",
+      "detailedQuestion": "A ____________ is the local axis of an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
         "Cartesian coordinate system（Cartesian coordinate system）",
         "Pivot point（軸心點）",
@@ -1098,7 +1098,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: In <span class=\"term-en\">World Space</span><span class=\"inline-trans\">（世界空間絕對坐標）</span>, the axes (X, Y, Z) are <span class=\"term-en\">fixed relative to the entire level</span><span class=\"inline-trans\">（固定不變，永遠以地圖世界原點為基準）</span>.",
+      "detailedQuestion": "1 <span class=\"term-en\">Unreal unit</span><span class=\"inline-trans\">（虛幻長度單位：1uu=1cm）</span> (uu) is equal to 1 <span class=\"term-en\">centimeter</span><span class=\"inline-trans\">（公分）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1143,7 +1143,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which hotkey cycles through the <span class=\"term-en\">translation</span><span class=\"inline-trans\">（位移 W）</span>, <span class=\"term-en\">rotation</span><span class=\"inline-trans\">（旋轉 E）</span>, and <span class=\"term-en\">scaling</span><span class=\"inline-trans\">（縮放 R）</span> gizmos in the viewport?",
+      "detailedQuestion": "____________ creates a <span class=\"term-en\">parent-child relationship</span><span class=\"inline-trans\">（父子階層關聯）</span> between two or more <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> where the child <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>’s <span class=\"term-en\">transforms</span><span class=\"inline-trans\">（變換屬性）</span> become relative to the parent’s <span class=\"term-en\">transforms</span><span class=\"inline-trans\">（變換屬性）</span> by default.",
       "detailedOptions": [
         "Combining（群組化）",
         "Layering（吸附）",
@@ -1178,7 +1178,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: An Actor placed inside a folder in the World Outliner will <span class=\"term-en\">inherit the transform</span><span class=\"inline-trans\">（位置/旋轉/縮放之變換屬性）</span> of that folder.",
+      "detailedQuestion": "<span class=\"term-en\">Uniform scale</span><span class=\"inline-trans\">（等比例縮放）</span> means x, y, x <span class=\"term-en\">scale</span><span class=\"inline-trans\">（縮放比例）</span> <span class=\"term-en\">transforms</span><span class=\"inline-trans\">（變換屬性）</span> are scaled proportionally to one another.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1223,7 +1223,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ feature allows you to <span class=\"term-en\">snap Actors</span><span class=\"inline-trans\">（依自訂網格間距或角度吸附對齊物件）</span> to specific grid increments during translation.",
+      "detailedQuestion": "If you want to attach two <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> to create a <span class=\"term-en\">parent-child relationship</span><span class=\"inline-trans\">（父子階層關聯）</span>, this can be done in the ____________.",
       "detailedOptions": [
         "World Outliner（世界大綱）",
         "Details panel（內容瀏覽器）",
@@ -1262,7 +1262,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "In the Details panel, the <span class=\"term-en\">Transform properties</span><span class=\"inline-trans\">（變換數值）</span> are displayed in the order of ____________.",
+      "detailedQuestion": "It is possible to set the <span class=\"term-en\">Move transform</span><span class=\"inline-trans\">（移動變換）</span> to “Relative” and the <span class=\"term-en\">Rotation transform</span><span class=\"inline-trans\">（旋轉變換）</span> to ”World” (absolute).",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1303,7 +1303,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Grouping multiple Actors</span><span class=\"inline-trans\">（將多個物件建立群組，快速鍵 Ctrl + G）</span> allows you to move and rotate them as a single collective unit.",
+      "detailedQuestion": "If a collection of <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> are assigned to a ____________ in the <span class=\"term-en\">World Outliner</span><span class=\"inline-trans\">（世界大綱/場景物件清單）</span>, you can easily change all the <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span>’ <span class=\"term-en\">visibility</span><span class=\"inline-trans\">（可見度）</span>.",
       "detailedOptions": [
         "Parent（標籤）",
         "Layer（圖層）",
@@ -1359,7 +1359,7 @@ const UE_QUIZ_DATA = {
           "en": "By default, it appears in the top-right corner of the screen when you open a project."
         }
       ],
-      "detailedQuestion": "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu. By default, it appears in the <span class=\"term-en\">top-right corner of the screen</span><span class=\"inline-trans\">（視窗畫面右上角預設位置）</span> when you open a project.",
+      "detailedQuestion": "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu. By default, it appears in the top-right corner of the screen when you open a project.",
       "detailedOptions": [
         "Modes panel（模式面板）",
         "World Outliner panel（世界大綱面板）",
@@ -1406,7 +1406,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which tool inside the Static Mesh Editor allows you to inspect and modify <span class=\"term-en\">collision geometry</span><span class=\"inline-trans\">（碰撞體幾何結構）</span>?",
+      "detailedQuestion": "The ____________ in UE4 allows you to modify and set the default preferences for <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> assets.",
       "detailedOptions": [
         "Destructible Editor（Material Editor）",
         "Blueprint Editor（靜態網格編輯器）",
@@ -1441,7 +1441,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: When a <span class=\"term-en\">Static Mesh asset</span><span class=\"inline-trans\">（靜態網格模型素材）</span> is dragged from the Content Browser into a level, it becomes an instance known as a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（實例化靜態網格物件）</span>.",
+      "detailedQuestion": "Once a <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset has been placed in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>, it is referred to as a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1478,7 +1478,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "What does <span class=\"term-en\">LOD</span><span class=\"inline-trans\">（細節層次 Level of Detail）</span> stand for in <span class=\"term-en\">3D game asset optimization</span><span class=\"inline-trans\">（3D 遊戲資源最佳化技術）</span>?",
+      "detailedQuestion": "If you are unable to assign a <span class=\"term-en\">collision</span><span class=\"inline-trans\">（物理碰撞）</span> preset to a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span>, it is most likely because the <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset does not have a <span class=\"term-en\">collision hull</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1523,7 +1523,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ is an <span class=\"term-en\">attachment point</span><span class=\"inline-trans\">（骨架或網格上的掛接點/裝備插槽）</span> added to a mesh that allows other Actors or effects to be attached dynamically.",
+      "detailedQuestion": "If you want a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> to be lit in real time, you should change its <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> to ____________.",
       "detailedOptions": [
         "Hidden（靜態）",
         "Static（可移動）",
@@ -1562,7 +1562,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Complex Collision</span><span class=\"inline-trans\">（複雜網格精確碰撞體）</span> uses <span class=\"term-en\">simple geometric primitives</span><span class=\"inline-trans\">（簡易基本幾何體如球體與方塊）</span> such as spheres and boxes to represent collision.",
+      "detailedQuestion": "The three <span class=\"term-en\">collision</span><span class=\"inline-trans\">（物理碰撞）</span> response types are ____________.",
       "detailedOptions": [
         "Bounce, Hit, and Intersection（阻擋）",
         "Ignore, Overlap, and Block（Collide）",
@@ -1597,7 +1597,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which collision complexity setting calculates collision against the <span class=\"term-en\">exact triangles of the visual mesh</span><span class=\"inline-trans\">（使用 3D 模型的真實精確三角面進行物理碰撞計算）</span>?",
+      "detailedQuestion": "By default, lightmap <span class=\"term-en\">UV channels</span><span class=\"inline-trans\">（UV 貼圖通道）</span> are stored in UV Channel 2.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1634,7 +1634,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The maximum number of <span class=\"term-en\">UV channels</span><span class=\"inline-trans\">（UV 紋理貼圖坐標通道）</span> typically supported by a Static Mesh in UE4 is ____________.",
+      "detailedQuestion": "The two common file types used to import 3D models into the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> are ____________.",
       "detailedOptions": [
         ".pdf and .fbx（匯入）",
         ".fbx and .obj（遷移）",
@@ -1677,7 +1677,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: Static Meshes cannot be assigned <span class=\"term-en\">different materials</span><span class=\"inline-trans\">（指定不同材質）</span> on separate <span class=\"term-en\">material slots</span><span class=\"inline-trans\">（材質槽）</span>.",
+      "detailedQuestion": "It is possible to change the <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset that a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> references.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1718,7 +1718,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which <span class=\"term-en\">volume type</span><span class=\"inline-trans\">（體積類型）</span> is used to completely block player or physics movement in a level?",
+      "detailedQuestion": "You can create multiple <span class=\"term-en\">collision hulls</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span> on a single <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset.",
       "detailedOptions": [
         "True（True）",
         "False（False）"
@@ -1755,7 +1755,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which keyboard shortcut toggles <span class=\"term-en\">collision visualization</span><span class=\"inline-trans\">（開啟/關閉工作視窗中所有物件的碰撞體顯示）</span> in the Level Viewport?",
+      "detailedQuestion": "You press ____________ to toggle <span class=\"term-en\">collision hull</span><span class=\"inline-trans\">（物理碰撞外框/範圍）</span> <span class=\"term-en\">visibility</span><span class=\"inline-trans\">（可見度）</span> on and off in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> <span class=\"term-en\">Editor Viewport</span><span class=\"inline-trans\">（編輯器場景視窗）</span>.",
       "detailedOptions": [
         "Atl+C（+C）",
         "Atl+H（+C）",
@@ -1802,7 +1802,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which light type simulates distant, <span class=\"term-en\">parallel light rays</span><span class=\"inline-trans\">（遠距離平行光束，如太陽光或月光）</span> across an entire level?",
+      "detailedQuestion": "____________ is UE4’s offline global illumination rendering engine and is used to calculating lighting for Light and <span class=\"term-en\">Static Mesh Actors</span><span class=\"inline-trans\">（靜態網格物件）</span> with a <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> of “Static”.",
       "detailedOptions": [
         "Lightmass（Lightmass）",
         "Renderman（Lumen）",
@@ -1841,7 +1841,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Static lights</span><span class=\"inline-trans\">（靜態光源）</span> have <span class=\"term-en\">zero runtime performance cost</span><span class=\"inline-trans\">（在遊戲執行時完全零效能消耗，因為光影已完全烘焙至光照貼圖）</span> because all light and shadow calculations are precomputed by Lightmass.",
+      "detailedQuestion": "<span class=\"term-en\">Sky Light</span><span class=\"inline-trans\">（天空光：環境全域補光）</span> <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> do not cast dynamic shadows.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1886,7 +1886,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A light that combines <span class=\"term-en\">precalculated baked shadows with dynamic real-time direct illumination</span><span class=\"inline-trans\">（預計算烘焙陰影與動態即時直射光照相結合）</span> is a ____________ light.",
+      "detailedQuestion": "A ____________ works much like a real-world lightbulb, emitting light equally in all directions from a single point in space.",
       "detailedOptions": [
         "Directional Light（Spot Light）",
         "Sky Light（點光源）",
@@ -1925,7 +1925,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which lighting actor <span class=\"term-en\">captures the distant environment and sky</span><span class=\"inline-trans\">（擷取遠景大氣與天空光影）</span> to provide <span class=\"term-en\">ambient fill lighting</span><span class=\"inline-trans\">（環境漫射全域補光）</span> for the scene?",
+      "detailedQuestion": "Light attenuation is a drop in light intensity over distance.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -1962,7 +1962,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Movable lights</span><span class=\"inline-trans\">（可移動完全動態光源）</span> support <span class=\"term-en\">full real-time shadows</span><span class=\"inline-trans\">（支援全即時動態陰影）</span>, but require significant GPU/CPU performance overhead.",
+      "detailedQuestion": "While Light <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> with a <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> of ____________ do not move, their brightness can be changed at runtime.",
       "detailedOptions": [
         "Dynamic（Static）",
         "Static（固定光源）",
@@ -1997,7 +1997,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "To <span class=\"term-en\">optimize Lightmass baking times</span><span class=\"inline-trans\">（大幅縮減靜態光照烘焙運算時間）</span>, you should place a ____________ around the playable areas of your level.",
+      "detailedQuestion": "When you build lighting, <span class=\"term-en\">Blueprints</span><span class=\"inline-trans\">（藍圖可視化腳本）</span> are compiled.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2051,7 +2051,7 @@ const UE_QUIZ_DATA = {
           "en": "When you build lighting, it keeps track of and displays the build progress."
         }
       ],
-      "detailedQuestion": "The <span class=\"term-en\">Mobility setting</span><span class=\"inline-trans\">（移動性設定）</span> of a light actor can be found in the ____________ panel.",
+      "detailedQuestion": "____________ manages communication between the <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> and <span class=\"term-en\">Lightmass</span><span class=\"inline-trans\">（Lightmass 靜態光照烘焙系統）</span>. When you build lighting, it keeps track of and displays the build progress.",
       "detailedOptions": [
         "Epic Games Launcher（Lightmass）",
         "Radiosity（Swarm Agent）",
@@ -2086,7 +2086,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which light type emits light in a <span class=\"term-en\">cone shape</span><span class=\"inline-trans\">（圓錐形範圍定向照射，如手電筒或探照燈）</span> from a single point?",
+      "detailedQuestion": "It is possible to change the Lightmap resolution on a per-<span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> basis.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2136,7 +2136,7 @@ const UE_QUIZ_DATA = {
           "en": "Common rendering methods include scanline rendering, ray tracing, and radiosity methods."
         }
       ],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Point lights</span><span class=\"inline-trans\">（點光源）</span> emit light outward in <span class=\"term-en\">all 360-degree directions</span><span class=\"inline-trans\">（從中心點向四周 360 度無死角均勻發散）</span> from a central point.",
+      "detailedQuestion": "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model <span class=\"term-en\">position</span><span class=\"inline-trans\">（位置坐標）</span> and <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> properties. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
       "detailedOptions": [
         "Rasterization（Modeling）",
         "Rendering（Texturing）",
@@ -2188,7 +2188,7 @@ const UE_QUIZ_DATA = {
           "en": "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
         }
       ],
-      "detailedQuestion": "The ____________ light property overrides light color properties and uses real-world values in <span class=\"term-en\">kelvins</span><span class=\"inline-trans\">（克耳文絕對溫標 K）</span> to define the <span class=\"term-en\">color of a light</span><span class=\"inline-trans\">（燈光色溫）</span>. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+      "detailedQuestion": "The ____________ light property overrides light color properties and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
       "detailedOptions": [
         "IES（Intensity）",
         "Temperature（色溫）",
@@ -2235,7 +2235,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "In UE4's physically based rendering (PBR), which material input defines the <span class=\"term-en\">diffuse reflection color</span><span class=\"inline-trans\">（無光照下的漫反射純色/固有顏色）</span>?",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is a node-based system that uses expressions and functions to create a desired surface.",
       "detailedOptions": [
         "Lightmass（材質）",
         "Texture（貼圖）",
@@ -2270,7 +2270,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Roughness value of 0.0</span><span class=\"inline-trans\">（粗糙度設為 0.0）</span> produces an <span class=\"term-en\">extremely dull, matte surface</span><span class=\"inline-trans\">（完全霧面粗糙的表面）</span>.",
+      "detailedQuestion": "To open the <span class=\"term-en\">Material Editor</span><span class=\"inline-trans\">（材質編輯器）</span>, you need to create a new <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> asset or double-click on an existing <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> in the <span class=\"term-en\">Content Browser</span><span class=\"inline-trans\">（內容瀏覽器/素材庫）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2307,7 +2307,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which material input controls whether a surface behaves like a <span class=\"term-en\">dielectric (insulator)</span><span class=\"inline-trans\">（非金屬/絕緣體，如塑膠、木材、石頭）</span> or a <span class=\"term-en\">conductor (metal)</span><span class=\"inline-trans\">（導電純金屬）</span>?",
+      "detailedQuestion": "“PBR” stands for ____________.",
       "detailedOptions": [
         "Physical-based rasterization（-based rendering）",
         "Physical baking and rendering（基於物理的渲染）",
@@ -2350,7 +2350,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ map simulates <span class=\"term-en\">fine surface details and scratches</span><span class=\"inline-trans\">（模擬微細表面刮痕與凹凸起伏）</span> without <span class=\"term-en\">adding extra polygon geometry</span><span class=\"inline-trans\">（無需增加多餘模型面數）</span>.",
+      "detailedQuestion": "If a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> is not metallic, then you will need to use the Specular input.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2408,7 +2408,7 @@ const UE_QUIZ_DATA = {
           "en": "It is the core color description of the surface in a Material minus shadow and lighting detail."
         }
       ],
-      "detailedQuestion": "Which material expression node performs <span class=\"term-en\">linear interpolation (Lerp)</span><span class=\"inline-trans\">（線性插值混合運算）</span> between two input values based on an alpha mask?",
+      "detailedQuestion": "Base color, also called ____________, defines the overall color of a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> minus shadow and lighting detail.",
       "detailedOptions": [
         "Emissive（反照率）",
         "Roughness（Specular）",
@@ -2443,7 +2443,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: Holding down the '1' key and clicking in the Material Editor graph creates a <span class=\"term-en\">Constant (single scalar value)</span><span class=\"inline-trans\">（建立單數純量常數節點）</span>.",
+      "detailedQuestion": "Mipmaps are automatically generated for imported texture files that are not powers of 2.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2476,7 +2476,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "While <span class=\"term-en\">UV tiling</span><span class=\"inline-trans\">（UV 紋理重複平鋪）</span> is controlled in the Material Editor using the <span class=\"term-en\">Texture Coordinate node</span><span class=\"inline-trans\">（TexCoord 紋理坐標節點）</span>, the tiling of a Texture is controlled in the Texture properties.",
+      "detailedQuestion": "While <span class=\"term-en\">UV tiling</span><span class=\"inline-trans\">（UV 紋理重複平鋪）</span> is controlled in the <span class=\"term-en\">Material Editor</span><span class=\"inline-trans\">（材質編輯器）</span> using the <span class=\"term-en\">Texture Coordinate node</span><span class=\"inline-trans\">（TexCoord 紋理坐標節點）</span>, the tiling of a <span class=\"term-en\">Texture</span><span class=\"inline-trans\">（紋理貼圖）</span> is controlled in the <span class=\"term-en\">Texture properties</span><span class=\"inline-trans\">（紋理貼圖屬性）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2513,7 +2513,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which material input allows a material to <span class=\"term-en\">emit visible glow or light</span><span class=\"inline-trans\">（使材質表面產生自發光或霓虹燈輝光效果）</span> without needing an actual light actor?",
+      "detailedQuestion": "If you want to make the base color of a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> an even color, you should use a ____________ <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> expression node.",
       "detailedOptions": [
         "Constant 3 Vector（Constant）",
         "Sine（Constant 2 Vector）",
@@ -2556,7 +2556,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Material Instances</span><span class=\"inline-trans\">（材質實例）</span> allow you to <span class=\"term-en\">rapidly tweak exposed parameters</span><span class=\"inline-trans\">（即時微調公開參數）</span> without <span class=\"term-en\">triggering a slow shader recompilation</span><span class=\"inline-trans\">（無需等待耗時的著色器重新編譯）</span>.",
+      "detailedQuestion": "The ____________ input uses RGB values to control the direction in which light should react with a surface and create the illusion of directional variation on a surface.",
       "detailedOptions": [
         "Metallic（Specular）",
         "Texture（Metallic）",
@@ -2604,7 +2604,7 @@ const UE_QUIZ_DATA = {
           "en": "They are self-contained nodes with different combinations of inputs and outputs that perform specific operations."
         }
       ],
-      "detailedQuestion": "The shortcut key to create a <span class=\"term-en\">Texture Sample node</span><span class=\"inline-trans\">（紋理貼圖取樣節點）</span> in the Material Editor is holding ____________ and clicking.",
+      "detailedQuestion": "____________ are the building blocks used to create <span class=\"term-en\">Materials</span><span class=\"inline-trans\">（材質）</span>. They are self-contained nodes with different combinations of inputs and outputs that perform specific operations.",
       "detailedOptions": [
         "Mipmaps（Functions）",
         "Material functions（材質表達式）",
@@ -2651,7 +2651,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ represents an <span class=\"term-en\">imported audio file</span><span class=\"inline-trans\">（匯入的音訊檔案素材）</span> and settings related to the playback and storage of that file.",
+      "detailedQuestion": "A ____________ represents an imported audio file and settings related to the playback and storage of that file.",
       "detailedOptions": [
         "Ambient Sound Actor（音訊波形資產）",
         "Sound Attenuation asset（Sound Cue asset）",
@@ -2695,7 +2695,7 @@ const UE_QUIZ_DATA = {
           "en": "Bit rate also has an impact on quality: the higher the bit rate, the better the quality."
         }
       ],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Sound Cue</span><span class=\"inline-trans\">（Sound Cue 音效節點圖）</span> is a <span class=\"term-en\">node-based audio asset</span><span class=\"inline-trans\">（節點式音效複合資產）</span> that allows you to combine, randomize, and modulate raw audio tracks.",
+      "detailedQuestion": "The term bit rate refers to the amount of data that is processed or transferred over a specified amount of time. Bit rate also has an impact on quality: the higher the bit rate, the better the quality.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2745,7 +2745,7 @@ const UE_QUIZ_DATA = {
           "en": "This allows for adjustment to attenuation properties without having to revisit every Sound Actor individually."
         }
       ],
-      "detailedQuestion": "Which node inside a Sound Cue is used to <span class=\"term-en\">randomly alter pitch and volume</span><span class=\"inline-trans\">（隨機微調音量與音高）</span> to prevent repetitive ear fatigue?",
+      "detailedQuestion": "A ____________ stores attenuation properties in a reusable manner. This allows for adjustment to attenuation properties without having to revisit every Sound <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> individually.",
       "detailedOptions": [
         "Modulation Effect asset（Reverb Effect asset）",
         "Reverb Effect asset（聲音衰減資產）",
@@ -2789,7 +2789,7 @@ const UE_QUIZ_DATA = {
           "en": "The Modulation settings allow you to control the minimum and maximum modulation for both pitch and volume as well as set a high-frequency gain multiplier."
         }
       ],
-      "detailedQuestion": "A <span class=\"term-en\">Reverb Effect asset</span><span class=\"inline-trans\">（空間殘響/混響效果資產）</span> adds motion and depth to sound. The <span class=\"term-en\">Modulation settings</span><span class=\"inline-trans\">（隨機調變設定）</span> allow you to control the minimum and maximum modulation for both pitch and volume as well as set a high-frequency gain multiplier.",
+      "detailedQuestion": "A <span class=\"term-en\">Reverb Effect asset</span><span class=\"inline-trans\">（空間殘響/混響效果資產）</span> adds motion and depth to sound. The <span class=\"term-en\">Modulation settings</span><span class=\"inline-trans\">（隨機音高音量調變設定）</span> allow you to control the minimum and maximum modulation for both pitch and volume as well as set a high-frequency gain multiplier.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2843,7 +2843,7 @@ const UE_QUIZ_DATA = {
           "en": "You can add modulation, reverb, and randomness."
         }
       ],
-      "detailedQuestion": "True or False: An <span class=\"term-en\">Ambient Sound Actor</span><span class=\"inline-trans\">（環境背景音效物件）</span> placed in a level can play looped spatialized background audio automatically on level start.",
+      "detailedQuestion": "The ____________ Is a node-based editor that gives you the ability to modify <span class=\"term-en\">Sound Waves</span><span class=\"inline-trans\">（原始音效素材）</span> and store the result as a <span class=\"term-en\">Sound Cue asset</span><span class=\"inline-trans\">（Sound Cue 音效資產）</span>. You can add modulation, reverb, and randomness.",
       "detailedOptions": [
         "Sound Cue Editor（Sound Class）",
         "Audio Editor（Mixer node）",
@@ -2890,7 +2890,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ is a definable asset with adjustable property settings that will allow you to control such elements as <span class=\"term-en\">echo density</span><span class=\"inline-trans\">（回音密度）</span>, <span class=\"term-en\">overall reverb gain</span><span class=\"inline-trans\">（整體殘響增益）</span>, and <span class=\"term-en\">air absorption</span><span class=\"inline-trans\">（空氣高頻吸收係數）</span> to help craft the overall feel you may be after.",
+      "detailedQuestion": "A ____________ is a definable asset with adjustable property settings that will allow you to control such elements as echo density, overall reverb gain, and air absorption to help craft the overall feel you may be after.",
       "detailedOptions": [
         "Sound Attenuation asset（Sound Wave）",
         "Sound Cue asset（混響效果資產）",
@@ -2925,7 +2925,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "To <span class=\"term-en\">attach a sound directly to a moving character's skeletal socket</span><span class=\"inline-trans\">（將腳步聲或武器音效直接掛接於移動角色的骨架插槽上）</span>, you use the ____________ function.",
+      "detailedQuestion": "The Looping node is used to randomly trigger a <span class=\"term-en\">Sound Wave</span><span class=\"inline-trans\">（原始音訊素材 .wav）</span> node from within a group of possible <span class=\"term-en\">Sound Wave</span><span class=\"inline-trans\">（原始音訊素材 .wav）</span> nodes.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -2962,7 +2962,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Sound Attenuation</span><span class=\"inline-trans\">（聲音距離衰減範圍）</span> can be shaped as a sphere, box, capsule, or cone volume in 3D space.",
+      "detailedQuestion": "A ____________ allows you to control and apply various sounds in your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> as well as provides an avenue to create compartmentalized audio zones where you can control what is heard inside and outside of the volume.",
       "detailedOptions": [
         "Sound Modulation Actor（Ambient Sound）",
         "Reverb Actor（Sound Attenuation）",
@@ -3001,7 +3001,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which multiplier property inside a Sound Cue adjusts the <span class=\"term-en\">overall loudness</span><span class=\"inline-trans\">（整體音量增益大小）</span> of a sound wave?",
+      "detailedQuestion": "A ____________ is used to trigger multiple <span class=\"term-en\">Sound Wave</span><span class=\"inline-trans\">（原始音訊素材 .wav）</span> nodes simultaneously.",
       "detailedOptions": [
         "Wave Player node（Concatenator node）",
         "Random node（混音節點）",
@@ -3036,7 +3036,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "You can place an <span class=\"term-en\">Ambient Sound Actor</span><span class=\"inline-trans\">（環境音效物件）</span> in your Level by dragging a <span class=\"term-en\">Sound Cue asset</span><span class=\"inline-trans\">（Sound Cue 音效節點資產）</span> from the <span class=\"term-en\">Content Browser</span><span class=\"inline-trans\">（內容瀏覽器）</span> into your Level.",
+      "detailedQuestion": "You can place an <span class=\"term-en\">Ambient Sound Actor</span><span class=\"inline-trans\">（環境音效物件）</span> in your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> by dragging a <span class=\"term-en\">Sound Cue asset</span><span class=\"inline-trans\">（Sound Cue 音效資產）</span> from the <span class=\"term-en\">Content Browser</span><span class=\"inline-trans\">（內容瀏覽器/素材庫）</span> into your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3077,7 +3077,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which tool mode in UE4 is specifically used to <span class=\"term-en\">create, sculpt, and paint massive outdoor terrain</span><span class=\"inline-trans\">（建立、雕刻與彩繪大型戶外山川地貌）</span>?",
+      "detailedQuestion": "A ____________ is a <span class=\"term-en\">Texture</span><span class=\"inline-trans\">（紋理貼圖）</span> that provides elevation information based on a gray <span class=\"term-en\">scale</span><span class=\"inline-trans\">（縮放比例）</span>.",
       "detailedOptions": [
         "Terrain map（Terrain map）",
         "8-bit map（-bit map）",
@@ -3116,7 +3116,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A grayscale image used to <span class=\"term-en\">generate 3D terrain elevations</span><span class=\"inline-trans\">（使用黑白明暗像素代表高低起伏以生成 3D 地形）</span> is called a ____________.",
+      "detailedQuestion": "The <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span> tools can be found in the World Settings panel.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3153,7 +3153,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "<span class=\"term-en\">Height maps</span><span class=\"inline-trans\">（地貌灰階高度圖）</span> can be authored directly in UE4 by using the <span class=\"term-en\">Landscape Sculpt tools</span><span class=\"inline-trans\">（地貌雕刻工具）</span>, or they can be made in other sculpting or photo-manipulation programs and imported into UE4.",
+      "detailedQuestion": "<span class=\"term-en\">Height maps</span><span class=\"inline-trans\">（地貌高度圖）</span> can be authored directly in UE4 by using the <span class=\"term-en\">Landscape Sculpt tools</span><span class=\"inline-trans\">（地貌雕刻工具）</span>, or they can be made in other sculpting or photo-manipulation programs and imported into UE4.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3198,7 +3198,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which sculpting brush tool creates a <span class=\"term-en\">smooth, flat plateau</span><span class=\"inline-trans\">（將崎嶇山地壓平整為平坦台地或建築地基）</span> by forcing surrounding vertices to a uniform sampled height?",
+      "detailedQuestion": "The ____________ is a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> node that allows you to blend between <span class=\"term-en\">Materials</span><span class=\"inline-trans\">（材質）</span> and <span class=\"term-en\">Textures</span><span class=\"inline-trans\">（紋理貼圖）</span> on Landscapes.",
       "detailedOptions": [
         "FoliageLayerBlend（FoliageLayerBlend）",
         "LandscapeLayerBlend（地貌圖層混合節點）",
@@ -3254,7 +3254,7 @@ const UE_QUIZ_DATA = {
           "en": "This Actor can be any type of Static Mesh asset that is available through the Content Browser."
         }
       ],
-      "detailedQuestion": "Which brush tool <span class=\"term-en\">softens sharp spikes, harsh ridges, and jagged terrain edges</span><span class=\"inline-trans\">（柔化撫平陡峭毛刺、硬邊與鋸齒地形）</span>?",
+      "detailedQuestion": "A ____________ is a collection of assets placed on top of and in direct relation to the <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span> mesh or other assets in a scene. This <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> can be any type of <span class=\"term-en\">Static Mesh</span><span class=\"inline-trans\">（靜態網格 3D 模型）</span> asset that is available through the <span class=\"term-en\">Content Browser</span><span class=\"inline-trans\">（內容瀏覽器/素材庫）</span>.",
       "detailedOptions": [
         "Shrub Actor（Shrub Actor）",
         "Tree Actor（Tree Actor）",
@@ -3293,7 +3293,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: The <span class=\"term-en\">Foliage tool</span><span class=\"inline-trans\">（Foliage 植被筆刷系統）</span> allows you to <span class=\"term-en\">efficiently paint thousands of static mesh instances (trees, rocks, grass)</span><span class=\"inline-trans\">（以極高 GPU 批次實例化效率在地形上刷出數萬顆樹木草叢）</span> across landscapes.",
+      "detailedQuestion": "The Paint tools work in conjunction with the <span class=\"term-en\">LandscapeLayerBlend</span><span class=\"inline-trans\">（地貌圖層混合節點）</span> node in a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span> to display <span class=\"term-en\">Texture</span><span class=\"inline-trans\">（紋理貼圖）</span> layers on a <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span> <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3330,7 +3330,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ contains a collection of tools for <span class=\"term-en\">placing a large number of assets into a scene quickly</span><span class=\"inline-trans\">（快速在場景中大批次刷入大量植被素材）</span>, using defined parameters and restrictions on where they can be placed.",
+      "detailedQuestion": "____________ contains a collection of tools for placing a large number of assets into a scene quickly, using defined parameters and restrictions on where they can be placed.",
       "detailedOptions": [
         "Foliage mode（植被模式面板）",
         "Sculpt mode（Sculpt mode）",
@@ -3382,7 +3382,7 @@ const UE_QUIZ_DATA = {
           "en": "This Actor has its own level of detail (LOD) system for efficiency."
         }
       ],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Painting different landscape layers (such as grass, dirt, and rock)</span><span class=\"inline-trans\">（彩繪不同地表層，如青草、泥土與岩石）</span> requires a Landscape Material using a LandscapeLayerBlend node.",
+      "detailedQuestion": "A ____________ is a specific <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> class used to represent terrain. This <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> has its own level of detail (<span class=\"term-en\">LOD</span><span class=\"inline-trans\">（LOD 細節層次）</span>) system for efficiency.",
       "detailedOptions": [
         "Terrain Actor（Terrain Actor）",
         "Landscape Actor（地貌 Actor）",
@@ -3434,7 +3434,7 @@ const UE_QUIZ_DATA = {
           "en": "There are different properties for editing brush sizes and shapes."
         }
       ],
-      "detailedQuestion": "Which parameter controls the <span class=\"term-en\">diameter/size of the landscape sculpting brush</span><span class=\"inline-trans\">（地貌雕刻筆刷的直徑工作範圍大小）</span>?",
+      "detailedQuestion": "In <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span> mode, the ____________ contains a collection of tools for deforming the surface of a <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span> <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>. There are different properties for editing brush sizes and shapes.",
       "detailedOptions": [
         "Foliage tab（Foliage tab）",
         "Paint tab（Paint tab）",
@@ -3469,7 +3469,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The strength or intensity of a <span class=\"term-en\">sculpting brush deformation</span><span class=\"inline-trans\">（地貌雕刻筆刷拉伸或壓陷地形的變形力道強度）</span> is controlled by the ____________ setting.",
+      "detailedQuestion": "The Fill World button simply confirms the settings that are currently in place and uses them to create a new <span class=\"term-en\">Landscape</span><span class=\"inline-trans\">（地貌地形系統）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3506,7 +3506,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which fog actor simulates the <span class=\"term-en\">scattering of sunlight through the atmosphere</span><span class=\"inline-trans\">（模擬太陽光穿透大氣層的瑞利散射與逼真天空地平線）</span> to give a natural sense of distant depth?",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> captures images (cubemaps) of the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> from its location and projects those images onto other <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> in its vicinity.",
       "detailedOptions": [
         "Sphere Capture（Sphere Capture）",
         "Reflection Capture（反射捕捉 Actor）",
@@ -3541,7 +3541,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Exponential Height Fog</span><span class=\"inline-trans\">（指數高度霧）</span> creates a density gradient where fog is <span class=\"term-en\">thickest at lower elevations and thins out exponentially as altitude increases</span><span class=\"inline-trans\">（低窪處濃密，隨海拔高度上升呈指數遞減變薄）</span>.",
+      "detailedQuestion": "<span class=\"term-en\">Bloom</span><span class=\"inline-trans\">（強光泛光眩光）</span> causes the exposure of a scene to automatically adjust to re-create the effect experienced as human eyes adjust when going from a bright environment into a dark environment or vice versa.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3578,7 +3578,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which volume actor allows you to apply <span class=\"term-en\">full-screen camera effects</span><span class=\"inline-trans\">（全螢幕鏡頭濾鏡特效，如色調分級、自動曝光與光暈）</span> such as exposure, bloom, and color grading?",
+      "detailedQuestion": "The Player Start <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> defines the location the player’s <span class=\"term-en\">Pawn</span><span class=\"inline-trans\">（受控實體）</span> will spawn into the world.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3628,7 +3628,7 @@ const UE_QUIZ_DATA = {
           "en": "It can give your outdoor Levels a much more realistic look."
         }
       ],
-      "detailedQuestion": "To make a Post Process Volume <span class=\"term-en\">apply to the entire level regardless of whether the camera is inside it</span><span class=\"inline-trans\">（讓後製效果作用於全地圖，無視攝影機是否在體積外框內）</span>, you must enable ____________.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> gives an approximation of light scattering through a planetary atmosphere. It can give your outdoor <span class=\"term-en\">Levels</span><span class=\"inline-trans\">（關卡場景）</span> a much more realistic look.",
       "detailedOptions": [
         "Atmospheric Fog（大氣霧 Actor）",
         "Sky Sphere Blueprint（Sky Sphere Blueprint）",
@@ -3675,7 +3675,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: <span class=\"term-en\">Bloom</span><span class=\"inline-trans\">（強光泛光眩光效果）</span> produces glowing fringes around intensely bright areas on the screen to simulate real-world camera lens flare.",
+      "detailedQuestion": "If it is taking a long time to build lighting for your <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>, there is a good chance you need to place a ____________.",
       "detailedOptions": [
         "Sky Light（Sky Light）",
         "Post Process Volume（Post Process Volume）",
@@ -3710,7 +3710,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A <span class=\"term-en\">Sky Light</span><span class=\"inline-trans\">（天空光）</span> will only <span class=\"term-en\">recapture the scene</span><span class=\"inline-trans\">（重新擷取場景環境全域光影）</span> when you rebuild lighting.",
+      "detailedQuestion": "A <span class=\"term-en\">Sky Light</span><span class=\"inline-trans\">（天空光：環境全域補光）</span> will only recapture the scene when you rebuild lighting.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3760,7 +3760,7 @@ const UE_QUIZ_DATA = {
           "en": "The effect can be used to draw the viewer’s attention and to make the rendering appear more like a photograph or a movie."
         }
       ],
-      "detailedQuestion": "Which post-process setting <span class=\"term-en\">mimics the human eye adjusting from a dark indoor room to bright sunny outdoors</span><span class=\"inline-trans\">（模擬人眼從陰暗室內走到戶外烈日下的瞳孔暗適應/明適應調節）</span>?",
+      "detailedQuestion": "The ____________ post processing property applies a blur to the scene based on distance in front of or behind a focal point. This is done to simulate what happens in real-world cameras. The effect can be used to draw the viewer’s attention and to make the rendering appear more like a photograph or a movie.",
       "detailedOptions": [
         "Depth of Field (DOF)（景深）",
         "Color Grading（Color Grading）",
@@ -3808,7 +3808,7 @@ const UE_QUIZ_DATA = {
           "en": "The effect is mostly noticeable near the edges of an image."
         }
       ],
-      "detailedQuestion": "A ____________ is a <span class=\"term-en\">chromatic aberration effect</span><span class=\"inline-trans\">（色差/色散光學現象）</span> that simulates the color shifts in real-world camera lenses. The effect is mostly noticeable near the edges of an image.",
+      "detailedQuestion": "A ____________ is a <span class=\"term-en\">chromatic aberration effect</span><span class=\"inline-trans\">（色差/色散光學效應）</span> that simulates the color shifts in real-world camera lenses. The effect is mostly noticeable near the edges of an image.",
       "detailedOptions": [
         "Scene Fringe（場景邊緣色散）",
         "Blendable（Blendable）",
@@ -3855,7 +3855,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ provides two <span class=\"term-en\">fog colors</span><span class=\"inline-trans\">（雙色半球霧氣色彩）</span>, one for the hemisphere facing the dominant <span class=\"term-en\">Directional Light</span><span class=\"inline-trans\">（主定向太陽光）</span>, and another for the opposite hemisphere.",
+      "detailedQuestion": "____________ provides two fog colors, one for the hemisphere facing the dominant <span class=\"term-en\">Directional Light</span><span class=\"inline-trans\">（定向光源/太陽光）</span> (or straight up if none exists), and another for the opposite hemisphere.",
       "detailedOptions": [
         "Reflection Capture（Reflection Capture）",
         "Sky Sphere Blueprint（Sky Sphere Blueprint）",
@@ -3890,7 +3890,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The <span class=\"term-en\">Lens Flare effect</span><span class=\"inline-trans\">（鏡頭光暈眩光效果）</span> is a type of <span class=\"term-en\">DOF blur effect</span><span class=\"inline-trans\">（景深模糊效果）</span>.",
+      "detailedQuestion": "The <span class=\"term-en\">Lens Flare effect</span><span class=\"inline-trans\">（鏡頭光暈眩光效果）</span> is a type of <span class=\"term-en\">DOF blur effect</span><span class=\"inline-trans\">（景深鏡頭模糊效果）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3923,7 +3923,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "If you want to animate the change in color of a particle over its life, you need a <span class=\"term-en\">Color Over Life module</span><span class=\"inline-trans\">（生命週期顏色漸變模組）</span> with a <span class=\"term-en\">constant curve or uniform curve distribution</span><span class=\"inline-trans\">（常數或均勻曲線分佈）</span>.",
+      "detailedQuestion": "If you want to animate the change in color of a particle over its life, you need a <span class=\"term-en\">Color Over Life module</span><span class=\"inline-trans\">（生命週期顏色漸變模組）</span> with a constant curve or uniform curve distribution.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -3960,7 +3960,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Particle System Actor</span><span class=\"inline-trans\">（粒子系統物件）</span> placed in a level can <span class=\"term-en\">contain multiple independent particle emitters</span><span class=\"inline-trans\">（包含多個各自獨立的發射器，如同時發射火焰核心與煙霧）</span>.",
+      "detailedQuestion": "____________ are a set of float or vector data types for handling data in specialized ways, such as using a range for a value, or interpolating a value along a curve.",
       "detailedOptions": [
         "Emitter Actors（Emitter Actors）",
         "Distributions（分佈器）",
@@ -3995,7 +3995,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which particle module defines <span class=\"term-en\">how many individual particles are generated per second</span><span class=\"inline-trans\">（每秒生成產生的粒子顆數與生成頻率）</span>?",
+      "detailedQuestion": "An <span class=\"term-en\">Emitter Actor</span><span class=\"inline-trans\">（粒子發射器物件）</span> is an instance of a <span class=\"term-en\">Particle System asset</span><span class=\"inline-trans\">（粒子系統資產）</span> placed in a <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4041,7 +4041,7 @@ const UE_QUIZ_DATA = {
           "en": "By allowing multiple Emitters in a system, the designer can create elaborate particle effects that are held in a single system."
         }
       ],
-      "detailedQuestion": "A ____________ is a complete particle effect that contains any number of <span class=\"term-en\">Particle Emitters</span><span class=\"inline-trans\">（粒子發射器單元）</span>. By allowing multiple Emitters in a system, the designer can create elaborate particle effects that are held in a single system.",
+      "detailedQuestion": "A ____________ is a complete particle effect that contains any number of <span class=\"term-en\">Particle Emitters</span><span class=\"inline-trans\">（粒子發射器單元）</span>. By allowing multiple <span class=\"term-en\">Emitters</span><span class=\"inline-trans\">（發射器）</span> in a system, the designer can create elaborate particle effects that are held in a single system.",
       "detailedOptions": [
         "Emitter Actor（Emitter Actor）",
         "Emitter System asset（Emitter System asset）",
@@ -4093,7 +4093,7 @@ const UE_QUIZ_DATA = {
           "en": "Information about the applied Material, the Emitter’s lifetime, and whether the Emitter loops can be found here."
         }
       ],
-      "detailedQuestion": "The ____________ module holds the parameters that a particle Emitter absolutely needs to function. Information about the applied <span class=\"term-en\">Material</span><span class=\"inline-trans\">（指定材質）</span>, the <span class=\"term-en\">Emitter’s lifetime</span><span class=\"inline-trans\">（發射器生命週期）</span>, and whether the Emitter loops can be found here.",
+      "detailedQuestion": "The ____________ module holds the parameters that a particle <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> absolutely needs to function. Information about the applied <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>, the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span>’s lifetime, and whether the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> loops can be found here.",
       "detailedOptions": [
         "Required（必要模組）",
         "Initial Velocity（Initial Velocity）",
@@ -4128,7 +4128,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which module gives newborn particles an <span class=\"term-en\">initial directional speed vector upon spawning</span><span class=\"inline-trans\">（在粒子生成瞬間賦予其初始方向與噴發初速度向量）</span>?",
+      "detailedQuestion": "The <span class=\"term-en\">Spawn module</span><span class=\"inline-trans\">（粒子生成速率模組）</span> is responsible for the number of new particles that are birthed and their frequency or rate of emission.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4169,7 +4169,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The ____________ module is represented as a black bar below the Emitter block.",
+      "detailedQuestion": "The ____________ module is represented as a black bar below the <span class=\"term-en\">Emitter</span><span class=\"inline-trans\">（發射器）</span> block.",
       "detailedOptions": [
         "Type Data（類型資料模組）",
         "Required（Required）",
@@ -4208,7 +4208,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: Particle materials typically require their Blend Mode to be set to <span class=\"term-en\">Translucent or Additive</span><span class=\"inline-trans\">（半透明 Translucent 或疊加 Additive 混合模式）</span> to support semi-transparent fire, smoke, and sparks.",
+      "detailedQuestion": "____________ is not a type data found in UE4.",
       "detailedOptions": [
         "Sprite（精靈面片）",
         "Beam（光束）",
@@ -4247,7 +4247,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which particle emitter type emits <span class=\"term-en\">2D camera-facing texture quads (sprites)</span><span class=\"inline-trans\">（發射永遠面向攝影機視角平面的 2D 廣告看板精靈圖元）</span>?",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is a real-time particle editor and UE4’s modular approach to controlling particle behavior that allows you to design complex effects quickly and easily.",
       "detailedOptions": [
         "Cascade（級聯粒子編輯器）",
         "Drizzle（Drizzle）",
@@ -4295,7 +4295,7 @@ const UE_QUIZ_DATA = {
           "en": "By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points."
         }
       ],
-      "detailedQuestion": "A ____________ is connected particles that form a <span class=\"term-en\">stream between a source point and a target point</span><span class=\"inline-trans\">（發射起點與受擊終點之間的粒子光束流/閃電鏈）</span>. By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points.",
+      "detailedQuestion": "A ____________ is connected particles that form a stream between a source point and a target point. By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points.",
       "detailedOptions": [
         "Beam（光束）",
         "GPU（GPU）",
@@ -4334,7 +4334,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The modern multi-track cinematic timeline tool in Unreal Engine used to <span class=\"term-en\">direct cutscenes and animations</span><span class=\"inline-trans\">（虛幻引擎用於製作過場運鏡與動畫的多軌道時間軸導演工具）</span> is ____________.",
+      "detailedQuestion": "The newest editor in UE4 used to edit in-game cinematics is called ____________.",
       "detailedOptions": [
         "Cinematics（Cinematics）",
         "Persona（Persona）",
@@ -4369,7 +4369,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Level Sequence asset</span><span class=\"inline-trans\">（Level Sequence 關卡過場序列資產）</span> stores keyframe animation tracks for actors, cameras, lights, and transform properties.",
+      "detailedQuestion": "In a digital environment, <span class=\"term-en\">keys</span><span class=\"inline-trans\">（關鍵影格）</span> or <span class=\"term-en\">keyframes</span><span class=\"inline-trans\">（關鍵影格）</span> store changes in value or property at set points over a specified amount of time.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4406,7 +4406,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which specialized track inside Sequencer is responsible for <span class=\"term-en\">switching between multiple camera angles during a cutscene</span><span class=\"inline-trans\">（在過場動畫中切換不同電影鏡位與視角鏡頭的專用軌道）</span>?",
+      "detailedQuestion": "A ____________ is a panel in the <span class=\"term-en\">Sequencer Editor</span><span class=\"inline-trans\">（Sequencer 動畫序列編輯器）</span> that displays the playback range of your sequence using red and green markers.",
       "detailedOptions": [
         "Tracks Area（Tracks Area）",
         "Timeline（時間軸）",
@@ -4441,7 +4441,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which camera actor is <span class=\"term-en\">specifically designed for cinematics, featuring real-world film focal lengths, apertures, and depth of field controls</span><span class=\"inline-trans\">（專為電影運鏡打造，支援真實鏡頭焦距、光圈與感光元件規格的攝影機物件）</span>?",
+      "detailedQuestion": "The <span class=\"term-en\">Cine Camera Actor</span><span class=\"inline-trans\">（電影攝影機物件）</span> has the exact same properties as a regular Camera <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4482,7 +4482,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ is a Sequencer term meaning an <span class=\"term-en\">Actor that exists in the Level already</span><span class=\"inline-trans\">（已存在於關卡中的場景物件）</span> and that Sequencer will take control of in order to apply changes to it.",
+      "detailedQuestion": "____________ is a <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> term meaning an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> that exists in the <span class=\"term-en\">Level</span><span class=\"inline-trans\">（關卡場景）</span> already and that <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> will take control of in order to apply changes to it.",
       "detailedOptions": [
         "Placeable（Placeable）",
         "Possessable（可附身物件）",
@@ -4517,7 +4517,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "The <span class=\"term-en\">Timeline Marker</span><span class=\"inline-trans\">（時間軸指針標記）</span> is the <span class=\"term-en\">playhead</span><span class=\"inline-trans\">（播放指針）</span> and displays the <span class=\"term-en\">current frame being played</span><span class=\"inline-trans\">（當前正在播放的影格畫面）</span> in the Level Sequence.",
+      "detailedQuestion": "The <span class=\"term-en\">Timeline Marker</span><span class=\"inline-trans\">（時間軸指針標記）</span> is the <span class=\"term-en\">playhead</span><span class=\"inline-trans\">（播放指針）</span> and displays the current frame being played in the <span class=\"term-en\">Level Sequence</span><span class=\"inline-trans\">（關卡過場序列資產）</span>.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4558,7 +4558,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which shortcut key in Sequencer sets a <span class=\"term-en\">keyframe</span><span class=\"inline-trans\">（在時間軸指針當前位置打下一個關鍵影格）</span> for selected transform properties?",
+      "detailedQuestion": "____________ is a <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> term meaning an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> that <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> is possessing that does not yet exist and will be spawned by <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span>.",
       "detailedOptions": [
         "Placeable（Placeable）",
         "Possessable（Possessable）",
@@ -4597,7 +4597,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ are self-contained assets that store <span class=\"term-en\">track and keyframe data</span><span class=\"inline-trans\">（軌道與關鍵影格資料）</span> used for creating in-game cinematics and are edited in the <span class=\"term-en\">Sequencer Editor</span><span class=\"inline-trans\">（Sequencer 動畫序列編輯器）</span>.",
+      "detailedQuestion": "____________ are self-contained assets that store track and <span class=\"term-en\">keyframe</span><span class=\"inline-trans\">（關鍵影格）</span> data used for creating in-game cinematics and are edited in the <span class=\"term-en\">Sequencer Editor</span><span class=\"inline-trans\">（Sequencer 動畫序列編輯器）</span>.",
       "detailedOptions": [
         "Level Sequence assets（關卡序列資產）",
         "Level Sequence Actors（Level Sequence Actors）",
@@ -4644,7 +4644,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "A ____________ allows you to <span class=\"term-en\">switch between cameras associated with Sequencer</span><span class=\"inline-trans\">（在 Sequencer 關聯的各攝影機鏡頭視角之間切換）</span> and provides a camera perspective.",
+      "detailedQuestion": "A ____________ allows you to switch between cameras associated with <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span> and provides a camera perspective.",
       "detailedOptions": [
         "Shot Track（Shot Track）",
         "Event Track（Event Track）",
@@ -4691,7 +4691,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "If you want to animate a <span class=\"term-en\">Cine Camera Actor</span><span class=\"inline-trans\">（電影攝影機物件）</span> along a path with Sequencer, you should use a ____________.",
+      "detailedQuestion": "If you want to animate a <span class=\"term-en\">Cine Camera Actor</span><span class=\"inline-trans\">（電影攝影機物件）</span> along a path with <span class=\"term-en\">Sequencer</span><span class=\"inline-trans\">（Sequencer 動畫序列器）</span>, you should use a ____________.",
       "detailedOptions": [
         "Camera Rig Crane Actor（攝影搖臂）",
         "Level Sequence Actor（Level Sequence Actor）",
@@ -4734,7 +4734,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which property checkbox must be enabled on a Static Mesh Actor's Details panel to make it <span class=\"term-en\">fall under gravity and react to collisions</span><span class=\"inline-trans\">（受地心引力墜落並產生實體剛體物理碰撞反應）</span>?",
+      "detailedQuestion": "A ____________ is a <span class=\"term-en\">rigid body</span><span class=\"inline-trans\">（剛體物理）</span> that fractures and crumbles when enough force or damage has been applied.",
       "detailedOptions": [
         "Radial Force Actor（Radial Force Actor）",
         "Static Mesh Actor（Static Mesh Actor）",
@@ -4773,7 +4773,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: An Actor must have valid <span class=\"term-en\">collision geometry (Collision Hulls)</span><span class=\"inline-trans\">（必須具備有效碰撞體外框）</span> in order to simulate physics properly.",
+      "detailedQuestion": "<span class=\"term-en\">Friction</span><span class=\"inline-trans\">（表面摩擦力）</span> is the amount of resistance applied to a sliding or rolling body.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4810,7 +4810,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "____________ refers to the <span class=\"term-en\">amount of matter in a body</span><span class=\"inline-trans\">（物體內所含物質的總量/質量）</span>, regardless of the amount of gravity applied.",
+      "detailedQuestion": "____________ refers to the amount of matter in a body, regardless of the amount of gravity applied.",
       "detailedOptions": [
         "Mass（質量）",
         "Density（密度）",
@@ -4854,7 +4854,7 @@ const UE_QUIZ_DATA = {
           "en": "It is the dissipation of energy over time."
         }
       ],
-      "detailedQuestion": "Which physical property dampens the straight-line velocity of a moving object, <span class=\"term-en\">simulating air resistance</span><span class=\"inline-trans\">（移動空氣阻力：使剛體在空中前進時線性速度逐漸衰減變慢）</span>?",
+      "detailedQuestion": "<span class=\"term-en\">Restitution</span><span class=\"inline-trans\">（表面彈性係數）</span> refers to how quickly a physics body comes to rest after a force has been applied. It is the dissipation of energy over time.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -4912,7 +4912,7 @@ const UE_QUIZ_DATA = {
           "en": "There are several preset joint types: ball-and-socket, hinge, and prismatic."
         }
       ],
-      "detailedQuestion": "Which physical property dampens the <span class=\"term-en\">rotational tumbling of a spinning physics object</span><span class=\"inline-trans\">（旋轉阻力：使物體在空中翻滾旋轉時角速度逐漸衰減停止）</span>?",
+      "detailedQuestion": "A ____________ is a type of joint that allows you to connect two <span class=\"term-en\">Actors</span><span class=\"inline-trans\">（場景物件/Actor）</span> together, presumably ones simulating physics. It gives you the ability to apply limits or set linear and angular forces. There are several preset joint types: ball-and-socket, hinge, and prismatic.",
       "detailedOptions": [
         "Destructible Actor（Destructible Actor）",
         "Physics Thruster Actor（Physics Thruster Actor）",
@@ -4955,7 +4955,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "True or False: A <span class=\"term-en\">Physics Material</span><span class=\"inline-trans\">（物理材質資產）</span> is used to define <span class=\"term-en\">surface friction (slide resistance) and restitution (bounciness)</span><span class=\"inline-trans\">（表面滑動摩擦阻力與彈性反彈係數）</span>.",
+      "detailedQuestion": "A <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> can be set to simulate physics.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -5009,7 +5009,7 @@ const UE_QUIZ_DATA = {
           "en": "It is used, for example, to create ragdoll effects on characters or dynamic hoses or chains that react with the world around them."
         }
       ],
-      "detailedQuestion": "The ____________ Editor is used to set up <span class=\"term-en\">physics constraints on the bone hierarchy</span><span class=\"inline-trans\">（骨架階層上的物理約束）</span> for a <span class=\"term-en\">Skeletal Mesh asset</span><span class=\"inline-trans\">（骨架模型資產）</span>. It is used, for example, to create ragdoll effects on characters or dynamic hoses or chains that react with the world around them.",
+      "detailedQuestion": "The ____________ <span class=\"term-en\">Editor</span><span class=\"inline-trans\">（虛幻編輯器）</span> is used to set up <span class=\"term-en\">physics constraints</span><span class=\"inline-trans\">（物理約束鉸鏈）</span> on the <span class=\"term-en\">bone hierarchy</span><span class=\"inline-trans\">（骨骼階層）</span> for a <span class=\"term-en\">Skeletal Mesh asset</span><span class=\"inline-trans\">（骨架模型資產）</span>. It is used, for example, to create <span class=\"term-en\">ragdoll effects</span><span class=\"inline-trans\">（布娃娃物理效果）</span> on characters or dynamic hoses or chains that react with the world around them.",
       "detailedOptions": [
         "Physics Asset Tool (PhAT)（物理資產工具 PhAT）",
         "Destructible Mesh（Destructible Mesh）",
@@ -5044,7 +5044,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which component is used to <span class=\"term-en\">link two physics bodies together like a hinge, ball socket, or rope constraint</span><span class=\"inline-trans\">（像鉸鏈、關節或繩索般將兩個物理實體連接拘束在一起的組件）</span>?",
+      "detailedQuestion": "Voronoi is a mathematical tessellation algorithm that divides a large entity into small parts.",
       "detailedOptions": [
         "True（正確）",
         "False（錯誤）"
@@ -5102,7 +5102,7 @@ const UE_QUIZ_DATA = {
           "en": "Properties include Friction, Restitution, and Density."
         }
       ],
-      "detailedQuestion": "True or False: Enabling Simulate Physics on a Static Mesh automatically changes its <span class=\"term-en\">Mobility setting to Movable</span><span class=\"inline-trans\">（自動將其移動性切換為可移動 Movable）</span>.",
+      "detailedQuestion": "A ____________ contains a collection of properties that affect the behavior of an <span class=\"term-en\">Actor</span><span class=\"inline-trans\">（場景物件/Actor）</span> simulating physics. It can be assigned to a <span class=\"term-en\">Static Mesh Actor</span><span class=\"inline-trans\">（靜態網格物件）</span> or a <span class=\"term-en\">Material</span><span class=\"inline-trans\">（材質）</span>. Properties include <span class=\"term-en\">Friction</span><span class=\"inline-trans\">（表面摩擦力）</span>, <span class=\"term-en\">Restitution</span><span class=\"inline-trans\">（表面彈性係數）</span>, and Density.",
       "detailedOptions": [
         "Skeletal Mesh asset（Skeletal Mesh asset）",
         "Physical Material asset（物理材質資產）",
@@ -5141,7 +5141,7 @@ const UE_QUIZ_DATA = {
       ],
       "hasSegments": false,
       "segments": [],
-      "detailedQuestion": "Which function call applies an <span class=\"term-en\">instantaneous directional force or kick</span><span class=\"inline-trans\">（施加瞬間爆發力道衝量，如子彈擊中或爆炸推力）</span> to a physics object?",
+      "detailedQuestion": "A ____________ is a solid nondeformable object.",
       "detailedOptions": [
         "Cloth（布料）",
         "Impulse（衝量）",
