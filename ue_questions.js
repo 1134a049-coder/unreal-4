@@ -101,7 +101,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e ____________ panel displays the editable properties for a selected \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e ____________ panel displays the \u003cspan class=\"term-en\"\u003eeditable\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（可編輯/可調整）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e for a selected \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Modes（模式面板：放置基礎幾何體、地貌與植被工具）",
                                                   "Details（細節面板：檢視與調整所選物件的各項屬性數值）",
@@ -233,7 +233,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e shows you all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e that are placed in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e shows you all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e that are \u003cspan class=\"term-en\"\u003eplaced\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（放置/擺放）\u003c/span\u003e in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -403,7 +403,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "When creating a new project, you can select from a variety of default ____________ templates, such as First Person, Third Person, Flying, and Puzzle.",
+                          "detailedQuestion":  "When creating a new project, you can select from a \u003cspan class=\"term-en\"\u003evariety\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（多樣/多種）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e ____________ \u003cspan class=\"term-en\"\u003etemplates\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（樣板/模板）\u003c/span\u003e, such as First Person, Third Person, Flying, and Puzzle.",
                           "detailedOptions":  [
                                                   "Game Mode（遊戲模式規範：定義遊戲規則、勝負條件與預設生成角色的中央大腦）",
                                                   "Graphic Settings（圖形品質設定：調整畫面解析度與渲染效能）",
@@ -601,7 +601,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "These files are found in your project’s “Saved” folder."
                                            }
                                        ],
-                          "detailedQuestion":  "Autosave and backup files update every 30 minutes by default. These files can save the day if the \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e ever crashes on you, but they also increase the size of your project. These files are found in your project’s “Saved” folder.",
+                          "detailedQuestion":  "Autosave and backup files update every 30 minutes by \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e. These files can save the day if the \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e ever crashes on you, but they also increase the size of your project. These files are found in your project’s “Saved” folder.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -640,7 +640,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ folder is not found in a default project folder.",
+                          "detailedQuestion":  "The ____________ folder is not found in a \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e project folder.",
                           "detailedOptions":  [
                                                   "Saved（暫存目錄：存放自動備份存檔與遊戲執行日誌）",
                                                   "Content（資產主目錄：專案所有遊戲素材必須存放在此）",
@@ -716,7 +716,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ______________ Viewer shows the dependencies for an asset.",
+                          "detailedQuestion":  "The ______________ Viewer shows the \u003cspan class=\"term-en\"\u003edependencies\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（相依引用/依賴關聯）\u003c/span\u003e for an asset.",
                           "detailedOptions":  [
                                                   "Viewport（工作視窗：編輯與預覽 3D 場景的主要操作視窗）",
                                                   "Reference（資產引用：查看素材之間的相依連結）",
@@ -792,7 +792,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The____________ is a collection of C++ or \u003cspan class=\"term-en\"\u003eBlueprint\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（藍圖腳本）\u003c/span\u003e classes that manages the rules of the game, handles player input, and \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義規範）\u003c/span\u003e the avatars, cameras, and player \u003cspan class=\"term-en\"\u003eHUDs\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（抬頭顯示介面）\u003c/span\u003e in UE4 projects.",
+                          "detailedQuestion":  "The____________ is a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/群組）\u003c/span\u003e of C++ or \u003cspan class=\"term-en\"\u003eBlueprint\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（藍圖腳本）\u003c/span\u003e classes that \u003cspan class=\"term-en\"\u003emanages\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（管理/主掌）\u003c/span\u003e the rules of the game, \u003cspan class=\"term-en\"\u003ehandles\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（處理/控制）\u003c/span\u003e player input, and \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義規範）\u003c/span\u003e the avatars, cameras, and player \u003cspan class=\"term-en\"\u003eHUDs\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（抬頭顯示介面）\u003c/span\u003e in UE4 projects.",
                           "detailedOptions":  [
                                                   "Gameplay Framework（玩法框架：UE 官方定義的一套標準遊戲開發架構）",
                                                   "Content Browser（內容瀏覽器：專案所有模型、材質與音效的檔案總管）",
@@ -883,7 +883,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the Level."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ is the definition of the game, including things like the game rules and win conditions. It only exists on the server. It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
+                          "detailedQuestion":  "The ____________ is the \u003cspan class=\"term-en\"\u003edefinition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義/規則核心）\u003c/span\u003e of the game, including things like the game rules and win conditions. It only \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/運行）\u003c/span\u003e on the \u003cspan class=\"term-en\"\u003eserver\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（伺服器端）\u003c/span\u003e. It typically should not have much data that changes during play, and it \u003cspan class=\"term-en\"\u003edefinitely\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（絕對/確定）\u003c/span\u003e should not have \u003cspan class=\"term-en\"\u003etransient\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（瞬態/暫時資料）\u003c/span\u003e data that \u003cspan class=\"term-en\"\u003eclients\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（客戶端/玩家端）\u003c/span\u003e need in the \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Controller class（控制器：接收鍵盤滑鼠操作並對角色下達動作指令的核心類別）",
                                                   "HUD class（抬頭顯示介面：繪製玩家血量與計分等 2D 螢幕介面）",
@@ -1163,7 +1163,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ creates a \u003cspan class=\"term-en\"\u003eparent-child relationship\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（父子階層關聯）\u003c/span\u003e between two or more \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e where the child \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e’s \u003cspan class=\"term-en\"\u003etransforms\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（變換屬性）\u003c/span\u003e become relative to the parent’s \u003cspan class=\"term-en\"\u003etransforms\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（變換屬性）\u003c/span\u003e by default.",
+                          "detailedQuestion":  "____________ creates a \u003cspan class=\"term-en\"\u003eparent-child relationship\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（父子階層關聯）\u003c/span\u003e between two or more \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e where the child \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e’s \u003cspan class=\"term-en\"\u003etransforms\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（變換屬性）\u003c/span\u003e become relative to the parent’s \u003cspan class=\"term-en\"\u003etransforms\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（變換屬性）\u003c/span\u003e by \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Combining（幾何合併：將多個模型拼合成單一整體）",
                                                   "Layering（分層處理）",
@@ -1331,7 +1331,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "If a collection of \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e are assigned to a ____________ in the \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e, you can easily change all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e’ \u003cspan class=\"term-en\"\u003evisibility\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（可見度）\u003c/span\u003e.",
+                          "detailedQuestion":  "If a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/群組）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e are assigned to a ____________ in the \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e, you can easily change all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e’ \u003cspan class=\"term-en\"\u003evisibility\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（可見度）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Parent（父物件：階層架構中的主導者）",
                                                   "Layer（圖層管理）",
@@ -1387,7 +1387,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "By default, it appears in the top-right corner of the screen when you open a project."
                                            }
                                        ],
-                          "detailedQuestion":  "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu. By default, it appears in the top-right corner of the screen when you open a project.",
+                          "detailedQuestion":  "You can use the ____________ to organize all aspects of a scene into one easy-to-read menu. By \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e, it appears in the top-right corner of the screen when you open a project.",
                           "detailedOptions":  [
                                                   "Modes panel（模式面板：放置常用物件與地貌植被工具）",
                                                   "World Outliner panel（世界大綱面板：場景中所有物件的清單總表）",
@@ -1436,7 +1436,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ in UE4 allows you to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調整）\u003c/span\u003e and set the default preferences for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e assets.",
+                          "detailedQuestion":  "The ____________ in UE4 allows you to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調整）\u003c/span\u003e and set the \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e preferences for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e assets.",
                           "detailedOptions":  [
                                                   "Destructible Editor（可破壞網格編輯器：製作受撞擊碎裂的剛體模型）",
                                                   "Blueprint Editor（藍圖編輯器：視覺化編寫遊戲邏輯圖表）",
@@ -1473,7 +1473,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "Once a \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e asset has been placed in a \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e, it is referred to as a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e.",
+                          "detailedQuestion":  "Once a \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e asset has been \u003cspan class=\"term-en\"\u003eplaced\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（放置/擺放）\u003c/span\u003e in a \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e, it is referred to as a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -1629,7 +1629,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "By default, lightmap \u003cspan class=\"term-en\"\u003eUV channels\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（UV 貼圖通道）\u003c/span\u003e are stored in UV Channel 2.",
+                          "detailedQuestion":  "By \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e, lightmap \u003cspan class=\"term-en\"\u003eUV channels\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（UV 貼圖通道）\u003c/span\u003e are stored in UV Channel 2.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -2079,7 +2079,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "When you build lighting, it keeps track of and displays the build progress."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ manages communication between the \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eLightmass\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Lightmass 靜態光照烘焙系統）\u003c/span\u003e. When you build lighting, it keeps track of and displays the build progress.",
+                          "detailedQuestion":  "____________ \u003cspan class=\"term-en\"\u003emanages\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（管理/調度）\u003c/span\u003e communication between the \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eLightmass\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Lightmass 靜態光照烘焙系統）\u003c/span\u003e. When you build lighting, it keeps track of and displays the build progress.",
                           "detailedOptions":  [
                                                   "Epic Games Launcher（Epic 官方啟動器：下載引擎版本與購買商城素材）",
                                                   "Radiosity（熱輻射度：計算表面相互反彈光照的演算法）",
@@ -2166,7 +2166,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Common rendering methods include scanline rendering, ray tracing, and radiosity methods."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e properties. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
+                          "detailedQuestion":  "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
                           "detailedOptions":  [
                                                   "Rasterization（光柵化：將 3D 幾何頂點轉換為 2D 螢幕像素的渲染技術）",
                                                   "Rendering（渲染著色：將 3D 場景計算並生成最終畫面的過程）",
@@ -2218,7 +2218,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ \u003cspan class=\"term-en\"\u003elight property\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（光源光學屬性）\u003c/span\u003e overrides light color properties and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+                          "detailedQuestion":  "The ____________ \u003cspan class=\"term-en\"\u003elight property\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（光源光學屬性）\u003c/span\u003e overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
                           "detailedOptions":  [
                                                   "IES（IES 光學設定檔：真實燈具廠商提供的物理光線照射形狀圖樣）",
                                                   "Temperature（色溫：以開爾文 K 為單位調整偏暖黃光或偏冷藍光）",
@@ -2777,7 +2777,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "This allows for adjustment to attenuation properties without having to revisit every Sound Actor individually."
                                            }
                                        ],
-                          "detailedQuestion":  "A ____________ stores attenuation properties in a reusable manner. This allows for adjustment to attenuation properties without having to revisit every Sound \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e individually.",
+                          "detailedQuestion":  "A ____________ stores attenuation \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e in a reusable manner. This allows for adjustment to attenuation \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e without having to revisit every Sound \u003cspan class=\"term-en\"\u003eActor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e individually.",
                           "detailedOptions":  [
                                                   "Modulation Effect asset（音訊調變效果資產）",
                                                   "Reverb Effect asset（混響效果資產：模擬大廳、洞穴或浴室等空間的回音殘響特性）",
@@ -3193,7 +3193,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱）\u003c/span\u003e shows you all the Actors that are placed in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e Level.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱）\u003c/span\u003e shows you all the Actors that are \u003cspan class=\"term-en\"\u003eplaced\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（放置/擺放）\u003c/span\u003e in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e Level.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -3240,7 +3240,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The Level ____________ panel displays the editable properties for a selected Actor.",
+                          "detailedQuestion":  "The Level ____________ panel displays the \u003cspan class=\"term-en\"\u003eeditable\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（可編輯/可調整）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e for a selected Actor.",
                           "detailedOptions":  [
                                                   "Modes（模式面板：放置基礎幾何體、地貌與植被工具）",
                                                   "Details（細節面板：檢視與調整所選物件的各項屬性數值）",
@@ -3285,7 +3285,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "When creating a new project, you can select from a variety of default ____________ templates, such as First Person, Third Person, Flying, and Puzzle.",
+                          "detailedQuestion":  "When creating a new project, you can select from a \u003cspan class=\"term-en\"\u003evariety\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（多樣/多種）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e ____________ \u003cspan class=\"term-en\"\u003etemplates\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（樣板/模板）\u003c/span\u003e, such as First Person, Third Person, Flying, and Puzzle.",
                           "detailedOptions":  [
                                                   "Game Mode（遊戲模式樣板：預設配置好角色、控制與規則的遊戲範本）",
                                                   "Graphic Settings（圖形設定：調整渲染品質與效能等級）",
@@ -3371,7 +3371,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ folder is not found in a default project folder.",
+                          "detailedQuestion":  "The ____________ folder is not found in a \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e project folder.",
                           "detailedOptions":  [
                                                   "Save（非預設名稱，正確預設資料夾名稱為 Saved）",
                                                   "Content（內容資料夾：存放專案所有遊戲資產的核心目錄）",
@@ -3412,7 +3412,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ is a collection of C++ or \u003cspan class=\"term-en\"\u003eBlueprint\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（藍圖系統）\u003c/span\u003e classes that manages the rules of the game, handles player input, and defines the avatars, cameras, and player HUDs in UE4 projects.",
+                          "detailedQuestion":  "The ____________ is a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/群組）\u003c/span\u003e of C++ or \u003cspan class=\"term-en\"\u003eBlueprint\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（藍圖系統）\u003c/span\u003e classes that \u003cspan class=\"term-en\"\u003emanages\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（管理/主掌）\u003c/span\u003e the rules of the game, \u003cspan class=\"term-en\"\u003ehandles\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（處理/控制）\u003c/span\u003e player input, and \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義規範）\u003c/span\u003e the avatars, cameras, and player HUDs in UE4 projects.",
                           "detailedOptions":  [
                                                   "Gameplay Framework（遊戲玩法框架：管理規則、輸入、化身角色、相機與 HUD 的類別集合）",
                                                   "Game Mode class（遊戲模式類別：僅存在於伺服器端，定義遊戲規則與勝負條件）",
@@ -3464,7 +3464,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the Level."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ is the definition of the game, including things like the game rules and win conditions. It only exists on the server. It typically should not have much data that changes during play, and it definitely should not have transient data that clients need in the Level.",
+                          "detailedQuestion":  "The ____________ is the \u003cspan class=\"term-en\"\u003edefinition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義/規則核心）\u003c/span\u003e of the game, including things like the game rules and win conditions. It only \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/運行）\u003c/span\u003e on the \u003cspan class=\"term-en\"\u003eserver\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（伺服器端）\u003c/span\u003e. It typically should not have much data that changes during play, and it \u003cspan class=\"term-en\"\u003edefinitely\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（絕對/確定）\u003c/span\u003e should not have \u003cspan class=\"term-en\"\u003etransient\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（瞬態/暫時資料）\u003c/span\u003e data that \u003cspan class=\"term-en\"\u003eclients\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（客戶端/玩家端）\u003c/span\u003e need in the Level.",
                           "detailedOptions":  [
                                                   "Controller class（控制器類別：負責接收玩家輸入或 AI 決策並指揮 Pawn）",
                                                   "HUD class（抬頭顯示器類別：負責管理玩家螢幕上的 2D 介面資訊顯示）",
@@ -3505,7 +3505,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ Viewer shows the dependencies for an asset.",
+                          "detailedQuestion":  "The ____________ Viewer shows the \u003cspan class=\"term-en\"\u003edependencies\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（相依引用/依賴關聯）\u003c/span\u003e for an asset.",
                           "detailedOptions":  [
                                                   "Viewport（工作視窗：檢視與操作 3D 關卡場景的核心視窗）",
                                                   "Reference（引用檢視器 Reference Viewer：以視覺化節點圖顯示資產依賴關係）",
@@ -3659,7 +3659,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ creates a parent-child relationship between two or more Actors where the child Actor’s transforms become relative to the parent’s transforms by default.",
+                          "detailedQuestion":  "____________ creates a parent-child relationship between two or more Actors where the child Actor’s transforms become relative to the parent’s transforms by \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Combining（結合：將多個網格合併的操作，非動態父子階層關係）",
                                                   "Layers（圖層系統：用於分類管理與批次切換物件可見度）",
@@ -3745,7 +3745,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "Once a \u003cspan class=\"term-en\"\u003eStatic Mesh asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格資產）\u003c/span\u003e has been placed in a Level, it is referred to as a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e.",
+                          "detailedQuestion":  "Once a \u003cspan class=\"term-en\"\u003eStatic Mesh asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格資產）\u003c/span\u003e has been \u003cspan class=\"term-en\"\u003eplaced\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（放置/擺放）\u003c/span\u003e in a Level, it is referred to as a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -3870,7 +3870,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "By default, lightmap UV channels are stored in \u003cspan class=\"term-en\"\u003eUV Channel 1\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（第 1 號 UV 通道）\u003c/span\u003e.",
+                          "detailedQuestion":  "By \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e, lightmap UV channels are stored in \u003cspan class=\"term-en\"\u003eUV Channel 1\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（第 1 號 UV 通道）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -4013,7 +4013,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "When you build lighting, it keeps track of and displays the build progress."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ manages communication between the Editor and \u003cspan class=\"term-en\"\u003eLightmass\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Lightmass 靜態光照系統）\u003c/span\u003e. When you build lighting, it keeps track of and displays the build progress.",
+                          "detailedQuestion":  "____________ \u003cspan class=\"term-en\"\u003emanages\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（管理/調度）\u003c/span\u003e communication between the Editor and \u003cspan class=\"term-en\"\u003eLightmass\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Lightmass 靜態光照系統）\u003c/span\u003e. When you build lighting, it keeps track of and displays the build progress.",
                           "detailedOptions":  [
                                                   "Epic Games Launcher（Epic 官方啟動器：管理引擎版本與商城資源）",
                                                   "Radiosity（輻射度演算法：光學理論名稱，非管理通訊的外部程式）",
@@ -4104,7 +4104,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ light property overrides light color properties and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+                          "detailedQuestion":  "The ____________ light property overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
                           "detailedOptions":  [
                                                   "IES（IES 光域網檔案：描述真實燈具發光分佈形狀的檔案格式）",
                                                   "Temperature（色溫屬性：以開爾文 Kelvin 為單位定義光源物理冷暖色調）",
@@ -4347,7 +4347,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, defines the overall color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the overall color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光輸入：控制材質表面主動發光的顏色與亮度）",
                                                   "Roughness（粗糙度輸入：控制表面微觀平滑或粗糙漫反射程度）",
@@ -4568,7 +4568,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "This allows adjustment to attenuation properties without having to revisit every sound Actor individually."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ stores attenuation properties in a reusable manner. This allows adjustment to attenuation properties without having to revisit every sound Actor individually.",
+                          "detailedQuestion":  "The ____________ stores attenuation \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e in a reusable manner. This allows adjustment to attenuation \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e without having to revisit every sound Actor individually.",
                           "detailedOptions":  [
                                                   "Modulation Effect asset（調變效果資產：干擾項）",
                                                   "Reverb Effect asset（混響效果資產：可調整回音密度、整體混響增益與空氣吸收等空間聲學屬性）",
@@ -4661,7 +4661,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "There are different properties for editing brush sizes and shapes."
                                            }
                                        ],
-                          "detailedQuestion":  "In \u003cspan class=\"term-en\"\u003eLandscape mode\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌模式）\u003c/span\u003e, the ____________ has tools for deforming the surface of a \u003cspan class=\"term-en\"\u003eLandscape Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌地形物件）\u003c/span\u003e. There are different properties for editing brush sizes and shapes.",
+                          "detailedQuestion":  "In \u003cspan class=\"term-en\"\u003eLandscape mode\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌模式）\u003c/span\u003e, the ____________ has tools for deforming the surface of a \u003cspan class=\"term-en\"\u003eLandscape Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌地形物件）\u003c/span\u003e. There are different \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e for editing brush sizes and shapes.",
                           "detailedOptions":  [
                                                   "Foliage tab（干擾項：植被工具位於獨立的 Foliage 模式面板中）",
                                                   "Paint tab（繪製分頁：用於在地貌表面塗抹不同材質圖層權重）",
@@ -5016,7 +5016,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ provides two fog colors, one for the hemisphere facing the dominant \u003cspan class=\"term-en\"\u003eDirectional Light\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定向光源）\u003c/span\u003e (or straight up if none exists), and another for the opposite hemisphere.",
+                          "detailedQuestion":  "____________ provides two fog colors, one for the hemisphere facing the dominant \u003cspan class=\"term-en\"\u003eDirectional Light\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定向光源）\u003c/span\u003e (or straight up if none \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/具備）\u003c/span\u003e), and another for the opposite hemisphere.",
                           "detailedOptions":  [
                                                   "Reflection Capture（反射捕捉 Actor：從所在位置捕捉關卡立方體貼圖 Cubemap 並投射至周遭物件）",
                                                   "Sky Sphere Blueprint（天空球藍圖：呈現天空背景外觀的藍圖資產）",
@@ -5098,7 +5098,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "An \u003cspan class=\"term-en\"\u003eEmitter Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（發射器物件）\u003c/span\u003e is an instance of a \u003cspan class=\"term-en\"\u003eParticle System asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（粒子系統資產）\u003c/span\u003e placed in a Level.",
+                          "detailedQuestion":  "An \u003cspan class=\"term-en\"\u003eEmitter Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（發射器物件）\u003c/span\u003e is an instance of a \u003cspan class=\"term-en\"\u003eParticle System asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（粒子系統資產）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eplaced\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（放置/擺放）\u003c/span\u003e in a Level.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -5144,7 +5144,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ is connected particles that form a stream between a source point and a target point. By default, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points.",
+                          "detailedQuestion":  "The ____________ is connected particles that form a stream between a source point and a target point. By \u003cspan class=\"term-en\"\u003edefault\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（預設）\u003c/span\u003e, it consists of a single quad polygon referred to as a sheet that always faces the camera and is stretched between two points.",
                           "detailedOptions":  [
                                                   "Beam（光束粒子：在起點 Source 與目標點 Target 之間拉伸連接形成連續光束串流的四邊形面片）",
                                                   "GPU（GPU 粒子：利用顯示卡並行運算生成數十萬顆高密度粒子的類型）",
@@ -5278,7 +5278,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ is a \u003cspan class=\"term-en\"\u003eSequencer\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sequencer 序列器）\u003c/span\u003e term meaning an Actor that exists in the Level already and that Sequencer will take control of in order to apply changes to it.",
+                          "detailedQuestion":  "____________ is a \u003cspan class=\"term-en\"\u003eSequencer\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sequencer 序列器）\u003c/span\u003e term meaning an Actor that \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/運行）\u003c/span\u003e in the Level already and that Sequencer will take control of in order to apply changes to it.",
                           "detailedOptions":  [
                                                   "Placeable（可放置：類別修飾詞，表示該 Actor 類別可手動拖放入關卡）",
                                                   "Possessable（可附身/接管物件：Sequencer 術語，指關卡中原本就存在並由 Sequencer 接管控制的 Actor）",
@@ -5614,7 +5614,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Properties include Friction, Restitution, and Density."
                                            }
                                        ],
-                          "detailedQuestion":  "A ____________ contains a collection of properties that affect the behavior of an Actor simulating physics. It can be assigned to a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e or a Material. Properties include \u003cspan class=\"term-en\"\u003eFriction\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（摩擦力）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eRestitution\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（彈性恢復係數）\u003c/span\u003e, and \u003cspan class=\"term-en\"\u003eDensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e.",
+                          "detailedQuestion":  "A ____________ contains a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/組合）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e that affect the behavior of an Actor simulating physics. It can be assigned to a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e or a Material. Properties include \u003cspan class=\"term-en\"\u003eFriction\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（摩擦力）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eRestitution\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（彈性恢復係數）\u003c/span\u003e, and \u003cspan class=\"term-en\"\u003eDensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Skeletal Mesh asset（骨骼網格資產：具備骨骼階層與蒙皮權重的可動畫角色模型）",
                                                   "Physics Material asset（物理材質資產：包含摩擦力 Friction、恢復係數 Restitution 與密度 Density 等物理屬性集合）",
