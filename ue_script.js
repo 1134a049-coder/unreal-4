@@ -547,6 +547,19 @@
     totalQuestionsBadge.textContent = total;
   }
 
+  // 將行內專有名詞與中文註解轉換為上下雙層排版 (單字在上、1/3 中文在下)
+  function formatDetailedPrompt(html) {
+    if (!html) return '';
+    if (html.includes('term-pair')) return html;
+    return html.replace(
+      /<span class=["']term-en["']>([\s\S]*?)<\/span>\s*<span class=["']inline-trans["']>([\s\S]*?)<\/span>/gi,
+      function(match, enText, zhText) {
+        const cleanZh = zhText.replace(/^[（(]\s*/, '').replace(/\s*[）)]$/, '');
+        return `<span class="term-pair"><span class="term-en">${enText}</span><span class="inline-trans">${cleanZh}</span></span>`;
+      }
+    );
+  }
+
   function renderQuestionContent() {
     const q = getCurrentQuestion();
     if (!q) return;
@@ -554,20 +567,23 @@
     // 1. 基本題目文字渲染
     if (state.language === 'en') {
       questionPromptEn.style.display = 'block';
+      questionPromptEn.classList.remove('detailed-mode');
       questionPromptEn.textContent = q.question;
       questionPromptZh.style.display = 'none';
       detailedBreakdownBox.style.display = 'none';
       keywordMemoryBox.style.display = 'none';
     } else if (state.language === 'zh') {
       questionPromptEn.style.display = 'none';
+      questionPromptEn.classList.remove('detailed-mode');
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;
       detailedBreakdownBox.style.display = 'none';
       keywordMemoryBox.style.display = 'none';
     } else if (state.language === 'detailed') {
-      // 精闢詳細版翻譯：英文專有名詞隨文附帶中文註解 + 繁體中文全句翻譯 + 核心功能記憶錨點
+      // 精闢詳細版翻譯：英文專有名詞隨文附帶中文註解（單字下方 1/3 大小）+ 自動擴增行高 + 繁體中文全句翻譯 + 核心功能記憶錨點
       questionPromptEn.style.display = 'block';
-      questionPromptEn.innerHTML = q.detailedQuestion || q.question;
+      questionPromptEn.classList.add('detailed-mode');
+      questionPromptEn.innerHTML = formatDetailedPrompt(q.detailedQuestion || q.question);
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;
       detailedBreakdownBox.style.display = 'none';
@@ -575,6 +591,7 @@
     } else {
       // Bilingual 預設雙語模式：英文原文 + 繁體中文對照 + 核心功能記憶錨點
       questionPromptEn.style.display = 'block';
+      questionPromptEn.classList.remove('detailed-mode');
       questionPromptEn.textContent = q.question;
       questionPromptZh.style.display = 'block';
       questionPromptZh.textContent = q.questionZh;

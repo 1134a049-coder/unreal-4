@@ -397,30 +397,68 @@ body {
   box-shadow: 0 2px 8px var(--primary-glow);
 }
 
-/* Inline Translation Chip & Highlighted English Term in Detailed Translation Mode */
+/* ==========================================================================
+   Interlinear Inline Term & Underneath Chinese Translation (單字下方中文註解)
+   ========================================================================== */
+.term-pair {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+  margin: 0 4px !important;
+  line-height: 1 !important;
+  text-indent: 0 !important;
+  position: relative !important;
+  max-width: 100% !important;
+}
+
+/* 上方英文單字 (English Term) */
+.term-pair .term-en,
 .term-en {
   color: #fbbf24 !important; /* 醒目溫暖金黃色，與白色內文及藍色翻譯強烈對比 */
   font-weight: 700 !important;
-  background: rgba(245, 158, 11, 0.15) !important;
-  padding: 1px 6px !important;
-  margin: 0 2px !important;
+  font-size: 1.05rem !important;
+  line-height: 1.25 !important;
+  background: rgba(245, 158, 11, 0.16) !important;
+  padding: 1px 7px !important;
+  margin: 0 !important;
   border-radius: 4px !important;
   border-bottom: 2px solid #f59e0b !important;
   display: inline-block !important;
-  line-height: 1.35 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
 }
 
+/* 下方中文翻譯 (位置置於單字下方並縮小至約 1/3 大小) */
+.term-pair .inline-trans,
 .inline-trans {
-  color: #38bdf8 !important;
+  color: #38bdf8 !important; /* 科技高亮天藍色 */
   font-weight: 600 !important;
-  background: rgba(14, 165, 233, 0.12) !important;
-  padding: 1px 6px !important;
-  margin: 0 3px !important;
-  border-radius: 4px !important;
-  border: 1px solid rgba(14, 165, 233, 0.28) !important;
-  display: inline-block !important;
-  line-height: 1.4 !important;
-  font-size: 0.95em !important;
+  font-size: clamp(9px, 0.38em, 11px) !important; /* 精確縮小至約 1/3 大小，兼顧小螢幕清晰可讀 */
+  line-height: 1.15 !important;
+  margin-top: 3px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  letter-spacing: 0.02em !important;
+  background: rgba(14, 165, 233, 0.14) !important;
+  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+  padding: 0 4px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35) !important;
+}
+
+@media (max-width: 640px) {
+  .term-pair {
+    margin: 0 2px !important;
+  }
+  .term-pair .term-en {
+    font-size: 0.98rem !important;
+    padding: 1px 5px !important;
+  }
+  .term-pair .inline-trans {
+    font-size: clamp(9px, 0.36em, 10px) !important;
+    padding: 0 3px !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -597,6 +635,18 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   letter-spacing: -0.01em;
+  transition: line-height 0.2s ease;
+}
+
+/* 開啟詳細版翻譯時，自動大幅增加行高，確保單字下方中文註解有寬裕舒適的展示空間 */
+.question-prompt.detailed-mode {
+  line-height: 2.7 !important;
+}
+
+@media (max-width: 640px) {
+  .question-prompt.detailed-mode {
+    line-height: 2.85 !important;
+  }
 }
 
 .question-prompt-zh {
@@ -944,10 +994,13 @@ body {
 .correct-ans-tag {
   background: rgba(16, 185, 129, 0.2);
   color: var(--green);
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 6px;
-  font-weight: 800;
+  font-weight: 700;
   margin-left: 6px;
+  display: inline-block;
+  line-height: 1.5;
+  word-break: break-word;
 }
 
 .feedback-notes {
