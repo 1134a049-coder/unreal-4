@@ -310,6 +310,11 @@ body {
   margin-bottom: 24px;
 }
 
+.practice-banner.exam-mode .practice-stats-group,
+.practice-banner.exam-mode .practice-toggles {
+  display: none !important;
+}
+
 .practice-stats-group {
   display: flex;
   gap: 12px;
@@ -365,11 +370,16 @@ body {
 
 .lang-tabs {
   display: flex;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  gap: 4px;
+}
+
+.practice-banner .mode-nav {
   background: var(--bg-main);
   border: 1px solid var(--border-subtle);
-  padding: 3px;
-  border-radius: var(--radius-sm);
-  gap: 3px;
 }
 
 .lang-btn {
@@ -484,6 +494,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .mode-nav {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+    padding: 6px !important;
+    box-sizing: border-box;
+  }
+  .mode-tab {
+    width: 100%;
+    justify-content: center;
+    padding: 9px 4px;
+    font-size: 0.84rem;
+    min-height: 40px;
   }
 }
 

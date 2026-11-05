@@ -321,7 +321,7 @@
         if (btnModeStarred) btnModeStarred.classList.remove('active');
         btnModeExam.classList.remove('active');
         examControls.style.display = 'none';
-        practiceBanner.style.display = 'flex';
+        practiceBanner.classList.remove('exam-mode');
       }
       state.currentChapterId = e.target.value;
       state.currentIndex = 0;
@@ -343,12 +343,12 @@
 
     if (mode === 'exam') {
       examControls.style.display = 'flex';
-      practiceBanner.style.display = 'none';
+      practiceBanner.classList.add('exam-mode');
       startExamTimer();
     } else {
       clearInterval(state.examTimerInterval);
       examControls.style.display = 'none';
-      practiceBanner.style.display = 'flex';
+      practiceBanner.classList.remove('exam-mode');
     }
 
     state.currentIndex = 0;
@@ -1067,12 +1067,12 @@
 
     if (state.mode === 'exam') {
       examControls.style.display = 'flex';
-      practiceBanner.style.display = 'none';
+      practiceBanner.classList.add('exam-mode');
       startExamTimer();
     } else {
       clearInterval(state.examTimerInterval);
       examControls.style.display = 'none';
-      practiceBanner.style.display = 'flex';
+      practiceBanner.classList.remove('exam-mode');
     }
   }
 

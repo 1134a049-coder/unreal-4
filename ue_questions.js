@@ -1,6 +1,6 @@
-/**
- * Unreal Engine 4.27 全真考題庫 (7 章節 + 2 綜合測驗 01_to_06_Test / 07_to_13_Texs，共 130 題完整 100% 原文、精準功能記憶點與隨文翻譯)
- * 來源：Teach Yourself Unreal Engine 4 Game Development in 24 Hours
+﻿/**
+ * Unreal Engine 4.27 ?函???摨?(7 蝡? + 2 蝬?皜祇? 01_to_06_Test / 07_to_13_Texs嚗 130 憿???100% ???移皞??質??園???蕃霅?
+ * 靘?嚗each Yourself Unreal Engine 4 Game Development in 24 Hours
  */
 const UE_QUIZ_DATA = {
     "chapters":  [
@@ -196,7 +196,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It also keeps you updated with community news and links to online learning resources and documentation."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ is an application that keeps track of the different versions of Unreal Engine that you have installed. You can use it to manage your projects, access free sample projects, and purchase content from the \u003cspan class=\"term-en\"\u003eUnreal Marketplace\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻商城）\u003c/span\u003e. It also keeps you updated with community news and links to online learning resources and documentation.",
+                          "detailedQuestion":  "The ____________ is an application that keeps track of the different versions of \u003cspan class=\"term-en\"\u003eUnreal Engine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻引擎）\u003c/span\u003e that you have installed. You can use it to manage your projects, access free sample projects, and purchase content from the \u003cspan class=\"term-en\"\u003eUnreal Marketplace\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻商城）\u003c/span\u003e. It also keeps you updated with community news and links to online learning resources and documentation.",
                           "detailedOptions":  [
                                                   "Project Browser（專案瀏覽器：建立新專案或開啟既有專案）",
                                                   "Modes panel（模式面板：放置常用物件與地貌植被工具）",
@@ -233,7 +233,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e shows you all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e that are placed in the current \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱/場景物件清單）\u003c/span\u003e shows you all the \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e that are placed in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eLevel\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（關卡場景）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -508,7 +508,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ are settings applied to \u003cspan class=\"term-en\"\u003eEditor Viewports\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（編輯器場景視窗）\u003c/span\u003e that modify the display of content. They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results.",
+                          "detailedQuestion":  "____________ are settings applied to \u003cspan class=\"term-en\"\u003eEditor Viewports\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（編輯器場景視窗）\u003c/span\u003e that \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（改變/修改）\u003c/span\u003e the display of content. They help you to see the type of data being processed in your scene, as well as to diagnose any errors or unexpected results.",
                           "detailedOptions":  [
                                                   "Perspective（透視視角：符合人眼近大遠小的真實 3D 空間視角）",
                                                   "View modes（視圖選單：切換帶光照、無光照與線框等顯示模式）",
@@ -553,7 +553,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ files are text files that store \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e, engine, and project preferences.",
+                          "detailedQuestion":  "____________ files are text files that store \u003cspan class=\"term-en\"\u003eEditor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（虛幻編輯器）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eengine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（引擎/核心引擎）\u003c/span\u003e, and project preferences.",
                           "detailedOptions":  [
                                                   ".uasset（虛幻專用資產檔：包含模型、材質與音效等素材）",
                                                   ".umap（關卡地圖檔：儲存場景中所有擺放的物件資訊）",
@@ -1436,7 +1436,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ in UE4 allows you to modify and set the default preferences for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e assets.",
+                          "detailedQuestion":  "The ____________ in UE4 allows you to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調整）\u003c/span\u003e and set the default preferences for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格 3D 模型）\u003c/span\u003e assets.",
                           "detailedOptions":  [
                                                   "Destructible Editor（可破壞網格編輯器：製作受撞擊碎裂的剛體模型）",
                                                   "Blueprint Editor（藍圖編輯器：視覺化編寫遊戲邏輯圖表）",
@@ -1828,7 +1828,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ is UE4’s offline global illumination rendering engine and is used to calculating lighting for Light and \u003cspan class=\"term-en\"\u003eStatic Mesh Actors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e with a \u003cspan class=\"term-en\"\u003eMobility setting\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（移動性設定）\u003c/span\u003e of “Static”.",
+                          "detailedQuestion":  "____________ is UE4’s offline global \u003cspan class=\"term-en\"\u003eillumination\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（全局光照）\u003c/span\u003e rendering \u003cspan class=\"term-en\"\u003eengine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（渲染引擎）\u003c/span\u003e and is used to \u003cspan class=\"term-en\"\u003ecalculating\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（計算/運算）\u003c/span\u003e lighting for Light and \u003cspan class=\"term-en\"\u003eStatic Mesh Actors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e with a \u003cspan class=\"term-en\"\u003eMobility setting\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（移動性設定）\u003c/span\u003e of “Static”.",
                           "detailedOptions":  [
                                                   "Lightmass（Lightmass 烘焙系統：預先計算漫反射光影並寫入貼圖，效能極高）",
                                                   "Renderman（Pixar RenderMan：電影級離線擬真渲染器）",
@@ -1865,7 +1865,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "\u003cspan class=\"term-en\"\u003eSky Light\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（天空光：環境全域補光）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e do not cast dynamic shadows.",
+                          "detailedQuestion":  "\u003cspan class=\"term-en\"\u003eSky Light\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（天空光：環境全域補光）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eActors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（場景物件/Actor）\u003c/span\u003e do not cast \u003cspan class=\"term-en\"\u003edynamic\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（動態即時）\u003c/span\u003e shadows.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -2430,7 +2430,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the overall color of a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e minus shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the overall color of a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光顏色：物體自身發光的亮度和顏色（不受外部燈光影響））",
                                                   "Roughness（粗糙度：0 代表極致鏡面反光，1 代表完全粗糙消光）",
@@ -2875,7 +2875,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "You can add modulation, reverb, and randomness."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to modify \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（原始音效素材）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sound Cue 音效資產）\u003c/span\u003e. You can add modulation, reverb, and randomness.",
+                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（原始音效素材）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sound Cue 音效資產）\u003c/span\u003e. You can add modulation, reverb, and randomness.",
                           "detailedOptions":  [
                                                   "Sound Cue Editor（Sound Cue 節點編輯器：設計複雜動態音效播放邏輯的圖表工具）",
                                                   "Audio Editor（音訊編輯器）",
@@ -3193,7 +3193,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱）\u003c/span\u003e shows you all the Actors that are placed in the current Level.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eWorld Outliner\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（世界大綱）\u003c/span\u003e shows you all the Actors that are placed in the \u003cspan class=\"term-en\"\u003ecurrent\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（當前/目前）\u003c/span\u003e Level.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -3330,7 +3330,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ files are text files that store Editor, engine, and project preferences.",
+                          "detailedQuestion":  "____________ files are text files that store Editor, \u003cspan class=\"term-en\"\u003eengine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（引擎/核心引擎）\u003c/span\u003e, and project preferences.",
                           "detailedOptions":  [
                                                   ".uasset（虛幻資產二進位檔案：儲存材質、網格、藍圖等單一資產）",
                                                   ".umap（虛幻關卡地圖檔案：儲存單一關卡場景配置）",
@@ -3965,7 +3965,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "You use the lighting build tools in UE4 to precalculate lighting and shadow information in a Level for Static Mesh and Light Actors with a Mobility setting of “Static” and for BSPs."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ is UE4’s offline radiosity rendering engine and is used to calculate lighting for Light and \u003cspan class=\"term-en\"\u003eStatic Mesh Actors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e with a \u003cspan class=\"term-en\"\u003eMobility\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（移動性設定）\u003c/span\u003e setting of “Static”. You use the lighting build tools in UE4 to precalculate lighting and shadow information in a Level for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格）\u003c/span\u003e and Light Actors with a Mobility setting of “Static” and for BSPs.",
+                          "detailedQuestion":  "____________ is UE4’s offline radiosity rendering \u003cspan class=\"term-en\"\u003eengine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（渲染引擎）\u003c/span\u003e and is used to calculate lighting for Light and \u003cspan class=\"term-en\"\u003eStatic Mesh Actors\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e with a \u003cspan class=\"term-en\"\u003eMobility\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（移動性設定）\u003c/span\u003e setting of “Static”. You use the lighting build tools in UE4 to precalculate lighting and shadow information in a Level for \u003cspan class=\"term-en\"\u003eStatic Mesh\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格）\u003c/span\u003e and Light Actors with a Mobility setting of “Static” and for BSPs.",
                           "detailedOptions":  [
                                                   "Lightmass（UE4 離線全域光照與輻射度渲染引擎，預先計算靜態光影與間接反彈）",
                                                   "Renderman（皮克斯 Pixar 開發的離線電影渲染器，非 UE4 內建系統）",
@@ -4347,7 +4347,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, defines the overall color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a Material minus shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, defines the overall color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光輸入：控制材質表面主動發光的顏色與亮度）",
                                                   "Roughness（粗糙度輸入：控制表面微觀平滑或粗糙漫反射程度）",
@@ -4392,7 +4392,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to modify \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音波資產）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音效提示資產）\u003c/span\u003e.",
+                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音波資產）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音效提示資產）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Sound Cue Editor（音效提示編輯器：節點式音訊編輯器，可組合修改 Sound Wave 並存為 Sound Cue）",
                                                   "Audio Editor（干擾項：UE4 中節點式音訊編輯器稱為 Sound Cue Editor）",
@@ -5554,7 +5554,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is used, for example, to create ragdoll effects on characters or dynamic hoses or chains that react with the world around them."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ Editor is used to set up physics constraints on the bone hierarchy for a \u003cspan class=\"term-en\"\u003eSkeletal Mesh asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（骨骼網格資產）\u003c/span\u003e. It is used, for example, to create ragdoll effects on characters or dynamic hoses or chains that react with the world around them.",
+                          "detailedQuestion":  "The ____________ Editor is used to set up physics constraints on the bone hierarchy for a \u003cspan class=\"term-en\"\u003eSkeletal Mesh asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（骨骼網格資產）\u003c/span\u003e. It is used, for example, to create ragdoll effects on characters or \u003cspan class=\"term-en\"\u003edynamic\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（動態模擬/即時）\u003c/span\u003e hoses or chains that react with the world around them.",
                           "detailedOptions":  [
                                                   "Physics Asset Tool (PhAT)（物理資產工具 PhAT：為骨骼網格階層設定物理碰撞與約束，製作角色布娃娃或動態鎖鏈）",
                                                   "Destructible Mesh（可破壞網格：儲存破碎塊層級結構的資產類型）",
