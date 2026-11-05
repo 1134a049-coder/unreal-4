@@ -2166,7 +2166,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Common rendering methods include scanline rendering, ray tracing, and radiosity methods."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ is a 3D computer graphics term used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
+                          "detailedQuestion":  "____________ is a 3D computer graphics \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
                           "detailedOptions":  [
                                                   "Rasterization（光柵化：將 3D 幾何頂點轉換為 2D 螢幕像素的渲染技術）",
                                                   "Rendering（渲染著色：將 3D 場景計算並生成最終畫面的過程）",
@@ -2430,7 +2430,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the overall color of a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e color of a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color \u003cspan class=\"term-en\"\u003edescription\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（描述/呈現）\u003c/span\u003e of the surface in a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光顏色：物體自身發光的亮度和顏色（不受外部燈光影響））",
                                                   "Roughness（粗糙度：0 代表極致鏡面反光，1 代表完全粗糙消光）",
@@ -2727,7 +2727,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Bit rate also has an impact on quality: the higher the bit rate, the better the quality."
                                            }
                                        ],
-                          "detailedQuestion":  "The term bit rate refers to the amount of data that is processed or transferred over a specified amount of time. Bit rate also has an impact on quality: the higher the bit rate, the better the quality.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e bit rate \u003cspan class=\"term-en\"\u003erefers\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（意指/指的是）\u003c/span\u003e to the \u003cspan class=\"term-en\"\u003eamount\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（數量/總額）\u003c/span\u003e of data that is processed or transferred over a specified \u003cspan class=\"term-en\"\u003eamount\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（數量/總額）\u003c/span\u003e of time. Bit rate also has an impact on quality: the higher the bit rate, the better the quality.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -2875,7 +2875,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "You can add modulation, reverb, and randomness."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（原始音效素材）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sound Cue 音效資產）\u003c/span\u003e. You can add modulation, reverb, and randomness.",
+                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the \u003cspan class=\"term-en\"\u003eability\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（能力/功能機制）\u003c/span\u003e to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（原始音效素材）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sound Cue 音效資產）\u003c/span\u003e. You can add modulation, \u003cspan class=\"term-en\"\u003ereverb\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（混響/空間殘響）\u003c/span\u003e, and randomness.",
                           "detailedOptions":  [
                                                   "Sound Cue Editor（Sound Cue 節點編輯器：設計複雜動態音效播放邏輯的圖表工具）",
                                                   "Audio Editor（音訊編輯器）",
@@ -2924,7 +2924,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "A ____________ is a definable asset with adjustable \u003cspan class=\"term-en\"\u003eproperty\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（空間聲學屬性）\u003c/span\u003e settings that will allow you to control such elements as echo density, overall reverb gain, and air absorption to help craft the overall feel you may be after.",
+                          "detailedQuestion":  "A ____________ is a definable asset with adjustable \u003cspan class=\"term-en\"\u003eproperty\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（空間聲學屬性）\u003c/span\u003e settings that will allow you to control such \u003cspan class=\"term-en\"\u003eelements\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（要素/組成元件）\u003c/span\u003e as echo \u003cspan class=\"term-en\"\u003edensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e \u003cspan class=\"term-en\"\u003ereverb\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（混響/空間殘響）\u003c/span\u003e gain, and air \u003cspan class=\"term-en\"\u003eabsorption\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（吸收/聲能吸收）\u003c/span\u003e to help craft the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e feel you may be after.",
                           "detailedOptions":  [
                                                   "Sound Attenuation asset（聲音衰減資產：設定距離拉遠時音量如何減弱與 3D 空間立體聲定位）",
                                                   "Sound Cue asset（Sound Cue 音效藍圖：可用節點組合隨機音調、淡入淡出與混音邏輯）",
@@ -4347,7 +4347,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the overall color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color description of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color \u003cspan class=\"term-en\"\u003edescription\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（描述/呈現）\u003c/span\u003e of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光輸入：控制材質表面主動發光的顏色與亮度）",
                                                   "Roughness（粗糙度輸入：控制表面微觀平滑或粗糙漫反射程度）",
@@ -4392,7 +4392,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the ability to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音波資產）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音效提示資產）\u003c/span\u003e.",
+                          "detailedQuestion":  "The ____________ Is a node-based editor that gives you the \u003cspan class=\"term-en\"\u003eability\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（能力/功能機制）\u003c/span\u003e to \u003cspan class=\"term-en\"\u003emodify\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（修改/調節）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eSound Waves\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音波資產）\u003c/span\u003e and store the result as a \u003cspan class=\"term-en\"\u003eSound Cue asset\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（音效提示資產）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Sound Cue Editor（音效提示編輯器：節點式音訊編輯器，可組合修改 Sound Wave 並存為 Sound Cue）",
                                                   "Audio Editor（干擾項：UE4 中節點式音訊編輯器稱為 Sound Cue Editor）",
@@ -4436,7 +4436,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Bit rate also has an impact on quality: the higher the bit rate, the better the quality."
                                            }
                                        ],
-                          "detailedQuestion":  "The term bit rate refers to the amount of data that is processed or transferred over a specified amount of time. Bit rate also has an impact on quality: the higher the bit rate, the better the quality.",
+                          "detailedQuestion":  "The \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e bit rate \u003cspan class=\"term-en\"\u003erefers\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（意指/指的是）\u003c/span\u003e to the \u003cspan class=\"term-en\"\u003eamount\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（數量/總額）\u003c/span\u003e of data that is processed or transferred over a specified \u003cspan class=\"term-en\"\u003eamount\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（數量/總額）\u003c/span\u003e of time. Bit rate also has an impact on quality: the higher the bit rate, the better the quality.",
                           "detailedOptions":  [
                                                   "True（正確）",
                                                   "False（錯誤）"
@@ -4479,7 +4479,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "A ____________ is a definable asset with adjustable property settings that will allow you to control such elements as the echo density, overall reverb gain, and air absorption to help craft the overall feel you may be after.",
+                          "detailedQuestion":  "A ____________ is a definable asset with adjustable property settings that will allow you to control such \u003cspan class=\"term-en\"\u003eelements\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（要素/組成元件）\u003c/span\u003e as the echo \u003cspan class=\"term-en\"\u003edensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e \u003cspan class=\"term-en\"\u003ereverb\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（混響/空間殘響）\u003c/span\u003e gain, and air \u003cspan class=\"term-en\"\u003eabsorption\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（吸收/聲能吸收）\u003c/span\u003e to help craft the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e feel you may be after.",
                           "detailedOptions":  [
                                                   "Sound Attenuation asset（聲音衰減資產：以可重複使用的方式儲存距離衰減屬性，方便統一調整）",
                                                   "Sound Cue asset（音效提示資產：儲存節點式合成與隨機化音訊播放邏輯的資產）",
@@ -5278,7 +5278,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "____________ is a \u003cspan class=\"term-en\"\u003eSequencer\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sequencer 序列器）\u003c/span\u003e term meaning an Actor that \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/運行）\u003c/span\u003e in the Level already and that Sequencer will take control of in order to apply changes to it.",
+                          "detailedQuestion":  "____________ is a \u003cspan class=\"term-en\"\u003eSequencer\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（Sequencer 序列器）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e meaning an Actor that \u003cspan class=\"term-en\"\u003eexists\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（存在/運行）\u003c/span\u003e in the Level already and that Sequencer will take control of in order to apply changes to it.",
                           "detailedOptions":  [
                                                   "Placeable（可放置：類別修飾詞，表示該 Actor 類別可手動拖放入關卡）",
                                                   "Possessable（可附身/接管物件：Sequencer 術語，指關卡中原本就存在並由 Sequencer 接管控制的 Actor）",
@@ -5502,7 +5502,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "There are several preset joint types: ball-and-socket, hinge, and prismatic."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ is a type of joint that allows you to connect two Actors together, presumably ones simulating physics. It gives you the ability to apply limits or set linear and angular forces. There are several preset joint types: ball-and-socket, hinge, and prismatic.",
+                          "detailedQuestion":  "____________ is a type of joint that allows you to connect two Actors together, presumably ones simulating physics. It gives you the \u003cspan class=\"term-en\"\u003eability\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（能力/功能機制）\u003c/span\u003e to apply limits or set linear and angular forces. There are several preset joint types: ball-and-socket, hinge, and prismatic.",
                           "detailedOptions":  [
                                                   "Destructible Actor（可破壞 Actor：當承受足夠外力或傷害時會碎裂崩解成小碎塊的剛體物件）",
                                                   "Physics Thruster Actor（物理推進器 Actor：向指定方向持續施加推力，類似火箭推進器）",
