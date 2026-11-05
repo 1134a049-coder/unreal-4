@@ -1,10 +1,10 @@
 /**
  * Unreal Engine Interactive Quiz & Certification Platform Logic
  * Features:
- * 1. 12 Chapters / 120 Questions (Teach Yourself UE4 Game Development in 24 Hours)
- * 2. Tri-state Language Switching: English 原文 / 英中雙語對照 (Bilingual) / 中文繁體
- * 3. Practice Mode (Instant Answer + In-depth Explanation) vs Exam Mode (30-min Timer + 20-pt Scoring)
- * 4. Smart Mistakes Notebook (錯題本) persisted in localStorage
+ * 1. 7 Chapters + 2 Comprehensive Tests (01_to_06_Test, 07_to_13_Texs) / 130 Questions
+ * 2. Quad-state Language Switching: English 原文 / 英中雙語對照 / 精闢詳細版翻譯 / 中文繁體
+ * 3. Practice Mode (Instant Answer + In-depth Explanation) vs Exam Mode (30/60-min Timer + 2-pt/Q Scoring)
+ * 4. Smart Mistakes Notebook (錯題本) & Starred Filter (星號標註篩選) persisted in localStorage
  * 5. Full palette drawer navigation and statistics
  */
 
@@ -13,8 +13,8 @@
 
   // State Management
   const state = {
-    mode: 'practice', // 'practice' | 'exam' | 'mistakes'
-    language: 'bilingual', // 'en' | 'bilingual' | 'zh'
+    mode: 'practice', // 'practice' | 'exam' | 'mistakes' | 'starred'
+    language: 'bilingual', // 'en' | 'bilingual' | 'detailed' | 'zh'
     currentChapterId: 'h01',
     currentIndex: 0, // 0 ~ (activeQuestions.length - 1)
     
@@ -27,6 +27,7 @@
     // Feature toggles
     showAnswer: true,
     showExplain: true,
+    filterStarredOnly: false,
     
     // Exam state
     examTimerInterval: null,
@@ -39,7 +40,9 @@
   const btnModePractice = document.getElementById('btnModePractice');
   const btnModeExam = document.getElementById('btnModeExam');
   const btnModeMistakes = document.getElementById('btnModeMistakes');
+  const btnModeStarred = document.getElementById('btnModeStarred');
   const mistakesCountEl = document.getElementById('mistakesCount');
+  const starredCountEl = document.getElementById('starredCount');
   
   const examControls = document.getElementById('examControls');
   const examTimer = document.getElementById('examTimer');
@@ -56,6 +59,8 @@
   const btnLangDetailed = document.getElementById('btnLangDetailed');
   const btnLangZh = document.getElementById('btnLangZh');
   
+  const btnFilterStarred = document.getElementById('btnFilterStarred');
+  const filterStarredText = document.getElementById('filterStarredText');
   const btnToggleAnswer = document.getElementById('btnToggleAnswer');
   const answerToggleText = document.getElementById('answerToggleText');
   const btnToggleExplain = document.getElementById('btnToggleExplain');
@@ -102,6 +107,7 @@
   const resultModal = document.getElementById('resultModal');
   const modalTestName = document.getElementById('modalTestName');
   const modalScore = document.getElementById('modalScore');
+  const modalScoreLabel = document.getElementById('modalScoreLabel');
   const resCorrectCount = document.getElementById('resCorrectCount');
   const resWrongCount = document.getElementById('resWrongCount');
   const resUnansweredCount = document.getElementById('resUnansweredCount');
@@ -118,16 +124,30 @@
     mode: 'ue_quiz_mode',
     showAnswer: 'ue_quiz_show_answer',
     showExplain: 'ue_quiz_show_explain',
+    filterStarred: 'ue_quiz_filter_starred',
     currentIndex: 'ue_quiz_current_index',
     mistakes: 'ue_quiz_mistakes'
   };
+
+  function getStarredCount() {
+    return UE_QUIZ_DATA.questions.filter(q => state.answers[q.id] && state.answers[q.id].isFlagged).length;
+  }
+
+  function updateStarredCount() {
+    if (starredCountEl) {
+      starredCountEl.textContent = getStarredCount();
+    }
+  }
 
   // Load mistakes from localStorage
   function loadMistakes() {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.mistakes);
       if (saved) {
-        state.mistakes = new Set(JSON.parse(saved));
+        const validIds = new Set(UE_QUIZ_DATA.questions.map(q => q.id));
+        const filtered = JSON.parse(saved).filter(id => validIds.has(id));
+        state.mistakes = new Set(filtered);
+        localStorage.setItem(STORAGE_KEYS.mistakes, JSON.stringify(filtered));
       }
     } catch (e) {
       console.warn('Could not read mistakes from localStorage', e);
@@ -159,6 +179,7 @@
       localStorage.setItem(STORAGE_KEYS.mode, state.mode);
       localStorage.setItem(STORAGE_KEYS.showAnswer, String(state.showAnswer));
       localStorage.setItem(STORAGE_KEYS.showExplain, String(state.showExplain));
+      localStorage.setItem(STORAGE_KEYS.filterStarred, String(state.filterStarredOnly));
       localStorage.setItem(STORAGE_KEYS.currentIndex, String(state.currentIndex));
     } catch (e) {
       console.warn('Could not save app state to localStorage', e);
@@ -188,9 +209,15 @@
       if (savedAnswers) {
         const parsed = JSON.parse(savedAnswers);
         if (parsed && typeof parsed === 'object') {
-          state.answers = parsed;
+          const validIds = new Set(UE_QUIZ_DATA.questions.map(q => q.id));
+          const cleaned = {};
+          Object.keys(parsed).forEach(k => {
+            if (validIds.has(k)) cleaned[k] = parsed[k];
+          });
+          state.answers = cleaned;
         }
       }
+      updateStarredCount();
 
       // 2. 恢復上次瀏覽的章節
       const savedChap = localStorage.getItem(STORAGE_KEYS.chapter);
@@ -204,7 +231,7 @@
         state.language = savedLang;
       }
 
-      // 4. 恢復功能開關設定 (即時答案、詳細解釋)
+      // 4. 恢復功能開關設定 (即時答案、詳細解釋、星號標註篩選)
       const savedShowAns = localStorage.getItem(STORAGE_KEYS.showAnswer);
       if (savedShowAns !== null) {
         state.showAnswer = (savedShowAns === 'true');
@@ -213,11 +240,17 @@
       if (savedShowExp !== null) {
         state.showExplain = (savedShowExp === 'true');
       }
+      const savedFilterStarred = localStorage.getItem(STORAGE_KEYS.filterStarred);
+      if (savedFilterStarred !== null) {
+        state.filterStarredOnly = (savedFilterStarred === 'true');
+      }
 
-      // 5. 恢復模式 (刷題/錯題本，模考模式為避免計時異常預設回刷題)
+      // 5. 恢復模式 (刷題/錯題本/星號標註，模考模式為避免計時異常預設回刷題)
       const savedMode = localStorage.getItem(STORAGE_KEYS.mode);
       if (savedMode === 'mistakes' && state.mistakes.size > 0) {
         state.mode = 'mistakes';
+      } else if (savedMode === 'starred' && getStarredCount() > 0) {
+        state.mode = 'starred';
       } else {
         state.mode = 'practice';
       }
@@ -235,13 +268,20 @@
     }
   }
 
-  // Active Questions List based on current mode & chapter
+  // Active Questions List based on current mode & chapter & starred filter
   function getActiveQuestions() {
     if (state.mode === 'mistakes') {
       const list = UE_QUIZ_DATA.questions.filter(q => state.mistakes.has(q.id));
-      return list;
+      return state.filterStarredOnly ? list.filter(q => state.answers[q.id] && state.answers[q.id].isFlagged) : list;
     }
-    return UE_QUIZ_DATA.questions.filter(q => q.chapterId === state.currentChapterId);
+    if (state.mode === 'starred') {
+      return UE_QUIZ_DATA.questions.filter(q => state.answers[q.id] && state.answers[q.id].isFlagged);
+    }
+    const chapList = UE_QUIZ_DATA.questions.filter(q => q.chapterId === state.currentChapterId);
+    if (state.filterStarredOnly && state.mode !== 'exam') {
+      return chapList.filter(q => state.answers[q.id] && state.answers[q.id].isFlagged);
+    }
+    return chapList;
   }
 
   function getCurrentQuestion() {
@@ -273,11 +313,12 @@
     chapterSelect.value = state.currentChapterId;
 
     chapterSelect.addEventListener('change', (e) => {
-      // 切換章節時，若位於錯題本模式，自動切回刷題模式以呈現該章題目
-      if (state.mode === 'mistakes') {
+      // 切換章節時，若位於錯題本或星號標註總覽模式，自動切回刷題模式以呈現該章題目
+      if (state.mode === 'mistakes' || state.mode === 'starred') {
         state.mode = 'practice';
         btnModePractice.classList.add('active');
         btnModeMistakes.classList.remove('active');
+        if (btnModeStarred) btnModeStarred.classList.remove('active');
         btnModeExam.classList.remove('active');
         examControls.style.display = 'none';
         practiceBanner.style.display = 'flex';
@@ -298,6 +339,7 @@
     btnModePractice.classList.toggle('active', mode === 'practice');
     btnModeExam.classList.toggle('active', mode === 'exam');
     btnModeMistakes.classList.toggle('active', mode === 'mistakes');
+    if (btnModeStarred) btnModeStarred.classList.toggle('active', mode === 'starred');
 
     if (mode === 'exam') {
       examControls.style.display = 'flex';
@@ -337,7 +379,9 @@
   // Exam Timer
   function startExamTimer() {
     clearInterval(state.examTimerInterval);
-    state.examSecondsRemaining = 30 * 60; // 30 minutes
+    const list = getActiveQuestions();
+    const mins = list.length >= 30 ? 60 : 30;
+    state.examSecondsRemaining = mins * 60;
     state.examSubmitted = false;
     updateTimerDisplay();
 
@@ -378,13 +422,17 @@
       }
     });
 
-    // 10 questions, each worth 2 points = 20 points max
+    // Each question worth 2 points (10Q = 20 pts, 30Q = 60 pts)
     const points = correct * 2;
+    const maxPoints = list.length * 2;
     const accuracy = list.length > 0 ? ((correct / list.length) * 100).toFixed(1) : '0';
 
     const chap = UE_QUIZ_DATA.chapters.find(c => c.id === state.currentChapterId);
     modalTestName.textContent = chap ? `${chap.title} - ${chap.titleZh}` : '章節測驗';
     modalScore.textContent = points;
+    if (modalScoreLabel) {
+      modalScoreLabel.textContent = `測驗得分 (滿分 ${maxPoints} 分 / ${list.length} 題)`;
+    }
     resCorrectCount.textContent = correct;
     resWrongCount.textContent = wrong;
     resUnansweredCount.textContent = unanswered;
@@ -437,12 +485,27 @@
     const list = getActiveQuestions();
 
     if (!q) {
-      // Empty mistakes notebook or no questions
+      // Empty mistakes notebook, starred list, or no questions
       cardQNum.textContent = '無題目';
-      cardQChapter.textContent = state.mode === 'mistakes' ? '錯題本目前為空' : '無章節資料';
+      if (state.mode === 'mistakes') {
+        cardQChapter.textContent = state.filterStarredOnly ? '錯題本中無星號標註題目' : '錯題本目前為空';
+        questionPromptEn.textContent = state.filterStarredOnly
+          ? '錯題本中目前沒有已加「★ 星號標註」的題目。可關閉「星號標註篩選」檢視全部錯題。'
+          : '太棒了！目前沒有任何答錯的題目。';
+      } else if (state.mode === 'starred' || state.filterStarredOnly) {
+        cardQChapter.textContent = state.mode === 'starred' ? '星號標註清單目前為空' : '本章節尚無星號標註題目';
+        questionPromptEn.textContent = '目前沒有已加上「★ 星號標註」的題目。您可以在刷題時點擊題目右上角的「★ 星號標註」按鈕，將重點題目加入此篩選清單！';
+      } else {
+        cardQChapter.textContent = '無章節資料';
+        questionPromptEn.textContent = '查無符合條件的考題。';
+      }
       cardQType.textContent = '-';
-      questionPromptEn.textContent = state.mode === 'mistakes' ? '太棒了！目前沒有任何答錯的題目。' : '查無符合條件的考題。';
+      questionPromptEn.style.display = 'block';
       questionPromptZh.style.display = 'none';
+      if (answerHintBanner) answerHintBanner.style.display = 'none';
+      if (detailedBreakdownBox) detailedBreakdownBox.style.display = 'none';
+      if (keywordMemoryBox) keywordMemoryBox.style.display = 'none';
+      btnFlag.classList.remove('active');
       optionsContainer.innerHTML = '';
       feedbackCard.style.display = 'none';
       btnPrevQ.disabled = true;
@@ -450,6 +513,8 @@
       progressText.textContent = '0 / 0';
       progressStat.textContent = '已答 0 題';
       progressFill.style.width = '0%';
+      answeredCountBadge.textContent = 0;
+      totalQuestionsBadge.textContent = 0;
       return;
     }
 
@@ -527,7 +592,8 @@
       answerHintBanner.style.display = 'flex';
       const letters = ['A', 'B', 'C', 'D'];
       const letChar = letters[q.correctIndex] || '';
-      answerHintText.innerHTML = `題目提示：正確答案為 <strong>(${letChar}) ${q.correctText}</strong>`;
+      const ansZh = (q.optionsZh && q.optionsZh[q.correctIndex]) ? q.optionsZh[q.correctIndex] : q.correctText;
+      answerHintText.innerHTML = `題目提示：正確答案為 <strong>(${letChar}) ${ansZh}</strong>`;
     } else {
       answerHintBanner.style.display = 'none';
     }
@@ -683,7 +749,8 @@
       feedbackStatus.textContent = '作答錯誤，請詳讀專業解析';
     }
 
-    feedbackCorrectOpt.textContent = `(${correctLetter}) ${q.correctText}`;
+    const ansZh = (q.optionsZh && q.optionsZh[q.correctIndex]) ? q.optionsZh[q.correctIndex] : q.correctText;
+    feedbackCorrectOpt.textContent = `(${correctLetter}) ${ansZh}`;
     feedbackNotes.textContent = q.explanation;
   }
 
@@ -734,7 +801,14 @@
     // Update Summary in Palette
     const chap = UE_QUIZ_DATA.chapters.find(c => c.id === state.currentChapterId);
     if (sideChapterTitle) {
-      sideChapterTitle.textContent = state.mode === 'mistakes' ? '錯題本清單' : (chap ? chap.num + '. ' + chap.title : 'Hour');
+      if (state.mode === 'mistakes') {
+        sideChapterTitle.textContent = state.filterStarredOnly ? '錯題本 (僅星號★)' : '錯題本清單';
+      } else if (state.mode === 'starred') {
+        sideChapterTitle.textContent = '★ 星號標註清單';
+      } else {
+        const baseTitle = chap ? chap.num + '. ' + chap.title : 'Hour';
+        sideChapterTitle.textContent = state.filterStarredOnly ? `${baseTitle} (僅星號★)` : baseTitle;
+      }
     }
     if (sideChapterTotal) {
       sideChapterTotal.textContent = `${list.length} 題`;
@@ -772,6 +846,24 @@
     btnModePractice.addEventListener('click', () => setMode('practice'));
     btnModeExam.addEventListener('click', () => setMode('exam'));
     btnModeMistakes.addEventListener('click', () => setMode('mistakes'));
+    if (btnModeStarred) {
+      btnModeStarred.addEventListener('click', () => setMode('starred'));
+    }
+
+    // Starred Filter Toggle in Practice Banner
+    if (btnFilterStarred) {
+      btnFilterStarred.addEventListener('click', () => {
+        state.filterStarredOnly = !state.filterStarredOnly;
+        btnFilterStarred.classList.toggle('active', state.filterStarredOnly);
+        if (filterStarredText) {
+          filterStarredText.textContent = state.filterStarredOnly ? '僅星號 ★' : '全部';
+        }
+        state.currentIndex = 0;
+        saveAppState();
+        renderAll();
+        showToast(state.filterStarredOnly ? '★ 已開啟星號標註篩選（僅顯示星號題目）' : '已切換為顯示全部題目');
+      });
+    }
 
     // Language Tabs Delegation & Direct Events
     const langTabs = document.querySelector('.lang-tabs');
@@ -819,6 +911,7 @@
           delete state.answers[q.id];
         });
         state.currentIndex = 0;
+        updateStarredCount();
         saveAppState();
         renderAll();
         showToast('已重置當前章節的作答紀錄！');
@@ -829,10 +922,11 @@
     const btnClearAllData = document.getElementById('btnClearAllData');
     if (btnClearAllData) {
       btnClearAllData.addEventListener('click', () => {
-        if (confirm('⚠️ 警告：確定要清除「全部 12 個章節」的所有作答紀錄、標記與錯題本嗎？此操作無法復原。')) {
+        if (confirm('⚠️ 警告：確定要清除全部章節與測驗的所有作答紀錄、星號標註與錯題本嗎？此操作無法復原。')) {
           state.answers = {};
           state.mistakes.clear();
           state.currentIndex = 0;
+          updateStarredCount();
           saveMistakes();
           saveAppState();
           renderAll();
@@ -841,7 +935,7 @@
       });
     }
 
-    // Flag Button
+    // Flag (Starred) Button
     btnFlag.addEventListener('click', () => {
       const q = getCurrentQuestion();
       if (!q) return;
@@ -849,9 +943,14 @@
       cur.isFlagged = !cur.isFlagged;
       state.answers[q.id] = cur;
       btnFlag.classList.toggle('active', cur.isFlagged);
+      updateStarredCount();
       saveAppState();
-      renderPalette();
-      showToast(cur.isFlagged ? '★ 已將此題加入標記清單' : '已取消此題標記');
+      if (state.mode === 'starred' || state.filterStarredOnly) {
+        renderAll();
+      } else {
+        renderPalette();
+      }
+      showToast(cur.isFlagged ? '★ 已將此題加入星號標註清單' : '已取消此題星號標註');
     });
 
     // Stage Navigation
@@ -947,6 +1046,7 @@
     btnModePractice.classList.toggle('active', state.mode === 'practice');
     btnModeExam.classList.toggle('active', state.mode === 'exam');
     btnModeMistakes.classList.toggle('active', state.mode === 'mistakes');
+    if (btnModeStarred) btnModeStarred.classList.toggle('active', state.mode === 'starred');
 
     if (state.mode === 'exam') {
       examControls.style.display = 'flex';
@@ -966,6 +1066,10 @@
   }
 
   function initToggleUI() {
+    if (btnFilterStarred && filterStarredText) {
+      btnFilterStarred.classList.toggle('active', state.filterStarredOnly);
+      filterStarredText.textContent = state.filterStarredOnly ? '僅星號 ★' : '全部';
+    }
     if (btnToggleAnswer && answerToggleText) {
       btnToggleAnswer.classList.toggle('active', state.showAnswer);
       answerToggleText.textContent = state.showAnswer ? '開啟' : '關閉';
