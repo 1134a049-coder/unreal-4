@@ -2166,7 +2166,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Common rendering methods include scanline rendering, ray tracing, and radiosity methods."
                                            }
                                        ],
-                          "detailedQuestion":  "____________ is a 3D computer graphics \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e. Common rendering methods include scanline rendering, ray tracing, and radiosity methods.",
+                          "detailedQuestion":  "____________ is a 3D computer graphics \u003cspan class=\"term-en\"\u003eterm\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（術語/專有名詞）\u003c/span\u003e used to describe the process of creating raster images based on camera, light, and model \u003cspan class=\"term-en\"\u003eposition\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（位置坐標）\u003c/span\u003e and \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e. Common rendering \u003cspan class=\"term-en\"\u003emethods\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（方法/演算法）\u003c/span\u003e include scanline rendering, ray tracing, and radiosity \u003cspan class=\"term-en\"\u003emethods\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（方法/演算法）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Rasterization（光柵化：將 3D 幾何頂點轉換為 2D 螢幕像素的渲染技術）",
                                                   "Rendering（渲染著色：將 3D 場景計算並生成最終畫面的過程）",
@@ -2218,7 +2218,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ \u003cspan class=\"term-en\"\u003elight property\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（光源光學屬性）\u003c/span\u003e overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+                          "detailedQuestion":  "The ____________ \u003cspan class=\"term-en\"\u003elight property\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（光源光學屬性）\u003c/span\u003e overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to \u003cspan class=\"term-en\"\u003edefine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義/決定）\u003c/span\u003e the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
                           "detailedOptions":  [
                                                   "IES（IES 光學設定檔：真實燈具廠商提供的物理光線照射形狀圖樣）",
                                                   "Temperature（色溫：以開爾文 K 為單位調整偏暖黃光或偏冷藍光）",
@@ -4104,7 +4104,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "For example, a 100W incandescent lightbulb has a temperature of 2,800K."
                                            }
                                        ],
-                          "detailedQuestion":  "The ____________ light property overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to define the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
+                          "detailedQuestion":  "The ____________ light property overrides light color \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e and uses real-world values in kelvins to \u003cspan class=\"term-en\"\u003edefine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義/決定）\u003c/span\u003e the color of a light. For example, a 100W incandescent lightbulb has a temperature of 2,800K.",
                           "detailedOptions":  [
                                                   "IES（IES 光域網檔案：描述真實燈具發光分佈形狀的檔案格式）",
                                                   "Temperature（色溫屬性：以開爾文 Kelvin 為單位定義光源物理冷暖色調）",
@@ -4347,7 +4347,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "It is the core color description of the surface in a Material minus shadow and lighting detail."
                                            }
                                        ],
-                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e color of a Material. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color \u003cspan class=\"term-en\"\u003edescription\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（描述/呈現）\u003c/span\u003e of the surface in a Material \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
+                          "detailedQuestion":  "Base color, also called ____________, \u003cspan class=\"term-en\"\u003edefines\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義決定）\u003c/span\u003e the \u003cspan class=\"term-en\"\u003eoverall\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（整體/全域）\u003c/span\u003e color of a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. It takes in a Vector3 (RGB) value, and each channel is automatically clamped between 0 and 1. It is the core color \u003cspan class=\"term-en\"\u003edescription\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（描述/呈現）\u003c/span\u003e of the surface in a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e \u003cspan class=\"term-en\"\u003eminus\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（排除/扣除）\u003c/span\u003e shadow and lighting detail.",
                           "detailedOptions":  [
                                                   "Emissive（自發光輸入：控制材質表面主動發光的顏色與亮度）",
                                                   "Roughness（粗糙度輸入：控制表面微觀平滑或粗糙漫反射程度）",
@@ -4613,7 +4613,7 @@ const UE_QUIZ_DATA = {
                           "segments":  [
 
                                        ],
-                          "detailedQuestion":  "The ____________ is a Material node that allows you to define layers, assign Textures, and set blend methods for terrain.",
+                          "detailedQuestion":  "The ____________ is a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e node that allows you to \u003cspan class=\"term-en\"\u003edefine\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（定義/劃分）\u003c/span\u003e \u003cspan class=\"term-en\"\u003elayers\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（圖層/層級）\u003c/span\u003e, assign \u003cspan class=\"term-en\"\u003eTextures\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（紋理貼圖）\u003c/span\u003e, and set blend \u003cspan class=\"term-en\"\u003emethods\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（混合方式/算法）\u003c/span\u003e for \u003cspan class=\"term-en\"\u003eterrain\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌/地形）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "FoliageLayerBlend（干擾項：無此材質節點名稱）",
                                                   "LandscapeLayerBlend（地貌圖層混合節點：定義地形圖層、指派貼圖並設定混合模式的材質節點）",
@@ -4709,7 +4709,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "This Actor has its own level of detail (LOD) system for efficiency."
                                            }
                                        ],
-                          "detailedQuestion":  "A ____________ is a specific Actor class used to represent terrain. This Actor has its own level of detail (LOD) system for efficiency.",
+                          "detailedQuestion":  "A ____________ is a specific Actor class used to represent \u003cspan class=\"term-en\"\u003eterrain\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（地貌/地形）\u003c/span\u003e. This Actor has its own level of detail (LOD) system for efficiency.",
                           "detailedOptions":  [
                                                   "Terrain Actor（干擾項：UE3 舊稱，UE4 中改稱為 Landscape Actor）",
                                                   "Landscape Actor（地貌 Actor：專門代表廣袤地形並具備獨立高效 LOD 系統的特定 Actor 類別）",
@@ -5614,7 +5614,7 @@ const UE_QUIZ_DATA = {
                                                "en":  "Properties include Friction, Restitution, and Density."
                                            }
                                        ],
-                          "detailedQuestion":  "A ____________ contains a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/組合）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e that affect the behavior of an Actor simulating physics. It can be assigned to a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e or a Material. Properties include \u003cspan class=\"term-en\"\u003eFriction\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（摩擦力）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eRestitution\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（彈性恢復係數）\u003c/span\u003e, and \u003cspan class=\"term-en\"\u003eDensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e.",
+                          "detailedQuestion":  "A ____________ contains a \u003cspan class=\"term-en\"\u003ecollection\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（集合/組合）\u003c/span\u003e of \u003cspan class=\"term-en\"\u003eproperties\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（屬性/參數）\u003c/span\u003e that affect the behavior of an Actor simulating physics. It can be assigned to a \u003cspan class=\"term-en\"\u003eStatic Mesh Actor\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（靜態網格物件）\u003c/span\u003e or a \u003cspan class=\"term-en\"\u003eMaterial\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（材質）\u003c/span\u003e. Properties include \u003cspan class=\"term-en\"\u003eFriction\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（摩擦力）\u003c/span\u003e, \u003cspan class=\"term-en\"\u003eRestitution\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（彈性恢復係數）\u003c/span\u003e, and \u003cspan class=\"term-en\"\u003eDensity\u003c/span\u003e\u003cspan class=\"inline-trans\"\u003e（密度）\u003c/span\u003e.",
                           "detailedOptions":  [
                                                   "Skeletal Mesh asset（骨骼網格資產：具備骨骼階層與蒙皮權重的可動畫角色模型）",
                                                   "Physics Material asset（物理材質資產：包含摩擦力 Friction、恢復係數 Restitution 與密度 Density 等物理屬性集合）",
